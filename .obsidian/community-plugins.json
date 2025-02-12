@@ -3,7 +3,6 @@
   "obsidian-excalidraw-plugin",
   "dataview",
   "calendar",
-  "obsidian-git",
   "obsidian-icon-folder",
   "obsidian-emoji-toolbar",
   "obsidian-minimal-settings",
@@ -13,5 +12,6 @@
   "badges",
   "text-snippets-obsidian",
   "obsidian-markdown-formatting-assistant-plugin",
-  "editing-toolbar"
+  "editing-toolbar",
+  "obsidian-git"
 ]
