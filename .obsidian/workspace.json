@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ff58950677cb85df",
+        "id": "013263e4a1bed0fe",
         "type": "tabs",
         "children": [
           {
-            "id": "2704db2cad5dcbe9",
+            "id": "6d1b1d74a3fb71ba",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data Science do Zero/Data Science do Zero.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Data Science do Zero"
+              "title": "Nova aba"
             }
           }
         ]
@@ -40,7 +36,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byModifiedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -206,12 +202,16 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "e9ea88d18a839487",
+  "active": "6d1b1d74a3fb71ba",
   "lastOpenFiles": [
-    "Data Science do Zero",
+    "livros/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
+    "Data Science do Zero/0 -Data Science do Zero.md",
+    "Data Science do Zero/3-Álgebra Linear.md",
+    "Data Science do Zero/1-Um Curso Intensivo de Python.md",
+    "Data Science do Zero/Um Curso Intensivo de Python.md",
+    "Data Science do Zero/2-Visualização de Dados.md",
     "Data Science do Zero/Introdução.md",
-    "Data Science do Zero/Data Science do Zero.md",
-    "livros/pdf/_OceanofPDF.com_Data_Science_from_Scratch_-_Joel_Grus.pdf",
+    "Data Science do Zero",
     "livros/pdf/_OceanofPDF.com_Data_Science_from_Scratch_-_Joel_Grus.pdf.crdownload",
     "livros/pdf",
     "Loterias.md",
