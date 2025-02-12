@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -232,16 +232,6 @@
             }
           },
           {
-            "id": "96c2ae10ae311865",
-            "type": "leaf",
-            "state": {
-              "type": "side-panel-control-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
             "id": "9695b7659074a0aa",
             "type": "leaf",
             "state": {
@@ -250,9 +240,19 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "92a23cfa8678df07",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {},
+              "icon": "viewIcon",
+              "title": "Markdown-Autocomplete"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -276,11 +276,11 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "25059955b2290e5b",
+  "active": "3c7567fa8e251fc6",
   "lastOpenFiles": [
     "teste github.md",
-    "teste.md",
     "Loterias.md",
+    "teste.md",
     "Sem título.md",
     "Excalidraw/Drawing 2025-02-08 15.07.55.excalidraw.md",
     "Primeira Nota.md",
