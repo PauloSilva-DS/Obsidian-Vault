@@ -213,13 +213,53 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "excel:Create Excel File": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "3c7567fa8e251fc6",
+  "floating": {
+    "id": "641e278ce23efe55",
+    "type": "floating",
+    "children": [
+      {
+        "id": "a196c39c35233b4f",
+        "type": "window",
+        "children": [
+          {
+            "id": "9e57784a5b3b4508",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "278d848a136a1236",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://github.com/drbap/dashboard-navigator-for-obsidian",
+                    "title": "GitHub - drbap/dashboard-navigator-for-obsidian: Dashboard navigator plugin for Obsidian.",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "GitHub - drbap/dashboard-navigator-for-obsidian: Dashboard navigator plugin for Obsidian."
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1284,
+        "y": 40,
+        "width": 1268,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "278d848a136a1236",
   "lastOpenFiles": [
-    "Sem título.md",
     "Loterias.md",
+    "Sem título.md",
     "teste github.md",
     "teste.md",
     "Excalidraw/Drawing 2025-02-08 15.07.55.excalidraw.md",
