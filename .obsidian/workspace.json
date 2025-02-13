@@ -15,7 +15,7 @@
               "state": {
                 "file": "Data Science do Zero/1-Um Curso Intensivo de Python.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "1-Um Curso Intensivo de Python"
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "teste.md",
+                "file": "Data Science do Zero/1-Um Curso Intensivo de Python.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de teste"
+              "title": "Sumário de 1-Um Curso Intensivo de Python"
             }
           },
           {
@@ -181,7 +181,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -206,21 +206,22 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "e9ea88d18a839487",
+  "active": "e716998da45fd9ea",
   "lastOpenFiles": [
+    "Templates",
     "Notas Rápidas",
     "Data Science do Zero/0 -Data Science do Zero.md",
     "Data Science do Zero/3-Álgebra Linear.md",
     "Data Science do Zero/Introdução Data Science do Zero.md",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Data Science do Zero/2-Visualização de Dados.md",
-    "livros/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
+    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/Um Curso Intensivo de Python.md",
     "Data Science do Zero",
     "livros/pdf/_OceanofPDF.com_Data_Science_from_Scratch_-_Joel_Grus.pdf.crdownload",
-    "livros/pdf",
+    "Source Material/pdf",
     "Loterias.md",
-    "livros",
+    "Source Material",
     "Excalidraw/Drawing 2025-02-08 15.07.55.excalidraw.md",
     "teste github.md",
     "teste.md",
