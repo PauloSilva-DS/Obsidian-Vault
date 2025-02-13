@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🖐",
       "LiChartLine",
       "👀",
       "LiDatabase",
-      "LiAtom",
-      "📙"
+      "LiAtom"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -38,5 +38,6 @@
   "livros/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf": "📙",
   "Data Science do Zero/1-Um Curso Intensivo de Python.md": "LiAtom",
   "Data Science do Zero/2-Visualização de Dados.md": "👀",
-  "Data Science do Zero/3-Álgebra Linear.md": "LiChartLine"
+  "Data Science do Zero/3-Álgebra Linear.md": "LiChartLine",
+  "Data Science do Zero/Introdução Data Science do Zero.md": "🖐"
 }
