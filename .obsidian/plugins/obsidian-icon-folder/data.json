@@ -6,8 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "📙",
-      "📚"
+      "LiChartLine",
+      "👀",
+      "LiDatabase",
+      "LiAtom",
+      "📙"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -32,5 +35,8 @@
     "useInternalPlugins": false
   },
   "Data Science do Zero/0 -Data Science do Zero.md": "📚",
-  "livros/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf": "📙"
+  "livros/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf": "📙",
+  "Data Science do Zero/1-Um Curso Intensivo de Python.md": "LiAtom",
+  "Data Science do Zero/2-Visualização de Dados.md": "👀",
+  "Data Science do Zero/3-Álgebra Linear.md": "LiChartLine"
 }

@@ -1,7 +1,7 @@
 ## Sumário
 
 [[Introdução]]  
-[[1-Um Curso Intensivo de Python]]  
+[[1-Um Curso Intensivo de Python]]      
 [[2-Visualização de Dados]]  
 [[3-Álgebra Linear]]  
 [[4-Estatística]]  
