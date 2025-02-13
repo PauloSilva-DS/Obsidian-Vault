@@ -1,6 +1,40 @@
 {
   "cascadeColors": false,
   "colorBackground": true,
-  "palette": [],
-  "fileColors": []
+  "palette": [
+    {
+      "id": "I5fi7hV6GmtqNUrELhfL8",
+      "name": "Vermelho",
+      "value": "#ed0c0c"
+    },
+    {
+      "id": "pssH1RKbQnU5Q8KO1rJ3B",
+      "name": "Azul",
+      "value": "#1177e4"
+    },
+    {
+      "id": "DyBGbN51edVp6Y_OC7ilJ",
+      "name": "Verde",
+      "value": "#267f06"
+    },
+    {
+      "id": "wqdo_B13eqBIM9Fy-QnRc",
+      "name": "Amarelo",
+      "value": "#f7db8d"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Templates",
+      "color": "pssH1RKbQnU5Q8KO1rJ3B"
+    },
+    {
+      "path": "Loterias.md",
+      "color": "DyBGbN51edVp6Y_OC7ilJ"
+    },
+    {
+      "path": "Source Material",
+      "color": "wqdo_B13eqBIM9Fy-QnRc"
+    }
+  ]
 }

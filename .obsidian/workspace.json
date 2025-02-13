@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "013263e4a1bed0fe",
+        "id": "309e39f0322e9fda",
         "type": "tabs",
         "children": [
           {
-            "id": "6d1b1d74a3fb71ba",
+            "id": "c4f39cd82465a9a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Science do Zero/1-Um Curso Intensivo de Python.md",
+                "file": "Loterias.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "1-Um Curso Intensivo de Python"
+              "title": "Loterias"
             }
           }
         ]
@@ -141,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Science do Zero/1-Um Curso Intensivo de Python.md",
+                "file": "Loterias.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de 1-Um Curso Intensivo de Python"
+              "title": "Sumário de Loterias"
             }
           },
           {
@@ -206,21 +206,21 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "e716998da45fd9ea",
+  "active": "c4f39cd82465a9a5",
   "lastOpenFiles": [
+    "Loterias.md",
+    "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Templates",
     "Notas Rápidas",
     "Data Science do Zero/0 -Data Science do Zero.md",
     "Data Science do Zero/3-Álgebra Linear.md",
     "Data Science do Zero/Introdução Data Science do Zero.md",
-    "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Data Science do Zero/2-Visualização de Dados.md",
     "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/Um Curso Intensivo de Python.md",
     "Data Science do Zero",
     "livros/pdf/_OceanofPDF.com_Data_Science_from_Scratch_-_Joel_Grus.pdf.crdownload",
     "Source Material/pdf",
-    "Loterias.md",
     "Source Material",
     "Excalidraw/Drawing 2025-02-08 15.07.55.excalidraw.md",
     "teste github.md",
