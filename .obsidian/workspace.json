@@ -11,10 +11,14 @@
             "id": "6d1b1d74a3fb71ba",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Data Science do Zero/1-Um Curso Intensivo de Python.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "1-Um Curso Intensivo de Python"
             }
           }
         ]
@@ -204,8 +208,8 @@
   },
   "active": "6d1b1d74a3fb71ba",
   "lastOpenFiles": [
-    "livros/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/0 -Data Science do Zero.md",
+    "livros/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/3-Álgebra Linear.md",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Data Science do Zero/Um Curso Intensivo de Python.md",
