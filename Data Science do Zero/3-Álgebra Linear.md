@@ -1,2 +1,2 @@
 [[0 -Data Science do Zero]]
-#dataScience #python
+#dataScienceZero  #python
