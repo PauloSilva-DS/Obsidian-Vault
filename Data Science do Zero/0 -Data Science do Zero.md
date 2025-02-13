@@ -1,4 +1,12 @@
-## Sumário
+#dataScienceZero #estudo #python 
+
+
+
+ > [!info] 
+>  Sumário
+
+
+
 
 [[Introdução Data Science do Zero]]  
 [[1-Um Curso Intensivo de Python]]      
