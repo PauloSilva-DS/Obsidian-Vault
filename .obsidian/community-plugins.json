@@ -16,5 +16,6 @@
   "obsidian-git",
   "dashboard-navigator",
   "obsidian-file-color",
-  "templater-obsidian"
+  "templater-obsidian",
+  "frontmatter-modified-date"
 ]
