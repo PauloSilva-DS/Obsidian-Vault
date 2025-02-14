@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/DataScience.md",
+                "file": "Templates/modelo teste.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DataScience"
+              "title": "modelo teste"
             }
           }
         ]
@@ -209,10 +209,10 @@
   },
   "active": "63df646397fdf60f",
   "lastOpenFiles": [
-    "Templates/Sem título.md",
+    "Templates/DataScience.md",
+    "Templates/modelo teste.md",
     "Nova Notas/Sem título.md",
     "Nova Notas/Sem título 1.md",
-    "Templates/DataScience.md",
     "Data Science do Zero/3-Álgebra Linear.md",
     "DataScience.md",
     "Loterias.md",
