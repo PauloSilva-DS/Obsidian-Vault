@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7a791149a74173c3",
+        "id": "0a2d7008426bb915",
         "type": "tabs",
         "children": [
           {
-            "id": "6136d7d42d0476bd",
+            "id": "c2ddb2a20d08ba11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Science do Zero/3-Álgebra Linear.md",
+                "file": "Templates/Sem título.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "3-Álgebra Linear"
+              "title": "Sem título"
             }
           }
         ]
@@ -207,9 +207,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6136d7d42d0476bd",
+  "active": "c2ddb2a20d08ba11",
   "lastOpenFiles": [
     "Templates/DataScience.md",
+    "Templates/Sem título.md",
+    "Data Science do Zero/3-Álgebra Linear.md",
     "Nova Notas/Sem título.md",
     "DataScience.md",
     "Loterias.md",
@@ -217,7 +219,6 @@
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Templates",
     "Nova Notas",
-    "Data Science do Zero/3-Álgebra Linear.md",
     "Data Science do Zero/Introdução Data Science do Zero.md",
     "Data Science do Zero/2-Visualização de Dados.md",
     "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
