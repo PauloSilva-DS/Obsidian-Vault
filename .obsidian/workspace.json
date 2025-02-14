@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0a2d7008426bb915",
+        "id": "2cdc14c6cf94e104",
         "type": "tabs",
         "children": [
           {
-            "id": "c2ddb2a20d08ba11",
+            "id": "63df646397fdf60f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Sem título.md",
+                "file": "Templates/DataScience.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Sem título"
+              "title": "DataScience"
             }
           }
         ]
@@ -207,12 +207,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c2ddb2a20d08ba11",
+  "active": "63df646397fdf60f",
   "lastOpenFiles": [
-    "Templates/DataScience.md",
     "Templates/Sem título.md",
-    "Data Science do Zero/3-Álgebra Linear.md",
     "Nova Notas/Sem título.md",
+    "Nova Notas/Sem título 1.md",
+    "Templates/DataScience.md",
+    "Data Science do Zero/3-Álgebra Linear.md",
     "DataScience.md",
     "Loterias.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
