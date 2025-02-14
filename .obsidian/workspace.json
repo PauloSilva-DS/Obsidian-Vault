@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Estudo livros.md",
+                "file": "DataScience.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Estudo livros"
+              "title": "Sumário de DataScience"
             }
           },
           {
