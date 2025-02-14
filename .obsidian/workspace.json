@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Loterias"
             }
+          },
+          {
+            "id": "38525194d7d9ec91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Estudo livros.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Estudo livros"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Loterias.md",
+                "file": "Estudo livros.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Loterias"
+              "title": "Sumário de Estudo livros"
             }
           },
           {
@@ -171,7 +186,7 @@
             }
           },
           {
-            "id": "98f65af51f4afe92",
+            "id": "f3e0e4a413e78992",
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
@@ -181,7 +196,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -206,10 +221,11 @@
       "dashboard-navigator:Open dashboard navigator": false
     }
   },
-  "active": "c4f39cd82465a9a5",
+  "active": "38525194d7d9ec91",
   "lastOpenFiles": [
-    "Data Science do Zero/0 -Data Science do Zero.md",
     "Loterias.md",
+    "Estudo livros.md",
+    "Data Science do Zero/0 -Data Science do Zero.md",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Templates",
     "Notas Rápidas",
