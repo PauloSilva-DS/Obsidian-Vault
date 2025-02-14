@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Estudo livros.md",
+                "file": "DataScience.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Estudo livros"
+              "title": "DataScience"
             }
           }
         ],
@@ -224,7 +224,7 @@
   "active": "38525194d7d9ec91",
   "lastOpenFiles": [
     "Loterias.md",
-    "Estudo livros.md",
+    "DataScience.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Templates",
