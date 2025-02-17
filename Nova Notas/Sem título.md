@@ -3,15 +3,11 @@ tags:
   - dataScienceZero
   - estudo
   - python
-LISTA:
-  - FAFA FAFDAF  FAFDAS
 Completo: false
-Atualizado: 2025-02-14-05:04
-Criado: 2025-02-14-05:03
+Atualizado: 2025-02-17  14.22.03
+Criado: 2025-02-17  14.21.46
 ---
-
 --- 
-
 
 
 

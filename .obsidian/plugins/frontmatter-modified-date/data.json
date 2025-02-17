@@ -1,7 +1,7 @@
 {
   "frontmatterProperty": "Atualizado",
   "createdDateProperty": "Criado",
-  "momentFormat": "YYYY-MM-DD-hh:mm",
+  "momentFormat": "YYYY-MM-DD  HH.mm",
   "storeHistoryLog": false,
   "historyNewestFirst": false,
   "historyMaxItems": 0,

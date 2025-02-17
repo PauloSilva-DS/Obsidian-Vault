@@ -5,7 +5,7 @@
   "sheetHeight": "300",
   "rowHeight": "25",
   "colWidth": "100",
-  "theme": "dark",
+  "theme": "light",
   "showSheetButton": "true",
   "defaultRowsLen": "100",
   "defaultColsLen": "26"
