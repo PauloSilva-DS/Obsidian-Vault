@@ -185,16 +185,6 @@
             }
           },
           {
-            "id": "f3e0e4a413e78992",
-            "type": "leaf",
-            "state": {
-              "type": "side-panel-control-view",
-              "state": {},
-              "icon": "viewIcon",
-              "title": "Markdown-Autocomplete"
-            }
-          },
-          {
             "id": "79d3fb8716564bc9",
             "type": "leaf",
             "state": {
@@ -209,7 +199,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -233,7 +223,10 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "dashboard-navigator:Open dashboard navigator": false,
       "templater-obsidian:Templater": false,
-      "slide-note:Slide Note Block Generator": false
+      "slide-note:Slide Note Block Generator": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
   "active": "6ef177cef6f8edb7",
