@@ -197,13 +197,25 @@
               "icon": "lucide-archive",
               "title": "Todas as propriedades"
             }
+          },
+          {
+            "id": "9ceda42c69d54486",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "custom-frames-google-keep",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-files",
+              "title": "Google Keep"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 519.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,7 +232,6 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false,
       "excel:Create Excel File": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "dashboard-navigator:Open dashboard navigator": false,
       "templater-obsidian:Templater": false,
       "slide-note:Slide Note Block Generator": false,
@@ -229,7 +240,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "6ef177cef6f8edb7",
+  "active": "8f52bfc17a6bc929",
   "lastOpenFiles": [
     "Templates/SlideNote.md",
     "",
