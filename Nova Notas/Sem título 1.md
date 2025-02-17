@@ -4,7 +4,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-02-17  15.33
+Atualizado: 2025-02-17  16.12
 Criado: 2025-02-17  14.24
 ---
 --- 
@@ -30,6 +30,15 @@ collapse: closed
 Isto é legal
 
 ```
+
+
+
+```ad-summary
+title: Sumário
+
+
+```
+
 
 
 

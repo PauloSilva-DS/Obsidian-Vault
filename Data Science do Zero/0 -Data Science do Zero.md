@@ -1,9 +1,16 @@
+---
+Atualizado: 2025-02-17  16.13
+Criado: 2025-02-12  16.25
+---
 #dataScienceZero #estudo #python 
 
 
 
- > [!info] 
->  Sumário
+```ad-summary
+title: Sumário
+
+
+```
 
 
 
