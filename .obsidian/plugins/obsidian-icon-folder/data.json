@@ -3,14 +3,14 @@
     "migrated": 6,
     "iconPacksPath": ".obsidian/icons",
     "fontSize": 16,
-    "emojiStyle": "native",
+    "emojiStyle": "twemoji",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🙏",
       "🖐",
       "LiChartLine",
       "👀",
-      "LiDatabase",
-      "LiAtom"
+      "LiDatabase"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -20,8 +20,8 @@
       "bottom": 0,
       "left": 0
     },
-    "iconInTabsEnabled": false,
-    "iconInTitleEnabled": false,
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": true,
     "iconInTitlePosition": "above",
     "iconInFrontmatterEnabled": false,
     "iconInFrontmatterFieldName": "icon",
@@ -39,5 +39,6 @@
   "Data Science do Zero/2-Visualização de Dados.md": "👀",
   "Data Science do Zero/3-Álgebra Linear.md": "LiChartLine",
   "Data Science do Zero/Introdução Data Science do Zero.md": "🖐",
-  "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf": "📙"
+  "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf": "📙",
+  "Nova Notas/Sem título 1.md": "🙏"
 }
