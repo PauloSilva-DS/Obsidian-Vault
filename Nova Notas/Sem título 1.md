@@ -4,7 +4,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-02-17  15.16
+Atualizado: 2025-02-17  15.23
 Criado: 2025-02-17  14.24
 ---
 --- 
@@ -30,3 +30,6 @@ collapse: closed
 Isto é legal
 
 ```
+
+
+
