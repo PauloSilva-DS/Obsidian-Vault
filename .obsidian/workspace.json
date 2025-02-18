@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Science do Zero/Introdução Data Science do Zero.md",
+                "file": "Data Science do Zero/1-Um Curso Intensivo de Python.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Introdução Data Science do Zero"
+              "title": "1-Um Curso Intensivo de Python"
             }
           },
           {
@@ -28,9 +28,9 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 18,
+                "page": 33,
                 "left": -12,
-                "top": 486,
+                "top": 396,
                 "zoom": 1.2450980392156865
               },
               "icon": "lucide-file-text",
@@ -159,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Science do Zero/Introdução Data Science do Zero.md",
+                "file": "Data Science do Zero/1-Um Curso Intensivo de Python.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Introdução Data Science do Zero"
+              "title": "Sumário de 1-Um Curso Intensivo de Python"
             }
           },
           {
@@ -271,8 +271,9 @@
   },
   "active": "f24e8274af454116",
   "lastOpenFiles": [
-    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
+    "Data Science do Zero/Cusdo Intensivo.ipynb",
     "Data Science do Zero/Introdução Data Science do Zero.md",
+    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Templates/DataScience.md",
     "Data Science do Zero/3-Álgebra Linear.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
