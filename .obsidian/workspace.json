@@ -11,10 +11,17 @@
             "id": "6ef177cef6f8edb7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização em gráfico"
+              "type": "canvas",
+              "state": {
+                "file": "Sem título.canvas",
+                "viewState": {
+                  "x": -297,
+                  "y": 341.40000000000003,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Sem título"
             }
           },
           {
@@ -104,6 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Sem título.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +121,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Links inversos para Sem título"
             }
           },
           {
@@ -122,11 +130,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Sem título.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída"
+              "title": "Links de saída para Sem título"
             }
           },
           {
@@ -236,6 +245,7 @@
   },
   "active": "6ef177cef6f8edb7",
   "lastOpenFiles": [
+    "Sem título.canvas",
     "Data Science do Zero/Introdução Data Science do Zero.md",
     "Data Science do Zero/2-Visualização de Dados.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
