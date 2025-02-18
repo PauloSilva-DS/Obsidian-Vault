@@ -14,10 +14,10 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 14,
-                "left": -14,
-                "top": 647,
-                "zoom": 1.036764705882353
+                "page": 17,
+                "left": -18,
+                "top": 183,
+                "zoom": 0.8529411764705883
               },
               "icon": "lucide-file-text",
               "title": "Data_Science_from_Scratch_-_Joel_Grus"
@@ -96,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "00e7413b30db199d",

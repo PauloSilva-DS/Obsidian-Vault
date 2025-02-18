@@ -88,7 +88,7 @@
   "syncDefaultColorPaletteItem": false,
   "colorPaletteInToolbar": true,
   "noColorButtonInColorPalette": true,
-  "colorPaletteInEmbedToolbar": false,
+  "colorPaletteInEmbedToolbar": true,
   "quietColorPaletteTooltip": false,
   "showStatusInToolbar": true,
   "highlightColorSpecifiedOnly": false,
