@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-02-18  10.45
+Atualizado: 2025-02-18  11.00
 Criado: 2025-02-18  10.35
 ---
 > [!PDF|yellow] [[Data_Science_from_Scratch_-_Joel_Grus.pdf#page=14&selection=9,0,11,53&color=yellow|Data_Science_from_Scratch_-_Joel_Grus, p.14]]
@@ -20,3 +20,9 @@ Criado: 2025-02-18  10.35
 
 ![[Data_Science_from_Scratch_-_Joel_Grus.pdf#page=18&rect=54,552,566,765&color=yellow|📖]]
 
+> [!PDF|234, 82, 82] [[Data_Science_from_Scratch_-_Joel_Grus.pdf#page=19&annotation=8182R|p.19]]
+> > One way to think of what we’ve done is as a way of identifying people who are somehow central to the network. In fact, what we’ve just computed is the network metric degree centrality (Figure 1-2).
+> 
+
+
+> 

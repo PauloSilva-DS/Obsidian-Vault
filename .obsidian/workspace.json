@@ -14,10 +14,10 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 17,
+                "page": 20,
                 "left": -18,
-                "top": 183,
-                "zoom": 0.8529411764705883
+                "top": 788,
+                "zoom": 0.8529411764705882
               },
               "icon": "lucide-file-text",
               "title": "Data_Science_from_Scratch_-_Joel_Grus"
@@ -38,7 +38,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -112,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nova Notas/Sem título 2.md",
+                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +121,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Sem título 2"
+              "title": "Links inversos para Data_Science_from_Scratch_-_Joel_Grus"
             }
           },
           {
@@ -259,10 +258,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f24e8274af454116",
+  "active": "161cbd0c992f995a",
   "lastOpenFiles": [
-    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Nova Notas/Sem título 2.md",
+    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Sem título.canvas",
     "Data Science do Zero/Introdução Data Science do Zero.md",
     "Data Science do Zero/2-Visualização de Dados.md",

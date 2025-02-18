@@ -27,23 +27,23 @@
   "copyCommands": [
     {
       "name": "Quote",
-      "template": "> ({{linkWithDisplay}})\n> {{selection}}\n"
+      "template": "> ({{linkWithDisplay}})\n> {{selection}}\n\n\n"
     },
     {
       "name": "Link",
-      "template": "{{linkWithDisplay}}"
+      "template": "{{linkWithDisplay}}\n\n"
     },
     {
       "name": "Embed",
-      "template": "!{{link}}"
+      "template": "!{{link}}\n\n"
     },
     {
       "name": "Callout",
-      "template": "> [!{{calloutType}}|{{color}}] {{linkWithDisplay}}\n> {{text}}\n"
+      "template": "> [!{{calloutType}}|{{color}}] {{linkWithDisplay}}\n> {{text}}\n\n\n"
     },
     {
       "name": "Quote in callout",
-      "template": "> [!{{calloutType}}|{{color}}] {{linkWithDisplay}}\n> > {{text}}\n> \n> "
+      "template": "> [!{{calloutType}}|{{color}}] {{linkWithDisplay}}\n> > {{text}}\n> \n\n\n> "
     }
   ],
   "useAnotherCopyTemplateWhenNoSelection": false,
@@ -219,10 +219,10 @@
   "clickThumbnailWithModifierKey": true,
   "focusEditorAfterAutoPaste": true,
   "clearSelectionAfterAutoPaste": true,
-  "respectCursorPositionWhenAutoPaste": true,
+  "respectCursorPositionWhenAutoPaste": false,
   "blankLineAboveAppendedContent": true,
   "autoCopy": false,
-  "autoFocus": false,
+  "autoFocus": true,
   "autoPaste": false,
   "autoFocusTarget": "last-active-and-open-then-last-paste",
   "autoPasteTarget": "last-active-and-open-then-last-paste",
