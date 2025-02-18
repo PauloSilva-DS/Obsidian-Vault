@@ -28,13 +28,25 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 34,
-                "left": -12,
-                "top": 255,
-                "zoom": 1.2450980392156865
+                "page": 69,
+                "left": -20,
+                "top": 24,
+                "zoom": 0.7941176470588235
               },
               "icon": "lucide-file-text",
               "title": "Data_Science_from_Scratch_-_Joel_Grus"
+            }
+          },
+          {
+            "id": "5c73c943092e3ca4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.7"
             }
           }
         ],
