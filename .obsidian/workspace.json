@@ -4,41 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "2cdc14c6cf94e104",
+        "id": "25f21776a69ed903",
         "type": "tabs",
         "children": [
           {
-            "id": "6ef177cef6f8edb7",
+            "id": "161cbd0c992f995a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "pdf",
               "state": {
-                "file": "Sem título.canvas",
-                "viewState": {
-                  "x": -297,
-                  "y": 341.40000000000003,
-                  "zoom": 0
-                }
+                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
+                "page": 14,
+                "left": -14,
+                "top": 647,
+                "zoom": 1.036764705882353
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Sem título"
+              "icon": "lucide-file-text",
+              "title": "Data_Science_from_Scratch_-_Joel_Grus"
             }
           },
           {
-            "id": "872bd65d8f20d9bf",
+            "id": "f24e8274af454116",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/DataScience.md",
+                "file": "Nova Notas/Sem título 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DataScience"
+              "title": "Sem título 2"
             }
           }
-        ]
+        ],
+        "currentTab": 1,
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -95,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -111,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sem título.canvas",
+                "file": "Nova Notas/Sem título 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +123,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Sem título"
+              "title": "Links inversos para Sem título 2"
             }
           },
           {
@@ -213,12 +215,27 @@
               "icon": "lucide-files",
               "title": "Google Keep"
             }
+          },
+          {
+            "id": "1b177f05ec233f1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Nova Notas/Sem título 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sem título 2"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 519.5
+    "width": 519.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -243,8 +260,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "6ef177cef6f8edb7",
+  "active": "f24e8274af454116",
   "lastOpenFiles": [
+    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
+    "Nova Notas/Sem título 2.md",
     "Sem título.canvas",
     "Data Science do Zero/Introdução Data Science do Zero.md",
     "Data Science do Zero/2-Visualização de Dados.md",
@@ -256,14 +275,12 @@
     "Nova Notas/Data inválida.md",
     "Templates/DataScience.md",
     "Templates/modelo teste.md",
-    "Nova Notas/Sem título 2.md",
     "Data Science do Zero/3-Álgebra Linear.md",
     "DataScience.md",
     "Loterias.md",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Templates",
     "Nova Notas",
-    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/Um Curso Intensivo de Python.md",
     "Data Science do Zero",
     "livros/pdf/_OceanofPDF.com_Data_Science_from_Scratch_-_Joel_Grus.pdf.crdownload",
