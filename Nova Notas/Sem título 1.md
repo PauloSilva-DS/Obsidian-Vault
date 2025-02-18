@@ -4,7 +4,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-02-17  16.12
+Atualizado: 2025-02-18  11.44
 Criado: 2025-02-17  14.24
 ---
 --- 
