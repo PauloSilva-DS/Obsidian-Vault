@@ -28,9 +28,9 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 69,
+                "page": 80,
                 "left": -20,
-                "top": 24,
+                "top": 514,
                 "zoom": 0.7941176470588235
               },
               "icon": "lucide-file-text",
@@ -38,19 +38,21 @@
             }
           },
           {
-            "id": "5c73c943092e3ca4",
+            "id": "8d3001de191d10e1",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "webviewer",
               "state": {
-                "currentVersion": "1.8.7"
+                "url": "https://seaborn.pydata.org/",
+                "title": "seaborn: statistical data visualization — seaborn 0.13.2 documentation",
+                "mode": "webview"
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.7"
+              "icon": "globe-2",
+              "title": "seaborn: statistical data visualization — seaborn 0.13.2 documentation"
             }
           }
         ],
-        "currentTab": 1,
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -282,12 +284,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "1977ccc044659499",
+  "active": "8d3001de191d10e1",
   "lastOpenFiles": [
+    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Data Science do Zero/Cusdo Intensivo.ipynb",
     "Data Science do Zero/Introdução Data Science do Zero.md",
-    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Templates/DataScience.md",
     "Data Science do Zero/3-Álgebra Linear.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
