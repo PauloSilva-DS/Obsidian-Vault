@@ -13,11 +13,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 20,
-                "left": -18,
-                "top": 788,
-                "zoom": 0.8529411764705882
+                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf"
               },
               "icon": "lucide-file-text",
               "title": "Data_Science_from_Scratch_-_Joel_Grus"
@@ -31,7 +27,7 @@
               "state": {
                 "file": "Nova Notas/Sem título 2.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Sem título 2"
@@ -262,6 +258,7 @@
   "lastOpenFiles": [
     "Nova Notas/Sem título 2.md",
     "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
+    "Pasted image 20250218110522.png",
     "Sem título.canvas",
     "Data Science do Zero/Introdução Data Science do Zero.md",
     "Data Science do Zero/2-Visualização de Dados.md",
