@@ -28,9 +28,9 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 33,
+                "page": 34,
                 "left": -12,
-                "top": 396,
+                "top": 255,
                 "zoom": 1.2450980392156865
               },
               "icon": "lucide-file-text",
@@ -38,6 +38,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -159,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Science do Zero/1-Um Curso Intensivo de Python.md",
+                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de 1-Um Curso Intensivo de Python"
+              "title": "Sumário de Data_Science_from_Scratch_-_Joel_Grus"
             }
           },
           {
@@ -269,8 +270,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f24e8274af454116",
+  "active": "1977ccc044659499",
   "lastOpenFiles": [
+    "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Data Science do Zero/Cusdo Intensivo.ipynb",
     "Data Science do Zero/Introdução Data Science do Zero.md",
     "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
@@ -292,7 +294,6 @@
     "Templates/modelo teste.md",
     "DataScience.md",
     "Loterias.md",
-    "Data Science do Zero/1-Um Curso Intensivo de Python.md",
     "Templates",
     "Nova Notas",
     "Data Science do Zero/Um Curso Intensivo de Python.md",
@@ -304,7 +305,6 @@
     "teste.md",
     "Primeira Nota.md",
     "Excel 2025-02-07 17.36.35.sheet.md",
-    "Excalidraw/Drawing 2025-02-06 21.02.29.excalidraw.md",
-    "Excalidraw"
+    "Excalidraw/Drawing 2025-02-06 21.02.29.excalidraw.md"
   ]
 }
