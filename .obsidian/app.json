@@ -1,5 +1,6 @@
 {
   "alwaysUpdateLinks": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "Nova Notas"
+  "newFileFolderPath": "Nova Notas",
+  "attachmentFolderPath": "Source Material/Imagens"
 }

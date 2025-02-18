@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "161cbd0c992f995a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Data_Science_from_Scratch_-_Joel_Grus"
-            }
-          },
-          {
             "id": "f24e8274af454116",
             "type": "leaf",
             "state": {
@@ -107,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
+                "file": "Nova Notas/Sem título 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Data_Science_from_Scratch_-_Joel_Grus"
+              "title": "Links inversos para Sem título 2"
             }
           },
           {
@@ -228,8 +216,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 519.5,
-    "collapsed": true
+    "width": 395.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,11 +241,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "161cbd0c992f995a",
+  "active": "e9ea88d18a839487",
   "lastOpenFiles": [
+    "Source Material/Imagens",
+    "Pasted image 20250218110522.png",
     "Nova Notas/Sem título 2.md",
     "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-    "Pasted image 20250218110522.png",
     "Sem título.canvas",
     "Data Science do Zero/Introdução Data Science do Zero.md",
     "Data Science do Zero/2-Visualização de Dados.md",
