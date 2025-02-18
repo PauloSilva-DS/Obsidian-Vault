@@ -14,8 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "Data Science do Zero/Introdução Data Science do Zero.md",
-                "mode": "preview",
-                "source": false
+                "mode": "source",
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Introdução Data Science do Zero"
@@ -28,9 +28,9 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 18,
+                "page": 17,
                 "left": -12,
-                "top": 52,
+                "top": 699,
                 "zoom": 1.2450980392156865
               },
               "icon": "lucide-file-text",
@@ -38,6 +38,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -159,13 +160,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Science do Zero/Introdução Data Science do Zero.md",
+                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Introdução Data Science do Zero"
+              "title": "Sumário de Data_Science_from_Scratch_-_Joel_Grus"
             }
           },
           {
@@ -269,10 +270,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f24e8274af454116",
+  "active": "1977ccc044659499",
   "lastOpenFiles": [
-    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/Introdução Data Science do Zero.md",
+    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Templates/DataScience.md",
     "Data Science do Zero/3-Álgebra Linear.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
