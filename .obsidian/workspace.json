@@ -11,14 +11,12 @@
             "id": "f24e8274af454116",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Nova Notas/Sem título 2.md",
-                "mode": "source",
-                "source": true
+                "file": "Excalidraw/Drawing 2025-02-18 11.22.51.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Sem título 2"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-02-18 11.22.51.excalidraw"
             }
           }
         ],
@@ -95,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nova Notas/Sem título 2.md",
+                "file": "Excalidraw/Drawing 2025-02-18 11.22.51.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Sem título 2"
+              "title": "Links inversos para Drawing 2025-02-18 11.22.51.excalidraw"
             }
           },
           {
@@ -216,7 +214,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5
+    "width": 395.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,11 +240,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "e9ea88d18a839487",
+  "active": "f24e8274af454116",
   "lastOpenFiles": [
+    "Nova Notas/Sem título 2.md",
+    "Excalidraw/Drawing 2025-02-18 11.22.51.excalidraw.md",
     "Source Material/Imagens",
     "Pasted image 20250218110522.png",
-    "Nova Notas/Sem título 2.md",
     "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Sem título.canvas",
     "Data Science do Zero/Introdução Data Science do Zero.md",
