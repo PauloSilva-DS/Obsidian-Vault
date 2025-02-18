@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Data Science do Zero/Introdução Data Science do Zero.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -28,9 +28,9 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 17,
+                "page": 18,
                 "left": -12,
-                "top": 482,
+                "top": 52,
                 "zoom": 1.2450980392156865
               },
               "icon": "lucide-file-text",

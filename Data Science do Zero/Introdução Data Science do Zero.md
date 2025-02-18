@@ -4,7 +4,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-02-18  14.27
+Atualizado: 2025-02-18  14.29
 Criado: 2025-02-12  16.34
 ---
 [[0 -Data Science do Zero]]
@@ -30,5 +30,5 @@ friendship_pairs = [(0, 1), (0, 2), (1, 2), (1, 3), (2, 3), (3, 4), (4, 5), (5, 
 
 
 ```run-python
-pr
+print(frienship_pairs)
 ```
