@@ -28,9 +28,9 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 17,
+                "page": 18,
                 "left": -12,
-                "top": 699,
+                "top": 486,
                 "zoom": 1.2450980392156865
               },
               "icon": "lucide-file-text",
@@ -38,7 +38,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -160,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
+                "file": "Data Science do Zero/Introdução Data Science do Zero.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Data_Science_from_Scratch_-_Joel_Grus"
+              "title": "Sumário de Introdução Data Science do Zero"
             }
           },
           {
@@ -270,10 +269,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "1977ccc044659499",
+  "active": "f24e8274af454116",
   "lastOpenFiles": [
-    "Data Science do Zero/Introdução Data Science do Zero.md",
     "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
+    "Data Science do Zero/Introdução Data Science do Zero.md",
     "Templates/DataScience.md",
     "Data Science do Zero/3-Álgebra Linear.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
