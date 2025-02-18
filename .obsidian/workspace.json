@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Science do Zero/0 -Data Science do Zero.md",
+                "file": "Data Science do Zero/Introdução Data Science do Zero.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0 -Data Science do Zero"
-            }
-          },
-          {
-            "id": "b60a6bc095dc69c1",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://github.com/joelgrus/data-science-from-scratch",
-                "title": "GitHub - joelgrus/data-science-from-scratch: code for Data Science From Scratch book",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "GitHub - joelgrus/data-science-from-scratch: code for Data Science From Scratch book"
+              "title": "Introdução Data Science do Zero"
             }
           },
           {
@@ -42,10 +28,10 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 6,
-                "left": -20,
-                "top": 222,
-                "zoom": 0.7941176470588235
+                "page": 9,
+                "left": -12,
+                "top": 381,
+                "zoom": 1.2450980392156865
               },
               "icon": "lucide-file-text",
               "title": "Data_Science_from_Scratch_-_Joel_Grus"
@@ -173,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data Science do Zero/0 -Data Science do Zero.md",
+                "file": "Data Science do Zero/Introdução Data Science do Zero.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de 0 -Data Science do Zero"
+              "title": "Sumário de Introdução Data Science do Zero"
             }
           },
           {
