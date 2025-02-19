@@ -29,30 +29,16 @@
               "state": {
                 "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
                 "page": 80,
-                "left": -20,
-                "top": 514,
-                "zoom": 0.7941176470588235
+                "left": -12,
+                "top": 522,
+                "zoom": 1.2450980392156865
               },
               "icon": "lucide-file-text",
               "title": "Data_Science_from_Scratch_-_Joel_Grus"
             }
-          },
-          {
-            "id": "8d3001de191d10e1",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://seaborn.pydata.org/",
-                "title": "seaborn: statistical data visualization — seaborn 0.13.2 documentation",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "seaborn: statistical data visualization — seaborn 0.13.2 documentation"
-            }
           }
         ],
-        "currentTab": 2,
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -284,7 +270,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "8d3001de191d10e1",
+  "active": "1977ccc044659499",
   "lastOpenFiles": [
     "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
