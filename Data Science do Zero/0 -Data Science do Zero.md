@@ -28,7 +28,7 @@ https://github.com/joelgrus/data-science-from-scratch
 [[Introdução Data Science do Zero]]  
 [[1-Um Curso Intensivo de Python]]      
 [[2-Visualização de Dados]]  
-[[3-Álgebra Linear]]  
+[[4-Álgebra Linear]]  
 [[4-Estatística]]  
 [[Probabilidade]]  
 [[Hipótese e Inferência]]  

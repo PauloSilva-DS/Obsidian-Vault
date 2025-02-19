@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Science do Zero/1-Um Curso Intensivo de Python.md",
-                "mode": "source",
-                "source": true
+                "file": "Data Science do Zero/4-Álgebra Linear.md",
+                "mode": "preview",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "1-Um Curso Intensivo de Python"
+              "title": "4-Álgebra Linear"
             }
           }
         ],
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -256,12 +255,12 @@
   },
   "active": "f24e8274af454116",
   "lastOpenFiles": [
-    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
+    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/Cusdo Intensivo.ipynb",
     "Data Science do Zero/Introdução Data Science do Zero.md",
     "Templates/DataScience.md",
-    "Data Science do Zero/3-Álgebra Linear.md",
+    "Data Science do Zero/4-Álgebra Linear.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
     "Excalidraw/Drawing 2025-02-08 15.07.55.excalidraw.md",
     "Excalidraw/Drawing 2025-02-18 11.22.51.excalidraw.md",
