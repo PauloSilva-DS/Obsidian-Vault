@@ -4,7 +4,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-02-19  15.42
+Atualizado: 2025-02-19  15.48
 Criado: 2025-02-12  16.41
 ---
 [[0 -Data Science do Zero]]
@@ -218,43 +218,25 @@ Esses dois conceitos vêm da álgebra linear e são fundamentais para entender o
 A **magnitude** de um vetor (também chamada de **norma** ou **comprimento**) representa o "tamanho" do vetor no espaço. É calculada usando a fórmula da distância Euclidiana a partir da origem até o ponto representado pelo vetor.
 
 ### **Fórmula da Magnitude**
-
-Se temos um vetor vv em um espaço nn-dimensional:
-
-v=[v1,v2,...,vn]v = [v_1, v_2, ..., v_n]
-
-A magnitude de vv, denotada por ∣v∣|v| ou ∣∣v∣∣||v||, é:
-
-∣v∣=v12+v22+...+vn2|v| = \sqrt{v_1^2 + v_2^2 + ... + v_n^2}
-
-Isso vem diretamente do Teorema de Pitágoras!
-
-### **Exemplo**
-
-Se tivermos um vetor em 2D:
-
-v=[3,4]v = [3, 4]
-
-A magnitude será:
-
-∣v∣=32+42=9+16=25=5|v| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
+![[Pasted image 20250219154447.png]]
 
 ### **Implementação em Python**
 
-```python
-imp
-```output
-5.0
-```
-ort math
+
+
+```run-python
+import math
 
 def magnitude(v):
     """Calcula a magnitude (norma) de um vetor"""
     return math.sqrt(sum(v_i ** 2 for v_i in v))
 
-# Testando
+       # Testando
 print(magnitude([3, 4]))  # Saída: 5.0
 ```
+
+
+
 
 ### **Interpretação Geométrica**
 
@@ -268,25 +250,7 @@ A **distância entre dois vetores** mede o quão "longe" eles estão um do outro
 
 ### **Fórmula da Distância Euclidiana**
 
-Se temos dois vetores vv e ww:
-
-v=[v1,v2,...,vn]v = [v_1, v_2, ..., v_n] w=[w1,w2,...,wn]w = [w_1, w_2, ..., w_n]
-
-A distância entre eles é:
-
-d(v,w)=(v1−w1)2+(v2−w2)2+...+(vn−wn)2d(v, w) = \sqrt{(v_1 - w_1)^2 + (v_2 - w_2)^2 + ... + (v_n - w_n)^2}
-
-Ou seja, é a magnitude do vetor obtido ao subtrair ww de vv.
-
-### **Exemplo**
-
-Se tivermos os vetores:
-
-v=[1,2,3],w=[4,6,8]v = [1, 2, 3], \quad w = [4, 6, 8]
-
-A distância será:
-
-d=(1−4)2+(2−6)2+(3−8)2d = \sqrt{(1 - 4)^2 + (2 - 6)^2 + (3 - 8)^2} d=(−3)2+(−4)2+(−5)2d = \sqrt{(-3)^2 + (-4)^2 + (-5)^2} d=9+16+25=50≈7.07d = \sqrt{9 + 16 + 25} = \sqrt{50} \approx 7.07
+![[Pasted image 20250219154846.png]]
 
 ### **Implementação em Python**
 
