@@ -4,7 +4,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-02-19  15.34
+Atualizado: 2025-02-19  15.42
 Criado: 2025-02-12  16.41
 ---
 [[0 -Data Science do Zero]]
@@ -143,6 +143,10 @@ def dot(v: list, w: list) -> float:
 # Testando
 print(dot([1, 2, 3], [4, 5, 6]))  # Saída: 32
 ```
+```output
+32
+```
+
 
 ---
 
@@ -180,11 +184,15 @@ def magnitude(v):
 def angle_between(v, w):
     return math.acos(dot(v, w) / (magnitude(v) * magnitude(w)))
 
-# Testando
-v = [1, 0]
-w = [0, 1]
-print(math.degrees(angle_between(v, w)))  # Saída: 90.0 (vetores ortogonais)
+# T
+```output
+90.0
 ```
+t(math.degrees(angle_between(v, w)))  # Saída: 90.0 (vetores ortogonais)
+```
+```output
+```
+
 
 ---
 
@@ -234,7 +242,11 @@ A magnitude será:
 ### **Implementação em Python**
 
 ```python
-import math
+imp
+```output
+5.0
+```
+ort math
 
 def magnitude(v):
     """Calcula a magnitude (norma) de um vetor"""
@@ -301,7 +313,160 @@ Se tivermos dois pontos A(1,2,3)A(1,2,3) e B(4,6,8)B(4,6,8), a distância entre 
 
 🚀 Agora você pode medir tamanhos de vetores e distâncias entre pontos no espaço!
 
+### **Matrizes - Resumo e Tradução**
 
+#### **O que é uma Matriz?**
+
+Uma matriz é uma coleção bidimensional de números, representada como uma lista de listas em Python. Cada lista interna representa uma linha da matriz e deve ter o mesmo tamanho.
+
+Se AA é uma matriz, então A[i][j]A[i][j] representa o elemento da ii-ésima linha e da jj-ésima coluna.
+
+Por convenção matemática, usamos letras maiúsculas para representar matrizes. Por exemplo:
+
+```python
+A = [[1, 2, 3],  
+     [4, 5, 6]]  # Matriz 2x3 (2 linhas, 3 colunas)
+
+B = [[1, 2],  
+     [3, 4],  
+     [5, 6]]  # Matriz 3x2 (3 linhas, 2 colunas)
+```
+
+> **Observação:** Em matemática, a contagem normalmente começa em 1 (linha 1, coluna 1), mas como Python usa indexação baseada em zero, as posições começam do índice 0 (linha 0, coluna 0).
+
+---
+
+#### **Forma da Matriz (Dimensão)**
+
+Podemos determinar o número de linhas e colunas de uma matriz com a função:
+
+```python
+from typing import List, Tuple
+
+Matrix = List[List[float]]
+
+def shape(A: Matrix) -> Tuple[int, int]:
+    """Retorna (# de linhas, # de colunas)"""
+    num_rows = len(A)
+    num_cols = len(A[0]) if A else 0
+    return num_rows, num_cols
+
+assert shape([[1, 2, 3], [4, 5, 6]]) == (2, 3)  # 2 linhas, 3 colunas
+```
+
+Se uma matriz tem nn linhas e kk colunas, chamamos de matriz **n×kn \times k**.  
+Podemos considerar cada linha como um vetor de comprimento kk e cada coluna como um vetor de comprimento nn.
+
+---
+
+#### **Acessando Linhas e Colunas**
+
+Funções para obter uma linha ou uma coluna da matriz:
+
+```python
+def get_row(A: Matrix, i: int) -> List[float]:
+    """Retorna a i-ésima linha de A"""
+    return A[i]
+
+def get_column(A: Matrix, j: int) -> List[float]:
+    """Retorna a j-ésima coluna de A"""
+    return [A_i[j] for A_i in A]  # Percorre todas as linhas e pega o j-ésimo elemento
+```
+
+---
+
+#### **Criando Matrizes com Funções**
+
+Podemos criar uma matriz com base em sua forma e uma função para gerar os elementos:
+
+```python
+from typing import Callable
+
+def make_matrix(num_rows: int, num_cols: int, entry_fn: Callable[[int, int], float]) -> Matrix:
+    """Retorna uma matriz num_rows x num_cols, onde cada entrada (i,j) é dada por entry_fn(i, j)"""
+    return [[entry_fn(i, j) for j in range(num_cols)] for i in range(num_rows)]
+```
+
+Criando uma **matriz identidade** n×nn \times n:
+
+```python
+def identity_matrix(n: int) -> Matrix:
+    """Retorna a matriz identidade de tamanho n x n"""
+    return make_matrix(n, n, lambda i, j: 1 if i == j else 0)
+
+assert identity_matrix(5) == [[1, 0, 0, 0, 0],
+                              [0, 1, 0, 0, 0],
+                              [0, 0, 1, 0, 0],
+                              [0, 0, 0, 1, 0],
+                              [0, 0, 0, 0, 1]]
+```
+
+---
+
+#### **Aplicações das Matrizes**
+
+1. **Representação de Dados:**
+    
+    - Uma matriz pode armazenar um conjunto de dados, onde cada linha representa um vetor de características.
+    - Exemplo: uma matriz 1000×31000 \times 3 pode armazenar alturas, pesos e idades de 1000 pessoas.
+    
+    ```python
+    data = [[70, 170, 40],
+            [65, 120, 26],
+            [77, 250, 19]]
+    ```
+    
+2. **Transformações Lineares:**
+    
+    - Uma matriz n×kn \times k pode representar uma função linear que transforma vetores de dimensão kk em vetores de dimensão nn.
+3. **Representação de Relações Binárias:**
+    
+    - Podemos usar uma matriz para representar conexões em uma rede, como um grafo de amizades.
+        
+    - Exemplo: Lista de amizades representada por pares (i,j)(i, j):
+        
+        ```python
+        friendships = [(0, 1), (0, 2), (1, 2), (1, 3), (2, 3), (3, 4),
+                       (4, 5), (5, 6), (5, 7), (6, 8), (7, 8), (8, 9)]
+        ```
+        
+    - Alternativamente, podemos representar essa rede como uma matriz de adjacência:
+        
+        ```python
+        friend_matrix = [[0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+                         [1, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+                         [1, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+                         [0, 1, 1, 0, 1, 0, 0, 0, 0, 0],
+                         [0, 0, 0, 1, 0, 1, 0, 0, 0, 0],
+                         [0, 0, 0, 0, 1, 0, 1, 1, 0, 0],
+                         [0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+                         [0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+                         [0, 0, 0, 0, 0, 0, 1, 1, 0, 1],
+                         [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]]
+        ```
+        
+    - Com essa matriz, podemos verificar rapidamente conexões entre nós:
+        
+        ```python
+        assert friend_matrix[0][2] == 1, "0 e 2 são amigos"
+        assert friend_matrix[0][8] == 0, "0 e 8 não são amigos"
+        ```
+        
+    - Para encontrar os amigos de um usuário específico:
+        
+        ```python
+        friends_of_five = [i for i, is_friend in enumerate(friend_matrix[5]) if is_friend]
+        ```
+        
+
+---
+
+### **Conclusão**
+
+- Matrizes são uma estrutura poderosa para representar dados, funções lineares e conexões em redes.
+- Em Python, são representadas como listas de listas.
+- Podemos acessá-las por índice, extrair linhas e colunas, e criar matrizes personalizadas.
+- Elas são fundamentais para aplicações em ciência de dados, computação gráfica, inteligência artificial e mais.
 
 
 
