@@ -29,7 +29,7 @@ https://github.com/joelgrus/data-science-from-scratch
 [[1-Um Curso Intensivo de Python]]      
 [[2-Visualização de Dados]]  
 [[4-Álgebra Linear]]  
-[[4-Estatística]]  
+[[5-Estatística]]  
 [[Probabilidade]]  
 [[Hipótese e Inferência]]  
 [[Descida do Gradiente]]  

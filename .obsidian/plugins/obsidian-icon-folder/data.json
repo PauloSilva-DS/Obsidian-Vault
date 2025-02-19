@@ -6,11 +6,11 @@
     "emojiStyle": "twemoji",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiDistributeSpaceVertical",
       "🙏",
       "🖐",
       "LiChartLine",
-      "👀",
-      "LiDatabase"
+      "👀"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -40,5 +40,6 @@
   "Data Science do Zero/Introdução Data Science do Zero.md": "🖐",
   "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf": "📙",
   "Nova Notas/Sem título 1.md": "🙏",
-  "Data Science do Zero/4-Álgebra Linear.md": "LiChartLine"
+  "Data Science do Zero/4-Álgebra Linear.md": "LiChartLine",
+  "Data Science do Zero/5-Estatística.md": "LiDistributeSpaceVertical"
 }
