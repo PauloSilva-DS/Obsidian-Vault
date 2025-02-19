@@ -4,7 +4,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-02-19  15.13
+Atualizado: 2025-02-19  15.15
 Criado: 2025-02-12  16.41
 ---
 [[0 -Data Science do Zero]]
@@ -36,8 +36,8 @@ Como listas comuns do Python não suportam operações matemáticas de vetores, 
     
     ```run-python
     def add(v: Vector, w: Vector) -> Vector:
-	    assert len(v) == len(w), "vetores devem ter o mesmo tamanho"
-        return [v_i + w_i for v_i, w_i in zip(v, w)]
+		assert len(v) == len(w), "vetores devem ter o mesmo tamanho"
+	    return [v_i + w_i for v_i, w_i in zip(v, w)]
     ```
     
     Exemplo: `add([1, 2, 3], [4, 5, 6])` resulta em `[5, 7, 9]`.
