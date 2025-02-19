@@ -4,7 +4,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-02-19  16.19
+Atualizado: 2025-02-19  16.49
 Criado: 2025-02-19  16.03
 ---
 [[0 -Data Science do Zero]]
