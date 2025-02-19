@@ -20,25 +20,8 @@
               "icon": "lucide-file",
               "title": "1-Um Curso Intensivo de Python"
             }
-          },
-          {
-            "id": "1977ccc044659499",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-                "page": 80,
-                "left": -12,
-                "top": 522,
-                "zoom": 1.2450980392156865
-              },
-              "icon": "lucide-file-text",
-              "title": "Data_Science_from_Scratch_-_Joel_Grus"
-            }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -96,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -270,7 +254,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "1977ccc044659499",
+  "active": "f24e8274af454116",
   "lastOpenFiles": [
     "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
