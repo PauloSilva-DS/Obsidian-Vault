@@ -158,8 +158,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "Plugin desativado"
             }
           },
           {
@@ -168,8 +168,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "Plugin desativado"
             }
           },
           {
@@ -194,8 +194,8 @@
               "type": "custom-frames-google-keep",
               "state": {},
               "pinned": true,
-              "icon": "lucide-files",
-              "title": "Google Keep"
+              "icon": "lucide-file",
+              "title": "Plugin desativado"
             }
           },
           {
@@ -219,7 +219,7 @@
               "type": "slidenote-pdfcanvas",
               "state": {},
               "icon": "lucide-file",
-              "title": "PDF Canvas"
+              "title": "Plugin desativado"
             }
           }
         ],
@@ -243,14 +243,7 @@
       "workspaces:Gerenciar leiautes da área de trabalho": false,
       "publish:Publicar mudanças": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "excel:Create Excel File": false,
-      "dashboard-navigator:Open dashboard navigator": false,
-      "templater-obsidian:Templater": false,
-      "slide-note:Slide Note Block Generator": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "excel:Create Excel File": false
     }
   },
   "active": "f24e8274af454116",
