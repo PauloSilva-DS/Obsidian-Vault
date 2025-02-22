@@ -239,7 +239,14 @@
       "workspaces:Gerenciar leiautes da área de trabalho": false,
       "publish:Publicar mudanças": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "excel:Create Excel File": false
+      "excel:Create Excel File": false,
+      "obsidian-git:Open Git source control": false,
+      "dashboard-navigator:Open dashboard navigator": false,
+      "templater-obsidian:Templater": false,
+      "slide-note:Slide Note Block Generator": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
   "active": "e9ea88d18a839487",
