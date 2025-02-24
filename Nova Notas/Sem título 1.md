@@ -4,7 +4,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-02-18  11.44
+Atualizado: 2025-02-24  15.58
 Criado: 2025-02-17  14.24
 ---
 2--- 
@@ -42,22 +42,12 @@ title: Sumário
 
 
 # oferta 
+![[Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md#^frame=HAeJiePFZ7xsPmdwtj-Cz|flame]]
+
+
 
 
 
 ---
-
-
-```handdrawn-ink
-{
-	"versionAtEmbed": "0.3.4",
-	"filepath": "Ink/Drawing/2025.2.23 - 21.35pm.drawing",
-	"width": 500,
-	"aspectRatio": 1
-}
-```
-
-
-
 
 

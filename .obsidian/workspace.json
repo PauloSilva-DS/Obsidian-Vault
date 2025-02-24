@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teste tablet.md",
+                "file": "Nova Notas/Sem título 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Teste tablet"
+              "title": "Sem título 1"
             }
           }
         ],
@@ -227,7 +227,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5
+    "width": 395.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,6 +255,10 @@
   },
   "active": "069db1b377ca067a",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
+    "Nova Notas/Sem título 1.md",
+    "Nova Notas/Sem título.md",
+    "Teste tablet.md",
     "teste teste/Teste sybc.md",
     "Data Science do Zero/5-Estatística.md",
     "teste teste",
@@ -268,7 +273,6 @@
     "Templates/DataScience.md",
     "Excalidraw/Drawing 2025-02-08 15.07.55.excalidraw.md",
     "Excalidraw/Drawing 2025-02-18 11.22.51.excalidraw.md",
-    "Nova Notas/Sem título 1.md",
     "Nova Notas/Sem título 2.md",
     "Source Material/Imagens",
     "Pasted image 20250218110522.png",
@@ -276,7 +280,6 @@
     "Data Science do Zero/2-Visualização de Dados.md",
     "Templates/SlideNote.md",
     "",
-    "Nova Notas/Sem título.md",
     "Nova Notas/Data inválida.md",
     "Templates/modelo teste.md",
     "DataScience.md",
