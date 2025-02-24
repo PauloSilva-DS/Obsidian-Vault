@@ -3,6 +3,7 @@ tags:
   - dataScienceZero
   - estudo
   - python
+  - álgebraLinear
 Completo: false
 Atualizado: 2025-02-19  15.48
 Criado: 2025-02-12  16.41

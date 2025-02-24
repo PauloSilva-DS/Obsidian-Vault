@@ -1,7 +1,7 @@
 > [!Lotofacil] 
 > 
 
-```run-python
+```python
 import random  # importar as funções do random
 random.seed()  # inicializar o contador
 sorteados = [10,11,22,23]  # lista de números sorteados
@@ -22,7 +22,7 @@ print(sorteados)
 
 > [!Milionária] 
 
-```run-python
+```python
 import random  # importar as funções do random
 
 random.seed()  # inicializar o gerador de números aleatórios
@@ -58,3 +58,6 @@ for y in range(volantes):
 
 ```
 
+```python
+print(67)
+```

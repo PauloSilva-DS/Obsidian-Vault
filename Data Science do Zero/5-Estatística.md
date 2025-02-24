@@ -3,6 +3,7 @@ tags:
   - dataScienceZero
   - estudo
   - python
+  - estatística
 Completo: false
 Atualizado: 2025-02-20  14.37
 Criado: 2025-02-19  16.03
