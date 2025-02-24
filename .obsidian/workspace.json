@@ -11,14 +11,12 @@
             "id": "069db1b377ca067a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Nova Notas/Sem título 1.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Sem título 1"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-02-24 15.54.56.excalidraw"
             }
           }
         ],
@@ -255,8 +253,8 @@
   },
   "active": "069db1b377ca067a",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
     "Nova Notas/Sem título 1.md",
+    "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
     "Nova Notas/Sem título.md",
     "Teste tablet.md",
     "teste teste/Teste sybc.md",

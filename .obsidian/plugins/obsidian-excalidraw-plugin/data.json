@@ -32,11 +32,11 @@
   "previewMatchObsidianTheme": false,
   "width": "400",
   "height": "",
-  "overrideObsidianFontSize": false,
+  "overrideObsidianFontSize": true,
   "dynamicStyling": "colorful",
   "isLeftHanded": false,
   "iframeMatchExcalidrawTheme": true,
-  "matchTheme": false,
+  "matchTheme": true,
   "matchThemeAlways": false,
   "matchThemeTrigger": false,
   "defaultMode": "normal",
@@ -432,7 +432,7 @@
       }
     }
   ],
-  "numberOfCustomPens": 0,
+  "numberOfCustomPens": 5,
   "pdfScale": 4,
   "pdfBorderBox": true,
   "pdfFrame": false,

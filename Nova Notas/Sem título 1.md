@@ -4,7 +4,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-02-24  15.58
+Atualizado: 2025-02-24  16.03
 Criado: 2025-02-17  14.24
 ---
 2--- 
@@ -37,6 +37,17 @@ title: Sumário
 
 
 ```
+
+
+
+```ad-note
+
+
+```
+
+
+
+
 
 
 
