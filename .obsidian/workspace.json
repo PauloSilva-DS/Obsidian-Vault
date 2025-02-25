@@ -11,30 +11,19 @@
             "id": "069db1b377ca067a",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "pdf",
               "state": {
-                "file": "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md"
+                "file": "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
+                "page": 13,
+                "left": -12,
+                "top": 340,
+                "zoom": 1.2380952380952384
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-02-24 15.54.56.excalidraw"
-            }
-          },
-          {
-            "id": "c13be7e449c0f1db",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://libraries.excalidraw.com/?target=_blank&referrer=app%3A%2F%2Fobsidian.md&useHash=true&token=LynPSRoZ7iRL1RoRL6yf2&theme=light&version=2&sort=default",
-                "title": "Excalidraw Libraries",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Excalidraw Libraries"
+              "icon": "lucide-file-text",
+              "title": "Practical Linear Algebra for Data Science_ From Co_240625_213838"
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -266,8 +255,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "c13be7e449c0f1db",
+  "active": "069db1b377ca067a",
   "lastOpenFiles": [
+    "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
     "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
     "Nova Notas/Sem título 1.md",
     "Nova Notas/Sem título.md",
@@ -306,7 +296,6 @@
     "teste github.md",
     "teste.md",
     "Primeira Nota.md",
-    "Excel 2025-02-07 17.36.35.sheet.md",
-    "Excalidraw/Drawing 2025-02-06 21.02.29.excalidraw.md"
+    "Excel 2025-02-07 17.36.35.sheet.md"
   ]
 }
