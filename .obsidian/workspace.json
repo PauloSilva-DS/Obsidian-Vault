@@ -14,30 +14,31 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield_bi_240625_212847.pdf",
-                "page": 47,
-                "left": -15,
-                "top": 796,
-                "zoom": 1.0637254901960784
+                "page": 9,
+                "left": -24,
+                "top": 253,
+                "zoom": 0.6225490196078433
               },
               "icon": "lucide-file-text",
               "title": "Essential-Math-for-Data-Science-by-Thomas-Nield_bi_240625_212847"
             }
           },
           {
-            "id": "2f25d5621310408e",
+            "id": "1ca51eb15c3ac303",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://github.com/thomasnield/oreilly_math_fundamentals_data_science",
-                "title": "GitHub - thomasnield/oreilly_math_fundamentals_data_science",
+                "url": "https://github.com/thomasnield/machine-learning-demo-data",
+                "title": "GitHub - thomasnield/machine-learning-demo-data",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "GitHub - thomasnield/oreilly_math_fundamentals_data_science"
+              "title": "GitHub - thomasnield/machine-learning-demo-data"
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -269,7 +270,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "e087e46a7d0c926a",
+  "active": "1ca51eb15c3ac303",
   "lastOpenFiles": [
     "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield_bi_240625_212847.pdf",
     "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
