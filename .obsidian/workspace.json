@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "cab9dd5919940be4",
+        "id": "136c4896667d9b77",
         "type": "tabs",
         "children": [
           {
-            "id": "069db1b377ca067a",
+            "id": "e087e46a7d0c926a",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
-                "page": 13,
-                "left": -12,
-                "top": 340,
-                "zoom": 1.2380952380952384
+                "file": "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield_bi_240625_212847.pdf",
+                "page": 47,
+                "left": -15,
+                "top": 796,
+                "zoom": 1.0637254901960784
               },
               "icon": "lucide-file-text",
-              "title": "Practical Linear Algebra for Data Science_ From Co_240625_213838"
+              "title": "Essential-Math-for-Data-Science-by-Thomas-Nield_bi_240625_212847"
+            }
+          },
+          {
+            "id": "2f25d5621310408e",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://github.com/thomasnield/oreilly_math_fundamentals_data_science",
+                "title": "GitHub - thomasnield/oreilly_math_fundamentals_data_science",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "GitHub - thomasnield/oreilly_math_fundamentals_data_science"
             }
           }
         ],
@@ -255,8 +269,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "069db1b377ca067a",
+  "active": "e087e46a7d0c926a",
   "lastOpenFiles": [
+    "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield_bi_240625_212847.pdf",
     "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
     "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
     "Nova Notas/Sem título 1.md",
@@ -292,7 +307,6 @@
     "Data Science do Zero/Um Curso Intensivo de Python.md",
     "Data Science do Zero",
     "livros/pdf/_OceanofPDF.com_Data_Science_from_Scratch_-_Joel_Grus.pdf.crdownload",
-    "Source Material/pdf",
     "teste github.md",
     "teste.md",
     "Primeira Nota.md",
