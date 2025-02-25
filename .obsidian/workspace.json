@@ -4,41 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "136c4896667d9b77",
+        "id": "2b09b3bf4736c730",
         "type": "tabs",
         "children": [
           {
-            "id": "e087e46a7d0c926a",
+            "id": "2457db18207ccae6",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield_bi_240625_212847.pdf",
-                "page": 9,
-                "left": -24,
-                "top": 253,
-                "zoom": 0.6225490196078433
+                "file": "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
+                "page": 1,
+                "left": -22,
+                "top": 665,
+                "zoom": 0.6845238095238095
               },
               "icon": "lucide-file-text",
-              "title": "Essential-Math-for-Data-Science-by-Thomas-Nield_bi_240625_212847"
-            }
-          },
-          {
-            "id": "1ca51eb15c3ac303",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://github.com/thomasnield/machine-learning-demo-data",
-                "title": "GitHub - thomasnield/machine-learning-demo-data",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "GitHub - thomasnield/machine-learning-demo-data"
+              "title": "Practical Linear Algebra for Data Science_ From Co_240625_213838"
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -96,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 532.5
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -270,9 +255,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "1ca51eb15c3ac303",
+  "active": "2457db18207ccae6",
   "lastOpenFiles": [
+    "Source Material/pdf/AI_Engineering_Building_Applications_-_Chip_Huyen.pdf",
     "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield_bi_240625_212847.pdf",
+    "Source Material/pdf/AI_Engineering_Building_Application_250131_115444.pdf",
+    "Source Material/pdf/essential-math-for-ai-next-level-mathematics-for-e_250218_215403.pdf",
     "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
     "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
     "Nova Notas/Sem título 1.md",
@@ -304,10 +292,7 @@
     "DataScience.md",
     "Loterias.md",
     "Templates",
-    "Nova Notas",
     "Data Science do Zero/Um Curso Intensivo de Python.md",
-    "Data Science do Zero",
-    "livros/pdf/_OceanofPDF.com_Data_Science_from_Scratch_-_Joel_Grus.pdf.crdownload",
     "teste github.md",
     "teste.md",
     "Primeira Nota.md",
