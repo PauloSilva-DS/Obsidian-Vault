@@ -13,7 +13,11 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf"
+                "file": "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
+                "page": 1,
+                "left": -64,
+                "top": 665,
+                "zoom": 0.23511904761904764
               },
               "icon": "lucide-file-text",
               "title": "PracticalStatisticsforDataScientists50EssentialCon_241218_064829"
@@ -251,8 +255,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "e9ea88d18a839487",
+  "active": "2457db18207ccae6",
   "lastOpenFiles": [
+    "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.epub",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
     "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
@@ -279,7 +284,6 @@
     "Excalidraw/Drawing 2025-02-08 15.07.55.excalidraw.md",
     "Excalidraw/Drawing 2025-02-18 11.22.51.excalidraw.md",
     "Nova Notas/Sem título 2.md",
-    "Source Material/Imagens",
     "Pasted image 20250218110522.png",
     "Sem título.canvas",
     "Data Science do Zero/2-Visualização de Dados.md",
