@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Loterias.md",
-                "mode": "preview",
+                "file": "Clippings/Como desinstalar o WPS Office da Kingsoft um guia passo a passo.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Loterias"
+              "title": "Como desinstalar o WPS Office da Kingsoft um guia passo a passo"
             }
           }
         ],
@@ -256,6 +256,11 @@
   },
   "active": "a325e1e9a5e49c14",
   "lastOpenFiles": [
+    "Clippings/Como desinstalar o WPS Office da Kingsoft um guia passo a passo.md",
+    "Clippings/Obsidian and Jupyter Notebooks.md",
+    "Clippings/Jeff Bezos Says the 1-Hour Rule Makes Him Smarter. New Neuroscience Says He’s Right.md",
+    "Loterias.md",
+    "Clippings",
     "Nova Notas/Estudo.md",
     "Nova Notas/Kanban sem título 3.md",
     "Nova Notas/Kanban sem título 2.md",
@@ -280,7 +285,6 @@
     "Teste tablet.md",
     "teste teste/Teste sybc.md",
     "Data Science do Zero/5-Estatística.md",
-    "teste teste",
     "Data Science do Zero/0 -Data Science do Zero.md",
     "Data Science do Zero/4-Álgebra Linear.md",
     "Source Material/Imagens/Pasted image 20250219154846.png",
@@ -291,10 +295,6 @@
     "Excalidraw/Drawing 2025-02-08 15.07.55.excalidraw.md",
     "Excalidraw/Drawing 2025-02-18 11.22.51.excalidraw.md",
     "Pasted image 20250218110522.png",
-    "Sem título.canvas",
-    "Data Science do Zero/2-Visualização de Dados.md",
-    "Templates/SlideNote.md",
-    "Nova Notas/Data inválida.md",
-    "Templates/modelo teste.md"
+    "Sem título.canvas"
   ]
 }

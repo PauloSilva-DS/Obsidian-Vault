@@ -6,11 +6,11 @@
     "emojiStyle": "twemoji",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "✏",
+      "📔",
       "💵",
       "🕸",
-      "CoFolderEdit",
-      "LiDistributeSpaceVertical",
-      "🙏"
+      "CoFolderEdit"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -49,5 +49,7 @@
     "iconColor": "#db2929"
   },
   "Page Web": "🕸",
-  "Loterias.md": "💵"
+  "Loterias.md": "💵",
+  "Data Science do Zero": "📔",
+  "Excalidraw": "✏"
 }
