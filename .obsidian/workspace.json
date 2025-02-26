@@ -4,25 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "611bedb49b8bad07",
+        "id": "5d0cd9dfc509c99f",
         "type": "tabs",
         "children": [
           {
-            "id": "913d04adeca9276b",
+            "id": "a325e1e9a5e49c14",
             "type": "leaf",
             "state": {
               "type": "kanban",
               "state": {
-                "file": "Nova Notas/Kanban sem título 3.md",
+                "file": "Nova Notas/Kanban sem título 4.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
+                    false,
+                    false,
+                    false,
                     false
                   ]
                 }
               },
               "icon": "lucide-trello",
-              "title": "Kanban sem título 3"
+              "title": "Kanban sem título 4"
             }
           }
         ],
@@ -258,8 +261,9 @@
       "obsidian-kanban:Criar um novo quadro": false
     }
   },
-  "active": "913d04adeca9276b",
+  "active": "a325e1e9a5e49c14",
   "lastOpenFiles": [
+    "Nova Notas/Kanban sem título 4.md",
     "Nova Notas/Kanban sem título 3.md",
     "Nova Notas/Kanban sem título 2.md",
     "Sem título.md",
@@ -298,7 +302,6 @@
     "Data Science do Zero/2-Visualização de Dados.md",
     "Templates/SlideNote.md",
     "Nova Notas/Data inválida.md",
-    "Templates/modelo teste.md",
-    "DataScience.md"
+    "Templates/modelo teste.md"
   ]
 }
