@@ -13,7 +13,7 @@
             "state": {
               "type": "kanban",
               "state": {
-                "file": "Nova Notas/Kanban sem título 4.md",
+                "file": "Nova Notas/Estudo.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
@@ -25,7 +25,7 @@
                 }
               },
               "icon": "lucide-trello",
-              "title": "Kanban sem título 4"
+              "title": "Estudo"
             }
           }
         ],
@@ -86,8 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -264,7 +263,7 @@
   },
   "active": "a325e1e9a5e49c14",
   "lastOpenFiles": [
-    "Nova Notas/Kanban sem título 4.md",
+    "Nova Notas/Estudo.md",
     "Nova Notas/Kanban sem título 3.md",
     "Nova Notas/Kanban sem título 2.md",
     "Sem título.md",
