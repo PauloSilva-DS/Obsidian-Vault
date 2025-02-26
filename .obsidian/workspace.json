@@ -201,8 +201,8 @@
               "type": "custom-frames-google-keep",
               "state": {},
               "pinned": true,
-              "icon": "lucide-file",
-              "title": "Plugin desativado"
+              "icon": "lucide-files",
+              "title": "Google Keep"
             }
           },
           {
@@ -230,7 +230,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
