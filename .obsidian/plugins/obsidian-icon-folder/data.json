@@ -6,11 +6,11 @@
     "emojiStyle": "twemoji",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🕸",
       "CoFolderEdit",
       "LiDistributeSpaceVertical",
       "🙏",
-      "🖐",
-      "LiChartLine"
+      "🖐"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -47,5 +47,6 @@
   "Data Science do Zero/5-Estatística.md": {
     "iconName": "CoFolderEdit",
     "iconColor": "#db2929"
-  }
+  },
+  "Page Web": "🕸"
 }
