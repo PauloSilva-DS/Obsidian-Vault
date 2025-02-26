@@ -1,5 +1,5 @@
 {
-  "cascadeColors": false,
+  "cascadeColors": true,
   "colorBackground": true,
   "palette": [
     {
@@ -21,6 +21,26 @@
       "id": "wqdo_B13eqBIM9Fy-QnRc",
       "name": "Amarelo",
       "value": "#f7db8d"
+    },
+    {
+      "id": "2fxQ8kLuwFcaKpt70E-n1",
+      "name": "laranja",
+      "value": "#debb0d"
+    },
+    {
+      "id": "5lstUZP3ySrMG48r34qlp",
+      "name": "violeta",
+      "value": "#b80de7"
+    },
+    {
+      "id": "_KwGKH0ls_0USNBePNiEq",
+      "name": "verde claro",
+      "value": "#0ce425"
+    },
+    {
+      "id": "1pIDNMoKkHLzKh5Gll1_Q",
+      "name": "cinza",
+      "value": "#bcb8b8"
     }
   ],
   "fileColors": [
@@ -38,7 +58,7 @@
     },
     {
       "path": "Page Web",
-      "color": "pssH1RKbQnU5Q8KO1rJ3B"
+      "color": "5lstUZP3ySrMG48r34qlp"
     }
   ]
 }
