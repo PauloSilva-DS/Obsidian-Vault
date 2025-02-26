@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Como desinstalar o WPS Office da Kingsoft um guia passo a passo.md",
-                "mode": "source",
+                "file": "Loterias.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Como desinstalar o WPS Office da Kingsoft um guia passo a passo"
+              "title": "Loterias"
             }
           }
         ],
@@ -254,7 +254,7 @@
       "obsidian-kanban:Criar um novo quadro": false
     }
   },
-  "active": "a325e1e9a5e49c14",
+  "active": "e9ea88d18a839487",
   "lastOpenFiles": [
     "Clippings/Como desinstalar o WPS Office da Kingsoft um guia passo a passo.md",
     "Clippings/Obsidian and Jupyter Notebooks.md",
