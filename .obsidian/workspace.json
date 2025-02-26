@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "05280e0be4334a4c",
+        "id": "611bedb49b8bad07",
         "type": "tabs",
         "children": [
           {
-            "id": "978490a6305b373d",
+            "id": "913d04adeca9276b",
             "type": "leaf",
             "state": {
               "type": "kanban",
               "state": {
-                "file": "Nova Notas/Kanban sem título 1.md",
+                "file": "Nova Notas/Kanban sem título 3.md",
                 "kanbanViewState": {
                   "kanban-plugin": "board",
                   "list-collapse": [
@@ -22,7 +22,7 @@
                 }
               },
               "icon": "lucide-trello",
-              "title": "Kanban sem título 1"
+              "title": "Kanban sem título 3"
             }
           }
         ],
@@ -258,8 +258,11 @@
       "obsidian-kanban:Criar um novo quadro": false
     }
   },
-  "active": "978490a6305b373d",
+  "active": "913d04adeca9276b",
   "lastOpenFiles": [
+    "Nova Notas/Kanban sem título 3.md",
+    "Nova Notas/Kanban sem título 2.md",
+    "Sem título.md",
     "Nova Notas/Kanban sem título 1.md",
     "Nova Notas/Kanban sem título.md",
     "Nova Notas/Estudos.md",
@@ -296,9 +299,6 @@
     "Templates/SlideNote.md",
     "Nova Notas/Data inválida.md",
     "Templates/modelo teste.md",
-    "DataScience.md",
-    "Loterias.md",
-    "Data Science do Zero/Um Curso Intensivo de Python.md",
-    "teste github.md"
+    "DataScience.md"
   ]
 }
