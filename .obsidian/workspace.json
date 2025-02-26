@@ -4,23 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "2b09b3bf4736c730",
+        "id": "05280e0be4334a4c",
         "type": "tabs",
         "children": [
           {
-            "id": "2457db18207ccae6",
+            "id": "978490a6305b373d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "kanban",
               "state": {
-                "file": "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
-                "page": 1,
-                "left": -22,
-                "top": 665,
-                "zoom": 0.6845238095238095
+                "file": "Nova Notas/Kanban sem título 1.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false
+                  ]
+                }
               },
-              "icon": "lucide-file-text",
-              "title": "PracticalStatisticsforDataScientists50EssentialCon_241218_064829"
+              "icon": "lucide-trello",
+              "title": "Kanban sem título 1"
             }
           }
         ],
@@ -252,16 +254,20 @@
       "slide-note:Slide Note Block Generator": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-kanban:Criar um novo quadro": false
     }
   },
-  "active": "2457db18207ccae6",
+  "active": "978490a6305b373d",
   "lastOpenFiles": [
+    "Nova Notas/Kanban sem título 1.md",
+    "Nova Notas/Kanban sem título.md",
+    "Nova Notas/Estudos.md",
+    "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
     "Nova Notas/Sem título 2.md",
     "Page Web/UOL - Seu universo online.md",
     "Page Web",
     "Nova Notas/Sem título.md",
-    "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.epub",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
     "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
@@ -293,9 +299,6 @@
     "DataScience.md",
     "Loterias.md",
     "Data Science do Zero/Um Curso Intensivo de Python.md",
-    "teste github.md",
-    "teste.md",
-    "Primeira Nota.md",
-    "Excel 2025-02-07 17.36.35.sheet.md"
+    "teste github.md"
   ]
 }
