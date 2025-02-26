@@ -15,15 +15,58 @@
               "state": {
                 "file": "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
                 "page": 1,
-                "left": -64,
+                "left": -27,
                 "top": 665,
-                "zoom": 0.23511904761904764
+                "zoom": 0.5654761904761905
               },
               "icon": "lucide-file-text",
               "title": "PracticalStatisticsforDataScientists50EssentialCon_241218_064829"
             }
+          },
+          {
+            "id": "02b7d770c4c0e3a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Nova Notas/Sem título 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sem título 2"
+            }
+          },
+          {
+            "id": "57835eabbc0c8bde",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.uol.com.br/",
+                "title": "UOL - Seu universo online",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "UOL - Seu universo online"
+            }
+          },
+          {
+            "id": "8855444f2798409f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Page Web/UOL - Seu universo online.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "UOL - Seu universo online"
+            }
           }
         ],
+        "currentTab": 3,
         "stacked": true
       }
     ],
@@ -255,8 +298,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "2457db18207ccae6",
+  "active": "8855444f2798409f",
   "lastOpenFiles": [
+    "Page Web/UOL - Seu universo online.md",
+    "Page Web",
+    "Nova Notas/Sem título 2.md",
+    "Nova Notas/Sem título.md",
     "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.epub",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
@@ -267,7 +314,6 @@
     "Source Material/pdf/essential-math-for-ai-next-level-mathematics-for-e_250218_215403.pdf",
     "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
     "Nova Notas/Sem título 1.md",
-    "Nova Notas/Sem título.md",
     "Teste tablet.md",
     "teste teste/Teste sybc.md",
     "Data Science do Zero/5-Estatística.md",
@@ -277,13 +323,10 @@
     "Source Material/Imagens/Pasted image 20250219154846.png",
     "Source Material/Imagens/Pasted image 20250219154447.png",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
-    "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
-    "Data Science do Zero/Cusdo Intensivo.ipynb",
     "Data Science do Zero/Introdução Data Science do Zero.md",
     "Templates/DataScience.md",
     "Excalidraw/Drawing 2025-02-08 15.07.55.excalidraw.md",
     "Excalidraw/Drawing 2025-02-18 11.22.51.excalidraw.md",
-    "Nova Notas/Sem título 2.md",
     "Pasted image 20250218110522.png",
     "Sem título.canvas",
     "Data Science do Zero/2-Visualização de Dados.md",
