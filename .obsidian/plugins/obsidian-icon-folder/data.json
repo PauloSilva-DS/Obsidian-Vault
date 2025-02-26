@@ -6,11 +6,11 @@
     "emojiStyle": "twemoji",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "💵",
       "🕸",
       "CoFolderEdit",
       "LiDistributeSpaceVertical",
-      "🙏",
-      "🖐"
+      "🙏"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -48,5 +48,6 @@
     "iconName": "CoFolderEdit",
     "iconColor": "#db2929"
   },
-  "Page Web": "🕸"
+  "Page Web": "🕸",
+  "Loterias.md": "💵"
 }
