@@ -5,7 +5,7 @@ tags:
   - python
   - newtag
 Completo: false
-Atualizado: 2025-02-27  15.55
+Atualizado: 2025-02-27  16.08
 Criado: 2025-02-17  14.24
 banner_y: 0.38
 ---
@@ -48,8 +48,6 @@ title: Sumário
 
 
 ```
-
-
 
 
 

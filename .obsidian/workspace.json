@@ -11,14 +11,10 @@
             "id": "a325e1e9a5e49c14",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Nova Notas/Sem título 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sem título 1"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
             }
           }
         ],
@@ -223,12 +219,11 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 395.5,
-    "collapsed": true
+    "width": 395.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,8 +249,9 @@
       "obsidian-kanban:Criar um novo quadro": false
     }
   },
-  "active": "a325e1e9a5e49c14",
+  "active": "9695b7659074a0aa",
   "lastOpenFiles": [
+    "Nova Notas/Sem título 1.md",
     "Loterias.md",
     "Source Material/Imagens/banner1.jpg",
     "Clippings/I Did a 2-Minute Plank Every Day for 31 Days — Here’s What Happened.md",
@@ -284,7 +280,6 @@
     "Source Material/pdf/AI_Engineering_Building_Application_250131_115444.pdf",
     "Source Material/pdf/essential-math-for-ai-next-level-mathematics-for-e_250218_215403.pdf",
     "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
-    "Nova Notas/Sem título 1.md",
     "Teste tablet.md",
     "teste teste/Teste sybc.md",
     "Data Science do Zero/5-Estatística.md",
