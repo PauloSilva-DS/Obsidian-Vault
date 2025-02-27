@@ -1,21 +1,23 @@
 ---
+
 kanban-plugin: board
 Atualizado: 2025-02-26  16.27
 Criado: 2025-02-26  15.16
+
 ---
 
-## Ideias
+## Ideias #tag1
 
 - [ ] [[0 -Data Science do Zero]]
 - [ ] Data Sicence do Zero
 - [ ] #python
 
 
-## Agendadas
+## Agendadas #tag2
 
 
 
-## Em Andamento
+## Em Andamento #new-tag
 
 
 

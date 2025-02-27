@@ -3,6 +3,7 @@ tags:
   - dataScienceZero
   - estudo
   - python
+  - newtag
 Completo: false
 Atualizado: 2025-02-24  16.03
 Criado: 2025-02-17  14.24

@@ -1,6 +1,4 @@
 ---
-
-kanban-plugin: board
-
+kanban-plugin: table
 ---
 
