@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-02-26  17.49
+Atualizado: 2025-02-27  15.32
 Criado: 2025-02-26  14.10
 ---
 > [!Lotofacil] 
