@@ -5,10 +5,14 @@ tags:
   - python
   - newtag
 Completo: false
-Atualizado: 2025-02-24  16.03
+Atualizado: 2025-02-27  15.51
 Criado: 2025-02-17  14.24
+banner: "![[banner1.jpg]]"
+banner_y: 0.38
 ---
-2--- 
+
+
+
 
 
 ```slide-note 
