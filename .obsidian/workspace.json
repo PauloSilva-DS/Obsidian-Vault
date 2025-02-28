@@ -221,9 +221,21 @@
               "icon": "lucide-file",
               "title": "PDF Canvas"
             }
+          },
+          {
+            "id": "9cc29f420e499d8d",
+            "type": "leaf",
+            "state": {
+              "type": "chat-view",
+              "state": {
+                "file": "Chats/New Chat.md"
+              },
+              "icon": "message-square",
+              "title": "New Chat"
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
@@ -231,6 +243,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "smart-second-brain:Open S2B Chat": false,
       "switcher:Abrir a troca rápida": false,
       "graph:Abrir visualização em gráfico": false,
       "canvas:Criar novo canvas": false,
@@ -250,13 +263,14 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-kanban:Criar um novo quadro": false,
-      "copilot:Open Copilot Chat": false
+      "obsidian-kanban:Criar um novo quadro": false
     }
   },
-  "active": "49eb5ef06b61bed3",
+  "active": "9cc29f420e499d8d",
   "lastOpenFiles": [
     "Nova Notas/Executar bibliotecas python.md",
+    "Chats/New Chat.md",
+    "Chats",
     "Nova Notas/Sem título 1.md",
     "Data Science do Zero/4-Álgebra Linear.md",
     "Loterias.md",
@@ -285,7 +299,6 @@
     "Source Material/pdf/AI_Engineering_Building_Applications_-_Chip_Huyen.pdf",
     "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield_bi_240625_212847.pdf",
     "Source Material/pdf/AI_Engineering_Building_Application_250131_115444.pdf",
-    "Source Material/pdf/essential-math-for-ai-next-level-mathematics-for-e_250218_215403.pdf",
     "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
     "Teste tablet.md",
     "teste teste/Teste sybc.md",
@@ -294,7 +307,6 @@
     "Source Material/Imagens/Pasted image 20250219154846.png",
     "Source Material/Imagens/Pasted image 20250219154447.png",
     "Data Science do Zero/1-Um Curso Intensivo de Python.md",
-    "Data Science do Zero/Introdução Data Science do Zero.md",
     "Pasted image 20250218110522.png",
     "Sem título.canvas"
   ]

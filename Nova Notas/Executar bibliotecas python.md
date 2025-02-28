@@ -2,7 +2,7 @@
 tags:
   - python
 Completo: false
-Atualizado: 2025-02-28  15.09
+Atualizado: 2025-02-28  16.16
 Criado: 2025-02-28  13.55
 ---
 ```ad-summary

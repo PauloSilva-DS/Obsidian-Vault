@@ -1,6 +1,6 @@
 {
   "cascadeColors": true,
-  "colorBackground": true,
+  "colorBackground": false,
   "palette": [
     {
       "id": "I5fi7hV6GmtqNUrELhfL8",
@@ -18,16 +18,6 @@
       "value": "#267f06"
     },
     {
-      "id": "wqdo_B13eqBIM9Fy-QnRc",
-      "name": "Amarelo",
-      "value": "#f7db8d"
-    },
-    {
-      "id": "2fxQ8kLuwFcaKpt70E-n1",
-      "name": "laranja",
-      "value": "#debb0d"
-    },
-    {
       "id": "5lstUZP3ySrMG48r34qlp",
       "name": "violeta",
       "value": "#b80de7"
@@ -41,6 +31,16 @@
       "id": "1pIDNMoKkHLzKh5Gll1_Q",
       "name": "cinza",
       "value": "#bcb8b8"
+    },
+    {
+      "id": "Rx2AEyadQym-J85XBZM17",
+      "name": "preto",
+      "value": "#030303"
+    },
+    {
+      "id": "z8lg3uoBdxwB0IgrHVupY",
+      "name": "branco",
+      "value": "#ffffff"
     }
   ],
   "fileColors": [
@@ -58,6 +58,18 @@
     },
     {
       "path": "Page Web",
+      "color": "5lstUZP3ySrMG48r34qlp"
+    },
+    {
+      "path": "Data Science do Zero",
+      "color": "DyBGbN51edVp6Y_OC7ilJ"
+    },
+    {
+      "path": "Excalidraw",
+      "color": "Rx2AEyadQym-J85XBZM17"
+    },
+    {
+      "path": "Teste tablet.md",
       "color": "5lstUZP3ySrMG48r34qlp"
     }
   ]
