@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-02-28  17.27
+Atualizado: 2025-02-28  17.35
 Criado: 2025-02-28  16.33
 ---
 ```python
@@ -11,5 +11,12 @@ def fibonacci(n):
 
 # Test the function with some inputs
 print(fibonacci(5)) # Output: 5
-print(fibonacci(8)) # Output: 21
+print(fibonacci(9)) # Output: 21
 ```
+
+
+
+ultimamente 
+
+
+
