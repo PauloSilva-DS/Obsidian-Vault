@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nova Notas/Sem título 3.md",
+                "file": "Nova Notas/Sem título 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sem título 3"
+              "title": "Sem título 2"
             }
           }
         ],
@@ -211,7 +211,7 @@
             }
           },
           {
-            "id": "2b8bd45011501d35",
+            "id": "a57cb2869d94f3d8",
             "type": "leaf",
             "state": {
               "type": "chat-view",
@@ -250,13 +250,14 @@
       "slide-note:Slide Note Block Generator": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-kanban:Criar um novo quadro": false
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "2b8bd45011501d35",
+  "active": "322a0f2ed23d06e7",
   "lastOpenFiles": [
     "Nova Notas/Sem título 3.md",
+    "Nova Notas/Sem título.md",
+    "Nova Notas/Estudo.md",
     "Chats/New Chat.md",
     "Nova Notas/Sem título 2.md",
     "Nova Notas/Executar bibliotecas python.md",
@@ -271,7 +272,6 @@
     "Clippings/Obsidian and Jupyter Notebooks.md",
     "Clippings/Jeff Bezos Says the 1-Hour Rule Makes Him Smarter. New Neuroscience Says He’s Right.md",
     "Clippings",
-    "Nova Notas/Estudo.md",
     "Nova Notas/Kanban sem título 3.md",
     "Nova Notas/Kanban sem título 2.md",
     "Sem título.md",
@@ -281,7 +281,6 @@
     "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
     "Page Web/UOL - Seu universo online.md",
     "Page Web",
-    "Nova Notas/Sem título.md",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.epub",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
     "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
