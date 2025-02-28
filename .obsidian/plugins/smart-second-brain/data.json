@@ -5,10 +5,10 @@
   "initialAssistantMessageContent": "Hello, I am your assistant. How can I help you?",
   "isIncognitoMode": true,
   "ollamaGenModel": {
-    "model": "llama2",
+    "model": "deepseek-r1:8b",
     "baseUrl": "http://localhost:11434",
     "temperature": 0.5,
-    "contextWindow": 1948,
+    "contextWindow": 2048,
     "lcModel": {
       "lc": 1,
       "type": "constructor",
@@ -22,12 +22,28 @@
         "model": "llama2",
         "base_url": "http://localhost:11434",
         "temperature": 0.5,
-        "context_window": 1948
+        "context_window": 1848,
+        "lc_model": {
+          "lc": 1,
+          "type": "constructor",
+          "id": [
+            "langchain",
+            "chat_models",
+            "ollama",
+            "ChatOllama"
+          ],
+          "kwargs": {
+            "model": "llama2",
+            "base_url": "http://localhost:11434",
+            "temperature": 0.5,
+            "context_window": 1948
+          }
+        }
       }
     }
   },
   "ollamaEmbedModel": {
-    "model": "nomic-embed-text",
+    "model": "deepseek-r1:8b",
     "baseUrl": "http://localhost:11434",
     "similarityThreshold": 0.75,
     "k": 100
@@ -35,7 +51,8 @@
   "openAIGenModel": {
     "model": "gpt-3.5-turbo",
     "openAIApiKey": "",
-    "temperature": 0.5
+    "temperature": 0.5,
+    "contextWindow": 1948
   },
   "openAIEmbedModel": {
     "model": "text-embedding-ada-002",
