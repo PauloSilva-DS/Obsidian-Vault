@@ -2,7 +2,7 @@
 tags:
   - python
 Completo: false
-Atualizado: 2025-02-28  14.28
+Atualizado: 2025-02-28  14.34
 Criado: 2025-02-28  13.55
 ---
 ```ad-summary
@@ -12,7 +12,7 @@ Todos os pacotes disponíveis estão listados [aqui](https://github.com/mokeyish
 ```
 
 
-#### Usando numpy`
+## Usando numpy`
 
 ```python file:numpy language
 import micropip
@@ -24,7 +24,7 @@ b = np.random.rand(2,5)
 print(a@b)
 ```
 
-#### Usando matplotlib
+## Usando matplotlib
 ```python
 import micropip
 await micropip.install('matplotlib')

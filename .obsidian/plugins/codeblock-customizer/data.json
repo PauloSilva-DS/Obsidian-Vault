@@ -362,8 +362,8 @@
       },
       "light": {
         "codeblock": {
-          "activeLineColor": "#EDE8D6",
-          "backgroundColor": "#FCF6E4",
+          "activeLineColor": "#161616",
+          "backgroundColor": "#F2B80A",
           "highlightColor": "#E9DFBA",
           "alternateHighlightColors": {},
           "languageBorderColors": {},

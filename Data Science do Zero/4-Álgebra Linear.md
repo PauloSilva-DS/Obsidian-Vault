@@ -5,7 +5,7 @@ tags:
   - python
   - álgebraLinear
 Completo: false
-Atualizado: 2025-02-19  15.48
+Atualizado: 2025-02-28  14.40
 Criado: 2025-02-12  16.41
 ---
 [[0 -Data Science do Zero]]
@@ -24,7 +24,7 @@ Vetores são objetos que podem ser somados e multiplicados por escalares (númer
 
 Em Python, vetores podem ser implementados como listas de números:
 
-```run-python
+```python
 from typing import List
 Vector = List[float]
 ```
@@ -35,7 +35,7 @@ Como listas comuns do Python não suportam operações matemáticas de vetores, 
 
 1. **Soma de vetores:** soma os elementos correspondentes de dois vetores:
     
-    ```run-python
+    ```python
     def add(v: Vector, w: Vector) -> Vector:
 		assert len(v) == len(w), "vetores devem ter o mesmo tamanho"
 	    return [v_i + w_i for v_i, w_i in zip(v, w)]
@@ -144,12 +144,7 @@ def dot(v: list, w: list) -> float:
 # Testando
 print(dot([1, 2, 3], [4, 5, 6]))  # Saída: 32
 ```
-```output
-32
-```
 
-
----
 
 ### **Interpretação Geométrica**
 
@@ -186,13 +181,10 @@ def angle_between(v, w):
     return math.acos(dot(v, w) / (magnitude(v) * magnitude(w)))
 
 # T
-```output
-90.0
-```
+
 t(math.degrees(angle_between(v, w)))  # Saída: 90.0 (vetores ortogonais)
 ```
-```output
-```
+
 
 
 ---
