@@ -221,14 +221,23 @@
               "icon": "lucide-file",
               "title": "Plugin desativado"
             }
+          },
+          {
+            "id": "d88c8c674e4fd7cc",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 395.5,
-    "collapsed": true
+    "width": 395.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -251,10 +260,11 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-kanban:Criar um novo quadro": false
+      "obsidian-kanban:Criar um novo quadro": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "97724ccc1ae9d049",
+  "active": "d88c8c674e4fd7cc",
   "lastOpenFiles": [
     "Nova Notas/Executar bibliotecas python.md",
     "Nova Notas/Sem título 1.md",
