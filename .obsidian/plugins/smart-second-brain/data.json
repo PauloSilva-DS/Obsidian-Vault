@@ -8,7 +8,23 @@
     "model": "deepseek-r1:8b",
     "baseUrl": "http://localhost:11434",
     "temperature": 0.5,
-    "contextWindow": 2048
+    "contextWindow": 1948,
+    "lcModel": {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain",
+        "chat_models",
+        "ollama",
+        "ChatOllama"
+      ],
+      "kwargs": {
+        "model": "deepseek-r1:8b",
+        "base_url": "http://localhost:11434",
+        "temperature": 0.5,
+        "context_window": 1948
+      }
+    }
   },
   "ollamaEmbedModel": {
     "model": "deepseek-r1:8b",
