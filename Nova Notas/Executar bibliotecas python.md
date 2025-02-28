@@ -1,10 +1,17 @@
 ---
 tags:
   - python
-Completo: false
-Atualizado: 2025-02-28  14.00
+Completo: true
+Atualizado: 2025-02-28  14.07
 Criado: 2025-02-28  13.55
 ---
+```ad-summary
+title: nota
+Todos os pacotes disponíveis estão listados [aqui](https://github.com/mokeyish/pyodide-dist/find/master) (procure `whl`)
+
+```
+
+
 #### Usando numpy`
 
 ```python
