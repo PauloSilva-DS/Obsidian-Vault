@@ -1,8 +1,8 @@
 ---
 tags:
   - python
-Completo: true
-Atualizado: 2025-02-28  14.07
+Completo: false
+Atualizado: 2025-02-28  14.20
 Criado: 2025-02-28  13.55
 ---
 ```ad-summary
@@ -14,7 +14,7 @@ Todos os pacotes disponíveis estão listados [aqui](https://github.com/mokeyish
 
 #### Usando numpy`
 
-```python
+```python file:test.py fold
 import micropip
 await micropip.install('numpy')  
 import numpy as np
@@ -38,3 +38,6 @@ plt.show()                           # Show the figure.
 
 
 
+```python
+print(a)
+```

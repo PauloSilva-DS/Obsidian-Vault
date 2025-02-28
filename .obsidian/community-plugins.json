@@ -8,7 +8,6 @@
   "obsidian-minimal-settings",
   "excel",
   "code-styler",
-  "execute-code",
   "text-snippets-obsidian",
   "editing-toolbar",
   "obsidian-git",
@@ -23,5 +22,6 @@
   "obsidian-custom-frames",
   "obsidian-kanban",
   "obsidian-banners",
-  "code-emitter"
+  "code-emitter",
+  "codeblock-customizer"
 ]
