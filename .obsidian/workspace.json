@@ -221,14 +221,25 @@
               "icon": "lucide-file",
               "title": "PDF Canvas"
             }
+          },
+          {
+            "id": "2b8bd45011501d35",
+            "type": "leaf",
+            "state": {
+              "type": "chat-view",
+              "state": {
+                "file": "Chats/New Chat.md"
+              },
+              "icon": "message-square",
+              "title": "New Chat"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 395.5,
-    "collapsed": true
+    "width": 395.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -255,10 +266,10 @@
       "obsidian-kanban:Criar um novo quadro": false
     }
   },
-  "active": "322a0f2ed23d06e7",
+  "active": "2b8bd45011501d35",
   "lastOpenFiles": [
-    "Nova Notas/Sem título 2.md",
     "Nova Notas/Sem título 3.md",
+    "Nova Notas/Sem título 2.md",
     "Chats/New Chat.md",
     "Nova Notas/Executar bibliotecas python.md",
     "Chats",
