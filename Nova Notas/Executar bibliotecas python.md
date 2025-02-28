@@ -2,7 +2,7 @@
 tags:
   - python
 Completo: false
-Atualizado: 2025-02-28  14.20
+Atualizado: 2025-02-28  14.28
 Criado: 2025-02-28  13.55
 ---
 ```ad-summary
@@ -14,7 +14,7 @@ Todos os pacotes disponíveis estão listados [aqui](https://github.com/mokeyish
 
 #### Usando numpy`
 
-```python file:test.py fold
+```python file:numpy language
 import micropip
 await micropip.install('numpy')  
 import numpy as np
