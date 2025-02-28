@@ -5,7 +5,7 @@ tags:
   - python
   - álgebraLinear
 Completo: false
-Atualizado: 2025-02-28  14.40
+Atualizado: 2025-02-28  14.41
 Criado: 2025-02-12  16.41
 ---
 [[0 -Data Science do Zero]]
