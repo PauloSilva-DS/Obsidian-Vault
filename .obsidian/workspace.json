@@ -221,25 +221,14 @@
               "icon": "lucide-file",
               "title": "PDF Canvas"
             }
-          },
-          {
-            "id": "9cc29f420e499d8d",
-            "type": "leaf",
-            "state": {
-              "type": "chat-view",
-              "state": {
-                "file": "Chats/New Chat.md"
-              },
-              "icon": "message-square",
-              "title": "New Chat"
-            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 395.5
+    "width": 395.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -266,8 +255,9 @@
       "obsidian-kanban:Criar um novo quadro": false
     }
   },
-  "active": "9cc29f420e499d8d",
+  "active": "322a0f2ed23d06e7",
   "lastOpenFiles": [
+    "Nova Notas/Sem título 2.md",
     "Nova Notas/Sem título 3.md",
     "Chats/New Chat.md",
     "Nova Notas/Executar bibliotecas python.md",
@@ -290,7 +280,6 @@
     "Nova Notas/Kanban sem título.md",
     "Nova Notas/Estudos.md",
     "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
-    "Nova Notas/Sem título 2.md",
     "Page Web/UOL - Seu universo online.md",
     "Page Web",
     "Nova Notas/Sem título.md",
