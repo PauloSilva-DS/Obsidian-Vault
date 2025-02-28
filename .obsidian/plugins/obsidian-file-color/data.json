@@ -28,19 +28,14 @@
       "value": "#0ce425"
     },
     {
-      "id": "1pIDNMoKkHLzKh5Gll1_Q",
-      "name": "cinza",
-      "value": "#bcb8b8"
-    },
-    {
       "id": "Rx2AEyadQym-J85XBZM17",
       "name": "preto",
       "value": "#030303"
     },
     {
-      "id": "z8lg3uoBdxwB0IgrHVupY",
-      "name": "branco",
-      "value": "#ffffff"
+      "id": "RyvA56i2XexHxSHxHI4V9",
+      "name": "azul claro",
+      "value": "#10dbea"
     }
   ],
   "fileColors": [
@@ -71,6 +66,10 @@
     {
       "path": "Teste tablet.md",
       "color": "5lstUZP3ySrMG48r34qlp"
+    },
+    {
+      "path": "Nova Notas",
+      "color": "RyvA56i2XexHxSHxHI4V9"
     }
   ]
 }

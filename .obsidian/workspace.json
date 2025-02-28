@@ -187,18 +187,6 @@
             }
           },
           {
-            "id": "9ceda42c69d54486",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "custom-frames-google-keep",
-              "state": {},
-              "pinned": true,
-              "icon": "lucide-files",
-              "title": "Google Keep"
-            }
-          },
-          {
             "id": "1b177f05ec233f1b",
             "type": "leaf",
             "state": {
@@ -235,7 +223,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
@@ -266,10 +254,10 @@
       "obsidian-kanban:Criar um novo quadro": false
     }
   },
-  "active": "2b8bd45011501d35",
+  "active": "e9ea88d18a839487",
   "lastOpenFiles": [
-    "Nova Notas/Sem título 3.md",
     "Chats/New Chat.md",
+    "Nova Notas/Sem título 3.md",
     "Nova Notas/Sem título 2.md",
     "Nova Notas/Executar bibliotecas python.md",
     "Chats",
