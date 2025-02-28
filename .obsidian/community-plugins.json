@@ -22,5 +22,6 @@
   "obsidian-text-format",
   "obsidian-custom-frames",
   "obsidian-kanban",
-  "obsidian-banners"
+  "obsidian-banners",
+  "code-emitter"
 ]

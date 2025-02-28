@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5d0cd9dfc509c99f",
+        "id": "51f82d21044e71dc",
         "type": "tabs",
         "children": [
           {
-            "id": "a325e1e9a5e49c14",
+            "id": "97724ccc1ae9d049",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização em gráfico"
+              "type": "markdown",
+              "state": {
+                "file": "Nova Notas/Executar bibliotecas python.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Executar bibliotecas python"
             }
           }
         ],
@@ -223,7 +227,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5
+    "width": 395.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -249,8 +254,9 @@
       "obsidian-kanban:Criar um novo quadro": false
     }
   },
-  "active": "9695b7659074a0aa",
+  "active": "97724ccc1ae9d049",
   "lastOpenFiles": [
+    "Nova Notas/Executar bibliotecas python.md",
     "Nova Notas/Sem título 1.md",
     "Loterias.md",
     "Source Material/Imagens/banner1.jpg",
