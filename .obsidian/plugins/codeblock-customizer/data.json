@@ -282,7 +282,7 @@
         "buttons": {
           "alwaysShowButtons": false,
           "alwaysShowCopyCodeButton": false,
-          "enableSelectCodeButton": false,
+          "enableSelectCodeButton": true,
           "enableDeleteCodeButton": true,
           "enableWrapCodeButton": false
         }
@@ -314,7 +314,7 @@
         "enableHighlight": false
       },
       "inlineCode": {
-        "enableInlineCodeStyling": false
+        "enableInlineCodeStyling": true
       },
       "printing": {
         "enablePrintToPDFStyling": false,
@@ -363,7 +363,7 @@
       "light": {
         "codeblock": {
           "activeLineColor": "#161616",
-          "backgroundColor": "#F2B80A",
+          "backgroundColor": "#FCF6E4",
           "highlightColor": "#E9DFBA",
           "alternateHighlightColors": {},
           "languageBorderColors": {},
