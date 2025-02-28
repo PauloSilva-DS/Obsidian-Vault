@@ -273,7 +273,7 @@
         "codeBlockBorderStylingPosition": "disable",
         "showIndentationLines": true,
         "enableLinks": true,
-        "enableLinkUpdate": false,
+        "enableLinkUpdate": true,
         "enableBracketHighlight": true,
         "highlightNonMatchingBrackets": true,
         "inverseFold": false,
@@ -303,18 +303,18 @@
         "collapsedCodeText": "",
         "codeblockLangBoldText": true,
         "codeblockLangItalicText": true,
-        "alwaysDisplayCodeblockLang": false,
-        "alwaysDisplayCodeblockIcon": false,
+        "alwaysDisplayCodeblockLang": true,
+        "alwaysDisplayCodeblockIcon": true,
         "displayCodeBlockLanguage": true,
-        "displayCodeBlockIcon": false,
+        "displayCodeBlockIcon": true,
         "disableFoldUnlessSpecified": false
       },
       "gutter": {
         "highlightActiveLineNr": false,
-        "enableHighlight": false
+        "enableHighlight": true
       },
       "inlineCode": {
-        "enableInlineCodeStyling": true
+        "enableInlineCodeStyling": false
       },
       "printing": {
         "enablePrintToPDFStyling": false,
@@ -387,7 +387,7 @@
           "activeLineNrColor": "#866704"
         },
         "inlineCode": {
-          "backgroundColor": "#E9DFBA",
+          "backgroundColor": "#2D2C2A",
           "textColor": "#866704"
         },
         "editorActiveLineColor": "#60460633",
