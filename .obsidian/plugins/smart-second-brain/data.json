@@ -1,5 +1,5 @@
 {
-  "isChatComfy": false,
+  "isChatComfy": true,
   "isUsingRag": true,
   "assistantLanguage": "de",
   "initialAssistantMessageContent": "Hallo, ich bin dein Assistent. Wie kann ich dir helfen?",
