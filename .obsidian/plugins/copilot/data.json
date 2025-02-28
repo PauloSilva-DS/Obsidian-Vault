@@ -14,7 +14,7 @@
   "googleApiKey": "",
   "openRouterAiApiKey": "",
   "defaultChainType": "llm_chain",
-  "defaultModelKey": "deepseek/deepseek-r1:free|openai",
+  "defaultModelKey": "gpt-4o|openai",
   "embeddingModelKey": "text-embedding-3-small|openai",
   "temperature": 0.1,
   "maxTokens": 1000,
@@ -139,22 +139,6 @@
       "provider": "azure openai",
       "enabled": true,
       "isBuiltIn": true
-    },
-    {
-      "name": "deepseek/deepseek-r1:free",
-      "provider": "openai",
-      "enabled": true,
-      "isBuiltIn": false,
-      "baseUrl": "",
-      "apiKey": "deepseek/deepseek-r1:free",
-      "isEmbeddingModel": false,
-      "capabilities": [
-        "reasoning",
-        "vision",
-        "websearch"
-      ],
-      "stream": true,
-      "displayName": "DeepSeek"
     }
   ],
   "activeEmbeddingModels": [

@@ -219,21 +219,11 @@
               "type": "slidenote-pdfcanvas",
               "state": {},
               "icon": "lucide-file",
-              "title": "Plugin desativado"
-            }
-          },
-          {
-            "id": "d88c8c674e4fd7cc",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
+              "title": "PDF Canvas"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
@@ -264,7 +254,7 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "d88c8c674e4fd7cc",
+  "active": "49eb5ef06b61bed3",
   "lastOpenFiles": [
     "Nova Notas/Executar bibliotecas python.md",
     "Nova Notas/Sem título 1.md",
