@@ -1,6 +1,6 @@
 {
   "isChatComfy": true,
-  "isUsingRag": true,
+  "isUsingRag": false,
   "assistantLanguage": "pt-BR",
   "initialAssistantMessageContent": "Hello, I am your assistant. How can I help you?",
   "isIncognitoMode": true,
@@ -8,7 +8,7 @@
     "model": "deepseek-r1:8b",
     "baseUrl": "http://localhost:11434",
     "temperature": 0.5,
-    "contextWindow": 1948,
+    "contextWindow": 1848,
     "lcModel": {
       "lc": 1,
       "type": "constructor",
@@ -22,7 +22,23 @@
         "model": "deepseek-r1:8b",
         "base_url": "http://localhost:11434",
         "temperature": 0.5,
-        "context_window": 1948
+        "context_window": 1848,
+        "lc_model": {
+          "lc": 1,
+          "type": "constructor",
+          "id": [
+            "langchain",
+            "chat_models",
+            "ollama",
+            "ChatOllama"
+          ],
+          "kwargs": {
+            "model": "deepseek-r1:8b",
+            "base_url": "http://localhost:11434",
+            "temperature": 0.5,
+            "context_window": 1948
+          }
+        }
       }
     }
   },
