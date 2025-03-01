@@ -1,7 +1,7 @@
 {
   "isChatComfy": true,
   "isUsingRag": false,
-  "assistantLanguage": "pt-BR",
+  "assistantLanguage": "en",
   "initialAssistantMessageContent": "Hello, I am your assistant. How can I help you?",
   "isIncognitoMode": true,
   "ollamaGenModel": {
