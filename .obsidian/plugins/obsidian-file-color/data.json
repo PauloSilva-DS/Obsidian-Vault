@@ -1,6 +1,6 @@
 {
   "cascadeColors": true,
-  "colorBackground": false,
+  "colorBackground": true,
   "palette": [
     {
       "id": "I5fi7hV6GmtqNUrELhfL8",
@@ -19,8 +19,8 @@
     },
     {
       "id": "5lstUZP3ySrMG48r34qlp",
-      "name": "violeta",
-      "value": "#b80de7"
+      "name": "violeta 1",
+      "value": "#761f75"
     },
     {
       "id": "_KwGKH0ls_0USNBePNiEq",
