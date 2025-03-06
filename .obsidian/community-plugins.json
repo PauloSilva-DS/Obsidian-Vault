@@ -19,7 +19,5 @@
   "pdf-plus",
   "obsidian-admonition",
   "obsidian-text-format",
-  "code-emitter",
-  "codeblock-customizer",
-  "smart-second-brain"
+  "code-emitter"
 ]

@@ -9,7 +9,7 @@ Criado: 2025-02-12  16.34
 ---
 [[0 -Data Science do Zero]]
 
-```run-python
+```python
 users = [ 
 { "id": 0, "name": "Hero" },
 { "id": 1, "name": "Dunn" },
@@ -24,12 +24,13 @@ users = [
 
 ```
 
-```run-python
+```python
 friendship_pairs = [(0, 1), (0, 2), (1, 2), (1, 3), (2, 3), (3, 4), (4, 5), (5, 6), (5, 7), (6, 8), (7, 8), (8, 9)]
+print(friendship_pairs)
 ```
 
 
-```run-python
+```python
 print(frienship_pairs)
 ```
 
