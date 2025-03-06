@@ -15,9 +15,9 @@
               "state": {
                 "file": "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield.pdf",
                 "page": 14,
-                "left": -77,
-                "top": 451,
-                "zoom": 0.1936274509803922
+                "left": -21,
+                "top": 455,
+                "zoom": 0.7156862745098039
               },
               "icon": "lucide-file-text",
               "title": "Essential-Math-for-Data-Science-by-Thomas-Nield"
@@ -83,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,7 +93,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Links inversos para Essential-Math-for-Data-Science-by-Thomas-Nield"
             }
           }
         ],
@@ -253,46 +254,7 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "floating": {
-    "id": "2d506587e205251c",
-    "type": "floating",
-    "children": [
-      {
-        "id": "1d2e0a908a61c8a2",
-        "type": "window",
-        "children": [
-          {
-            "id": "11d6058e1385378d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "5e224e628325e9f4",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://www.youtube.com/watch?v=OergqWCdFKc",
-                    "title": "GPT in Obsidian: Text Generator Plugin - YouTube",
-                    "mode": "blank"
-                  },
-                  "icon": "globe-2",
-                  "title": "GPT in Obsidian: Text Generator Plugin - YouTube"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 3524,
-        "y": 8,
-        "width": 948,
-        "height": 1064,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "5e224e628325e9f4",
+  "active": "5cb20e06483f9004",
   "lastOpenFiles": [
     "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield.pdf",
     "Nova Notas/Sem título.md",
