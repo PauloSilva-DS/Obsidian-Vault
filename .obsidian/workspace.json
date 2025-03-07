@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "368d34a459d986e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Nova Notas/📚0 - Aprendizado de máquina.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "📚0 - Aprendizado de máquina"
-            }
-          },
-          {
             "id": "1516d923600c562d",
             "type": "leaf",
             "state": {
@@ -33,6 +19,20 @@
               },
               "icon": "lucide-file",
               "title": "Sem título 5"
+            }
+          },
+          {
+            "id": "65d8d8579d0a7abe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Nova Notas/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Capítulo 1. O Panorama do Aprendizado de Máquina"
             }
           }
         ],
@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nova Notas/Sem título 5.md",
+                "file": "Nova Notas/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Sem título 5"
+              "title": "Sumário de Capítulo 1. O Panorama do Aprendizado de Máquina"
             }
           },
           {
@@ -230,7 +230,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5
+    "width": 336.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -256,16 +257,17 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "active": "1516d923600c562d",
+  "active": "65d8d8579d0a7abe",
   "lastOpenFiles": [
-    "Nova Notas/📚0 - Aprendizado de máquina.md",
     "Nova Notas/Sem título 5.md",
+    "Nova Notas/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
+    "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
+    "Nova Notas/📚0 - Aprendizado de máquina.md",
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow",
     "Source Material/pdf/mãos a obra/Hands-On Machine Learning 20-69.pdf",
-    "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
     "Nova Notas/Sem título 4.md",
     "Clippings/Simple Widget Introduction — Jupyter Widgets 8.1.5 documentation.md",
     "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield.pdf",
@@ -292,7 +294,6 @@
     "Sem título.md",
     "Nova Notas/Kanban sem título 1.md",
     "Nova Notas/Kanban sem título.md",
-    "Nova Notas/Estudos.md",
     "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
     "Page Web",
     "Source Material/Imagens/Pasted image 20250219154846.png",
