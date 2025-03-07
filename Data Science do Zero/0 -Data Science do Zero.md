@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-02-18  14.10
+Atualizado: 2025-03-07  14.50
 Criado: 2025-02-12  16.25
 ---
 #dataScienceZero #estudo #python 
