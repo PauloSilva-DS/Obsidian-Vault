@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nova Notas/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
+                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta"
+              "title": "Capítulo 1. O Panorama do Aprendizado de Máquina"
             }
           }
         ],
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nova Notas/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
+                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta"
+              "title": "Sumário de Capítulo 1. O Panorama do Aprendizado de Máquina"
             }
           },
           {
@@ -242,10 +242,10 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "active": "e9ea88d18a839487",
+  "active": "3401372aa208341d",
   "lastOpenFiles": [
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
     "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
-    "Nova Notas/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/📚0 - Aprendizado de máquina.md",
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",

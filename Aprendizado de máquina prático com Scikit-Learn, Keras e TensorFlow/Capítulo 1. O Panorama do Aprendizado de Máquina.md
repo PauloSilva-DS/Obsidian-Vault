@@ -3,7 +3,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-03-07  15.08
+Atualizado: 2025-03-07  15.52
 Criado: 2025-03-07  15.07
 ---
 [[📚0 - Aprendizado de máquina]]
@@ -546,7 +546,6 @@ As soluções para esses exercícios estão disponíveis no final do notebook de
 
 ---
 
-Se precisar de mais alguma coisa, estou à disposição! 😊
 
 
 
