@@ -4,21 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "234b050d0fbb3b68",
+        "id": "2ef96c9fe055da6b",
         "type": "tabs",
         "children": [
           {
-            "id": "a355643fde6e0b4a",
+            "id": "368d34a459d986e0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Nova Notas/Sem título 4.md",
-                "mode": "source",
-                "source": false
+                "file": "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
+                "page": 1,
+                "left": -11,
+                "top": 796,
+                "zoom": 1.3321078431372548
               },
-              "icon": "lucide-file",
-              "title": "Sem título 4"
+              "icon": "lucide-file-text",
+              "title": "Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron"
             }
           }
         ],
@@ -98,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 370.5
+    "width": 360.5
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -143,13 +145,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Source Material/pdf/Data_Science_from_Scratch_-_Joel_Grus.pdf",
+                "file": "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Data_Science_from_Scratch_-_Joel_Grus"
+              "title": "Sumário de Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron"
             }
           },
           {
@@ -211,11 +213,11 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 1054.5
+    "width": 336.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,9 +243,10 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "active": "a355643fde6e0b4a",
+  "active": "368d34a459d986e0",
   "lastOpenFiles": [
     "Source Material/pdf/mãos a obra/Hands-On Machine Learning 20-69.pdf",
+    "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
     "Nova Notas/Sem título 4.md",
     "Clippings/Simple Widget Introduction — Jupyter Widgets 8.1.5 documentation.md",
     "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield.pdf",
