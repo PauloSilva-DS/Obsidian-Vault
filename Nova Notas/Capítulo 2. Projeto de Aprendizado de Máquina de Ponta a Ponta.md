@@ -1,8 +1,8 @@
 ---
-Atualizado: 2025-03-07  15.05
+Atualizado: 2025-03-07  15.27
 Criado: 2025-03-07  14.55
 ---
-Claro! Aqui está a tradução integral do trecho fornecido:
+até aqui pagina 50 do 70 até 155
 
 ---
 

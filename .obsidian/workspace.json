@@ -4,23 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2ef96c9fe055da6b",
+        "id": "f1ea6844ee3f70e9",
         "type": "tabs",
         "children": [
           {
-            "id": "1516d923600c562d",
+            "id": "3401372aa208341d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
-                "page": 2,
-                "left": -8,
-                "top": 629,
-                "zoom": 1.7941269827742696
+                "file": "Nova Notas/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Hands-On Machine Learning 70-155"
+              "icon": "lucide-file",
+              "title": "Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta"
             }
           }
         ],
@@ -100,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 448.5
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -145,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
+                "file": "Nova Notas/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Hands-On Machine Learning 70-155"
+              "title": "Sumário de Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta"
             }
           },
           {
@@ -244,11 +242,11 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "active": "1516d923600c562d",
+  "active": "e9ea88d18a839487",
   "lastOpenFiles": [
+    "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
     "Nova Notas/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
-    "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/📚0 - Aprendizado de máquina.md",
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
@@ -280,7 +278,6 @@
     "Nova Notas/Kanban sem título 2.md",
     "Sem título.md",
     "Nova Notas/Kanban sem título 1.md",
-    "Nova Notas/Kanban sem título.md",
     "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
     "Page Web",
     "Source Material/Imagens/Pasted image 20250219154846.png",
