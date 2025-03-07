@@ -11,32 +11,19 @@
             "id": "1516d923600c562d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Nova Notas/Sem título 5.md",
-                "mode": "source",
-                "source": false
+                "file": "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
+                "page": 2,
+                "left": -8,
+                "top": 629,
+                "zoom": 1.7941269827742696
               },
-              "icon": "lucide-file",
-              "title": "Sem título 5"
-            }
-          },
-          {
-            "id": "65d8d8579d0a7abe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Nova Notas/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Capítulo 1. O Panorama do Aprendizado de Máquina"
+              "icon": "lucide-file-text",
+              "title": "Hands-On Machine Learning 70-155"
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -158,13 +145,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nova Notas/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
+                "file": "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Capítulo 1. O Panorama do Aprendizado de Máquina"
+              "title": "Sumário de Hands-On Machine Learning 70-155"
             }
           },
           {
@@ -257,12 +244,12 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "active": "65d8d8579d0a7abe",
+  "active": "1516d923600c562d",
   "lastOpenFiles": [
-    "Nova Notas/Sem título 5.md",
-    "Nova Notas/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
+    "Nova Notas/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
     "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
-    "Nova Notas/📚0 - Aprendizado de máquina.md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/📚0 - Aprendizado de máquina.md",
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
