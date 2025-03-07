@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "da8f47fcf780ea07",
+            "id": "a355643fde6e0b4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/Simple Widget Introduction — Jupyter Widgets 8.1.5 documentation.md",
+                "file": "Nova Notas/Sem título 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Simple Widget Introduction — Jupyter Widgets 8.1.5 documentation"
+              "title": "Sem título 4"
             }
           }
         ],
@@ -215,7 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 673.5
+    "width": 1054.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,10 +241,12 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "active": "da8f47fcf780ea07",
+  "active": "a355643fde6e0b4a",
   "lastOpenFiles": [
-    "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield.pdf",
+    "Source Material/pdf/mãos a obra/Hands-On Machine Learning 20-69.pdf",
+    "Nova Notas/Sem título 4.md",
     "Clippings/Simple Widget Introduction — Jupyter Widgets 8.1.5 documentation.md",
+    "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield.pdf",
     "Nova Notas/Sem título.md",
     "piecesdb.json",
     "Nova Notas/Sem título 2.md",
@@ -275,10 +277,8 @@
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.epub",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
     "Source Material/pdf/Practical Linear Algebra for Data Science_ From Co_240625_213838.pdf",
-    "Source Material/pdf/AI_Engineering_Building_Applications_-_Chip_Huyen.pdf",
     "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
     "Teste tablet.md",
-    "teste teste/Teste sybc.md",
     "Source Material/Imagens/Pasted image 20250219154846.png",
     "Source Material/Imagens/Pasted image 20250219154447.png",
     "Pasted image 20250218110522.png",
