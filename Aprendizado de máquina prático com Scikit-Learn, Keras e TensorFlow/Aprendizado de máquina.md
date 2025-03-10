@@ -3,7 +3,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-03-10  15.18
+Atualizado: 2025-03-10  15.26
 Criado: 2025-03-10  14.58
 ---
 🔖[[Aprendizado de máquina]]
@@ -25,7 +25,7 @@ https://github.com/ageron/handson-ml3
 ```
 
 ```ad-tip
-title: Tutorial
+title: Tutorial (NumPy, Pandas e Matplotlib)
 collapse: closed
 https://homl.info/tutorials
 ```
@@ -33,6 +33,7 @@ https://homl.info/tutorials
 
 
 
+## Parte I. Os Fundamentos do Aprendizado de Máquina
 
 [[Capítulo 1. O Panorama do Aprendizado de Máquina]]
 [[Capítulo 2. Projeto de Aprendizado de Máquina]]
