@@ -8,17 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3401372aa208341d",
+            "id": "ad38f9ab0efe4540",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Aprendizado de máquina"
+              "title": "Nova aba"
             }
           }
         ],
@@ -98,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 257.5
+    "width": 257.5,
+    "collapsed": true
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -241,8 +238,9 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "active": "3401372aa208341d",
+  "active": "ad38f9ab0efe4540",
   "lastOpenFiles": [
+    "Nova Notas/Sem título.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Source Material/Imagens/Pasted image 20250310150827.png",
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
@@ -260,7 +258,6 @@
     "Nova Notas/Sem título 4.md",
     "Clippings/Simple Widget Introduction — Jupyter Widgets 8.1.5 documentation.md",
     "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield.pdf",
-    "Nova Notas/Sem título.md",
     "piecesdb.json",
     "Nova Notas/Sem título 2.md",
     "Chats/New Chat.md",
