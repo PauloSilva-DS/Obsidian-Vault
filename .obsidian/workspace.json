@@ -11,10 +11,14 @@
             "id": "3401372aa208341d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Aprendizado de máquina"
             }
           }
         ],
@@ -94,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 448.5
+    "width": 257.5
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -238,15 +242,19 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "active": "e9ea88d18a839487",
+  "active": "3401372aa208341d",
   "lastOpenFiles": [
-    "Nova Notas/Aprendizado de máquina.md",
+    "Source Material/Imagens/Pasted image 20250310150827.png",
+    "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina (pss's conflicted copy 2025-03-10).md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
+    "Nova Notas/Aprendizado de máquina.md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
     "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/📚0 - Aprendizado de máquina.md",
-    "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow",
@@ -270,11 +278,7 @@
     "Clippings/I Did a 2-Minute Plank Every Day for 31 Days—Here’s What Happened.md",
     "Clippings/Como desinstalar o WPS Office da Kingsoft um guia passo a passo.md",
     "Clippings/Obsidian and Jupyter Notebooks.md",
-    "Clippings/Jeff Bezos Says the 1-Hour Rule Makes Him Smarter. New Neuroscience Says He’s Right.md",
     "Clippings",
-    "Nova Notas/Kanban sem título 3.md",
-    "Nova Notas/Kanban sem título 2.md",
-    "Sem título.md",
     "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
     "Page Web",
     "Source Material/Imagens/Pasted image 20250219154846.png",
