@@ -35,7 +35,7 @@ https://github.com/joelgrus/data-science-from-scratch
 [[Descida do Gradiente]]  
 [[Obtendo Dados]]  
 [[Trabalhando com Dados]]  
-[[Aprendizado de Máquina]]  
+[[Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina]]  
 [[k-Vizinhos Mais Próximos]]  
 [[Naive Bayes]]  
 [[Regressão Linear Simples]]  

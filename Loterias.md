@@ -11,7 +11,7 @@ random.seed()  # inicializar o contador
 sorteados = [10,11,22,23]  # lista de números sorteados
 
 # realização dos sorteios
-for i in range(11):
+for i in range(12):
     n = 10
     while (n in sorteados):
         n = random.randint(1, 25)
@@ -23,10 +23,8 @@ print(sorteados)
 
 
 ```
-```output
-16
-[1, 3, 5, 6, 7, 9, 10, 11, 12, 14, 18, 19, 22, 23, 24, 25]
-```
+
+
 
 
 > [!Milionária] 

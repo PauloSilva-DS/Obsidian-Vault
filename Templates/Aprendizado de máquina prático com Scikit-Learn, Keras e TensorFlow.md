@@ -4,7 +4,7 @@ tags:
   - python
 Completo: false
 ---
-[[📚0 - Aprendizado de máquina]]
+[[Nova Notas/Aprendizado de máquina]]
 
 
 

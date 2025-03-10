@@ -11,14 +11,10 @@
             "id": "3401372aa208341d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Capítulo 1. O Panorama do Aprendizado de Máquina"
+              "title": "Nova aba"
             }
           }
         ],
@@ -242,11 +238,13 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "active": "3401372aa208341d",
+  "active": "e9ea88d18a839487",
   "lastOpenFiles": [
+    "Nova Notas/Aprendizado de máquina.md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
     "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/📚0 - Aprendizado de máquina.md",
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
@@ -277,7 +275,6 @@
     "Nova Notas/Kanban sem título 3.md",
     "Nova Notas/Kanban sem título 2.md",
     "Sem título.md",
-    "Nova Notas/Kanban sem título 1.md",
     "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
     "Page Web",
     "Source Material/Imagens/Pasted image 20250219154846.png",
