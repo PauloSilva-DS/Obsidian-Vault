@@ -211,12 +211,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 336.5,
-    "collapsed": true
+    "width": 336.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -244,14 +243,13 @@
   },
   "active": "3401372aa208341d",
   "lastOpenFiles": [
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Source Material/Imagens/Pasted image 20250310150827.png",
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina (pss's conflicted copy 2025-03-10).md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
     "Nova Notas/Aprendizado de máquina.md",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina de Ponta a Ponta.md",
     "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/📚0 - Aprendizado de máquina.md",

@@ -3,12 +3,34 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-03-10  15.08
+Atualizado: 2025-03-10  15.18
 Criado: 2025-03-10  14.58
 ---
 🔖[[Aprendizado de máquina]]
 
-![[Pasted image 20250310150827.png]]
+![[Pasted image 20250310150827.png|250]]
+
+```ad-warning
+title: Errata
+collapse: closed
+https://oreilly.com/catalog/errata.csp?isbn=9781492032649
+
+```
+
+```ad-done
+title: Code Examples
+collapse: closed
+https://github.com/ageron/handson-ml3
+
+```
+
+```ad-tip
+title: Tutorial
+collapse: closed
+https://homl.info/tutorials
+```
+
+
 
 
 
