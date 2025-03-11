@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  16.35
+Atualizado: 2025-03-11  16.45
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -188,6 +188,34 @@ plt.show()
 
 ```
 
+
+```run-python
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+a = np.array([1, 2, 8])
+b = np.array([5, 6, 3])
+
+fig = plt.figure()
+subplot3d = fig.add_subplot(111, projection='3d')
+
+# Correção: usar a, b como coordenadas x e y, e definir valores para z
+x_coords = a
+y_coords = b
+z_coords = np.zeros_like(a)  # Ou defina os valores desejados para z
+
+subplot3d.scatter(x_coords, y_coords, z_coords)
+subplot3d.set_zlim3d([0, 9])
+plt.show()
+
+```
+
+
+
+
+
+
 É um pouco difícil visualizar exatamente onde no espaço esses dois pontos estão, então vamos adicionar linhas verticais.
 
 Vamos criar uma pequena função de conveniência para plotar uma lista de vetores 3D com linhas verticais anexadas:
@@ -221,26 +249,32 @@ Existem várias normas possíveis, mas a mais comum (e a única que discutiremos
 
 Isso é a raiz quadrada da soma dos quadrados de todos os componentes de \( \mathbf{u} \). Poderíamos implementar isso facilmente em Python puro, lembrando que \( \sqrt{x} = x^{\frac{1}{2}} \):
 
-```python
-def vector_norm(vector):
-    squares = [element**2 for element in vector]
-    return sum(squares)**0.5
+```run-python
+def norma_euclidiana(u):
+    return (sum(x**2 for x in u))**0.5
 
-print("||", u, "|| =")
-vector_norm(u)
+# Exemplo de uso
+vetor = [3, 4]
+resultado = norma_euclidiana(vetor)
+print(f"A norma do vetor {vetor} é {resultado}")
+
 ```
+
+
+
 
 No entanto, é muito mais eficiente usar a função `norm` do NumPy, disponível no módulo `linalg` (Álgebra Linear):
 
-```python
+```run-python
 import numpy.linalg as LA
 
 LA.norm(u)
 ```
 
+
 Vamos plotar um pequeno diagrama para confirmar que o comprimento do vetor \( \mathbf{u} \) é de fato \( \approx 5,4 \):
 
-```python
+```run-python
 radius = LA.norm(u)
 plt.gca().add_artist(plt.Circle((0, 0), radius, color="#DDDDDD"))
 plot_vector2d(u, color="red")
@@ -249,6 +283,7 @@ plt.gca().set_aspect("equal")
 plt.grid()
 plt.show()
 ```
+
 
 Parece correto!
 
