@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  15.45
+Atualizado: 2025-03-11  15.55
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -38,28 +38,14 @@ Uma lista de N números também pode representar as coordenadas de um ponto em u
 
 Os vetores têm muitos propósitos no Aprendizado de Máquina, principalmente para representar observações e previsões. Por exemplo, digamos que construímos um sistema de Aprendizado de Máquina para classificar vídeos em 3 categorias (bom, spam, clickbait) com base no que sabemos sobre eles. Para cada vídeo, teríamos um vetor representando o que sabemos sobre ele, como:
 
-\[
-\text{vídeo} = 
-\begin{pmatrix}
-10.5 \\
-5.2 \\
-3.25 \\
-7.0
-\end{pmatrix}
-\]
+![[Pasted image 20250311154907.png]]
 
 Esse vetor poderia representar um vídeo que dura 10,5 minutos, mas apenas 5,2% dos espectadores assistem por mais de um minuto, ele recebe 3,25 visualizações por dia em média e foi sinalizado 7 vezes como spam. Como você pode ver, cada eixo pode ter um significado diferente.
 
 Com base nesse vetor, nosso sistema de Aprendizado de Máquina pode prever que há uma probabilidade de 80% de ser um vídeo spam, 18% de ser clickbait e 2% de ser um bom vídeo. Isso pode ser representado como o seguinte vetor:
 
-\[
-\text{probabilidades_de_classe} = 
-\begin{pmatrix}
-0.80 \\
-0.18 \\
-0.02
-\end{pmatrix}
-\]
+![[Pasted image 20250311155314.png]]
+
 
 ---
 
@@ -67,17 +53,18 @@ Com base nesse vetor, nosso sistema de Aprendizado de Máquina pode prever que h
 
 Em Python, um vetor pode ser representado de várias maneiras, a mais simples sendo uma lista regular de números:
 
-```python
+```run-python
 [10.5, 5.2, 3.25, 7.0]
 ```
 
+
 Como planejamos fazer muitos cálculos científicos, é muito melhor usar o `ndarray` do NumPy, que fornece muitas implementações convenientes e otimizadas de operações matemáticas essenciais em vetores (para mais detalhes sobre o NumPy, confira o tutorial do NumPy). Por exemplo:
 
-```python
+```run-python
 import numpy as np
 
 video = np.array([10.5, 5.2, 3.25, 7.0])
-video
+print(video)
 ```
 
 ---
@@ -86,11 +73,13 @@ video
 
 O tamanho de um vetor pode ser obtido usando o atributo `size`:
 
-```python
+```run-python
 video.size
 ```
 
 O \( i^{ésimo} \) elemento (também chamado de entrada ou item) de um vetor \( \mathbf{v} \) é denotado por \( \mathbf{v}_i \).
+
+
 
 Observe que os índices em matemática geralmente começam em 1, mas na programação eles geralmente começam em 0. Portanto, para acessar o terceiro elemento de `video` programaticamente, escreveríamos:
 
