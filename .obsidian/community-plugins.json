@@ -20,5 +20,6 @@
   "obsidian-admonition",
   "obsidian-text-format",
   "code-emitter",
-  "pieces-for-developers"
+  "pieces-for-developers",
+  "execute-code"
 ]

@@ -11,10 +11,28 @@
             "id": "ad38f9ab0efe4540",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Aprendizado de máquina"
+            }
+          },
+          {
+            "id": "b62dec7d9169256d",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://colab.research.google.com/github/ageron/handson-ml3/blob/main/index.ipynb",
+                "title": "index.ipynb - Colab",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "index.ipynb - Colab"
             }
           }
         ],
@@ -94,8 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 257.5,
-    "collapsed": true
+    "width": 257.5
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -241,8 +258,9 @@
   },
   "active": "ad38f9ab0efe4540",
   "lastOpenFiles": [
-    "Nova Notas/Sem título.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
+    "Source Material/pdf/temp5668552431312359342.PDF",
+    "Nova Notas/Sem título.md",
     "Source Material/Imagens/Pasted image 20250310150827.png",
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
@@ -276,7 +294,6 @@
     "Clippings/Obsidian and Jupyter Notebooks.md",
     "Clippings",
     "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
-    "Page Web",
     "Source Material/Imagens/Pasted image 20250219154846.png",
     "Source Material/Imagens/Pasted image 20250219154447.png",
     "Pasted image 20250218110522.png",

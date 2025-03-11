@@ -3,7 +3,7 @@ tags:
   - estudo
   - python
 Completo: false
-Atualizado: 2025-03-10  15.26
+Atualizado: 2025-03-11  15.27
 Criado: 2025-03-10  14.58
 ---
 🔖[[Aprendizado de máquina]]
