@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  16.48
+Atualizado: 2025-03-11  17.05
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -267,9 +267,11 @@ No entanto, é muito mais eficiente usar a função `norm` do NumPy, disponível
 
 ```run-python
 import numpy.linalg as LA
-u = [3,4]
+u = np.array([2, 5]) 
 LA.norm(u)
 ```
+
+
 
 
 
