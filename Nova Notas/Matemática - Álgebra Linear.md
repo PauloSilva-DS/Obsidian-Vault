@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  17.46
+Atualizado: 2025-03-11  17.56
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -77,7 +77,7 @@ O tamanho de um vetor pode ser obtido usando o atributo `size`:
 video.size
 ```
 
-O $i^{th}$ elemento (também chamado de entrada ou item) de um vetor \( \mathbf{v} \) é denotado por \( \mathbf{v}_i \).
+O $i^{th}$ elemento (também chamado de entrada ou item) de um vetor $\textbf{v}$  é denotado por $\textbf{v}_i$..
 
 
 
@@ -240,15 +240,15 @@ plt.show()
 
 ### **Norma**
 
-A norma de um vetor \( \mathbf{u} \), denotada por \( \|\mathbf{u}\| \), é uma medida do comprimento (também conhecida como magnitude) de \( \mathbf{u} \).
+A norma de um vetor $( \mathbf{u} )$, denotada por $( \|\mathbf{u}\| )$, é uma medida do comprimento (também conhecida como magnitude) de $( \mathbf{u} )$.
 
 Existem várias normas possíveis, mas a mais comum (e a única que discutiremos aqui) é a norma Euclidiana, que é definida como:
 
 \[
-\|\mathbf{u}\| = \sqrt{\sum_{i} \mathbf{u}_{i}^{2}}
+$\|\mathbf{u}\| = \sqrt{\sum_{i} \mathbf{u}_{i}^{2}}$$
 \]
 
-Isso é a raiz quadrada da soma dos quadrados de todos os componentes de \( \mathbf{u} \). Poderíamos implementar isso facilmente em Python puro, lembrando que \( \sqrt{x} = x^{\frac{1}{2}} \):
+Isso é a raiz quadrada da soma dos quadrados de todos os componentes de $( \mathbf{u} )$. Poderíamos implementar isso facilmente em Python puro, lembrando que $( \sqrt{x} = x^{\frac{1}{2}} )$:
 
 ```run-python
 def norma_euclidiana(u):
@@ -276,7 +276,7 @@ LA.norm(u)
 
 
 
-Vamos plotar um pequeno diagrama para confirmar que o comprimento do vetor \( \mathbf{u} \) é de fato \( \approx 5,4 \):
+Vamos plotar um pequeno diagrama para confirmar que o comprimento do vetor $( \mathbf{u} )$ é de fato $( \approx 5,4 )$:
 
 ```run-python
 radius = LA.norm(u)
@@ -324,11 +324,11 @@ plt.grid()
 plt.show()
 ```
 
-A adição de vetores é **comutativa**, o que significa que \( \mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u} \). Você pode ver isso na imagem anterior: seguir \( \mathbf{u} \) e depois \( \mathbf{v} \) leva ao mesmo ponto que seguir \( \mathbf{v} \) e depois \( \mathbf{u} \).
+A adição de vetores é **comutativa**, o que significa que $( \mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u} )$. Você pode ver isso na imagem anterior: seguir$( \mathbf{u} )$ e depois $( \mathbf{v} )$ leva ao mesmo ponto que seguir $( \mathbf{v} )$ e depois $( \mathbf{u} )$.
 
-A adição de vetores também é **associativa**, o que significa que \( \mathbf{u} + (\mathbf{v} + \mathbf{w}) = (\mathbf{u} + \mathbf{v}) + \mathbf{w} \).
+A adição de vetores também é **associativa**, o que significa que $( \mathbf{u} + (\mathbf{v} + \mathbf{w}) = (\mathbf{u} + \mathbf{v}) + \mathbf{w} )$.
 
-Se você tiver uma forma definida por um número de pontos (vetores) e adicionar um vetor \( \mathbf{v} \) a todos esses pontos, então toda a forma será deslocada por \( \mathbf{v} \). Isso é chamado de translação geométrica:
+Se você tiver uma forma definida por um número de pontos (vetores) e adicionar um vetor $( \mathbf{v}) a todos esses pontos, então toda a forma será deslocada por \( \mathbf{v} \). Isso é chamado de translação geométrica:
 
 ```run-python
 t1 = np.array([2, 0.25])
