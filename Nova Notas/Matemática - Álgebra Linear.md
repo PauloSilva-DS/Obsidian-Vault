@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  17.56
+Atualizado: 2025-03-11  18.07
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -328,7 +328,7 @@ A adição de vetores é **comutativa**, o que significa que $( \mathbf{u} + \ma
 
 A adição de vetores também é **associativa**, o que significa que $( \mathbf{u} + (\mathbf{v} + \mathbf{w}) = (\mathbf{u} + \mathbf{v}) + \mathbf{w} )$.
 
-Se você tiver uma forma definida por um número de pontos (vetores) e adicionar um vetor $( \mathbf{v}) a todos esses pontos, então toda a forma será deslocada por \( \mathbf{v} \). Isso é chamado de translação geométrica:
+Se você tiver uma forma definida por um número de pontos (vetores) e adicionar um vetor $( \mathbf{v})$ a todos esses pontos, então toda a forma será deslocada por $( \mathbf{v} )$. Isso é chamado de translação geométrica:
 
 ```run-python
 t1 = np.array([2, 0.25])
@@ -401,15 +401,24 @@ plt.show()
 
 Como você pode imaginar, dividir um vetor por um escalar é equivalente a multiplicar pelo seu inverso multiplicativo (recíproco):
 
-\[
+$$
+
 \frac{\mathbf{u}}{\lambda} = \frac{1}{\lambda} \times \mathbf{u}
-\]
+$$
 
-A multiplicação por escalar é **comutativa**: \( \lambda \times \mathbf{u} = \mathbf{u} \times \lambda \).
 
-Também é **associativa**: \( \lambda_1 \times (\lambda_2 \times \mathbf{u}) = (\lambda_1 \times \lambda_2) \times \mathbf{u} \).
 
-Finalmente, é **distributiva** sobre a adição de vetores: \( \lambda \times (\mathbf{u} + \mathbf{v}) = \lambda \times \mathbf{u} + \lambda \times \mathbf{v} \).
+A multiplicação por escalar é **comutativa**: $$( \lambda \times \mathbf{u} = \mathbf{u} \times \lambda).
+
+$$
+
+Também é **associativa**:$$ ( \lambda_1 \times (\lambda_2 \times \mathbf{u}) = (\lambda_1 \times \lambda_2) \times \mathbf{u} ).
+$$
+
+Finalmente, é **distributiva** sobre a adição de vetores:
+$$
+( \lambda \times (\mathbf{u} + \mathbf{v}) = \lambda \times \mathbf{u} + \lambda \times \mathbf{v} ).
+$$
 
 ---
 
@@ -417,7 +426,8 @@ Finalmente, é **distributiva** sobre a adição de vetores: \( \lambda \times (
 
 - Um **vetor nulo** é um vetor cheio de 0s.
 - Um **vetor unitário** é um vetor com norma igual a 1.
-- O **vetor normalizado** de um vetor não nulo \( \mathbf{v} \), denotado por \( \hat{\mathbf{v}} \), é o vetor unitário que aponta na mesma direção que \( \mathbf{v} \). Ele é igual a: \( \hat{\mathbf{v}} = \frac{\mathbf{v}}{\|\mathbf{v}\|} \).
+- O **vetor normalizado** de um vetor não nulo $( \mathbf{v}),$ denotado por $( \hat{\mathbf{v}} )$, é o vetor unitário que aponta na mesma direção que $( \mathbf{v}).$ Ele é igual a: $( \hat{\mathbf{v}} = \frac{\mathbf{v}}{\|\mathbf{v}\|}).$
+-
 
 ```run-python
 plt.gca().add_artist(plt.Circle((0, 0), 1, color='c'))
@@ -667,45 +677,53 @@ A[:, 2:3]  # colunas 3 a 4 (excluído): isso retorna a coluna 3 como uma matriz 
 
 Uma **matriz quadrada** é uma matriz que tem o mesmo número de linhas e colunas, por exemplo, uma matriz \( 3 \times 3 \):
 
-\[
+$$
+
 \begin{bmatrix}
 4 & 9 & 2 \\
 3 & 5 & 7 \\
 8 & 1 & 6
 \end{bmatrix}
-\]
+$$
+
 
 Uma **matriz triangular superior** é um tipo especial de matriz quadrada onde todos os elementos abaixo da diagonal principal (do canto superior esquerdo para o canto inferior direito) são zero, por exemplo:
 
-\[
+$$
+
 \begin{bmatrix}
 4 & 9 & 2 \\
 0 & 5 & 7 \\
 0 & 0 & 6
 \end{bmatrix}
-\]
+
+$$
 
 Da mesma forma, uma **matriz triangular inferior** é uma matriz quadrada onde todos os elementos acima da diagonal principal são zero, por exemplo:
 
-\[
+$$
+
 \begin{bmatrix}
 4 & 0 & 0 \\
 3 & 5 & 0 \\
 8 & 1 & 6
 \end{bmatrix}
-\]
+$$
+
 
 Uma **matriz triangular** é aquela que é triangular superior ou inferior.
 
 Uma matriz que é tanto triangular superior quanto inferior é chamada de **matriz diagonal**, por exemplo:
 
-\[
+$$
+
 \begin{bmatrix}
 4 & 0 & 0 \\
 0 & 5 & 0 \\
 0 & 0 & 6
 \end{bmatrix}
-\]
+$$
+
 
 Você pode construir uma matriz diagonal usando a função `diag` do NumPy:
 
@@ -721,7 +739,7 @@ D = np.array([
     [4, 5, 6],
     [7, 8, 9]
 ])
-np.diag(D)
+print(np.diag(D))
 ```
 
 Finalmente, a **matriz identidade** de tamanho \( n \), denotada por \( I_n \), é uma matriz diagonal de tamanho \( n \times n \) com 1s na diagonal principal, por exemplo \( I_3 \):
@@ -748,7 +766,8 @@ A matriz identidade é frequentemente denotada simplesmente por \( I \) (em vez 
 
 Se duas matrizes \( Q \) e \( R \) tiverem o mesmo tamanho \( m \times n \), elas podem ser somadas. A adição é realizada elemento por elemento: o resultado também é uma matriz \( m \times n \) \( S \) onde cada elemento é a soma dos elementos na posição correspondente:
 
-\[
+$$
+
 S_{i,j} = Q_{i,j} + R_{i,j}
 \]
 
@@ -761,7 +780,8 @@ Q_{31} + R_{31} & Q_{32} + R_{32} & Q_{33} + R_{33} & \cdots & Q_{3n} + R_{3n} \
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 Q_{m1} + R_{m1} & Q_{m2} + R_{m2} & Q_{m3} + R_{m3} & \cdots & Q_{mn} + R_{mn}
 \end{bmatrix}
-\]
+
+$$
 
 Por exemplo, vamos criar uma matriz \( 2 \times 3 \) \( B \) e calcular \( A + B \):
 
