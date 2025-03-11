@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  15.57
+Atualizado: 2025-03-11  16.03
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -83,7 +83,7 @@ O \( i^{ésimo} \) elemento (também chamado de entrada ou item) de um vetor \( 
 
 Observe que os índices em matemática geralmente começam em 1, mas na programação eles geralmente começam em 0. Portanto, para acessar o terceiro elemento de `video` programaticamente, escreveríamos:
 
-```python
+```run-python
 video[2]  # 3º elemento
 ```
 
@@ -93,7 +93,7 @@ video[2]  # 3º elemento
 
 Para plotar vetores, usaremos o `matplotlib`, então vamos começar importando-o (para detalhes sobre o `matplotlib`, confira o tutorial do `matplotlib`):
 
-```python
+```run-python
 import matplotlib.pyplot as plt
 ```
 
@@ -103,14 +103,14 @@ import matplotlib.pyplot as plt
 
 Vamos criar alguns vetores 2D muito simples para plotar:
 
-```python
+```run-python
 u = np.array([2, 5])
 v = np.array([3, 1])
 ```
 
 Esses vetores têm 2 elementos cada, então podem ser facilmente representados graficamente em um gráfico 2D, por exemplo, como pontos:
 
-```python
+```run-python
 x_coords, y_coords = zip(u, v)
 plt.scatter(x_coords, y_coords, color=["r","b"])
 plt.axis([0, 9, 0, 6])
@@ -120,7 +120,7 @@ plt.show()
 
 Os vetores também podem ser representados como setas. Vamos criar uma pequena função de conveniência para desenhar setas bonitas:
 
-```python
+```run-python
 def plot_vector2d(vector2d, origin=[0, 0], **options):
     return plt.arrow(origin[0], origin[1], vector2d[0], vector2d[1],
                      head_width=0.2, head_length=0.3, length_includes_head=True,
@@ -129,13 +129,14 @@ def plot_vector2d(vector2d, origin=[0, 0], **options):
 
 Agora vamos desenhar os vetores `u` e `v` como setas:
 
-```python
+```run-python
 plot_vector2d(u, color="r")
 plot_vector2d(v, color="b")
 plt.axis([0, 9, 0, 6])
 plt.grid()
 plt.show()
 ```
+
 
 ---
 
