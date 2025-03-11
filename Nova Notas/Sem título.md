@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  16.03
+Atualizado: 2025-03-11  16.16
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -144,21 +144,27 @@ plt.show()
 
 Plotar vetores 3D também é relativamente simples. Primeiro, vamos criar dois vetores 3D:
 
-```python
+```run-python
 a = np.array([1, 2, 8])
 b = np.array([5, 6, 3])
 ```
 
 Agora vamos plotá-los usando o `Axes3D` do `matplotlib`:
 
-```python
+```run-python
 subplot3d = plt.subplot(111, projection='3d')
 x_coords, y_coords, z_coords = zip(a, b)
 subplot3d.scatter(x_coords, y_coords, z_coords)
 subplot3d.set_zlim3d([0, 9])
 plt.show()
 ```
-
+```run-python
+subplot3d = plt.subplot(111, projection='3d')
+x_coords, y_coords, z_coords = zip(a,b)
+subplot3d.scatter(x_coords, y_coords, z_coords)
+subplot3d.set_zlim3d([0, 9])
+plt.show()
+```
 É um pouco difícil visualizar exatamente onde no espaço esses dois pontos estão, então vamos adicionar linhas verticais.
 
 Vamos criar uma pequena função de conveniência para plotar uma lista de vetores 3D com linhas verticais anexadas:
