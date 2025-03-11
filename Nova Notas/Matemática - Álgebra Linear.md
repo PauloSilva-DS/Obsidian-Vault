@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  17.05
+Atualizado: 2025-03-11  17.16
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -296,16 +296,17 @@ Parece correto!
 
 Vetores de mesmo tamanho podem ser somados. A adição é realizada _elemento por elemento_:
 
-```python
+```run-python
 print(" ", u)
 print("+", v)
 print("-"*10)
-u + v
+print(u + v)
 ```
+
 
 Vamos ver como a adição de vetores se parece graficamente:
 
-```python
+```run-python
 plot_vector2d(u, color="r")
 plot_vector2d(v, color="b")
 plot_vector2d(v, origin=u, color="b", linestyle="dotted")
@@ -328,7 +329,7 @@ A adição de vetores também é **associativa**, o que significa que \( \mathbf
 
 Se você tiver uma forma definida por um número de pontos (vetores) e adicionar um vetor \( \mathbf{v} \) a todos esses pontos, então toda a forma será deslocada por \( \mathbf{v} \). Isso é chamado de translação geométrica:
 
-```python
+```run-python
 t1 = np.array([2, 0.25])
 t2 = np.array([2.5, 3.5])
 t3 = np.array([1, 2])
@@ -365,14 +366,14 @@ Finalmente, subtrair um vetor é como adicionar o vetor oposto.
 
 Vetores podem ser multiplicados por escalares. Todos os elementos do vetor são multiplicados por esse número, por exemplo:
 
-```python
+```run-python
 print("1.5 *", u, "=")
-1.5 * u
+print(1.5 * u)
 ```
 
 Graficamente, a multiplicação por escalar resulta na mudança da escala de uma figura, daí o nome _escalar_. A distância da origem (o ponto nas coordenadas iguais a zero) também é multiplicada pelo escalar. Por exemplo, vamos aumentar a escala por um fator de k = 2,5:
 
-```python
+```run-python
 k = 2.5
 t1c = k * t1
 t2c = k * t2
@@ -417,7 +418,7 @@ Finalmente, é **distributiva** sobre a adição de vetores: \( \lambda \times (
 - Um **vetor unitário** é um vetor com norma igual a 1.
 - O **vetor normalizado** de um vetor não nulo \( \mathbf{v} \), denotado por \( \hat{\mathbf{v}} \), é o vetor unitário que aponta na mesma direção que \( \mathbf{v} \). Ele é igual a: \( \hat{\mathbf{v}} = \frac{\mathbf{v}}{\|\mathbf{v}\|} \).
 
-```python
+```run-python
 plt.gca().add_artist(plt.Circle((0, 0), 1, color='c'))
 plt.plot(0, 0, "ko")
 plot_vector2d(v / LA.norm(v), color="k", zorder=10)
@@ -454,7 +455,7 @@ Outra maneira de calcular o produto escalar é:
 
 O produto escalar é bastante simples de implementar:
 
-```python
+```run-python
 def dot_product(v1, v2):
     return sum(v1_i * v2_i for v1_i, v2_i in zip(v1, v2))
 
@@ -463,19 +464,19 @@ dot_product(u, v)
 
 Mas uma implementação muito mais eficiente é fornecida pelo NumPy com a função `np.dot()`:
 
-```python
+```run-python
 np.dot(u, v)
 ```
 
 Equivalentemente, você pode usar o método `dot` dos `ndarray`s:
 
-```python
+```run-python
 u.dot(v)
 ```
 
 **Cuidado:** o operador `*` realizará uma multiplicação elemento por elemento, **NÃO** um produto escalar:
 
-```python
+```run-python
 print(" ", u)
 print("* ", v, "(NÃO é um produto escalar)")
 print("-"*10)
@@ -504,7 +505,7 @@ Observe que se \( \mathbf{u} \cdot \mathbf{v} = 0 \), segue que \( \theta = \fra
 
 Vamos usar essa fórmula para calcular o ângulo entre \( \mathbf{u} \) e \( \mathbf{v} \) (em radianos):
 
-```python
+```run-python
 def vector_angle(u, v):
     cos_theta = u.dot(v) / LA.norm(u) / LA.norm(v)
     return np.arccos(cos_theta.clip(-1, 1))
@@ -532,7 +533,7 @@ O que é equivalente a:
 \text{proj}_{\mathbf{u}} \mathbf{v} = (\mathbf{v} \cdot \hat{\mathbf{u}}) \times \hat{\mathbf{u}}
 \]
 
-```python
+```run-python
 u_normalized = u / LA.norm(u)
 proj = v.dot(u_normalized) * u_normalized
 
@@ -577,7 +578,7 @@ As matrizes são convenientes e muito eficientes para realizar operações em mu
 
 Em Python, uma matriz pode ser representada de várias maneiras. A mais simples é apenas uma lista de listas do Python:
 
-```python
+```run-python
 [
     [10, 20, 30],
     [40, 50, 60]
@@ -586,7 +587,7 @@ Em Python, uma matriz pode ser representada de várias maneiras. A mais simples 
 
 Uma maneira muito mais eficiente é usar a biblioteca NumPy, que fornece implementações otimizadas de muitas operações matriciais:
 
-```python
+```run-python
 A = np.array([
     [10, 20, 30],
     [40, 50, 60]
@@ -607,13 +608,13 @@ linhas × colunas. Por exemplo, a matriz \( A \) acima é um exemplo de uma matr
 
 Para obter o tamanho de uma matriz no NumPy:
 
-```python
+```run-python
 A.shape
 ```
 
 **Cuidado:** o atributo `size` representa o número de elementos no `ndarray`, não o tamanho da matriz:
 
-```python
+```run-python
 A.size
 ```
 
@@ -636,25 +637,25 @@ x_{m,1} & x_{m,2} & x_{m,3} & \cdots & x_{m,n}
 
 No entanto, neste notebook, usaremos a notação \( X_{i,j} \), pois ela corresponde bem à notação do NumPy. Observe que, em matemática, os índices geralmente começam em 1, mas na programação eles geralmente começam em 0. Portanto, para acessar \( A_{2,3} \) programaticamente, precisamos escrever:
 
-```python
+```run-python
 A[1, 2]  # 2ª linha, 3ª coluna
 ```
 
 O vetor da \( i^{ésima} \) linha é às vezes denotado por \( M_i \) ou \( M_{i,*} \), mas novamente não há uma notação padrão, então as pessoas geralmente preferem definir seus próprios nomes, por exemplo: "seja \( x_i \) o vetor da \( i^{ésima} \) linha da matriz \( X \)." Usaremos \( M_{i,*} \) pelo mesmo motivo mencionado acima. Por exemplo, para acessar \( A_{2,*} \) (ou seja, o vetor da 2ª linha de \( A \)):
 
-```python
+```run-python
 A[1, :]  # vetor da 2ª linha (como um array 1D)
 ```
 
 Da mesma forma, o vetor da \( j^{ésima} \) coluna é às vezes denotado por \( M^j \) ou \( M_{*,j} \), mas não há uma notação padrão. Usaremos \( M_{*,j} \). Por exemplo, para acessar \( A_{*,3} \) (ou seja, o vetor da 3ª coluna de \( A \)):
 
-```python
+```run-python
 A[:, 2]  # vetor da 3ª coluna (como um array 1D)
 ```
 
 Observe que o resultado é na verdade um array NumPy unidimensional: não existe algo como um array unidimensional vertical ou horizontal. Se você precisar realmente representar um vetor linha como uma matriz de uma linha (ou seja, um array 2D do NumPy) ou um vetor coluna como uma matriz de uma coluna, então você precisa usar um slice em vez de um inteiro ao acessar a linha ou coluna, por exemplo:
 
-```python
+```run-python
 A[1:2, :]  # linhas 2 a 3 (excluído): isso retorna a linha 2 como uma matriz de uma linha
 A[:, 2:3]  # colunas 3 a 4 (excluído): isso retorna a coluna 3 como uma matriz de uma coluna
 ```
@@ -707,13 +708,13 @@ Uma matriz que é tanto triangular superior quanto inferior é chamada de **matr
 
 Você pode construir uma matriz diagonal usando a função `diag` do NumPy:
 
-```python
+```run-python
 np.diag([4, 5, 6])
 ```
 
 Se você passar uma matriz para a função `diag`, ela extrairá os valores da diagonal:
 
-```python
+```run-python
 D = np.array([
     [1, 2, 3],
     [4, 5, 6],
@@ -734,7 +735,7 @@ Finalmente, a **matriz identidade** de tamanho \( n \), denotada por \( I_n \), 
 
 A função `eye` do NumPy retorna a matriz identidade do tamanho desejado:
 
-```python
+```run-python
 np.eye(3)
 ```
 
@@ -763,7 +764,7 @@ Q_{m1} + R_{m1} & Q_{m2} + R_{m2} & Q_{m3} + R_{m3} & \cdots & Q_{mn} + R_{mn}
 
 Por exemplo, vamos criar uma matriz \( 2 \times 3 \) \( B \) e calcular \( A + B \):
 
-```python
+```run-python
 B = np.array([
     [1, 2, 3],
     [4, 5, 6]
@@ -777,13 +778,13 @@ A + B
 
 A adição é comutativa, o que significa que \( A + B = B + A \):
 
-```python
+```run-python
 B + A
 ```
 
 Também é associativa, o que significa que \( A + (B + C) = (A + B) + C \):
 
-```python
+```run-python
 C = np.array([
     [100, 200, 300],
     [400, 500, 600]
@@ -818,13 +819,13 @@ Uma maneira mais concisa de escrever isso é:
 
 No NumPy, basta usar o operador `*` para multiplicar uma matriz por um escalar. Por exemplo:
 
-```python
+```run-python
 2 * A
 ```
 
 A multiplicação por escalar também é definida no lado direito e dá o mesmo resultado: \( M\lambda = \lambda M \). Por exemplo:
 
-```python
+```run-python
 A * 2
 ```
 
@@ -832,7 +833,7 @@ Isso torna a multiplicação por escalar **comutativa**.
 
 Também é **associativa**, o que significa que \( \alpha (\beta M) = (\alpha \times \beta)M \), onde \( \alpha \) e \( \beta \) são escalares. Por exemplo:
 
-```python
+```run-python
 2 * (3 * A)
 
 (2 * 3) * A
@@ -840,7 +841,7 @@ Também é **associativa**, o que significa que \( \alpha (\beta M) = (\alpha \t
 
 Finalmente, é **distributiva** sobre a adição de matrizes, o que significa que \( \lambda(Q + R) = \lambda Q + \lambda R \):
 
-```python
+```run-python
 2 * (A + B)
 
 2 * A + 2 * B
@@ -890,26 +891,26 @@ Q_{m,*} \cdot R_{*,1} & Q_{m,*} \cdot R_{*,2} & \cdots & Q_{m,*} \cdot R_{*,q}
 
 Vamos multiplicar duas matrizes no NumPy, usando a função `np.matmul()`:
 
-```python
+```run-python
 E = np.matmul(A, D)
 E
 ```
 
 O Python 3.5 introduziu o operador infixo `@` para multiplicação de matrizes, e o NumPy 1.10 adicionou suporte para ele. `A @ D` é equivalente a `np.matmul(A, D)`:
 
-```python
+```run-python
 A @ D
 ```
 
 O operador `@` também funciona para vetores. `u @ v` calcula o produto escalar de `u` e `v`:
 
-```python
+```run-python
 u @ v
 ```
 
 Vamos verificar esse resultado olhando para um elemento, só para ter certeza. Para calcular \( E_{2,3} \), por exemplo, precisamos multiplicar os elementos na 2ª linha de \( A \) pelos elementos na 3ª coluna de \( D \) e somar esses produtos:
 
-```python
+```run-python
 40*5 + 50*17 + 60*31
 
 E[1, 2]  # linha 2, coluna 3
@@ -919,7 +920,7 @@ Parece bom! Você pode verificar os outros elementos até se acostumar com o alg
 
 Multiplicamos uma matriz \( 2 \times 3 \) por uma matriz \( 3 \times 4 \), então o resultado é uma matriz \( 2 \times 4 \). O número de colunas da primeira matriz deve ser igual ao número de linhas da segunda matriz. Se tentarmos multiplicar \( D \) por \( A \), obteremos um erro porque \( D \) tem 4 colunas enquanto \( A \) tem 2 linhas:
 
-```python
+```run-python
 try:
     D @ A
 except ValueError as e:
@@ -930,7 +931,7 @@ Isso ilustra o fato de que a multiplicação de matrizes **NÃO** é comutativa:
 
 Na verdade, \( QR \) e \( RQ \) são ambos definidos apenas se \( Q \) tiver tamanho \( m \times n \) e \( R \) tiver tamanho \( n \times m \). Vamos ver um exemplo onde ambos são definidos e mostrar que eles (em geral) **NÃO** são iguais:
 
-```python
+```run-python
 F = np.array([
     [4, 1],
     [9, 3]
@@ -943,7 +944,7 @@ F @ A
 
 Por outro lado, a **multiplicação de matrizes é associativa**, o que significa que \( Q(RS) = (QR)S \). Vamos criar uma matriz \( 4 \times 5 \) \( G \) para ilustrar isso:
 
-```python
+```run-python
 G = np.array([
     [8, 7, 4, 2, 5],
     [2, 5, 1, 0, 5],
@@ -958,7 +959,7 @@ A @ (D @ G)  # A(DG)
 
 Também é **distributiva** sobre a adição de matrizes, o que significa que \( (Q + R)S = QS + RS \). Por exemplo:
 
-```python
+```run-python
 (A + B) @ D
 
 A @ D + B @ D
@@ -978,7 +979,7 @@ MI = IM = M
 
 Por exemplo:
 
-```python
+```run-python
 A @ np.eye(3)
 
 np.eye(2) @ A
@@ -986,7 +987,7 @@ np.eye(2) @ A
 
 **Cuidado:** O operador `*` do NumPy realiza multiplicação elemento por elemento, **NÃO** uma multiplicação de matrizes:
 
-```python
+```run-python
 A * B  # NÃO é uma multiplicação de matrizes
 ```
 
@@ -1017,7 +1018,7 @@ Obviamente, se \( M \) é uma matriz \( m \times n \), então \( M^T \) é uma m
 
 No NumPy, a transposta de uma matriz pode ser obtida simplesmente usando o atributo `T`:
 
-```python
+```run-python
 A
 
 A.T
@@ -1025,13 +1026,13 @@ A.T
 
 Como você pode esperar, transpor uma matriz duas vezes retorna a matriz original:
 
-```python
+```run-python
 A.T.T
 ```
 
 A transposição é distributiva sobre a adição de matrizes, o que significa que \( (Q + R)^T = Q^T + R^T \). Por exemplo:
 
-```python
+```run-python
 (A + B).T
 
 A.T + B.T
@@ -1039,7 +1040,7 @@ A.T + B.T
 
 Além disso, \( (Q \cdot R)^T = R^T \cdot Q^T \). Observe que a ordem é invertida. Por exemplo:
 
-```python
+```run-python
 (A @ D).T
 
 D.T @ A.T
@@ -1062,13 +1063,13 @@ Uma **matriz simétrica** é definida como uma matriz que é igual à sua transp
 
 O produto de uma matriz por sua transposta é sempre uma matriz simétrica, por exemplo:
 
-```python
+```run-python
 D @ D.T
 ```
 
 Como mencionamos anteriormente, no NumPy (ao contrário do Matlab, por exemplo), 1D realmente significa 1D: não existe algo como um array 1D vertical ou horizontal. Portanto, você não deve se surpreender ao ver que transpor um array 1D não faz nada:
 
-```python
+```run-python
 u
 
 u.T
@@ -1076,26 +1077,26 @@ u.T
 
 Queremos converter `u` em um vetor linha antes de transpor. Existem algumas maneiras de fazer isso:
 
-```python
+```run-python
 u_row = np.array([u])
 u_row
 ```
 
 Observe os colchetes extras: isso é um array 2D com apenas uma linha (ou seja, uma matriz \( 1 \times 2 \)). Em outras palavras, é realmente um vetor linha.
 
-```python
+```run-python
 u[np.newaxis, :]
 ```
 
 Isso é bastante explícito: estamos pedindo um novo eixo vertical, mantendo os dados existentes como o eixo horizontal.
 
-```python
+```run-python
 u[np.newaxis]
 ```
 
 Isso é equivalente, mas um pouco menos explícito.
 
-```python
+```run-python
 u[None]
 ```
 
@@ -1103,7 +1104,7 @@ Essa é a versão mais curta, mas você provavelmente deve evitá-la porque não
 
 Agora vamos transpor nosso vetor linha:
 
-```python
+```run-python
 u_row.T
 ```
 
@@ -1111,7 +1112,7 @@ u_row.T
 
 Em vez de criar um vetor linha e depois transpô-lo, também é possível converter um array 1D diretamente em um vetor coluna:
 
-```python
+```run-python
 u[:, np.newaxis]
 ```
 
@@ -1121,7 +1122,7 @@ u[:, np.newaxis]
 
 Já vimos que vetores podem ser representados como pontos ou setas em um espaço N-dimensional. Existe uma boa representação gráfica de matrizes? Bem, você pode simplesmente ver uma matriz como uma lista de vetores, então plotar uma matriz resulta em muitos pontos ou setas. Por exemplo, vamos criar uma matriz \( 2 \times 4 \) \( P \) e plotá-la como pontos:
 
-```python
+```run-python
 P = np.array([
     [3.0, 4.0, 1.0, 4.6],
     [0.2, 3.5, 2.0, 0.5]
@@ -1139,7 +1140,7 @@ Claro, também poderíamos ter armazenado os mesmos 4 vetores como vetores linha
 
 Como os vetores são ordenados, você pode ver a matriz como um caminho e representá-la com pontos conectados:
 
-```python
+```run-python
 plt.plot(x_coords_P, y_coords_P, "bo")
 plt.plot(x_coords_P, y_coords_P, "b--")
 plt.axis([0, 5, 0, 4])
@@ -1150,7 +1151,7 @@ plt.show()
 
 Ou você pode representá-la como um polígono: a classe `Polygon` do `matplotlib` espera um array NumPy \( n \times 2 \), não um array \( 2 \times n \), então precisamos apenas passar \( P^T \):
 
-```python
+```run-python
 from matplotlib.patches import Polygon
 plt.gca().add_artist(Polygon(P.T))
 plt.axis([0, 5, 0, 4])
@@ -1173,7 +1174,7 @@ Da mesma forma, as operações matriciais têm aplicações geométricas muito �
 
 Primeiro, adicionar duas matrizes é equivalente a adicionar todos os seus vetores. Por exemplo, vamos criar uma matriz \( 2 \times 4 \) \( H \) e adicioná-la a \( P \), e observar o resultado:
 
-```python
+```run-python
 H = np.array([
     [0.5, -0.2, 0.2, -0.1],
     [0.4, 0.4, 1.5, 0.6]
@@ -1201,7 +1202,7 @@ plt.show()
 
 Se adicionarmos uma matriz cheia de vetores idênticos, obteremos uma simples translação geométrica:
 
-```python
+```run-python
 H2 = np.array([
     [-0.5, -0.5, -0.5, -0.5],
     [0.4, 0.4, 0.4, 0.4]
@@ -1222,7 +1223,7 @@ plt.show()
 
 Embora as matrizes só possam ser somadas se tiverem o mesmo tamanho, o NumPy permite adicionar um vetor linha ou coluna a uma matriz: isso é chamado de **broadcasting** e é explicado em mais detalhes no tutorial do NumPy. Poderíamos ter obtido o mesmo resultado acima com:
 
-```python
+```run-python
 P + [[-0.5], [0.4]]  # mesmo que P + H2, graças ao broadcasting do NumPy
 ```
 
@@ -1232,7 +1233,7 @@ P + [[-0.5], [0.4]]  # mesmo que P + H2, graças ao broadcasting do NumPy
 
 Multiplicar uma matriz por um escalar resulta em todos os seus vetores sendo multiplicados por esse escalar, então, sem surpresa, o resultado geométrico é um redimensionamento de toda a figura. Por exemplo, vamos redimensionar nosso polígono por um fator de 60% (zoom out, centrado na origem):
 
-```python
+```run-python
 def plot_transformation(P_before, P_after, text_before, text_after, axis=[0, 5, 0, 4], arrows=True):
     if arrows:
         for vector_before, vector_after in zip(P_before.T, P_after.T):
@@ -1261,19 +1262,19 @@ A multiplicação de matrizes é mais complexa de visualizar, mas também é a f
 
 Vamos começar de forma simples, definindo uma matriz \( 1 \times 2 \) \( U = [1 \quad 0] \). Esse vetor linha é apenas o vetor unitário horizontal.
 
-```python
+```run-python
 U = np.array([[1, 0]])
 ```
 
 Agora vamos olhar para o produto escalar \( U \cdot P \):
 
-```python
+```run-python
 U @ P
 ```
 
 Essas são as coordenadas horizontais dos vetores em \( P \). Em outras palavras, acabamos de projetar \( P \) no eixo horizontal:
 
-```python
+```run-python
 def plot_projection(U, P):
     U_P = U @ P
     axis_end = 100 * U
@@ -1294,7 +1295,7 @@ plot_projection(U, P)
 
 Podemos realmente projetar em qualquer outro eixo, basta substituir \( U \) por qualquer outro vetor unitário. Por exemplo, vamos projetar no eixo que está a um ângulo de \( 30^\circ \) acima do eixo horizontal:
 
-```python
+```run-python
 angle30 = 30 * np.pi / 180  # ângulo em radianos
 U_30 = np.array([[np.cos(angle30), np.sin(angle30)]])
 
@@ -1317,7 +1318,7 @@ V =
 \end{bmatrix}
 \]
 
-```python
+```run-python
 angle120 = 120 * np.pi / 180
 V = np.array([
     [np.cos(angle30), np.sin(angle30)],
@@ -1329,13 +1330,13 @@ V
 
 Vamos olhar para o produto \( VP \):
 
-```python
+```run-python
 V @ P
 ```
 
 A primeira linha é igual a \( V_{1,*}P \), que são as coordenadas da projeção de \( P \) no eixo de \( 30^\circ \), como vimos acima. A segunda linha é \( V_{2,*}P \), que são as coordenadas da projeção de \( P \) no eixo de \( 120^\circ \). Então, basicamente, obtivemos as coordenadas de \( P \) após girar os eixos horizontal e vertical em \( 30^\circ \) (ou equivalentemente, após girar o polígono em \(-30^\circ\) em torno da origem)! Vamos plotar \( VP \) para ver isso:
 
-```python
+```run-python
 P_rotated = V @ P
 plot_transformation(P, P_rotated, "$P$", "$VP$", [-2, 6, -2, 4], arrows=True)
 plt.show()
@@ -1392,7 +1393,7 @@ FG = [f(\mathbf{u}_1) \quad f(\mathbf{u}_2) \quad \cdots \quad f(\mathbf{u}_q)]
 
 Para resumir, a matriz no lado esquerdo de um produto escalar especifica qual transformação linear aplicar aos vetores do lado direito. Já mostramos que isso pode ser usado para realizar projeções e rotações, mas qualquer outra transformação linear é possível. Por exemplo, aqui está uma transformação conhecida como **mapeamento de cisalhamento**:
 
-```python
+```run-python
 F_shear = np.array([
     [1, 1.5],
     [0, 1]
@@ -1404,7 +1405,7 @@ plt.show()
 
 Vamos ver como essa transformação afeta o quadrado unitário:
 
-```python
+```run-python
 Square = np.array([
     [0, 0, 1, 1],
     [0, 1, 1, 0]
@@ -1416,7 +1417,7 @@ plt.show()
 
 Agora vamos ver um **mapeamento de compressão**:
 
-```python
+```run-python
 F_squeeze = np.array([
     [1.4, 0],
     [0, 1/1.4]
@@ -1428,14 +1429,14 @@ plt.show()
 
 O efeito no quadrado unitário é:
 
-```python
+```run-python
 plot_transformation(Square, F_squeeze @ Square, "$Square$", "$F_{\text{squeeze}} Square$", axis=[0, 1.8, 0, 1.2])
 plt.show()
 ```
 
 Vamos mostrar mais uma – reflexão através do eixo horizontal:
 
-```python
+```run-python
 F_reflect = np.array([
     [1, 0],
     [0, -1]
@@ -1453,7 +1454,7 @@ Agora que entendemos que uma matriz pode representar qualquer transformação li
 
 Por exemplo, a rotação, o mapeamento de cisalhamento e o mapeamento de compressão acima têm transformações inversas. Vamos demonstrar isso no mapeamento de cisalhamento:
 
-```python
+```run-python
 F_inv_shear = np.array([
     [1, -1.5],
     [0, 1]
@@ -1470,14 +1471,14 @@ Aplicamos um mapeamento de cisalhamento em \( P \), como fizemos antes, mas ent�
 
 Definimos a matriz inversa \( F^{-1}_{\text{shear}} \) manualmente desta vez, mas o NumPy fornece uma função `inv` para calcular a inversa de uma matriz, então poderíamos ter escrito:
 
-```python
+```run-python
 F_inv_shear = LA.inv(F_shear)
 F_inv_shear
 ```
 
 Apenas matrizes quadradas podem ser invertidas. Isso faz sentido quando você pensa sobre isso: se você tiver uma transformação que reduz o número de dimensões, então algumas informações são perdidas e não há como recuperá-las. Por exemplo, digamos que você use uma matriz \( 2 \times 3 \) para projetar um objeto 3D em um plano. O resultado pode parecer com isso:
 
-```python
+```run-python
 plt.plot([0, 0, 1, 1, 0, 0.1, 0.1, 0, 0.1, 1.1, 1.0, 1.1, 1.1, 1.0, 1.1, 0.1],
          [0, 1, 1, 0, 0, 0.1, 1.1, 1.0, 1.1, 1.1, 1.0, 1.1, 0.1, 0, 0.1, 0.1],
          "r-")
@@ -1491,7 +1492,7 @@ Olhando para essa imagem, é impossível dizer se isso é a projeção de um cub
 
 Mesmo matrizes de transformação quadradas podem perder informações. Por exemplo, considere esta matriz de transformação:
 
-```python
+```run-python
 F_project = np.array([
     [1, 0],
     [0, 0]
@@ -1503,7 +1504,7 @@ plt.show()
 
 Essa matriz de transformação realiza uma projeção no eixo horizontal. Nosso polígono é completamente achatado, então algumas informações são totalmente perdidas, e é impossível voltar ao polígono original usando uma transformação linear. Em outras palavras, \( F_{\text{project}} \) não tem inversa. Tal matriz quadrada que não pode ser invertida é chamada de **matriz singular** (também conhecida como matriz degenerada). Se pedirmos ao NumPy para calcular sua inversa, ele levantará uma exceção:
 
-```python
+```run-python
 try:
     LA.inv(F_project)
 except LA.LinAlgError as e:
@@ -1512,7 +1513,7 @@ except LA.LinAlgError as e:
 
 Aqui está outro exemplo de uma matriz singular. Esta realiza uma projeção no eixo a um ângulo de \( 30^\circ \) acima do eixo horizontal:
 
-```python
+```run-python
 angle30 = 30 * np.pi / 180
 F_project_30 = np.array([
     [np.cos(angle30)**2, np.sin(2*angle30)/2],
@@ -1525,7 +1526,7 @@ plt.show()
 
 Mas desta vez, devido a erros de arredondamento de ponto flutuante, o NumPy consegue calcular uma inversa (observe como os elementos são grandes, no entanto):
 
-```python
+```run-python
 LA.inv(F_project_30)
 ```
 
@@ -1537,7 +1538,7 @@ M \cdot M^{-1} = M^{-1} \cdot M = I
 
 Isso faz sentido, já que fazer uma transformação linear seguida pela transformação inversa resulta em nenhuma mudança.
 
-```python
+```run-python
 F_shear @ LA.inv(F_shear)
 ```
 
@@ -1547,7 +1548,7 @@ Outra maneira de expressar isso é que a inversa da inversa de uma matriz \( M \
 ((M)^{-1})^{-1} = M
 \]
 
-```python
+```run-python
 LA.inv(LA.inv(F_shear))
 ```
 
@@ -1561,7 +1562,7 @@ Assim que você entende a interpretação geométrica das matrizes como transfor
 
 Uma matriz que é sua própria inversa é chamada de **involução**. Os exemplos mais simples são matrizes de reflexão, ou uma rotação de \( 180^\circ \), mas também existem involuções mais complexas, por exemplo, imagine uma transformação que comprime horizontalmente, depois reflete sobre o eixo vertical e finalmente gira \( 90^\circ \) no sentido horário. Pegue um guardanapo e tente fazer isso duas vezes: você acabará na posição original. Aqui está a matriz involutória correspondente:
 
-```python
+```run-python
 F_involution = np.array([
     [0, -2],
     [-1/2, 0]
@@ -1585,7 +1586,7 @@ H \cdot H^T = H^T \cdot H = I
 
 Ela corresponde a uma transformação que preserva distâncias, como rotações e reflexões, e combinações dessas, mas não redimensionamento, cisalhamento ou compressão. Vamos verificar que \( F_{\text{reflect}} \) é de fato ortogonal:
 
-```python
+```run-python
 F_reflect @ F_reflect.T
 ```
 
@@ -1649,7 +1650,7 @@ Agora podemos calcular o resultado final:
 
 Para obter o determinante de uma matriz, você pode chamar a função `det` do NumPy no módulo `numpy.linalg`:
 
-```python
+```run-python
 M = np.array([
     [1, 2, 3],
     [4, 5, 6],
@@ -1663,19 +1664,19 @@ Um dos principais usos do determinante é determinar se uma matriz quadrada pode
 
 Por exemplo, vamos calcular o determinante para as matrizes \( F_{\text{project}} \), \( F_{\text{project\_30}} \) e \( F_{\text{shear}} \) que definimos anteriormente:
 
-```python
+```run-python
 LA.det(F_project)
 ```
 
 Isso mesmo, \( F_{\text{project}} \) é singular, como vimos anteriormente.
 
-```python
+```run-python
 LA.det(F_project_30)
 ```
 
 Esse determinante está suspeitamente próximo de 0: ele realmente deveria ser 0, mas não é devido a pequenos erros de ponto flutuante. A matriz é na verdade singular.
 
-```python
+```run-python
 LA.det(F_shear)
 ```
 
@@ -1683,7 +1684,7 @@ Perfeito! Essa matriz pode ser invertida, como vimos anteriormente. Uau, a matem
 
 O determinante também pode ser usado para medir o quanto uma transformação linear afeta as áreas de superfície: por exemplo, as matrizes de projeção \( F_{\text{project}} \) e \( F_{\text{project\_30}} \) achatam completamente o polígono \( P \), até que sua área seja zero. É por isso que o determinante dessas matrizes é 0. O mapeamento de cisalhamento modificou a forma do polígono, mas não afetou sua área de superfície, e é por isso que o determinante é 1. Você pode tentar calcular o determinante de uma matriz de rotação e também deve encontrar 1. E quanto a uma matriz de redimensionamento? Vamos ver:
 
-```python
+```run-python
 F_scale = np.array([
     [0.5, 0],
     [0, 0.5]
@@ -1695,7 +1696,7 @@ plt.show()
 
 Redimensionamos o polígono por um fator de 1/2 em ambos os eixos vertical e horizontal, então a área de superfície do polígono resultante é \( 1/4 \) da área do polígono original. Vamos calcular o determinante e verificar isso:
 
-```python
+```run-python
 LA.det(F_scale)
 ```
 
@@ -1703,7 +1704,7 @@ Correto!
 
 O determinante pode realmente ser negativo, quando a transformação resulta em uma versão "invertida" do polígono original (por exemplo, uma luva para a mão esquerda se torna uma luva para a mão direita). Por exemplo, o determinante da matriz \( F_{\text{reflect}} \) é -1 porque a área de superfície é preservada, mas o polígono é invertido:
 
-```python
+```run-python
 LA.det(F_reflect)
 ```
 
@@ -1713,13 +1714,13 @@ LA.det(F_reflect)
 
 Várias transformações lineares podem ser encadeadas simplesmente realizando múltiplos produtos escalares em sequência. Por exemplo, para realizar um mapeamento de compressão seguido por um mapeamento de cisalhamento, basta escrever:
 
-```python
+```run-python
 P_squeezed_then_sheared = F_shear @ (F_squeeze @ P)
 ```
 
 Como o produto escalar é associativo, o seguinte código é equivalente:
 
-```python
+```run-python
 P_squeezed_then_sheared = F_shear @ F_squeeze @ P
 ```
 
@@ -1727,7 +1728,7 @@ Observe que a ordem das transformações é o inverso da ordem do produto escala
 
 Se formos realizar essa composição de transformações lineares mais de uma vez, podemos salvar a matriz de composição assim:
 
-```python
+```run-python
 F_squeeze_then_shear = F_shear @ F_squeeze
 P_squeezed_then_sheared = F_squeeze_then_shear @ P
 ```
@@ -1742,7 +1743,7 @@ E se você quiser realizar o inverso dessa dupla transformação? Bem, se você 
 
 E no NumPy:
 
-```python
+```run-python
 LA.inv(F_shear @ F_squeeze) == LA.inv(F_squeeze) @ LA.inv(F_shear)
 ```
 
@@ -1762,21 +1763,21 @@ M = U \cdot \Sigma \cdot V^T
 
 Por exemplo, vamos decompor a transformação de cisalhamento:
 
-```python
+```run-python
 U, S_diag, V_T = LA.svd(F_shear)  # nota: no Python 3, você pode renomear S_diag para Σ_diag
 S_diag
 ```
 
 Observe que isso é apenas um array 1D contendo os valores diagonais de \( \Sigma \). Para obter a matriz \( \Sigma \) real, podemos usar a função `diag` do NumPy:
 
-```python
+```run-python
 S = np.diag(S_diag)
 S
 ```
 
 Agora vamos verificar que \( U \cdot \Sigma \cdot V^T \) é de fato igual a \( F_{\text{shear}} \):
 
-```python
+```run-python
 U @ np.diag(S_diag) @ V_T
 
 F_shear
@@ -1784,21 +1785,21 @@ F_shear
 
 Funcionou perfeitamente. Vamos aplicar essas transformações uma por uma (em ordem inversa) no quadrado unitário para entender o que está acontecendo. Primeiro, vamos aplicar a primeira rotação \( V^T \):
 
-```python
+```run-python
 plot_transformation(Square, V_T @ Square, "$Square$", r"$V^T \cdot Square$", axis=[-0.5, 3.5, -1.5, 1.5])
 plt.show()
 ```
 
 Agora vamos redimensionar ao longo dos eixos vertical e horizontal usando \( \Sigma \):
 
-```python
+```run-python
 plot_transformation(V_T @ Square, S @ V_T @ Square, r"$V^T \cdot Square$", r"$\Sigma \cdot V^T \cdot Square$", axis=[-0.5, 3.5, -1.5, 1.5])
 plt.show()
 ```
 
 Finalmente, aplicamos a segunda rotação \( U \):
 
-```python
+```run-python
 plot_transformation(S @ V_T @ Square, U @ S @ V_T @ Square, r"$\Sigma \cdot V^T \cdot Square$", r"$U \cdot \Sigma \cdot V^T \cdot Square$", axis=[-0.5, 3.5, -1.5, 1.5])
 plt.show()
 ```
@@ -1825,7 +1826,7 @@ No entanto, matrizes de rotação não têm autovetores (exceto se o ângulo de 
 
 A função `eig` do NumPy retorna a lista de autovetores unitários e seus autovalores correspondentes para qualquer matriz quadrada. Vamos ver os autovetores e autovalores da matriz de compressão \( F_{\text{squeeze}} \):
 
-```python
+```run-python
 eigenvalues, eigenvectors = LA.eig(F_squeeze)
 eigenvalues  # [λ0, λ1, …]
 
@@ -1834,7 +1835,7 @@ eigenvectors  # [v0, v1, …]
 
 De fato, os vetores horizontais são esticados por um fator de 1,4, e os vetores verticais são comprimidos por um fator de 1/1,4=0,714..., então tudo bem. Vamos ver a matriz de cisalhamento \( F_{\text{shear}} \):
 
-```python
+```run-python
 eigenvalues2, eigenvectors2 = LA.eig(F_shear)
 eigenvalues2  # [λ0, λ1, …]
 
@@ -1849,7 +1850,7 @@ Espere, o quê!? Esperávamos apenas um autovetor unitário, não dois. O segund
 
 O traço de uma matriz quadrada \( M \), denotado por \( \text{tr}(M) \), é a soma dos valores em sua diagonal principal. Por exemplo:
 
-```python
+```run-python
 D = np.array([
     [100, 200, 300],
     [10, 20, 30],
@@ -1868,7 +1869,7 @@ O traço não tem uma interpretação geométrica simples (em geral), mas tem v�
 
 No entanto, ele tem uma interpretação geométrica útil no caso de matrizes de projeção (como \( F_{\text{project}} \) que discutimos anteriormente): ele corresponde ao número de dimensões após a projeção. Por exemplo:
 
-```python
+```run-python
 F_project.trace()
 ```
 
