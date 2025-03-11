@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  16.24
+Atualizado: 2025-03-11  16.35
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -147,7 +147,6 @@ Plotar vetores 3D também é relativamente simples. Primeiro, vamos criar dois v
 ```run-python
 a = np.array([1, 2, 8])
 b = np.array([5, 6, 3])
-c = np.array([2, 3, 4])
 
 
 ```
@@ -156,11 +155,15 @@ Agora vamos plotá-los usando o `Axes3D` do `matplotlib`:
 
 ```run-python
 subplot3d = plt.subplot(111, projection='3d')
-x_coords, y_coords, z_coords = zip(a, b)
+x_coords, y_coords, z_coords = zip(a,b)
 subplot3d.scatter(x_coords, y_coords, z_coords)
 subplot3d.set_zlim3d([0, 9])
 plt.show()
+
 ```
+
+
+
 ```run-python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -189,7 +192,7 @@ plt.show()
 
 Vamos criar uma pequena função de conveniência para plotar uma lista de vetores 3D com linhas verticais anexadas:
 
-```python
+```run-python
 def plot_vectors3d(ax, vectors3d, z0, **options):
     for v in vectors3d:
         x, y, z = v
@@ -202,6 +205,7 @@ subplot3d.set_zlim([0, 9])
 plot_vectors3d(subplot3d, [a, b], 0, color=("r","b"))
 plt.show()
 ```
+
 
 ---
 
