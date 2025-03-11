@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  17.36
+Atualizado: 2025-03-11  17.46
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -77,7 +77,7 @@ O tamanho de um vetor pode ser obtido usando o atributo `size`:
 video.size
 ```
 
-O $$\( i^{ésimo} \) elemento/ (também chamado de entrada ou item) de um vetor \( \mathbf{v} \) é denotado por \( \mathbf{v}_i \). $$\( i^{ésimo} \) elemento (também chamado de entrada ou item) de um vetor \( \mathbf{v} \) é denotado por \( \mathbf{v}_i \).
+O $i^{th}$ elemento (também chamado de entrada ou item) de um vetor \( \mathbf{v} \) é denotado por \( \mathbf{v}_i \).
 
 
 
@@ -154,7 +154,7 @@ b = np.array([5, 6, 3])
 Agora vamos plotá-los usando o `Axes3D` do `matplotlib`:
 
 ```run-python
-from mpl_toolkits.mplot3d import Axes3D
+
 subplot3d = plt.subplot(111, projection='3d')
 x_coords, y_coords, z_coords = zip(a,b)
 subplot3d.scatter(x_coords, y_coords, z_coords)
