@@ -2,9 +2,9 @@
 tags:
   - estudo
   - python
-  - machineLearning
+  - AprendizadoMaquina
 Completo: false
-Atualizado: 2025-03-07  15.08
+Atualizado: 2025-03-11  15.34
 Criado: 2025-03-07  15.07
 ---
 [[Aprendizado de máquina]]

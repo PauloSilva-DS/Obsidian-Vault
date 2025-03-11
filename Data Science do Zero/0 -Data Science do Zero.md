@@ -1,10 +1,10 @@
 ---
-Atualizado: 2025-03-07  14.50
+Atualizado: 2025-03-11  15.33
 Criado: 2025-02-12  16.25
 ---
 #dataScienceZero #estudo #python 
 
-![[Data_Science_from_Scratch_-_Joel_Grus.pdf#page=1&rect=1,103,610,794|Data_Science_from_Scratch_-_Joel_Grus, p.1]]
+![[Data_Science_from_Scratch_-_Joel_Grus.pdf#page=1&rect=1,103,610,794|Data_Science_from_Scratch_-_Joel_Grus, p.1|250]]
 
 
 ```ad-summary
