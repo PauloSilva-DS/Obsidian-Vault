@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b62dec7d9169256d",
+            "id": "678b6a1911995f88",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Science do Zero/4-Álgebra Linear.md",
+                "file": "Nova Notas/Sem título.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4-Álgebra Linear"
+              "title": "Sem título"
             }
           }
         ],
@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 257.5
+    "width": 449.5
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -215,8 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 664.5,
-    "collapsed": true
+    "width": 664.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,19 +241,20 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "active": "b62dec7d9169256d",
+  "active": "678b6a1911995f88",
   "lastOpenFiles": [
+    "Source Material/Imagens/Pasted image 20250311154341.png",
+    "Data Science do Zero/4-Álgebra Linear.md",
+    "Nova Notas/Sem título.md",
+    "Source Material/pdf/temp5668552431312359342.PDF",
     "Source Material/pdf/temp5945610998191025736.PDF",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
     "Templates/DataScience.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
-    "Data Science do Zero/4-Álgebra Linear.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
     "Sem título.md",
-    "Source Material/pdf/temp5668552431312359342.PDF",
-    "Nova Notas/Sem título.md",
     "Source Material/Imagens/Pasted image 20250310150827.png",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina (pss's conflicted copy 2025-03-10).md",
     "Nova Notas/Aprendizado de máquina.md",
@@ -281,7 +281,6 @@
     "Clippings/I Did a 2-Minute Plank Every Day for 31 Days—Here’s What Happened.md",
     "Clippings/Como desinstalar o WPS Office da Kingsoft um guia passo a passo.md",
     "Clippings",
-    "Source Material/pdf/PracticalStatisticsforDataScientists50EssentialCon_241218_064829.pdf",
     "Source Material/Imagens/Pasted image 20250219154846.png",
     "Source Material/Imagens/Pasted image 20250219154447.png",
     "Pasted image 20250218110522.png",
