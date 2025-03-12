@@ -1,14 +1,14 @@
 {
-  "snippets_file": "pyt : ```python$nl$$end$$nl$```\n",
+  "snippets_file": "pyt : ```run-python$nl$$end$$nl$```\n",
   "snippets": [
-    "pyt : ```python$nl$$end$$nl$```"
+    "pyt : ```run-python$nl$$end$$nl$```"
   ],
   "endSymbol": "$end$",
   "newlineSymbol": "$nl$",
   "stopSymbol": "$tb$",
   "pasteSymbol": "$pst$",
   "useTab": true,
-  "useSpace": false,
+  "useSpace": true,
   "wordDelimiters": "$()[]{}<>,.!?;:'\"\\/",
   "isWYSIWYG": true
 }
