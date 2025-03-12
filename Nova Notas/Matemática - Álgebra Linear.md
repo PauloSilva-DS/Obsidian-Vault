@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-12  10.39
+Atualizado: 2025-03-12  10.57
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
