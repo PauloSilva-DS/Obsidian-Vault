@@ -242,46 +242,7 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "floating": {
-    "id": "99a44bb53077278e",
-    "type": "floating",
-    "children": [
-      {
-        "id": "d0f0ac04c8e1af4a",
-        "type": "window",
-        "children": [
-          {
-            "id": "6e707ceab93d6768",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ce9fa5a3dafa0c3c",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://github.com/twibiral/obsidian-execute-code",
-                    "title": "GitHub - twibiral/obsidian-execute-code: Obsidian Plugin to execute code in a note.",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "GitHub - twibiral/obsidian-execute-code: Obsidian Plugin to execute code in a note."
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 1922,
-        "y": 40,
-        "width": 630,
-        "height": 1032,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "ce9fa5a3dafa0c3c",
+  "active": "cb67602b30f0da02",
   "lastOpenFiles": [
     "Nova Notas/Matemática - Álgebra Linear.md",
     "Nova Notas/Sem título.md",
