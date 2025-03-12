@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-12  10.05
+Atualizado: 2025-03-12  10.28
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -166,52 +166,14 @@ plt.show()
 
 
 ```run-python
-import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-
-# Definindo os arrays para as coordenadas
-a = np.array([1, 2, 8])  # Coordenadas x
-b = np.array([5, 6, 3])  # Coordenadas y
-c = np.array([2, 3, 4])  # Coordenadas z (adicionando um novo array para z)
-
-# Criando o subplot 3D
-subplot3d = plt.subplot(111, projection='3d')
-
-# Usando scatter para plotar os pontos
-subplot3d.scatter(a, b, c)
-
-# Definindo os limites do eixo z
-subplot3d.set_zlim3d([0, 9])
-
-# Mostrando o gráfico
-plt.show()
-
-```
-
-
-```run-python
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-
-a = np.array([1, 2, 8])
-b = np.array([5, 6, 3])
 
 fig = plt.figure()
-subplot3d = fig.add_subplot(111, projection='3d')
-
-# Correção: usar a, b como coordenadas x e y, e definir valores para z
-x_coords = a
-y_coords = b
-z_coords = np.zeros_like(a)  # Ou defina os valores desejados para z
-
-subplot3d.scatter(x_coords, y_coords, z_coords)
-subplot3d.set_zlim3d([0, 9])
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter([1, 2, 3], [1, 2, 3], [1, 2, 3])
 plt.show()
-
 ```
-
 
 
 
