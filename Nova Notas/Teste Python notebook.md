@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-12  10.59
+Atualizado: 2025-03-12  11.15
 Criado: 2025-03-12  10.05
 ---
 ```python
@@ -43,6 +43,8 @@ subplot3d.scatter(a, b, c)
 subplot3d.set_zlim3d([0, 9])
 
 # Mostrando o gráfico
-plt.show()
+plt.savefig('plot3d.png')
+print("Gráfico salvo como 'plot3d.png'")
 
 ```
+

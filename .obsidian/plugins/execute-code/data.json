@@ -58,7 +58,7 @@
   "csArgs": "",
   "csFileExtension": "csx",
   "csInject": "",
-  "pythonPath": "",
+  "pythonPath": "/home/paulo/anaconda3/bin/python3.12",
   "pythonArgs": "",
   "pythonEmbedPlots": true,
   "pythonFileExtension": "py",

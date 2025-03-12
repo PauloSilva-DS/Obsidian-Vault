@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b41d30b87ee73cc8",
+        "id": "c67c397e56f3068d",
         "type": "tabs",
         "children": [
           {
-            "id": "cb67602b30f0da02",
+            "id": "9426e3815bad3df9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Nova Notas/Teste Python notebook.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -242,46 +242,7 @@
       "pieces-for-developers:Pieces for Developers": false
     }
   },
-  "floating": {
-    "id": "57d5311e972f736e",
-    "type": "floating",
-    "children": [
-      {
-        "id": "b0d340a26fcc54d9",
-        "type": "window",
-        "children": [
-          {
-            "id": "5c7e814334eba435",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "b9b581cb9ac0a7ba",
-                "type": "leaf",
-                "state": {
-                  "type": "webviewer",
-                  "state": {
-                    "url": "https://www.youtube.com/watch?v=eQz4eAW3ZDk",
-                    "title": "Escape ChatGPT. Make your own Code Interpreter EASY - YouTube",
-                    "mode": "webview"
-                  },
-                  "icon": "globe-2",
-                  "title": "Escape ChatGPT. Make your own Code Interpreter EASY - YouTube"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 1284,
-        "y": 40,
-        "width": 1268,
-        "height": 1032,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "b9b581cb9ac0a7ba",
+  "active": "9426e3815bad3df9",
   "lastOpenFiles": [
     "Nova Notas/Teste Python notebook.md",
     "Nova Notas/Matemática - Álgebra Linear.md",
