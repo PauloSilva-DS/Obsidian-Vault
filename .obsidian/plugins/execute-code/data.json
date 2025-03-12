@@ -175,7 +175,7 @@
   "leanInteractive": false,
   "luaInteractive": false,
   "dartInteractive": false,
-  "pythonInteractive": true,
+  "pythonInteractive": false,
   "cppInteractive": false,
   "prologInteractive": false,
   "shellInteractive": false,

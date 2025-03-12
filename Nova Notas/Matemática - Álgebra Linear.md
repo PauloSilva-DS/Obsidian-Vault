@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-11  18.07
+Atualizado: 2025-03-11  18.14
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -769,9 +769,9 @@ Se duas matrizes \( Q \) e \( R \) tiverem o mesmo tamanho \( m \times n \), ela
 $$
 
 S_{i,j} = Q_{i,j} + R_{i,j}
-\]
+$$$$
 
-\[
+
 S = 
 \begin{bmatrix}
 Q_{11} + R_{11} & Q_{12} + R_{12} & Q_{13} + R_{13} & \cdots & Q_{1n} + R_{1n} \\
@@ -790,12 +790,15 @@ B = np.array([
     [1, 2, 3],
     [4, 5, 6]
 ])
-B
-
-A
+A = np.array([
+       [10, 20, 30],
+       [40, 50, 60]
+])
 
 A + B
 ```
+
+
 
 A adição é comutativa, o que significa que \( A + B = B + A \):
 
