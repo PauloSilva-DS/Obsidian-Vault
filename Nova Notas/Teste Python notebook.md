@@ -20,5 +20,6 @@ b = a
 print(b)
 
 c = input("digite algo")
+print(c)
 ```
 
