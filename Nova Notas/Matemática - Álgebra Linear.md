@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  14.57
+Atualizado: 2025-03-13  15.04
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -902,14 +902,19 @@ Q_{m,*} \cdot R_{*,1} & Q_{m,*} \cdot R_{*,2} & \cdots & Q_{m,*} \cdot R_{*,q}
 Vamos multiplicar duas matrizes no NumPy, usando a função `np.matmul()`:
 
 ```run-python
+D = np.array([
+        [ 2,  3,  5,  7],
+        [11, 13, 17, 19],
+        [23, 29, 31, 37]
+    ])
 E = np.matmul(A, D)
-print(E)
+print(E) 
 ```
 
 O Python 3.5 introduziu o operador infixo `@` para multiplicação de matrizes, e o NumPy 1.10 adicionou suporte para ele. `A @ D` é equivalente a `np.matmul(A, D)`:
 
 ```run-python
-A @ D
+print(A @ D )
 ```
 
 O operador `@` também funciona para vetores. `u @ v` calcula o produto escalar de `u` e `v`:
@@ -918,7 +923,7 @@ O operador `@` também funciona para vetores. `u @ v` calcula o produto escalar 
 u @ v
 ```
 
-Vamos verificar esse resultado olhando para um elemento, só para ter certeza. Para calcular \( E_{2,3} \), por exemplo, precisamos multiplicar os elementos na 2ª linha de \( A \) pelos elementos na 3ª coluna de \( D \) e somar esses produtos:
+Vamos verificar esse resultado olhando para um elemento, só para ter certeza. Para calcular $( E_{2,3} )$, por exemplo, precisamos multiplicar os elementos na 2ª linha de ( A) pelos elementos na 3ª coluna de ( D) e somar esses produtos:
 
 ```run-python
 40*5 + 50*17 + 60*31
