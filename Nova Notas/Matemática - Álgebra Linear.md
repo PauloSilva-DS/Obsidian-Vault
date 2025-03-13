@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  12.44
+Atualizado: 2025-03-13  12.45
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -757,6 +757,7 @@ $$
 Por exemplo, vamos criar uma matriz $( 2 \times 3 )$ ( B ) e calcular ( A + B ):
 
 ```run-python
+import numpy as np
 B = np.array([
     [1, 2, 3],
     [4, 5, 6]
@@ -768,6 +769,7 @@ A = np.array([
 
 print(A + B)
 ```
+
 
 
 
