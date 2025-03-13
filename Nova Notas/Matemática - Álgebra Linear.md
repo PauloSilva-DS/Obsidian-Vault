@@ -1706,7 +1706,7 @@ LA.det(M)
 
 Um dos principais usos do determinante é determinar se uma matriz quadrada pode ser invertida ou não: se o determinante for igual a 0, então a matriz não pode ser invertida (é uma matriz singular), e se o determinante não for 0, então ela pode ser invertida.
 
-Por exemplo, vamos calcular o determinante para as matrizes $( F_{\text{project}} \), \( F_{\text{project\_30}} \) e \( F_{\text{shear}} )$ que definimos anteriormente:
+Por exemplo, vamos calcular o determinante para as matrizes $( F_{\text{project}} \), \( F_{\text{project\_30}} ) e ( F_{\text{shear}} )$ que definimos anteriormente:
 
 ```run-python
 LA.det(F_project)
