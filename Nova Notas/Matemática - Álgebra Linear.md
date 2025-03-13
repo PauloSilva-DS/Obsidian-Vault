@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  16.44
+Atualizado: 2025-03-13  16.54
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1577,23 +1577,23 @@ F_shear @ LA.inv(F_shear)
 
 Outra maneira de expressar isso é que a inversa da inversa de uma matriz \( M \) é \( M \) mesma:
 
-\[
-((M)^{-1})^{-1} = M
-\]
+
+$((M)^{-1})^{-1} = M$
+
 
 ```run-python
 LA.inv(LA.inv(F_shear))
 ```
 
-Além disso, a inversa de escalonar por um fator de \( \lambda \) é, é claro, escalonar por um fator de \( \frac{1}{\lambda} \):
+Além disso, a inversa de escalonar por um fator de $( \lambda )$ é, é claro, escalonar por um fator de $( \frac{1}{\lambda} )$:
 
-\[
-(\lambda \times M)^{-1} = \frac{1}{\lambda} \times M^{-1}
-\]
+
+$(\lambda \times M)^{-1} = \frac{1}{\lambda} \times M^{-1}$
+
 
 Assim que você entende a interpretação geométrica das matrizes como transformações lineares, a maioria dessas propriedades parece bastante intuitiva.
 
-Uma matriz que é sua própria inversa é chamada de **involução**. Os exemplos mais simples são matrizes de reflexão, ou uma rotação de \( 180^\circ \), mas também existem involuções mais complexas, por exemplo, imagine uma transformação que comprime horizontalmente, depois reflete sobre o eixo vertical e finalmente gira \( 90^\circ \) no sentido horário. Pegue um guardanapo e tente fazer isso duas vezes: você acabará na posição original. Aqui está a matriz involutória correspondente:
+Uma matriz que é sua própria inversa é chamada de **involução**. Os exemplos mais simples são matrizes de reflexão, ou uma rotação de $( 180^\circ )$, mas também existem involuções mais complexas, por exemplo, imagine uma transformação que comprime horizontalmente, depois reflete sobre o eixo vertical e finalmente gira $( 90^\circ )$ no sentido horário. Pegue um guardanapo e tente fazer isso duas vezes: você acabará na posição original. Aqui está a matriz involutória correspondente:
 
 ```run-python
 F_involution = np.array([
@@ -1607,17 +1607,17 @@ plt.show()
 
 Finalmente, uma matriz quadrada \( H \) cuja inversa é sua própria transposta é uma **matriz ortogonal**:
 
-\[
-H^{-1} = H^T
-\]
+
+$H^{-1} = H^T$
+
 
 Portanto:
 
-\[
-H \cdot H^T = H^T \cdot H = I
-\]
 
-Ela corresponde a uma transformação que preserva distâncias, como rotações e reflexões, e combinações dessas, mas não redimensionamento, cisalhamento ou compressão. Vamos verificar que \( F_{\text{reflect}} \) é de fato ortogonal:
+$H \cdot H^T = H^T \cdot H = I$
+
+
+Ela corresponde a uma transformação que preserva distâncias, como rotações e reflexões, e combinações dessas, mas não redimensionamento, cisalhamento ou compressão. Vamos verificar que $( F_{\text{reflect}} )$ é de fato ortogonal:
 
 ```run-python
 F_reflect @ F_reflect.T
@@ -1627,59 +1627,70 @@ F_reflect @ F_reflect.T
 
 ### **Determinante**
 
-O determinante de uma matriz quadrada \( M \), denotado por \( \det(M) \) ou \( \det M \) ou \( |M| \), é um valor que pode ser calculado a partir de seus elementos \( (M_{i,j}) \) usando vários métodos equivalentes. Um dos métodos mais simples é esta abordagem recursiva:
+O determinante de uma matriz quadrada \( M \), denotado por $( \det(M) )$ ou $( \det M )$ ou $( |M| )$, é um valor que pode ser calculado a partir de seus elementos $( (M_{i,j}) )$ usando vários métodos equivalentes. Um dos métodos mais simples é esta abordagem recursiva:
 
-\[
+$$
+
 |M| = M_{1,1} \times |M^{(1,1)}| - M_{1,2} \times |M^{(1,2)}| + M_{1,3} \times |M^{(1,3)}| - M_{1,4} \times |M^{(1,4)}| + \cdots \pm M_{1,n} \times |M^{(1,n)}|
-\]
 
-- Onde \( M^{(i,j)} \) é a matriz \( M \) sem a linha \( i \) e a coluna \( j \).
+$$
 
-Por exemplo, vamos calcular o determinante da seguinte matriz \( 3 \times 3 \):
+- Onde $( M^{(i,j)} )$ é a matriz ( M ) sem a linha ( i ) e a coluna ( j ).
 
-\[
+Por exemplo, vamos calcular o determinante da seguinte matriz $( 3 \times 3 )$:
+
+$$
+
 M = 
 \begin{bmatrix}
 1 & 2 & 3 \\
 4 & 5 & 6 \\
 7 & 8 & 0
 \end{bmatrix}
-\]
+$$
 
 Usando o método acima, obtemos:
 
-\[
+$$
+
 |M| = 1 \times |[5 \quad 6 \quad 8 \quad 0]| - 2 \times |[4 \quad 6 \quad 7 \quad 0]| + 3 \times |[4 \quad 5 \quad 7 \quad 8]|
-\]
 
-Agora precisamos calcular o determinante de cada uma dessas matrizes \( 2 \times 2 \) (esses determinantes são chamados de menores):
+$$
 
-\[
+Agora precisamos calcular o determinante de cada uma dessas matrizes $( 2 \times 2 )$ (esses determinantes são chamados de menores):
+
+$$
+
 \begin{vmatrix}
 5 & 6 \\
 8 & 0
 \end{vmatrix} = 5 \times 0 - 6 \times 8 = -48
-\]
 
-\[
+$$
+
+
+$$
 \begin{vmatrix}
 4 & 6 \\
 7 & 0
 \end{vmatrix} = 4 \times 0 - 6 \times 7 = -42
-\]
+$$
 
-\[
+
+$$
+
 \begin{vmatrix}
 4 & 5 \\
 7 & 8
 \end{vmatrix} = 4 \times 8 - 5 \times 7 = -3
-\]
+$$
+
 
 Agora podemos calcular o resultado final:
 
-\[
-|M| = 1 \times (-48) - 2 \times (-42) + 3 \times (-3) = 27
-\]
+
+$|M| = 1 \times (-48) - 2 \times (-42) + 3 \times (-3) = 27$
+
 
 Para obter o determinante de uma matriz, você pode chamar a função `det` do NumPy no módulo `numpy.linalg`:
 
@@ -1695,7 +1706,7 @@ LA.det(M)
 
 Um dos principais usos do determinante é determinar se uma matriz quadrada pode ser invertida ou não: se o determinante for igual a 0, então a matriz não pode ser invertida (é uma matriz singular), e se o determinante não for 0, então ela pode ser invertida.
 
-Por exemplo, vamos calcular o determinante para as matrizes \( F_{\text{project}} \), \( F_{\text{project\_30}} \) e \( F_{\text{shear}} \) que definimos anteriormente:
+Por exemplo, vamos calcular o determinante para as matrizes $( F_{\text{project}} \), \( F_{\text{project\_30}} \) e \( F_{\text{shear}} )$ que definimos anteriormente:
 
 ```run-python
 LA.det(F_project)
