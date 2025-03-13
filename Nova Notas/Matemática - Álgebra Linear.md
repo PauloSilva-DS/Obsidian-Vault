@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  16.54
+Atualizado: 2025-03-13  16.59
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1712,7 +1712,7 @@ Por exemplo, vamos calcular o determinante para as matrizes $( F_{\text{project}
 LA.det(F_project)
 ```
 
-Isso mesmo, \( F_{\text{project}} \) é singular, como vimos anteriormente.
+Isso mesmo, $( F_{\text{project}} )$ é singular, como vimos anteriormente.
 
 ```run-python
 LA.det(F_project_30)
@@ -1905,11 +1905,13 @@ D.trace()
 ```
 
 O traço não tem uma interpretação geométrica simples (em geral), mas tem várias propriedades que o tornam útil em muitas áreas:
+$$
 
-- \( \text{tr}(A + B) = \text{tr}(A) + \text{tr}(B) \)
-- \( \text{tr}(A \cdot B) = \text{tr}(B \cdot A) \)
-- \( \text{tr}(A \cdot B \cdot \cdots Y \cdot Z) = \text{tr}(Z \cdot A \cdot B \cdot \cdots Y) \)
-- \( \text{tr}(A^T \cdot B) = \text{tr}(A \cdot B^T) = \text{tr}(B^T \cdot A) = \text{tr}(B \cdot A^T) = \sum_{i,j} X_{i,j} \times Y_{i,j} \)
+- ( \text{tr}(A + B) = \text{tr}(A) + \text{tr}(B) )
+- ( \text{tr}(A \cdot B) = \text{tr}(B \cdot A) )
+- ( \text{tr}(A \cdot B \cdot \cdots Y \cdot Z) = \text{tr}(Z \cdot A \cdot B \cdot \cdots Y) )
+- ( \text{tr}(A^T \cdot B) = \text{tr}(A \cdot B^T) = \text{tr}(B^T \cdot A) = text{tr}(B \cdot A^T) = \sum_{i,j} X_{i,j} \times Y_{i,j})
+$$
 
 No entanto, ele tem uma interpretação geométrica útil no caso de matrizes de projeção (como \( F_{\text{project}} \) que discutimos anteriormente): ele corresponde ao número de dimensões após a projeção. Por exemplo:
 
@@ -1924,12 +1926,6 @@ F_project.trace()
 Isso conclui esta introdução à Álgebra Linear. Embora esses conceitos básicos cubram a maior parte do que você precisará saber para Aprendizado de Máquina, se você quiser se aprofundar neste tópico, há muitas opções disponíveis: livros de Álgebra Linear, lições da Khan Academy ou apenas páginas da Wikipedia.
 
 ---
-
-**Fim do conteúdo**
-
----
-
-A tradução foi feita mantendo a formatação original e sem traduzir as partes de código. Se precisar de mais alguma coisa, estou à disposição!
 
 
 
