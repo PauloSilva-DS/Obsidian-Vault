@@ -1566,7 +1566,7 @@ LA.inv(F_project_30)
 Como você pode esperar, o produto escalar de uma matriz por sua inversa resulta na matriz identidade:
 
 
-M \cdot M^{-1} = M^{-1} \cdot M = I
+$M \cdot M^{-1} = M^{-1} \cdot M = I$
 
 
 Isso faz sentido, já que fazer uma transformação linear seguida pela transformação inversa resulta em nenhuma mudança.
