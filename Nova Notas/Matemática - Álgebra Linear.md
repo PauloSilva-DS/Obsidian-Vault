@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  10.19
+Atualizado: 2025-03-13  10.30
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -154,14 +154,17 @@ b = np.array([5, 6, 3])
 Agora vamos plotá-los usando o `Axes3D` do `matplotlib`:
 
 ```run-python
+import os
+from mpl_toolkits.mplot3d import Axes3D
 
 subplot3d = plt.subplot(111, projection='3d')
 x_coords, y_coords, z_coords = zip(a,b)
 subplot3d.scatter(x_coords, y_coords, z_coords)
 subplot3d.set_zlim3d([0, 9])
-plt.show()
+plt.savefig('/home/paulo/Obsidian Vault/Obsidian Vault/plot/plot3d.png') print("Gráfico salvo como 'plot3d.png'")
 
 ```
+
 
 
 
