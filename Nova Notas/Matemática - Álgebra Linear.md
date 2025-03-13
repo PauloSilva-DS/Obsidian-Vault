@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  15.28
+Atualizado: 2025-03-13  15.34
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1057,7 +1057,7 @@ print((A + B).T)
 print( A.T + B.T)
 ```
 
-Além disso, ( (Q \cdot R)^T = R^T \cdot Q^T ). Observe que a ordem é invertida. Por exemplo:
+Além disso, $( (Q \cdot R)^T = R^T \cdot Q^T )$. Observe que a ordem é invertida. Por exemplo:
 
 ```run-python
 print((A @ D).T)
@@ -1071,37 +1071,39 @@ print( D.T @ A.T)
 
 Uma **matriz simétrica** é definida como uma matriz que é igual à sua transposta: \( M = M^T \). Essa definição implica que ela deve ser uma matriz quadrada cujos elementos são simétricos em relação à diagonal principal, por exemplo:
 
-\[
+
+$$
 \begin{bmatrix}
 17 & 22 & 27 & 49 \\
 22 & 29 & 36 & 0 \\
 27 & 36 & 45 & 2 \\
 49 & 0 & 2 & 99
 \end{bmatrix}
-\]
+
+$$
 
 O produto de uma matriz por sua transposta é sempre uma matriz simétrica, por exemplo:
 
 ```run-python
-D @ D.T
+print(D @ D.T)
 ```
 
 Como mencionamos anteriormente, no NumPy (ao contrário do Matlab, por exemplo), 1D realmente significa 1D: não existe algo como um array 1D vertical ou horizontal. Portanto, você não deve se surpreender ao ver que transpor um array 1D não faz nada:
 
 ```run-python
-u
+print(u)
 
-u.T
+print(u.T)
 ```
 
 Queremos converter `u` em um vetor linha antes de transpor. Existem algumas maneiras de fazer isso:
 
 ```run-python
 u_row = np.array([u])
-u_row
+print(u_row)
 ```
 
-Observe os colchetes extras: isso é um array 2D com apenas uma linha (ou seja, uma matriz \( 1 \times 2 \)). Em outras palavras, é realmente um vetor linha.
+Observe os colchetes extras: isso é um array 2D com apenas uma linha (ou seja, uma matriz \ 1 \times 2 \)). Em outras palavras, é realmente um vetor linha.
 
 ```run-python
 u[np.newaxis, :]
