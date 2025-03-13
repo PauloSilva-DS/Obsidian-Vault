@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  14.53
+Atualizado: 2025-03-13  14.57
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -884,29 +884,26 @@ Q_{m1} R_{11} + Q_{m2} R_{21} + \cdots + Q_{mn} R_{n1} &
 \end{bmatrix} 
 $$
 
-Você pode notar que cada elemento \( P_{i,j} \) é o produto escalar do vetor linha \( Q_{i,*} \) e do vetor coluna \( R_{*,j} \):
+Você pode notar que cada elemento $( P_{i,j} )$ é o produto escalar do vetor linha ( Q_{i,*} ) e do vetor coluna $( R_{*,j}):$
 
-\[
-P_{i,j} = Q_{i,*} \cdot R_{*,j}
-\]
+$P_{i,j} = Q_{i,*} \cdot R_{*,j}$
 
 Portanto, podemos reescrever \( P \) de forma mais concisa como:
 
-\[
-P = 
+$$P =
 \begin{bmatrix}
 Q_{1,*} \cdot R_{*,1} & Q_{1,*} \cdot R_{*,2} & \cdots & Q_{1,*} \cdot R_{*,q} \\
 Q_{2,*} \cdot R_{*,1} & Q_{2,*} \cdot R_{*,2} & \cdots & Q_{2,*} \cdot R_{*,q} \\
 \vdots & \vdots & \ddots & \vdots \\
 Q_{m,*} \cdot R_{*,1} & Q_{m,*} \cdot R_{*,2} & \cdots & Q_{m,*} \cdot R_{*,q}
-\end{bmatrix}
-\]
+\end{bmatrix}$$
+
 
 Vamos multiplicar duas matrizes no NumPy, usando a função `np.matmul()`:
 
 ```run-python
 E = np.matmul(A, D)
-E
+print(E)
 ```
 
 O Python 3.5 introduziu o operador infixo `@` para multiplicação de matrizes, e o NumPy 1.10 adicionou suporte para ele. `A @ D` é equivalente a `np.matmul(A, D)`:
