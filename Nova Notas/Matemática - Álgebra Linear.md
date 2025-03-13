@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  15.48
+Atualizado: 2025-03-13  15.54
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1333,15 +1333,17 @@ Bom! Lembre-se de que o produto escalar de um vetor unitário e uma matriz basic
 
 ### **Multiplicação de matrizes – Rotação**
 
-Agora vamos criar uma matriz \( 2 \times 2 \) \( V \) contendo dois vetores unitários que fazem ângulos de \( 30^\circ \) e \( 120^\circ \) com o eixo horizontal:
+Agora vamos criar uma matriz $( 2 \times 2 ) ( V )$ contendo dois vetores unitários que fazem ângulos de $( 30^\circ ) e ( 120^\circ )$ com o eixo horizontal:
 
-\[
+$$
+
 V = 
 \begin{bmatrix}
 \cos(30^\circ) & \sin(30^\circ) \\
 \cos(120^\circ) & \sin(120^\circ)
 \end{bmatrix}
-\]
+
+$$
 
 ```run-python
 angle120 = 120 * np.pi / 180
@@ -1350,7 +1352,7 @@ V = np.array([
     [np.cos(angle120), np.sin(angle120)]
 ])
 
-V
+print(V)
 ```
 
 Vamos olhar para o produto \( VP \):
@@ -1359,7 +1361,7 @@ Vamos olhar para o produto \( VP \):
 V @ P
 ```
 
-A primeira linha é igual a \( V_{1,*}P \), que são as coordenadas da projeção de \( P \) no eixo de \( 30^\circ \), como vimos acima. A segunda linha é \( V_{2,*}P \), que são as coordenadas da projeção de \( P \) no eixo de \( 120^\circ \). Então, basicamente, obtivemos as coordenadas de \( P \) após girar os eixos horizontal e vertical em \( 30^\circ \) (ou equivalentemente, após girar o polígono em \(-30^\circ\) em torno da origem)! Vamos plotar \( VP \) para ver isso:
+A primeira linha é igual a $( V_{1,*}P)$, que são as coordenadas da projeção de ( P ) no eixo de \( 30^\circ \), como vimos acima. A segunda linha é \( V_{2,*}P \), que são as coordenadas da projeção de \( P \) no eixo de \( 120^\circ \). Então, basicamente, obtivemos as coordenadas de \( P \) após girar os eixos horizontal e vertical em \( 30^\circ \) (ou equivalentemente, após girar o polígono em \(-30^\circ\) em torno da origem)! Vamos plotar \( VP \) para ver isso:
 
 ```run-python
 P_rotated = V @ P
