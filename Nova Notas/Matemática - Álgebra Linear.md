@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  15.34
+Atualizado: 2025-03-13  15.37
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1103,7 +1103,7 @@ u_row = np.array([u])
 print(u_row)
 ```
 
-Observe os colchetes extras: isso é um array 2D com apenas uma linha (ou seja, uma matriz \ 1 \times 2 \)). Em outras palavras, é realmente um vetor linha.
+Observe os colchetes extras: isso é um array 2D com apenas uma linha (ou seja, uma matriz $( 1 \times 2 )$. Em outras palavras, é realmente um vetor linha.
 
 ```run-python
 u[np.newaxis, :]
@@ -1141,9 +1141,10 @@ u[:, np.newaxis]
 
 ### **Plotando uma matriz**
 
-Já vimos que vetores podem ser representados como pontos ou setas em um espaço N-dimensional. Existe uma boa representação gráfica de matrizes? Bem, você pode simplesmente ver uma matriz como uma lista de vetores, então plotar uma matriz resulta em muitos pontos ou setas. Por exemplo, vamos criar uma matriz \( 2 \times 4 \) \( P \) e plotá-la como pontos:
+Já vimos que vetores podem ser representados como pontos ou setas em um espaço N-dimensional. Existe uma boa representação gráfica de matrizes? Bem, você pode simplesmente ver uma matriz como uma lista de vetores, então plotar uma matriz resulta em muitos pontos ou setas. Por exemplo, vamos criar uma matriz $( 2 \times 4 )$ ( P) e plotá-la como pontos:
 
 ```run-python
+import matplotlib.pyplot as plt
 P = np.array([
     [3.0, 4.0, 1.0, 4.6],
     [0.2, 3.5, 2.0, 0.5]
@@ -1157,7 +1158,7 @@ plt.grid()
 plt.show()
 ```
 
-Claro, também poderíamos ter armazenado os mesmos 4 vetores como vetores linha em vez de vetores coluna, resultando em uma matriz \( 4 \times 2 \) (a transposta de \( P \), na verdade). É realmente uma escolha arbitrária.
+Claro, também poderíamos ter armazenado os mesmos 4 vetores como vetores linha em vez de vetores coluna, resultando em uma matriz $( 4 \times 2 )$ (a transposta de \( P \), na verdade). É realmente uma escolha arbitrária.
 
 Como os vetores são ordenados, você pode ver a matriz como um caminho e representá-la com pontos conectados:
 
