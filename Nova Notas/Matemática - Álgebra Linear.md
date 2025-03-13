@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  12.13
+Atualizado: 2025-03-13  12.23
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -735,7 +735,7 @@ A matriz identidade é frequentemente denotada simplesmente por \( I \) (em vez 
 
 ### **Adição de matrizes**
 
-Se duas matrizes \( Q \) e \( R \) tiverem o mesmo tamanho \( m \times n \), elas podem ser somadas. A adição é realizada elemento por elemento: o resultado também é uma matriz \( m \times n \) \( S \) onde cada elemento é a soma dos elementos na posição correspondente:
+Se duas matrizes \( Q \) e \( R \) tiverem o mesmo tamanho $( m \times n )$, elas podem ser somadas. A adição é realizada elemento por elemento: o resultado também é uma matriz $( m \times n ) ( S )$ onde cada elemento é a soma dos elementos na posição correspondente:
 
 $$
 
@@ -754,7 +754,7 @@ Q_{m1} + R_{m1} & Q_{m2} + R_{m2} & Q_{m3} + R_{m3} & \cdots & Q_{mn} + R_{mn}
 
 $$
 
-Por exemplo, vamos criar uma matriz \( 2 \times 3 \) \( B \) e calcular \( A + B \):
+Por exemplo, vamos criar uma matriz $( 2 \times 3 )$ ( B ) e calcular ( A + B ):
 
 ```run-python
 B = np.array([
@@ -766,7 +766,7 @@ A = np.array([
        [40, 50, 60]
 ])
 
-A + B
+print(A + B)
 ```
 
 
@@ -774,7 +774,7 @@ A + B
 A adição é comutativa, o que significa que \( A + B = B + A \):
 
 ```run-python
-B + A
+print(B + A)
 ```
 
 Também é associativa, o que significa que \( A + (B + C) = (A + B) + C \):
@@ -784,18 +784,19 @@ C = np.array([
     [100, 200, 300],
     [400, 500, 600]
 ])
-A + (B + C)
+print(A + (B + C))
 
-(A + B) + C
+print((A + B) + C)
 ```
 
 ---
 
 ### **Multiplicação por escalar**
 
-Uma matriz \( M \) pode ser multiplicada por um escalar \( \lambda \). O resultado é denotado por \( \lambda M \), e é uma matriz do mesmo tamanho que \( M \) com todos os elementos multiplicados por \( \lambda \):
+Uma matriz ( M ) pode ser multiplicada por um escalar $( \lambda)$. O resultado é denotado por $( \lambda M )$, e é uma matriz do mesmo tamanho que \( M \) com todos os elementos multiplicados por $( \lambda ):$
 
-\[
+
+$$
 \lambda M = 
 \begin{bmatrix}
 \lambda \times M_{11} & \lambda \times M_{12} & \lambda \times M_{13} & \cdots & \lambda \times M_{1n} \\
@@ -804,13 +805,16 @@ Uma matriz \( M \) pode ser multiplicada por um escalar \( \lambda \). O resulta
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 \lambda \times M_{m1} & \lambda \times M_{m2} & \lambda \times M_{m3} & \cdots & \lambda \times M_{mn}
 \end{bmatrix}
-\]
+$$
+
 
 Uma maneira mais concisa de escrever isso é:
 
-\[
+$$
+
 (\lambda M)_{i,j} = \lambda(M)_{i,j}
-\]
+
+$$
 
 No NumPy, basta usar o operador `*` para multiplicar uma matriz por um escalar. Por exemplo:
 
@@ -818,7 +822,7 @@ No NumPy, basta usar o operador `*` para multiplicar uma matriz por um escalar. 
 2 * A
 ```
 
-A multiplicação por escalar também é definida no lado direito e dá o mesmo resultado: \( M\lambda = \lambda M \). Por exemplo:
+A multiplicação por escalar também é definida no lado direito e dá o mesmo resultado: \$( M\lambda = \lambda M \)$. Por exemplo:
 
 ```run-python
 A * 2
