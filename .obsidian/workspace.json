@@ -215,7 +215,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 664.5
+    "width": 664.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -243,8 +244,9 @@
   },
   "active": "7d02a85fdf4e97e8",
   "lastOpenFiles": [
-    "Nova Notas/Matemática - Álgebra Linear.md",
+    "differential_calculus.md",
     "Clippings/Notebooks Obsidian e Jupyter  por Brian Carey - Freedium 1.md",
+    "Nova Notas/Matemática - Álgebra Linear.md",
     "Nova Notas/Teste Python notebook.md",
     "plot/plot3d.png",
     "Nova Notas/Matemática - Álgebra Linear 1.md",
@@ -284,7 +286,6 @@
     "Nova Notas/Executar bibliotecas python.md",
     "Chats",
     "Nova Notas/Sem título 1.md",
-    "Loterias.md",
     "Source Material/Imagens/banner1.jpg",
     "Source Material/Imagens/Pasted image 20250219154846.png",
     "Source Material/Imagens/Pasted image 20250219154447.png",
