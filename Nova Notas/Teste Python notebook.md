@@ -1,15 +1,12 @@
 ---
-Atualizado: 2025-03-13  10.28
+Atualizado: 2025-03-13  10.42
 Criado: 2025-03-12  10.05
 ---
 
 
 
 ```run-python
-import os
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-from PIL import Image
 import numpy as np
 
 
@@ -34,6 +31,9 @@ print("Gráfico salvo como 'plot3d.png'")
 
 
 ```
+
+
+
 
 
 
