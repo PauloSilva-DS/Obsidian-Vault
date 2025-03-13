@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  15.14
+Atualizado: 2025-03-13  15.18
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -970,24 +970,24 @@ G = np.array([
     [0, 1, 0, 1, 2]
 ])
 
-(A @ D) @ G  # (AD)G
+print((A @ D) @ G)  # (AD)G
 
-A @ (D @ G)  # A(DG)
+print(A @ (D @ G))  # A(DG)
 ```
 
 Também é **distributiva** sobre a adição de matrizes, o que significa que \( (Q + R)S = QS + RS \). Por exemplo:
 
 ```run-python
-(A + B) @ D
+print((A + B) @ D)
 
-A @ D + B @ D
+print(A @ D + B @ D)
 ```
 
-O produto de uma matriz \( M \) pela matriz identidade (de tamanho correspondente) resulta na mesma matriz \( M \). Mais formalmente, se \( M \) é uma matriz \( m \times n \), então:
+O produto de uma matriz \( M \) pela matriz identidade (de tamanho correspondente) resulta na mesma matriz \( M \). Mais formalmente, se \( M \) é uma matriz $( m \times n )$, então:
 
-\[
-MI_n = I_mM = M
-\]
+
+$MI_n = I_mM = M$
+
 
 Isso geralmente é escrito de forma mais concisa (já que o tamanho das matrizes identidade é inequívoco dado o contexto):
 

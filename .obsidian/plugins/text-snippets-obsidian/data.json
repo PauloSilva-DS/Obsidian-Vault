@@ -1,8 +1,8 @@
 {
-  "snippets_file": "pyt : ```run-python$nl$$end$$nl$```\npr : print( )\nimp : import pandas as pd\nimm : import matplotlib.pyplot as plt\nimn : import numpy as np\n\n\n",
+  "snippets_file": "pyt : ```run-python$nl$$end$$nl$```\npr : print($end$)\nimp : import pandas as pd\nimm : import matplotlib.pyplot as plt\nimn : import numpy as np\n\n\n",
   "snippets": [
     "pyt : ```run-python$nl$$end$$nl$```",
-    "pr : print( )",
+    "pr : print($end$)",
     "imp : import pandas as pd",
     "imm : import matplotlib.pyplot as plt",
     "imn : import numpy as np"
