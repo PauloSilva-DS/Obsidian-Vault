@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  12.45
+Atualizado: 2025-03-13  14.53
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -858,23 +858,31 @@ print( 2 * A + 2 * B)
 
 Até agora, as operações matriciais foram bastante intuitivas. Mas multiplicar matrizes é um pouco mais complexo.
 
-Uma matriz \( Q \) de tamanho \( m \times n \) pode ser multiplicada por uma matriz \( R \) de tamanho \( n \times q \). Ela é denotada simplesmente por \( QR \) sem sinal de multiplicação ou ponto. O resultado \( P \) é uma matriz \( m \times q \) onde cada elemento é calculado como uma soma de produtos:
+Uma matriz \( Q \) de tamanho $( m \times n )$ pode ser multiplicada por uma matriz ( R ) de tamanho ( n \times q ). Ela é denotada simplesmente por ( QR ) sem sinal de multiplicação ou ponto. O resultado ( P ) é uma matriz ( m \times q ) onde cada elemento é calculado como uma soma de produtos:
 
-\[
-P_{i,j} = \sum_{k=1}^n Q_{i,k} \times R_{k,j}
-\]
+$P_{i,j} = \sum_{k=1}^n{Q_{i,k} \times R_{k,j}}$
 
 O elemento na posição \( i, j \) na matriz resultante é a soma dos produtos dos elementos na linha \( i \) da matriz \( Q \) pelos elementos na coluna \( j \) da matriz \( R \).
 
-\[
-P = 
+
+$$
+ P =
 \begin{bmatrix}
-Q_{11}R_{11} + Q_{12}R_{21} + \cdots + Q_{1n}R_{n1} & Q_{11}R_{12} + Q_{12}R_{22} + \cdots + Q_{1n}R_{n2} & \cdots \\
-Q_{21}R_{11} + Q_{22}R_{21} + \cdots + Q_{2n}R_{n1} & Q_{21}R_{12} + Q_{22}R_{22} + \cdots + Q_{2n}R_{n2} & \cdots \\
-\vdots & \vdots & \ddots \\
-Q_{m1}R_{11} + Q_{m2}R_{21} + \cdots + Q_{mn}R_{n1} & Q_{m1}R_{12} + Q_{m2}R_{22} + \cdots + Q_{mn}R_{n2} & \cdots
-\end{bmatrix}
-\]
+Q_{11} R_{11} + Q_{12} R_{21} + \cdots + Q_{1n} R_{n1} &
+  Q_{11} R_{12} + Q_{12} R_{22} + \cdots + Q_{1n} R_{n2} &
+    \cdots &
+      Q_{11} R_{1q} + Q_{12} R_{2q} + \cdots + Q_{1n} R_{nq} \\
+Q_{21} R_{11} + Q_{22} R_{21} + \cdots + Q_{2n} R_{n1} &
+  Q_{21} R_{12} + Q_{22} R_{22} + \cdots + Q_{2n} R_{n2} &
+    \cdots &
+      Q_{21} R_{1q} + Q_{22} R_{2q} + \cdots + Q_{2n} R_{nq} \\
+  \vdots & \vdots & \ddots & \vdots \\
+Q_{m1} R_{11} + Q_{m2} R_{21} + \cdots + Q_{mn} R_{n1} &
+  Q_{m1} R_{12} + Q_{m2} R_{22} + \cdots + Q_{mn} R_{n2} &
+    \cdots &
+      Q_{m1} R_{1q} + Q_{m2} R_{2q} + \cdots + Q_{mn} R_{nq}
+\end{bmatrix} 
+$$
 
 Você pode notar que cada elemento \( P_{i,j} \) é o produto escalar do vetor linha \( Q_{i,*} \) e do vetor coluna \( R_{*,j} \):
 
