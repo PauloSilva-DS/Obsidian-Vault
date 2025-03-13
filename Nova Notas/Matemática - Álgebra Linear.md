@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  16.12
+Atualizado: 2025-03-13  16.23
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1361,7 +1361,7 @@ Vamos olhar para o produto \( VP \):
 print(V @ P)
 ```
 
-A primeira linha é igual a $( V_{1,*}P)$, que são as coordenadas da projeção de ( P ) no eixo de ( 30^\circ ), como vimos acima. A segunda linha é ( V_{2,*}P ), que são as coordenadas da projeção de \( P \) no eixo de \( 120^\circ \). Então, basicamente, obtivemos as coordenadas de \( P \) após girar os eixos horizontal e vertical em \( 30^\circ \) (ou equivalentemente, após girar o polígono em \(-30^\circ\) em torno da origem)! Vamos plotar \( VP \) para ver isso:
+A primeira linha é igual a $( V_{1,*}P)$, que são as coordenadas da projeção de ( P ) no eixo de $( 30^\circ )$, como vimos acima. A segunda linha é $( V_{2,*}P )$, que são as coordenadas da projeção de $( P )$ no eixo de $( 120^\circ )$. Então, basicamente, obtivemos as coordenadas de $( P )$ após girar os eixos horizontal e vertical em $( 30^\circ )$ (ou equivalentemente, após girar o polígono em $(-30^\circ)$ em torno da origem)! Vamos plotar $( VP )$ para ver isso:
 
 ```run-python
 P_rotated = V @ P

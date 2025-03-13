@@ -40,5 +40,14 @@
       ],
       "key": "E"
     }
+  ],
+  "quick-latex:addInlineMath": [],
+  "editing-toolbar:editor:toggle-inline-math": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "0"
+    }
   ]
 }
