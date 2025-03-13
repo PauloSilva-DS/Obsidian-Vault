@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  12.33
+Atualizado: 2025-03-13  12.44
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -841,10 +841,14 @@ print((2 * 3) * A)
 Finalmente, é **distributiva** sobre a adição de matrizes, o que significa que $( \lambda(Q + R) = \lambda Q + \lambda R )$:
 
 ```run-python
-2 * (A + B)
+print(2 * (A + B))
 
-2 * A + 2 * B
+print( 2 * A + 2 * B)
 ```
+
+
+
+
 
 ---
 
