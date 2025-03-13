@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  10.39
+Atualizado: 2025-03-13  10.52
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -165,15 +165,6 @@ plt.savefig('/home/paulo/Obsidian Vault/Obsidian Vault/plot/plot3d.png') print("
 
 
 
-```run-python
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-ax.scatter([1, 2, 3], [1, 2, 3], [1, 2, 3])
-plt.show()
-```
 
 
 
@@ -194,7 +185,8 @@ def plot_vectors3d(ax, vectors3d, z0, **options):
 subplot3d = plt.subplot(111, projection='3d')
 subplot3d.set_zlim([0, 9])
 plot_vectors3d(subplot3d, [a, b], 0, color=("r","b"))
-plt.show()
+#plt.show()
+plt.savefig('/home/paulo/Obsidian Vault/Obsidian Vault/plot/plot3d.png')
 ```
 
 
