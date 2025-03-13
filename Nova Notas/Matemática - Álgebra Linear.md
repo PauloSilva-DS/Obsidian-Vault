@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  11.42
+Atualizado: 2025-03-13  11.54
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -472,13 +472,13 @@ print(u * v)
 
 Um dos muitos usos do produto escalar é calcular o ângulo entre dois vetores não nulos. Olhando para a definição do produto escalar, podemos deduzir a seguinte fórmula:
 
-\[
-\theta = \arccos \left( \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \times \|\mathbf{v}\|} \right)
-\]
 
-Observe que se \( \mathbf{u} \cdot \mathbf{v} = 0 \), segue que \( \theta = \frac{\pi}{2} \). Em outras palavras, se o produto escalar de dois vetores não nulos for zero, isso significa que eles são ortogonais.
+$\theta = \arccos \left( \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \times \|\mathbf{v}\|} \right)$
 
-Vamos usar essa fórmula para calcular o ângulo entre \( \mathbf{u} \) e \( \mathbf{v} \) (em radianos):
+
+Observe que se $( \mathbf{u} \cdot \mathbf{v} = 0 ),$ segue que ( $\theta = \frac{\pi}{2} )$. Em outras palavras, se o produto escalar de dois vetores não nulos for zero, isso significa que eles são ortogonais.
+
+Vamos usar essa fórmula para calcular o ângulo entre $( \mathbf{u} )$ e $( \mathbf{v} )$ (em radianos):
 
 ```run-python
 def vector_angle(u, v):
@@ -496,17 +496,17 @@ print("    =", theta * 180 / np.pi, "graus")
 
 ### **Projetando um ponto em um eixo**
 
-O produto escalar também é muito útil para projetar pontos em um eixo. A projeção do vetor \( \mathbf{v} \) no eixo de \( \mathbf{u} \) é dada por esta fórmula:
+O produto escalar também é muito útil para projetar pontos em um eixo. A projeção do vetor $( \mathbf{v} )$ no eixo de $( \mathbf{u} )$ é dada por esta fórmula:
 
-\[
-\text{proj}_{\mathbf{u}} \mathbf{v} = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2} \times \mathbf{u}
-\]
+
+$\text{proj}_{\mathbf{u}} \mathbf{v} = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|^2} \times \mathbf{u}$
+
 
 O que é equivalente a:
 
-\[
-\text{proj}_{\mathbf{u}} \mathbf{v} = (\mathbf{v} \cdot \hat{\mathbf{u}}) \times \hat{\mathbf{u}}
-\]
+
+$\text{proj}_{\mathbf{u}} \mathbf{v} = (\mathbf{v} \cdot \hat{\mathbf{u}}) \times \hat{\mathbf{u}}$
+
 
 ```run-python
 u_normalized = u / LA.norm(u)
@@ -527,7 +527,8 @@ plt.text(0.8, 3, "$u$", color="r", fontsize=18)
 plt.axis([0, 8, 0, 5.5])
 plt.gca().set_aspect("equal")
 plt.grid()
-plt.show()
+#plt.show()
+plt.savefig('/home/paulo/Obsidian Vault/Obsidian Vault/plot/plot3d.png')
 ```
 
 ---
@@ -536,13 +537,15 @@ plt.show()
 
 Uma matriz é um array retangular de escalares (ou seja, qualquer número: inteiro, real ou complexo) organizados em linhas e colunas, por exemplo:
 
-\[
+$$
+
 \begin{bmatrix}
 10 & 20 & 30 \\
 40 & 50 & 60
 \end{bmatrix}
-\]
 
+
+$$
 Você também pode pensar em uma matriz como uma lista de vetores: a matriz anterior contém 2 vetores horizontais 3D ou 3 vetores verticais 2D.
 
 As matrizes são convenientes e muito eficientes para realizar operações em muitos vetores de uma só vez. Também veremos que elas são ótimas para representar e realizar transformações lineares, como rotações, translações e escalonamentos.
@@ -567,7 +570,7 @@ A = np.array([
     [10, 20, 30],
     [40, 50, 60]
 ])
-A
+print(A)
 ```
 
 Por convenção, as matrizes geralmente têm nomes em maiúsculas, como \( A \).
