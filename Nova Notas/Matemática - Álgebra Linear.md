@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  12.00
+Atualizado: 2025-03-13  12.13
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -621,13 +621,13 @@ No entanto, neste notebook, usaremos a notação \( X_{i,j} \), pois ela corresp
 A[1, 2]  # 2ª linha, 3ª coluna
 ```
 
-O vetor da $( i^{ésima} )$ linha é às vezes denotado por ( M_i) ou ( M_{i,*} ), mas novamente não há uma notação padrão, então as pessoas geralmente preferem definir seus próprios nomes, por exemplo: "seja ( x_i) o vetor da ( i^{ésima} ) linha da matriz ( X )." Usaremos \( M_{i,*} \) pelo mesmo motivo mencionado acima. Por exemplo, para acessar \( A_{2,*} \) (ou seja, o vetor da 2ª linha de \( A \)):
+O vetor da $( i^{ésima} )$ linha é às vezes denotado por ( M_i) ou ( M_{i,*} ), mas novamente não há uma notação padrão, então as pessoas geralmente preferem definir seus próprios nomes, por exemplo: "seja ( x_i) o vetor da ( $i^{ésima}$ ) linha da matriz ( X )." Usaremos ( M_{i,*} ) pelo mesmo motivo mencionado acima. Por exemplo, para acessar ( A_{2,*} ) (ou seja, o vetor da 2ª linha de ( A ):
 
 ```run-python
 A[1, :]  # vetor da 2ª linha (como um array 1D)
 ```
 
-Da mesma forma, o vetor da \( j^{ésima} \) coluna é às vezes denotado por \( M^j \) ou \( M_{*,j} \), mas não há uma notação padrão. Usaremos \( M_{*,j} \). Por exemplo, para acessar \( A_{*,3} \) (ou seja, o vetor da 3ª coluna de \( A \)):
+Da mesma forma, o vetor da ( $j^{ésima}$ ) coluna é às vezes denotado por ( M^j ) ou \( M_{*,j} ), mas não há uma notação padrão. Usaremos ( M_{*,j} ). Por exemplo, para acessar ( A_{*,3} ) (ou seja, o vetor da 3ª coluna de ( A )):
 
 ```run-python
 A[:, 2]  # vetor da 3ª coluna (como um array 1D)
@@ -636,8 +636,8 @@ A[:, 2]  # vetor da 3ª coluna (como um array 1D)
 Observe que o resultado é na verdade um array NumPy unidimensional: não existe algo como um array unidimensional vertical ou horizontal. Se você precisar realmente representar um vetor linha como uma matriz de uma linha (ou seja, um array 2D do NumPy) ou um vetor coluna como uma matriz de uma coluna, então você precisa usar um slice em vez de um inteiro ao acessar a linha ou coluna, por exemplo:
 
 ```run-python
-A[1:2, :]  # linhas 2 a 3 (excluído): isso retorna a linha 2 como uma matriz de uma linha
-A[:, 2:3]  # colunas 3 a 4 (excluído): isso retorna a coluna 3 como uma matriz de uma coluna
+print(A[1:2, :])  # linhas 2 a 3 (excluído): isso retorna a linha 2 como uma matriz de uma linha
+print(A[:, 2:3])  # colunas 3 a 4 (excluído): isso retorna a coluna 3 como uma matriz de uma coluna
 ```
 
 ---
@@ -711,15 +711,17 @@ D = np.array([
 print(np.diag(D))
 ```
 
-Finalmente, a **matriz identidade** de tamanho \( n \), denotada por \( I_n \), é uma matriz diagonal de tamanho \( n \times n \) com 1s na diagonal principal, por exemplo \( I_3 \):
+Finalmente, a **matriz identidade** de tamanho \( n \), denotada por \( I_n \), é uma matriz diagonal de tamanho $( n \times n )$ com 1s na diagonal principal, por exemplo \( I_3 \):
 
-\[
+$$
+
 \begin{bmatrix}
 1 & 0 & 0 \\
 0 & 1 & 0 \\
 0 & 0 & 1
 \end{bmatrix}
-\]
+
+$$
 
 A função `eye` do NumPy retorna a matriz identidade do tamanho desejado:
 
