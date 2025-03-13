@@ -1,7 +1,8 @@
 {
-  "snippets_file": "pyt : ```run-python$nl$$end$$nl$```\n",
+  "snippets_file": "pyt : ```run-python$nl$$end$$nl$```\npr: print\n\n",
   "snippets": [
-    "pyt : ```run-python$nl$$end$$nl$```"
+    "pyt : ```run-python$nl$$end$$nl$```",
+    "pr: print"
   ],
   "endSymbol": "$end$",
   "newlineSymbol": "$nl$",

@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  12.23
+Atualizado: 2025-03-13  12.33
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -822,7 +822,7 @@ No NumPy, basta usar o operador `*` para multiplicar uma matriz por um escalar. 
 2 * A
 ```
 
-A multiplicação por escalar também é definida no lado direito e dá o mesmo resultado: \$( M\lambda = \lambda M \)$. Por exemplo:
+A multiplicação por escalar também é definida no lado direito e dá o mesmo resultado: $( M\lambda = \lambda M )$. Por exemplo:
 
 ```run-python
 A * 2
@@ -830,15 +830,15 @@ A * 2
 
 Isso torna a multiplicação por escalar **comutativa**.
 
-Também é **associativa**, o que significa que \( \alpha (\beta M) = (\alpha \times \beta)M \), onde \( \alpha \) e \( \beta \) são escalares. Por exemplo:
+Também é **associativa**, o que significa que $( \alpha (\beta M)$ = $(\alpha \times \beta)M )$, onde ( $\alpha )$ e ( $\beta$ ) são escalares. Por exemplo:
 
 ```run-python
-2 * (3 * A)
+print(2 * (3 * A))
 
-(2 * 3) * A
+print((2 * 3) * A)
 ```
 
-Finalmente, é **distributiva** sobre a adição de matrizes, o que significa que \( \lambda(Q + R) = \lambda Q + \lambda R \):
+Finalmente, é **distributiva** sobre a adição de matrizes, o que significa que $( \lambda(Q + R) = \lambda Q + \lambda R )$:
 
 ```run-python
 2 * (A + B)
