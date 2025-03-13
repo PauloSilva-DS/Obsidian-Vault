@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  10.12
+Atualizado: 2025-03-13  10.19
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -134,8 +134,7 @@ plot_vector2d(u, color="r")
 plot_vector2d(v, color="b")
 plt.axis([0, 9, 0, 6])
 plt.grid()
-#plt.show()
-plt.savefig('plot3d.png')
+plt.show()
 ```
 
 

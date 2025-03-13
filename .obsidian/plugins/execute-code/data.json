@@ -60,7 +60,7 @@
   "csInject": "",
   "pythonPath": "/home/paulo/anaconda3/envs/Obsidian/bin/python3.12",
   "pythonArgs": "",
-  "pythonEmbedPlots": false,
+  "pythonEmbedPlots": true,
   "pythonFileExtension": "py",
   "pythonInject": "",
   "shellPath": "bash",
