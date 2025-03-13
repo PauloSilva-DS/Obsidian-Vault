@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  16.23
+Atualizado: 2025-03-13  16.34
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -193,7 +193,7 @@ plt.savefig('/home/paulo/Obsidian Vault/Obsidian Vault/plot/plot3d.png')
 ```
 
 
-![[plot3d.png|500]]
+
 
 
 
@@ -1346,6 +1346,7 @@ V =
 $$
 
 ```run-python
+import numpy as np
 angle120 = 120 * np.pi / 180
 V = np.array([
     [np.cos(angle30), np.sin(angle30)],
@@ -1375,44 +1376,49 @@ A matriz \( V \) é chamada de **matriz de rotação**.
 
 ### **Multiplicação de matrizes – Outras transformações lineares**
 
-De forma mais geral, qualquer transformação linear \( f \) que mapeie vetores n-dimensionais para vetores m-dimensionais pode ser representada como uma matriz \( m \times n \). Por exemplo, digamos que \( \mathbf{u} \) é um vetor tridimensional:
+De forma mais geral, qualquer transformação linear \( f \) que mapeie vetores n-dimensionais para vetores m-dimensionais pode ser representada como uma matriz $( m \times n )$. Por exemplo, digamos que $( \mathbf{u} )$ é um vetor tridimensional:
 
-\[
+$$
+
 \mathbf{u} = 
 \begin{pmatrix}
 x \\
 y \\
 z
 \end{pmatrix}
-\]
+
+$$
 
 e \( f \) é definida como:
 
-\[
+
+$$
 f(\mathbf{u}) =
 \begin{pmatrix}
 a x + b y + c z \\
 d x + e y + f z
 \end{pmatrix}
-\]
 
+$$
 Essa transformação \( f \) mapeia vetores tridimensionais para vetores bidimensionais de forma linear (ou seja, as coordenadas resultantes envolvem apenas somas de múltiplos das coordenadas originais). Podemos representar essa transformação como a matriz \( F \):
+$$
 
-\[
+
 F = 
 \begin{bmatrix}
 a & b & c \\
 d & e & f
 \end{bmatrix}
-\]
+$$
 
-Agora, para calcular \( f(\mathbf{u}) \), podemos simplesmente fazer uma multiplicação de matrizes:
 
-\[
-f(\mathbf{u}) = F \mathbf{u}
-\]
+Agora, para calcular $( f(\mathbf{u}) )$, podemos simplesmente fazer uma multiplicação de matrizes:
 
-Se tivermos uma matriz \( G = [\mathbf{u}_1 \quad \mathbf{u}_2 \quad \cdots \quad \mathbf{u}_q] \), onde cada \( \mathbf{u}_i \) é um vetor coluna tridimensional, então \( FG \) resulta na transformação linear de todos os vetores \( \mathbf{u}_i \) conforme definido pela matriz \( F \):
+
+$f(\mathbf{u}) = F \mathbf{u}$
+
+
+Se tivermos uma matriz $( G = [\mathbf{u}_1 \quad \mathbf{u}_2 \quad \cdots \quad \mathbf{u}_q] \)$, onde cada \( \mathbf{u}_i \) é um vetor coluna tridimensional, então \( FG \) resulta na transformação linear de todos os vetores \( \mathbf{u}_i \) conforme definido pela matriz \( F \):
 
 \[
 FG = [f(\mathbf{u}_1) \quad f(\mathbf{u}_2) \quad \cdots \quad f(\mathbf{u}_q)]
