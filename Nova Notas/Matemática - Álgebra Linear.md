@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  15.08
+Atualizado: 2025-03-13  15.14
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -943,22 +943,24 @@ except ValueError as e:
     print("ValueError:", e)
 ```
 
-Isso ilustra o fato de que a multiplicação de matrizes **NÃO** é comutativa: em geral, \( QR \neq RQ \).
+Isso ilustra o fato de que a multiplicação de matrizes **NÃO** é comutativa: em geral, $( QR \neq RQ )$.
 
-Na verdade, \( QR \) e \( RQ \) são ambos definidos apenas se \( Q \) tiver tamanho \( m \times n \) e \( R \) tiver tamanho \( n \times m \). Vamos ver um exemplo onde ambos são definidos e mostrar que eles (em geral) **NÃO** são iguais:
+Na verdade, ( QR ) e ( RQ ) são ambos definidos apenas se ( Q) tiver tamanho $( m \times n )$ e ( R ) tiver tamanho $( n \times m )$. Vamos ver um exemplo onde ambos são definidos e mostrar que eles (em geral) **NÃO** são iguais:
 
 ```run-python
 F = np.array([
-    [4, 1],
-    [9, 3]
-])
-
-A @ F
-
-F @ A
+        [5,2],
+        [4,1],
+        [9,3]
+    ])
+print(A @ F)
 ```
 
-Por outro lado, a **multiplicação de matrizes é associativa**, o que significa que \( Q(RS) = (QR)S \). Vamos criar uma matriz \( 4 \times 5 \) \( G \) para ilustrar isso:
+
+```run-python
+print(F @ A )
+```
+Por outro lado, a **multiplicação de matrizes é associativa**, o que significa que \( Q(RS) = (QR)S \). Vamos criar uma matriz $( 4 \times 5 )$ ( G ) para ilustrar isso:
 
 ```run-python
 G = np.array([
