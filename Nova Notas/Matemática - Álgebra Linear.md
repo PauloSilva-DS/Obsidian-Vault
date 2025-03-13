@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  11.21
+Atualizado: 2025-03-13  11.29
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -412,19 +412,18 @@ plt.show()
 
 **Definição**
 
-O produto escalar (também chamado de _produto interno_ no contexto do espaço Euclidiano) de dois vetores \( \mathbf{u} \) e \( \mathbf{v} \) é uma operação útil que aparece frequentemente em álgebra linear. Ele é denotado por \( \mathbf{u} \cdot \mathbf{v} \), ou às vezes \( \langle \mathbf{u}|\mathbf{v} \rangle \) ou \( (\mathbf{u}|\mathbf{v}) \), e é definido como:
+O produto escalar (também chamado de _produto interno_ no contexto do espaço Euclidiano) de dois vetores ( $\mathbf{u}$ ) e $( \mathbf{v} )$ é uma operação útil que aparece frequentemente em álgebra linear. Ele é denotado por $( \mathbf{u} \cdot \mathbf{v} )$, ou às vezes $( \langle \mathbf{u}|\mathbf{v} \rangle )$ ou $( (\mathbf{u}|\mathbf{v}) )$, e é definido como:
 
-\[
-\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\| \times \|\mathbf{v}\| \times \cos(\theta)
-\]
 
-onde \( \theta \) é o ângulo entre \( \mathbf{u} \) e \( \mathbf{v} \).
+$\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\| \times \|\mathbf{v}\| \times \cos(\theta)$
+
+
+onde $( \theta )$ é o ângulo entre $( \mathbf{u} ) e ( \mathbf{v}).$
 
 Outra maneira de calcular o produto escalar é:
 
-\[
-\mathbf{u} \cdot \mathbf{v} = \sum_{i} u_i \times v_i
-\]
+
+$\mathbf{u} \cdot \mathbf{v} = \sum_{i} u_i \times v_]$
 
 **Em Python**
 
