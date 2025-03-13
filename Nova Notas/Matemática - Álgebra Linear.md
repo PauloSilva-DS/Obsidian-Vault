@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  15.04
+Atualizado: 2025-03-13  15.08
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -928,12 +928,13 @@ Vamos verificar esse resultado olhando para um elemento, só para ter certeza. P
 ```run-python
 40*5 + 50*17 + 60*31
 
-E[1, 2]  # linha 2, coluna 3
+print(E[1, 2])  # linha 2, coluna 3
 ```
+
 
 Parece bom! Você pode verificar os outros elementos até se acostumar com o algoritmo.
 
-Multiplicamos uma matriz \( 2 \times 3 \) por uma matriz \( 3 \times 4 \), então o resultado é uma matriz \( 2 \times 4 \). O número de colunas da primeira matriz deve ser igual ao número de linhas da segunda matriz. Se tentarmos multiplicar \( D \) por \( A \), obteremos um erro porque \( D \) tem 4 colunas enquanto \( A \) tem 2 linhas:
+Multiplicamos uma matriz $( 2 \times 3 )$ por uma matriz $( 3 \times 4 )$, então o resultado é uma matriz $( 2 \times 4 )$. O número de colunas da primeira matriz deve ser igual ao número de linhas da segunda matriz. Se tentarmos multiplicar ( D ) por ( A ), obteremos um erro porque ( D ) tem 4 colunas enquanto ( A ) tem 2 linhas:
 
 ```run-python
 try:
