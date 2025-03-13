@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  11.54
+Atualizado: 2025-03-13  12.00
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -582,7 +582,7 @@ No restante deste tutorial, assumiremos que estamos usando arrays NumPy (tipo `n
 ### **Tamanho**
 
 O tamanho de uma matriz é definido pelo número de linhas e colunas. Ele é denotado por  
-linhas × colunas. Por exemplo, a matriz \( A \) acima é um exemplo de uma matriz \( 2 \times 3 \): 2 linhas, 3 colunas. **Cuidado:** uma matriz \( 3 \times 2 \) teria 3 linhas e 2 colunas.
+linhas × colunas. Por exemplo, a matriz ( A ) acima é um exemplo de uma matriz ( 2 $\times$ 3 ): 2 linhas, 3 colunas. **Cuidado:** uma matriz ( 3 $\times$ 2 ) teria 3 linhas e 2 colunas.
 
 Para obter o tamanho de uma matriz no NumPy:
 
@@ -600,9 +600,10 @@ A.size
 
 ### **Indexação de elementos**
 
-O número localizado na \( i^{ésima} \) linha e \( j^{ésima} \) coluna de uma matriz \( X \) é às vezes denotado por \( X_{i,j} \) ou \( X_{ij} \), mas não há uma notação padrão, então as pessoas geralmente preferem nomear explicitamente os elementos, assim: "seja \( X = (x_{i,j})_{1 \leq i \leq m, 1 \leq j \leq n} \)." Isso significa que \( X \) é igual a:
+O número localizado na $( i^{ésima} )$ linha e $( j^{ésima})$ coluna de uma matriz ( X\) é às vezes denotado por ( X_{i,j}\) ou ( X_{ij} ), mas não há uma notação padrão, então as pessoas geralmente preferem nomear explicitamente os elementos, assim: "seja $( X = (x_{i,j})_{1 \leq i \leq m, 1 \leq j \leq n} \)$." Isso significa que ( X ) é igual a:
 
-\[
+$$
+
 X = 
 \begin{bmatrix}
 x_{1,1} & x_{1,2} & x_{1,3} & \cdots & x_{1,n} \\
@@ -611,15 +612,16 @@ x_{3,1} & x_{3,2} & x_{3,3} & \cdots & x_{3,n} \\
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 x_{m,1} & x_{m,2} & x_{m,3} & \cdots & x_{m,n}
 \end{bmatrix}
-\]
 
+
+$$
 No entanto, neste notebook, usaremos a notação \( X_{i,j} \), pois ela corresponde bem à notação do NumPy. Observe que, em matemática, os índices geralmente começam em 1, mas na programação eles geralmente começam em 0. Portanto, para acessar \( A_{2,3} \) programaticamente, precisamos escrever:
 
 ```run-python
 A[1, 2]  # 2ª linha, 3ª coluna
 ```
 
-O vetor da \( i^{ésima} \) linha é às vezes denotado por \( M_i \) ou \( M_{i,*} \), mas novamente não há uma notação padrão, então as pessoas geralmente preferem definir seus próprios nomes, por exemplo: "seja \( x_i \) o vetor da \( i^{ésima} \) linha da matriz \( X \)." Usaremos \( M_{i,*} \) pelo mesmo motivo mencionado acima. Por exemplo, para acessar \( A_{2,*} \) (ou seja, o vetor da 2ª linha de \( A \)):
+O vetor da $( i^{ésima} )$ linha é às vezes denotado por ( M_i) ou ( M_{i,*} ), mas novamente não há uma notação padrão, então as pessoas geralmente preferem definir seus próprios nomes, por exemplo: "seja ( x_i) o vetor da ( i^{ésima} ) linha da matriz ( X )." Usaremos \( M_{i,*} \) pelo mesmo motivo mencionado acima. Por exemplo, para acessar \( A_{2,*} \) (ou seja, o vetor da 2ª linha de \( A \)):
 
 ```run-python
 A[1, :]  # vetor da 2ª linha (como um array 1D)
