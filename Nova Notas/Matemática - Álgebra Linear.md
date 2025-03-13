@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  11.13
+Atualizado: 2025-03-13  11.21
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -206,9 +206,9 @@ A norma de um vetor $( \mathbf{u} )$, denotada por $( \|\mathbf{u}\| )$, é uma 
 
 Existem várias normas possíveis, mas a mais comum (e a única que discutiremos aqui) é a norma Euclidiana, que é definida como:
 
-\[
-$\|\mathbf{u}\| = \sqrt{\sum_{i} \mathbf{u}_{i}^{2}}$$
-\]
+
+$\|\mathbf{u}\| = \sqrt{\sum_{i} \mathbf{u}_{i}^{2}}$
+
 
 Isso é a raiz quadrada da soma dos quadrados de todos os componentes de $( \mathbf{u} )$. Poderíamos implementar isso facilmente em Python puro, lembrando que $( \sqrt{x} = x^{\frac{1}{2}} )$:
 
@@ -231,8 +231,9 @@ No entanto, é muito mais eficiente usar a função `norm` do NumPy, disponível
 ```run-python
 import numpy.linalg as LA
 u = np.array([2, 5]) 
-LA.norm(u)
+print(LA.norm(u))
 ```
+
 
 
 
@@ -240,16 +241,17 @@ LA.norm(u)
 
 Vamos plotar um pequeno diagrama para confirmar que o comprimento do vetor $( \mathbf{u} )$ é de fato $( \approx 5,4 )$:
 
+
+
 ```run-python
 radius = LA.norm(u)
-plt.gca().add_artist(plt.Circle((0, 0), radius, color="#DDDDDD"))
+plt.gca().add_artist(plt.Circle((0,0), radius, color="#DDDDDD"))
 plot_vector2d(u, color="red")
 plt.axis([0, 8.7, 0, 6])
 plt.gca().set_aspect("equal")
 plt.grid()
-plt.show()
+plt.savefig('/home/paulo/Obsidian Vault/Obsidian Vault/plot/plot3d.png')
 ```
-
 
 Parece correto!
 
