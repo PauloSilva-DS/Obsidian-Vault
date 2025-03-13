@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  15.42
+Atualizado: 2025-03-13  15.48
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1282,13 +1282,13 @@ plt.show()
 
 A multiplicação de matrizes é mais complexa de visualizar, mas também é a ferramenta mais poderosa disponível.
 
-Vamos começar de forma simples, definindo uma matriz \( 1 \times 2 \) \( U = [1 \quad 0] \). Esse vetor linha é apenas o vetor unitário horizontal.
+Vamos começar de forma simples, definindo uma matriz $( 1 \times 2 ) ( U = [1 \quad 0] )$. Esse vetor linha é apenas o vetor unitário horizontal.
 
 ```run-python
 U = np.array([[1, 0]])
 ```
 
-Agora vamos olhar para o produto escalar \( U \cdot P \):
+Agora vamos olhar para o produto escalar $( U \cdot P )$:
 
 ```run-python
 U @ P
@@ -1299,13 +1299,16 @@ Essas são as coordenadas horizontais dos vetores em \( P \). Em outras palavras
 ```run-python
 def plot_projection(U, P):
     U_P = U @ P
+    
     axis_end = 100 * U
+    plot_vector2d(axis_end[0], color="black")
 
     plt.gca().add_artist(Polygon(P.T, alpha=0.2))
     for vector, proj_coordinate in zip(P.T, U_P.T):
         proj_point = proj_coordinate * U
         plt.plot(proj_point[0][0], proj_point[0][1], "ro", zorder=10)
-        plt.plot([vector[0], proj_point[0][0]], [vector[1], proj_point[0][1]], "r--", zorder=10)
+        plt.plot([vector[0], proj_point[0][0]], [vector[1], proj_point[0][1]],
+                 "r--", zorder=10)
 
     plt.axis([0, 5, 0, 4])
     plt.gca().set_aspect("equal")
