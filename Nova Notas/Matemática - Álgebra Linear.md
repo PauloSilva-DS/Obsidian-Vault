@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  15.37
+Atualizado: 2025-03-13  15.42
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1158,7 +1158,7 @@ plt.grid()
 plt.show()
 ```
 
-Claro, também poderíamos ter armazenado os mesmos 4 vetores como vetores linha em vez de vetores coluna, resultando em uma matriz $( 4 \times 2 )$ (a transposta de \( P \), na verdade). É realmente uma escolha arbitrária.
+Claro, também poderíamos ter armazenado os mesmos 4 vetores como vetores linha em vez de vetores coluna, resultando em uma matriz $( 4 \times 2 )$ (a transposta de( P ), na verdade). É realmente uma escolha arbitrária.
 
 Como os vetores são ordenados, você pode ver a matriz como um caminho e representá-la com pontos conectados:
 
@@ -1171,7 +1171,7 @@ plt.grid()
 plt.show()
 ```
 
-Ou você pode representá-la como um polígono: a classe `Polygon` do `matplotlib` espera um array NumPy \( n \times 2 \), não um array \( 2 \times n \), então precisamos apenas passar \( P^T \):
+Ou você pode representá-la como um polígono: a classe `Polygon` do `matplotlib` espera um array NumPy $( n \times 2 )$, não um array $( 2 \times n )$, então precisamos apenas passar $( P^T )$:
 
 ```run-python
 from matplotlib.patches import Polygon
@@ -1194,7 +1194,7 @@ Da mesma forma, as operações matriciais têm aplicações geométricas muito �
 
 ### **Adição = múltiplas translações geométricas**
 
-Primeiro, adicionar duas matrizes é equivalente a adicionar todos os seus vetores. Por exemplo, vamos criar uma matriz \( 2 \times 4 \) \( H \) e adicioná-la a \( P \), e observar o resultado:
+Primeiro, adicionar duas matrizes é equivalente a adicionar todos os seus vetores. Por exemplo, vamos criar uma matriz $( 2 \times 4 )$ ( H) e adicioná-la a ( P ), e observar o resultado:
 
 ```run-python
 H = np.array([
