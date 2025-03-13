@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  10.57
+Atualizado: 2025-03-13  11.13
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -165,9 +165,7 @@ plt.savefig('/home/paulo/Obsidian Vault/Obsidian Vault/plot/plot3d.png')
 
 ```
 
-
-
-
+![[plot3d.png|500]]
 
 
 
@@ -193,6 +191,11 @@ plot_vectors3d(subplot3d, [a, b], 0, color=("r","b"))
 #plt.show()
 plt.savefig('/home/paulo/Obsidian Vault/Obsidian Vault/plot/plot3d.png')
 ```
+
+
+![[plot3d.png|500]]
+
+
 
 
 ---

@@ -215,8 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 664.5,
-    "collapsed": true
+    "width": 664.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -244,10 +243,10 @@
   },
   "active": "7d02a85fdf4e97e8",
   "lastOpenFiles": [
-    "Nova Notas/Matemática - Álgebra Linear 1.md",
-    "Nova Notas/Matemática - Álgebra Linear.md",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "plot/plot3d.png",
+    "Nova Notas/Matemática - Álgebra Linear.md",
+    "Nova Notas/Matemática - Álgebra Linear 1.md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Nova Notas/Teste Python notebook.md",
     "plot3d.png",
     "plot",
