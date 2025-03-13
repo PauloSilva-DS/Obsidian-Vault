@@ -1418,7 +1418,7 @@ Agora, para calcular $( f(\mathbf{u}) )$, podemos simplesmente fazer uma multipl
 $f(\mathbf{u}) = F \mathbf{u}$
 
 
-Se tivermos uma matriz $( G = [\mathbf{u}_1 \quad \mathbf{u}_2 \quad \cdots \quad \mathbf{u}_q] \)$, onde cada \( \mathbf{u}_i \) é um vetor coluna tridimensional, então \( FG \) resulta na transformação linear de todos os vetores \( \mathbf{u}_i \) conforme definido pela matriz \( F \):
+Se tivermos uma matriz $( G = [\mathbf{u}_1 \quad \mathbf{u}_2 \quad \cdots \quad \mathbf{u}_q] \)$, onde cada \( \mathbf{u}_i ) é um vetor coluna tridimensional, então \( FG \) resulta na transformação linear de todos os vetores \( \mathbf{u}_i \) conforme definido pela matriz \( F \):
 
 \[
 FG = [f(\mathbf{u}_1) \quad f(\mathbf{u}_2) \quad \cdots \quad f(\mathbf{u}_q)]
