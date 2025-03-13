@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  11.29
+Atualizado: 2025-03-13  11.42
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -423,6 +423,7 @@ onde $( \theta )$ é o ângulo entre $( \mathbf{u} ) e ( \mathbf{v}).$
 Outra maneira de calcular o produto escalar é:
 
 
+
 $\mathbf{u} \cdot \mathbf{v} = \sum_{i} u_i \times v_]$
 
 **Em Python**
@@ -454,13 +455,13 @@ u.dot(v)
 print(" ", u)
 print("* ", v, "(NÃO é um produto escalar)")
 print("-"*10)
-u * v
+print(u * v)
 ```
 
 **Propriedades principais**
 
-- O produto escalar é **comutativo**: \( \mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u} \).
-- O produto escalar é definido apenas entre dois vetores, não entre um escalar e um vetor. Isso significa que não podemos encadear produtos escalares: por exemplo, a expressão \( \mathbf{u} \cdot \mathbf{v} \cdot \mathbf{w} \) não é definida, pois \( \mathbf{u} \cdot \mathbf{v} \) é um escalar e \( \mathbf{w} \) é um vetor.
+- O produto escalar é **comutativo**: $( \mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u} )$.
+- O produto escalar é definido apenas entre dois vetores, não entre um escalar e um vetor. Isso significa que não podemos encadear produtos escalares: por exemplo, a expressão $( \mathbf{u} \cdot \mathbf{v} \cdot \mathbf{w} )$ não é definida, pois $( \mathbf{u} \cdot \mathbf{v} )$ é um escalar e $( \mathbf{w} )$ é um vetor.
 - Isso também significa que o produto escalar **NÃO** é associativo: \( (\mathbf{u} \cdot \mathbf{v}) \cdot \mathbf{w} \neq \mathbf{u} \cdot (\mathbf{v} \cdot \mathbf{w}) \), já que nenhum dos dois é definido.
 - No entanto, o produto escalar é **associativo em relação à multiplicação por escalar**: \( \lambda \times (\mathbf{u} \cdot \mathbf{v}) = (\lambda \times \mathbf{u}) \cdot \mathbf{v} = \mathbf{u} \cdot (\lambda \times \mathbf{v}) \).
 - Finalmente, o produto escalar é **distributivo** sobre a adição de vetores: \( \mathbf{u} \cdot (\mathbf{v} + \mathbf{w}) = \mathbf{u} \cdot \mathbf{v} + \mathbf{u} \cdot \mathbf{w} \).
