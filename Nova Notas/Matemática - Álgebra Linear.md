@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-13  16.34
+Atualizado: 2025-03-13  16.43
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1418,11 +1418,11 @@ Agora, para calcular $( f(\mathbf{u}) )$, podemos simplesmente fazer uma multipl
 $f(\mathbf{u}) = F \mathbf{u}$
 
 
-Se tivermos uma matriz $( G = [\mathbf{u}_1 \quad \mathbf{u}_2 \quad \cdots \quad \mathbf{u}_q] \)$, onde cada \( \mathbf{u}_i ) é um vetor coluna tridimensional, então \( FG \) resulta na transformação linear de todos os vetores \( \mathbf{u}_i \) conforme definido pela matriz \( F \):
+Se tivermos uma matriz $( G = [\mathbf{u}_1 \quad \mathbf{u}_2 \quad \cdots \quad \mathbf{u}_q] )$, onde cada $( \mathbf{u}_i )$ é um vetor coluna tridimensional, então $( FG )$ resulta na transformação linear de todos os vetores $( \mathbf{u}_i )$ conforme definido pela matriz ( F ):
 
-\[
-FG = [f(\mathbf{u}_1) \quad f(\mathbf{u}_2) \quad \cdots \quad f(\mathbf{u}_q)]
-\]
+
+$FG = [f(\mathbf{u}_1) \quad f(\mathbf{u}_2) \quad \cdots \quad f(\mathbf{u}_q)]$
+
 
 Para resumir, a matriz no lado esquerdo de um produto escalar especifica qual transformação linear aplicar aos vetores do lado direito. Já mostramos que isso pode ser usado para realizar projeções e rotações, mas qualquer outra transformação linear é possível. Por exemplo, aqui está uma transformação conhecida como **mapeamento de cisalhamento**:
 
@@ -1483,7 +1483,7 @@ plt.show()
 
 ### **Inversa de uma matriz**
 
-Agora que entendemos que uma matriz pode representar qualquer transformação linear, uma pergunta natural é: podemos encontrar uma matriz de transformação que reverta o efeito de uma determinada matriz de transformação \( F \)? A resposta é sim... às vezes! Quando existe, essa matriz é chamada de **inversa** de \( F \), e é denotada por \( F^{-1} \).
+Agora que entendemos que uma matriz pode representar qualquer transformação linear, uma pergunta natural é: podemos encontrar uma matriz de transformação que reverta o efeito de uma determinada matriz de transformação \( F \)? A resposta é sim... às vezes! Quando existe, essa matriz é chamada de **inversa** de \( F \), e é denotada por $( F^{-1} )$.
 
 Por exemplo, a rotação, o mapeamento de cisalhamento e o mapeamento de compressão acima têm transformações inversas. Vamos demonstrar isso no mapeamento de cisalhamento:
 
@@ -1502,14 +1502,14 @@ plt.show()
 
 Aplicamos um mapeamento de cisalhamento em \( P \), como fizemos antes, mas então aplicamos uma segunda transformação ao resultado, e _voilà_, isso teve o efeito de voltar ao \( P \) original (plotei o contorno do \( P \) original para verificar). A segunda transformação é a inversa da primeira.
 
-Definimos a matriz inversa \( F^{-1}_{\text{shear}} \) manualmente desta vez, mas o NumPy fornece uma função `inv` para calcular a inversa de uma matriz, então poderíamos ter escrito:
+Definimos a matriz inversa $( F^{-1}_{\text{shear}} )$ manualmente desta vez, mas o NumPy fornece uma função `inv` para calcular a inversa de uma matriz, então poderíamos ter escrito:
 
 ```run-python
 F_inv_shear = LA.inv(F_shear)
 F_inv_shear
 ```
 
-Apenas matrizes quadradas podem ser invertidas. Isso faz sentido quando você pensa sobre isso: se você tiver uma transformação que reduz o número de dimensões, então algumas informações são perdidas e não há como recuperá-las. Por exemplo, digamos que você use uma matriz \( 2 \times 3 \) para projetar um objeto 3D em um plano. O resultado pode parecer com isso:
+Apenas matrizes quadradas podem ser invertidas. Isso faz sentido quando você pensa sobre isso: se você tiver uma transformação que reduz o número de dimensões, então algumas informações são perdidas e não há como recuperá-las. Por exemplo, digamos que você use uma matriz $( 2 \times 3 )$ para projetar um objeto 3D em um plano. O resultado pode parecer com isso:
 
 ```run-python
 plt.plot([0, 0, 1, 1, 0, 0.1, 0.1, 0, 0.1, 1.1, 1.0, 1.1, 1.1, 1.0, 1.1, 0.1],
@@ -1535,7 +1535,7 @@ plot_transformation(P, F_project @ P, "$P$", r"$F_{\text{project}} \cdot P$", ax
 plt.show()
 ```
 
-Essa matriz de transformação realiza uma projeção no eixo horizontal. Nosso polígono é completamente achatado, então algumas informações são totalmente perdidas, e é impossível voltar ao polígono original usando uma transformação linear. Em outras palavras, \( F_{\text{project}} \) não tem inversa. Tal matriz quadrada que não pode ser invertida é chamada de **matriz singular** (também conhecida como matriz degenerada). Se pedirmos ao NumPy para calcular sua inversa, ele levantará uma exceção:
+Essa matriz de transformação realiza uma projeção no eixo horizontal. Nosso polígono é completamente achatado, então algumas informações são totalmente perdidas, e é impossível voltar ao polígono original usando uma transformação linear. Em outras palavras, $( F_{\text{project}})$ não tem inversa. Tal matriz quadrada que não pode ser invertida é chamada de **matriz singular** (também conhecida como matriz degenerada). Se pedirmos ao NumPy para calcular sua inversa, ele levantará uma exceção:
 
 ```run-python
 try:
@@ -1544,7 +1544,7 @@ except LA.LinAlgError as e:
     print("LinAlgError:", e)
 ```
 
-Aqui está outro exemplo de uma matriz singular. Esta realiza uma projeção no eixo a um ângulo de \( 30^\circ \) acima do eixo horizontal:
+Aqui está outro exemplo de uma matriz singular. Esta realiza uma projeção no eixo a um ângulo de $( 30^\circ )$ acima do eixo horizontal:
 
 ```run-python
 angle30 = 30 * np.pi / 180
@@ -1565,9 +1565,9 @@ LA.inv(F_project_30)
 
 Como você pode esperar, o produto escalar de uma matriz por sua inversa resulta na matriz identidade:
 
-\[
+
 M \cdot M^{-1} = M^{-1} \cdot M = I
-\]
+
 
 Isso faz sentido, já que fazer uma transformação linear seguida pela transformação inversa resulta em nenhuma mudança.
 
