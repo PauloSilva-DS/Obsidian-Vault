@@ -11,7 +11,7 @@ random.seed()  # inicializar o contador
 sorteados = [10,11,22,23]  # lista de números sorteados
 
 # realização dos sorteios
-for i in range(12):
+for i in range(11):
     n = 10
     while (n in sorteados):
         n = random.randint(1, 25)

@@ -39,18 +39,21 @@ plt.show()                           # Show the figure.
 
 
 ```python
+import micropip
 await micropip.install('ipywidgets')
 import ipywidgets as widgets
 
 
 ```
+
 ```python
 widgets.IntSlider()
-
-```
- IPython.display import display
+IPython.display import display
 w = widgets.IntSlider()
 display(w)
+
+```
+ 
 
 ```python
 from IPython.display import display

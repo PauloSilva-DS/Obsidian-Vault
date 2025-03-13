@@ -1,14 +1,18 @@
 ---
-Atualizado: 2025-03-12  11.44
+Atualizado: 2025-03-12  12.09
 Criado: 2025-03-12  10.05
 ---
 
 
 
 ```run-python
-import numpy as np
+import os
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+from PIL import Image
+import subprocess
+
+caminho_imagem = '/home/paulo/Obsidian Vault/Obsidian Vault/plot/plot3d.png'
 
 # Definindo os arrays para as coordenadas
 a = np.array([1, 2, 8])  # Coordenadas x
@@ -27,6 +31,11 @@ subplot3d.set_zlim3d([0, 9])
 # Mostrando o gráfico
 plt.savefig('/home/paulo/Obsidian Vault/Obsidian Vault/plot/plot3d.png')
 print("Gráfico salvo como 'plot3d.png'")
+
+#imagem = Image.open(caminho_imagem)
+#imagem.show()
+
+subprocess.run(['xdg-open', caminho_imagem])
 
 ```
 
