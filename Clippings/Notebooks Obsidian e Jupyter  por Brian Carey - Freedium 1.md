@@ -1,12 +1,14 @@
 ---
-title: "Notebooks Obsidian e Jupyter | por Brian Carey - Freedium"
-url: "https://freedium.cfd/https://medium.com/@biscotty666/obsidian-and-jupyter-notebooks-5d90ab3eab4c"
-author:
-published:
-data: "2025-03-13T17:23:43-03:00"
-description: "Personal Knowledge Management for Data Science"
+title: Notebooks Obsidian e Jupyter | por Brian Carey - Freedium
+url: https://freedium.cfd/https://medium.com/@biscotty666/obsidian-and-jupyter-notebooks-5d90ab3eab4c
+author: 
+published: 
+data: 2025-03-13T17:23:43-03:00
+description: Personal Knowledge Management for Data Science
 tags:
-  - "clippings"
+  - clippings
+Atualizado: 2025-03-13  18.13
+Criado: 2025-03-13  17.23
 ---
 ### Motivação de informação
 
