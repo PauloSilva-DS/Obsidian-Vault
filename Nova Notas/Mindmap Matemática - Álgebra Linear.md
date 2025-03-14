@@ -1,8 +1,7 @@
 ---
-Atualizado: 2025-03-14  11.31
+Atualizado: 2025-03-14  11.33
 Criado: 2025-03-14  11.31
 ---
-**Mindmap: Matemática - Álgebra Linear**
 
 ### 1. **Introdução**
 
