@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
+                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Aprendizado de máquina"
+              "title": "Matemática - Álgebra Linear"
             }
           }
         ],
@@ -229,6 +229,9 @@
   },
   "active": "baf78baf21381818",
   "lastOpenFiles": [
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.ipynb",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear-Copy1.md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Untitled.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Autodiferenciação.md",
@@ -260,10 +263,7 @@
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
     "Templates/DataScience.md",
     "Data Science do Zero/0 -Data Science do Zero.md",
-    "Sem título.md",
     "Source Material/Imagens/Pasted image 20250310150827.png",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina (pss's conflicted copy 2025-03-10).md",
-    "Nova Notas/Aprendizado de máquina.md",
     "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow",
