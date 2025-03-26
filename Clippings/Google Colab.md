@@ -10,6 +10,8 @@ tags:
   - álgebraLinear
   - machineLearning
   - python
+Atualizado: 2025-03-26  14.57
+Criado: 2025-03-26  14.55
 ---
 **Math - Linear Algebra**
 

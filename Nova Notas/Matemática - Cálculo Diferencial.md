@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-14  10.50
+Atualizado: 2025-03-26  15.05
 Criado: 2025-03-13  18.13
 ---
 **Matemática - Cálculo Diferencial**
@@ -663,7 +663,8 @@ Até agora, consideramos apenas funções que produzem um escalar, mas é possí
 
 No Aprendizado Profundo, geralmente só precisamos diferenciar a função de custo, que quase sempre produz um único número escalar. Mas suponha por um segundo que você queira diferenciar uma função $\mathbf{f}(\mathbf{x})$ que produz vetores $d$-dimensionais. A boa notícia é que você pode tratar cada dimensão de _saída_ independentemente das outras. Isso lhe dará uma derivada parcial para cada dimensão de entrada e cada dimensão de saída. Se você colocá-las todas em uma única matriz, com uma coluna por dimensão de entrada e uma linha por dimensão de saída, você obterá a chamada **matriz jacobiana**.
 
-$
+
+$$
 \mathbf{J}_\mathbf{f}(\mathbf{x}_\mathbf{A}) = \begin{pmatrix}
 \dfrac{\partial f_1}{\partial x_1}(\mathbf{x}_\mathbf{A})
 && \dfrac{\partial f_1}{\partial x_2}(\mathbf{x}_\mathbf{A})
@@ -679,7 +680,8 @@ $
 && \dots
 && \dfrac{\partial f_m}{\partial x_n}(\mathbf{x}_\mathbf{A})
 \end{pmatrix}
-$
+$$
+
 
 As próprias derivadas parciais são frequentemente chamadas de **jacobianos**. São apenas as derivadas parciais de primeira ordem da função $\mathbf{f}$.
 
@@ -699,7 +701,8 @@ Observe que $\dfrac{\partial^2 f}{\partial x\,\partial y} = \dfrac{\partial^2 f}
 
 A matriz contendo todas as hessianas é chamada de **matriz hessiana**:
 
-$
+
+$$
 \mathbf{H}_f(\mathbf{x}_\mathbf{A}) = \begin{pmatrix}
 \dfrac{\partial^2 f}{\partial {x_1}^2}(\mathbf{x}_\mathbf{A})
 && \dfrac{\partial^2 f}{\partial x_1\, \partial x_2}(\mathbf{x}_\mathbf{A})
@@ -715,7 +718,8 @@ $
 && \dots
 && \dfrac{\partial^2 f}{\partial {x_n}^2}(\mathbf{x}_\mathbf{A})\\
 \end{pmatrix}
-$
+$$
+
 
 Existem ótimos algoritmos de otimização que tiram proveito das hessianas, mas, na prática, o Aprendizado Profundo quase nunca as usa. De fato, se uma função tem $n$ variáveis, há $n^2$ hessianas: como as redes neurais geralmente têm vários milhões de parâmetros, o número de hessianas excederia milhares de bilhões. Mesmo se tivéssemos a quantidade necessária de RAM, os cálculos seriam proibitivamente lentos.
 
@@ -725,18 +729,21 @@ Vamos terminar provando todas as regras de derivação que listamos anteriorment
 
 ## Constante: $f(x)=c$
 
-$
+
+$$
 \begin{align*}
 f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} && \quad\text{por definição}\\
 & = \underset{\epsilon \to 0}\lim\dfrac{c - c}{\epsilon} && \quad \text{usando }f(x) = c \\
 & = \underset{\epsilon \to 0}\lim 0 && \quad \text{pois }c - c = 0\\
 & = 0 && \quad \text{pois o limite de uma constante é essa constante}
 \end{align*}
-$
+
+$$
 
 ## Regra do produto: $f(x)=g(x)h(x)$
 
-$
+
+$$
 \begin{align*}
 f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} && \quad\text{por definição}\\
 & = \underset{\epsilon \to 0}\lim\dfrac{g(x+\epsilon)h(x+\epsilon) - g(x)h(x)}{\epsilon} && \quad \text{usando }f(x) = g(x)h(x) \\
@@ -749,7 +756,7 @@ f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} &&
 & = \underset{\epsilon \to 0}\lim{\left[\dfrac{g(x+\epsilon) - g(x)}{\epsilon}\right]}h(x) + h(x)g'(x) && \quad \text{pois } h(x) \text{ é contínua}\\
 & = g'(x)h(x) + g(x)h'(x) && \quad \text{usando a definição de }g'(x)
 \end{align*}
-$
+$$
 
 Observe que se $g(x)=c$ (uma constante), então $g'(x)=0$, então a equação se simplifica para:
 
@@ -757,7 +764,8 @@ $f'(x)=c \, h'(x)$
 
 ## Regra da cadeia: $f(x)=g(h(x))$
 
-$
+
+$$
 \begin{align*}
 f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} && \quad\text{por definição}\\
 & = \underset{\epsilon \to 0}\lim\dfrac{g(h(x+\epsilon)) - g(h(x))}{\epsilon} && \quad \text{usando }f(x) = g(h(x))\\
@@ -770,13 +778,15 @@ f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} &&
 & = h'(x)g'(v) && \quad \text{ usando a definição de } g'(v)\\
 & = h'(x)g'(h(x)) && \quad \text{ pois } v = h(x)
 \end{align*}
-$
+$$
+
 
 ## Exponencial: $f(x)=\exp(x)=e^x$
 
 Existem várias definições equivalentes do número $e$. Uma delas afirma que $e$ é o único número positivo para o qual $\underset{\epsilon \to 0}\lim{\dfrac{e^\epsilon - 1}{\epsilon}}=1$. Vamos usar isso nesta prova:
 
-$
+$$
+
 \begin{align*}
 f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} && \quad\text{por definição}\\
 & = \underset{\epsilon \to 0}\lim\dfrac{e^{x+\epsilon} - e^x}{\epsilon} && \quad \text{usando }f(x) = e^x\\
@@ -786,7 +796,8 @@ f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} &&
 & = \underset{\epsilon \to 0}\lim{e^x} && \quad \text{pois }\underset{\epsilon \to 0}\lim{\dfrac{e^\epsilon - 1}{\epsilon}}=1\\
 & = e^x && \quad \text{pois } e^x \text{ não depende de }\epsilon
 \end{align*}
-$
+
+$$
 
 ## Logaritmo: $f(x) = \ln(x)$
 
@@ -800,7 +811,7 @@ $e = \underset{\epsilon \to 0}\lim\left(1+\epsilon\right)^{1/\epsilon}$
 
 Isso será útil em um segundo:
 
-$
+$$
 \begin{align*}
 f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} && \quad\text{por definição}\\
 & = \underset{\epsilon \to 0}\lim\dfrac{\ln(x+\epsilon) - \ln(x)}{\epsilon} && \quad \text{usando }f(x) = \ln(x)\\
@@ -814,7 +825,7 @@ f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} &&
 & = \dfrac{1}{x}\ln(e) && \quad \text{pois }e=\underset{u \to 0}\lim{(1 + u)^{1/u}}\\
 & = \dfrac{1}{x} && \quad \text{pois }\ln(e)=1
 \end{align*}
-$
+$$
 
 ## Regra da potência: $f(x)=x^r$, com $r \neq 0$
 
