@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-26  15.16
+Atualizado: 2025-03-26  15.19
 Criado: 2025-03-13  18.13
 ---
 **Matemática - Cálculo Diferencial**
@@ -599,19 +599,19 @@ Se você estivesse em pé nessa superfície no ponto $\mathrm{A}$ e caminhasse a
 
 Como você pode ver, um único número não é mais suficiente para descrever a inclinação da função em um determinado ponto. Precisamos de uma inclinação para o eixo $x$ e uma inclinação para o eixo $y$. Uma inclinação para cada variável. Para encontrar a inclinação ao longo do eixo $x$, chamada de **derivada parcial de $f$ em relação a $x$**, e denotada por $\dfrac{\partial f}{\partial x}$ (com $\partial$ curvado), podemos diferenciar $f(x,y)$ em relação a $x$ enquanto tratamos todas as outras variáveis (neste caso, apenas $y$) como constantes:
 
-$ \dfrac{\partial f}{\partial x} = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon, y) - f(x,y)}{\epsilon}$
+$\dfrac{\partial f}{\partial x} = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon, y) - f(x,y)}{\epsilon}$
 
 Se você usar as regras de derivação listadas anteriormente (neste exemplo, você precisaria apenas da regra do produto e da regra da cadeia), tomando cuidado para tratar $y$ como uma constante, você encontrará:
 
-$ \dfrac{\partial f}{\partial x} = y\cos(xy)$
+$\dfrac{\partial f}{\partial x} = y\cos(xy)$
 
 Da mesma forma, a derivada parcial de $f$ em relação a $y$ é definida como:
 
-$ \dfrac{\partial f}{\partial y} = \underset{\epsilon \to 0}\lim\dfrac{f(x, y+\epsilon) - f(x,y)}{\epsilon}$
+$\dfrac{\partial f}{\partial y} = \underset{\epsilon \to 0}\lim\dfrac{f(x, y+\epsilon) - f(x,y)}{\epsilon}$
 
 Todas as variáveis, exceto $y$, são tratadas como constantes (apenas $x$ neste exemplo). Usando as regras de derivação, obtemos:
 
-$ \dfrac{\partial f}{\partial y} = x\cos(xy)$
+$\dfrac{\partial f}{\partial y} = x\cos(xy)$
 
 Agora temos equações para calcular a inclinação ao longo do eixo $x$ e ao longo do eixo $y$. Mas e as outras direções? Se você estivesse em pé na superfície no ponto $\mathrm{A}$, poderia decidir caminhar em qualquer direção que escolhesse, não apenas ao longo dos eixos $x$ ou $y$. Qual seria a inclinação então? Não deveríamos calcular a inclinação em todas as direções possíveis?
 
@@ -629,23 +629,23 @@ Na origem (ou seja, em $(x,y)=(0,0)$), as derivadas parciais da função $h$ em 
 
 Até agora, consideramos apenas funções com uma única variável $x$, ou com 2 variáveis, $x$ e $y$, mas o parágrafo anterior também se aplica a funções com mais variáveis. Então, vamos considerar uma função $f$ com $n$ variáveis: $f(x_1, x_2, \dots, x_n)$. Por conveniência, vamos definir um vetor $\mathbf{x}$ cujos componentes são essas variáveis:
 
-$\mathbf{x}=\begin{pmatrix}
+$$\mathbf{x}=\begin{pmatrix}
 x_1\\
 x_2\\
 \vdots\\
 x_n
-\end{pmatrix}$
+\end{pmatrix}$$
 
 Agora $f(\mathbf{x})$ é mais fácil de escrever do que $f(x_1, x_2, \dots, x_n)$.
 
 O gradiente da função $f(\mathbf{x})$ em algum ponto $\mathbf{x}_\mathrm{A}$ é o vetor cujos componentes são todas as derivadas parciais da função nesse ponto. Ele é denotado por $\nabla f(\mathbf{x}_\mathrm{A})$, ou às vezes $\nabla_{\mathbf{x}_\mathrm{A}}f$:
 
-$\nabla f(\mathbf{x}_\mathrm{A}) = \begin{pmatrix}
+$$\nabla f(\mathbf{x}_\mathrm{A}) = \begin{pmatrix}
 \dfrac{\partial f}{\partial x_1}(\mathbf{x}_\mathrm{A})\\
 \dfrac{\partial f}{\partial x_2}(\mathbf{x}_\mathrm{A})\\
 \vdots\\
 \dfrac{\partial f}{\partial x_n}(\mathbf{x}_\mathrm{A})\\
-\end{pmatrix}$
+\end{pmatrix}$$
 
 Assumindo que a função é totalmente diferenciável no ponto $\mathbf{x}_\mathbf{A}$, então a superfície que ela descreve pode ser aproximada por um plano nesse ponto (como discutido na seção anterior), e o vetor gradiente é aquele que aponta para a inclinação mais íngreme nesse plano.
 
@@ -991,9 +991,9 @@ Provamos que:
 Agora, a segunda coisa que precisamos provar antes de calcular a derivada da função \(\sin\) é que \(\lim_{\theta \to 0} \frac{\cos(\theta) - 1}{\theta} = 0\). Vamos lá:
 
 $$
-\[
+[
 \lim_{\theta \to 0} \frac{\cos(\theta) - 1}{\theta} = \lim_{\theta \to 0} \frac{\cos(\theta) - 1}{\theta} \cdot \frac{\cos(\theta) + 1}{\cos(\theta) + 1} = \lim_{\theta \to 0} \frac{\cos^2(\theta) - 1}{\theta (\cos(\theta) + 1)} = \lim_{\theta \to 0} \frac{-\sin^2(\theta)}{\theta (\cos(\theta) + 1)} = -\lim_{\theta \to 0} \frac{\sin(\theta)}{\theta} \cdot \frac{\sin(\theta)}{\cos(\theta) + 1} = -\lim_{\theta \to 0} \frac{\sin(\theta)}{\theta} \lim_{\theta \to 0} \frac{\sin(\theta)}{\cos(\theta) + 1} = -\lim_{\theta \to 0} \frac{\sin(\theta)}{\cos(\theta) + 1} = -\frac{0}{1 + 1} = 0
-\]
+]
 $$
 
 - Multiplicando e dividindo por \(\cos(\theta) + 1\)  
@@ -1061,6 +1061,3 @@ E, finalmente, como \(\cos^2(x) + \sin^2(x) = 1\), obtemos:
 f'(x) = \frac{1}{\cos^2(x)}
 \]
 
---- 
-
-Tradução fiel ao original, mantendo toda a formatação matemática e explicações passo a passo.
