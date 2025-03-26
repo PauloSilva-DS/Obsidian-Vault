@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-26  15.05
+Atualizado: 2025-03-26  15.16
 Criado: 2025-03-13  18.13
 ---
 **Matemática - Cálculo Diferencial**
@@ -949,4 +949,118 @@ Lembre-se de que $\tan(\theta)=\dfrac{\sin(\theta)}{\cos(\theta)}$, então o úl
 
 $cos(\theta) < \dfrac{\theta}{\sin(\theta)} < \dfrac{1}{\cos(\theta)}$
 
-Como todos esses termos são estritamente positivos quando $0 < \theta <
+
+Como todos esses termos são estritamente positivos quando \(0 < \theta < \frac{\pi}{2}\), podemos tomar seus inversos e inverter o sentido das desigualdades:
+
+**Desigualdades (1)**
+
+\[
+\frac{1}{\cos(\theta)} > \frac{\sin(\theta)}{\theta} > \cos(\theta)
+\]
+
+assumindo \(0 < \theta < \frac{\pi}{2}\)
+
+Agora, como \(\sin(-\theta) = -\sin(\theta)\), vemos que \(\frac{\sin(-\theta)}{-\theta} = \frac{\sin(\theta)}{\theta}\). Além disso, \(\cos(-\theta) = \cos(\theta)\), e portanto \(\frac{1}{\cos(-\theta)} = \frac{1}{\cos(\theta)}\). Substituindo os termos nas desigualdades (1), obtemos:
+
+\[
+\frac{1}{\cos(-\theta)} > \frac{\sin(-\theta)}{-\theta} > \cos(-\theta)
+\]
+
+assumindo \(0 < \theta < \frac{\pi}{2}\)
+
+Em outras palavras, as desigualdades (1) também valem para \(-\frac{\pi}{2} < \theta < 0\):
+
+**Desigualdades (2)**
+
+\[
+\frac{1}{\cos(\theta)} > \frac{\sin(\theta)}{\theta} > \cos(\theta)
+\]
+
+assumindo \(-\frac{\pi}{2} < \theta < \frac{\pi}{2}\) e \(\theta \neq 0\)
+
+Como \(\cos\) é uma função contínua, \(\lim_{\theta \to 0} \cos(\theta) = \cos(0) = 1\). Da mesma forma, \(\lim_{\theta \to 0} \frac{1}{\cos(\theta)} = \frac{1}{\cos(0)} = 1\).
+
+Como as desigualdades (2) nos dizem que \(\frac{\sin(\theta)}{\theta}\) está "espremido" entre \(\frac{1}{\cos(\theta)}\) e \(\cos(\theta)\) quando \(\theta\) está próximo de 0, e como ambos se aproximam de 1 quando \(\theta\) se aproxima de 0, podemos usar o **teorema do confronto** (também chamado de teorema do sanduíche) para concluir que \(\frac{\sin(\theta)}{\theta}\) também deve se aproximar de 1 quando \(\theta\) se aproxima de 0.
+
+Provamos que:
+
+\[
+\lim_{\theta \to 0} \frac{\sin(\theta)}{\theta} = 1
+\]
+
+Agora, a segunda coisa que precisamos provar antes de calcular a derivada da função \(\sin\) é que \(\lim_{\theta \to 0} \frac{\cos(\theta) - 1}{\theta} = 0\). Vamos lá:
+
+$$
+\[
+\lim_{\theta \to 0} \frac{\cos(\theta) - 1}{\theta} = \lim_{\theta \to 0} \frac{\cos(\theta) - 1}{\theta} \cdot \frac{\cos(\theta) + 1}{\cos(\theta) + 1} = \lim_{\theta \to 0} \frac{\cos^2(\theta) - 1}{\theta (\cos(\theta) + 1)} = \lim_{\theta \to 0} \frac{-\sin^2(\theta)}{\theta (\cos(\theta) + 1)} = -\lim_{\theta \to 0} \frac{\sin(\theta)}{\theta} \cdot \frac{\sin(\theta)}{\cos(\theta) + 1} = -\lim_{\theta \to 0} \frac{\sin(\theta)}{\theta} \lim_{\theta \to 0} \frac{\sin(\theta)}{\cos(\theta) + 1} = -\lim_{\theta \to 0} \frac{\sin(\theta)}{\cos(\theta) + 1} = -\frac{0}{1 + 1} = 0
+\]
+$$
+
+- Multiplicando e dividindo por \(\cos(\theta) + 1\)  
+- Pois \((a - 1)(a + 1) = a^2 - 1\)  
+- Pois \(\cos^2(\theta) - 1 = -\sin^2(\theta)\)  
+- Apenas reorganizando os termos  
+- Pois o limite de um produto é o produto dos limites  
+- Pois \(\lim_{\theta \to 0} \frac{\sin(\theta)}{\theta} = 1\)  
+- Pois \(\lim_{\theta \to 0} \sin(\theta) = 0\) e \(\lim_{\theta \to 0} \cos(\theta) = 1\)  
+
+Provamos que:
+
+\[
+\lim_{\theta \to 0} \frac{\cos(\theta) - 1}{\theta} = 0
+\]
+
+Com tudo isso, finalmente estamos prontos para provar que a derivada da função \(\sin\) é a função \(\cos\):
+
+\[
+f'(x) = \lim_{\theta \to 0} \frac{f(x + \theta) - f(x)}{\theta} = \lim_{\theta \to 0} \frac{\sin(x + \theta) - \sin(x)}{\theta} = \lim_{\theta \to 0} \frac{\cos(x)\sin(\theta) + \sin(x)\cos(\theta) - \sin(x)}{\theta} = \lim_{\theta \to 0} \cos(x) \frac{\sin(\theta)}{\theta} + \lim_{\theta \to 0} \sin(x) \frac{\cos(\theta) - 1}{\theta} = \cos(x) \lim_{\theta \to 0} \frac{\sin(\theta)}{\theta} + \sin(x) \lim_{\theta \to 0} \frac{\cos(\theta) - 1}{\theta} = \cos(x) \cdot 1 + \sin(x) \cdot 0 = \cos(x)
+\]
+
+- Por definição  
+- Usando \(f(x) = \sin(x)\)  
+- Pois \(\sin(a + b) = \cos(a)\sin(b) + \sin(a)\cos(b)\)  
+- Pois o limite de uma soma é a soma dos limites  
+- Tirando \(\cos(x)\) e \(\sin(x)\) pois não dependem de \(\theta\)  
+- Pois \(\lim_{\theta \to 0} \frac{\cos(\theta) - 1}{\theta} = 0\)  
+- Pois \(\lim_{\theta \to 0} \frac{\sin(\theta)}{\theta} = 1\)  
+
+**Cosseno: \(f(x) = \cos(x)\)**
+
+Como já provamos que \(\sin'(x) = \cos(x)\), provar que \(\cos'(x) = -\sin(x)\) será mais fácil.
+
+\[
+f'(x) = \lim_{\theta \to 0} \frac{f(x + \theta) - f(x)}{\theta} = \lim_{\theta \to 0} \frac{\cos(x + \theta) - \cos(x)}{\theta} = \lim_{\theta \to 0} \frac{\sin\left(x + \frac{\pi}{2} + \theta\right) - \sin\left(x + \frac{\pi}{2}\right)}{\theta} = \lim_{\theta \to 0} \frac{\sin(z + \theta) - \sin(z)}{\theta} = \sin'(z) = \cos(z) = \cos\left(x + \frac{\pi}{2}\right) = -\sin(x)
+\]
+
+- Por definição  
+- Usando \(f(x) = \cos(x)\)  
+- Pois \(\cos(x) = \sin\left(x + \frac{\pi}{2}\right)\)  
+- Usando \(z = x + \frac{\pi}{2}\)  
+- Usando a definição de \(\sin'(z)\)  
+- Pois provamos que \(\sin'(z) = \cos(z)\)  
+- Usando a definição de \(z\)  
+- Usando esta regra bem conhecida da trigonometria  
+
+**Tangente: \(f(x) = \tan(x)\)**
+
+Como \(\tan(x) = \frac{\sin(x)}{\cos(x)}\), podemos usar a regra do quociente para obter:
+
+\[
+f'(x) = \frac{\sin'(x)\cos(x) - \sin(x)\cos'(x)}{\cos^2(x)}
+\]
+
+Como \(\sin'(x) = \cos(x)\) e \(\cos'(x) = -\sin(x)\), obtemos:
+
+\[
+f'(x) = \frac{\cos^2(x) + \sin^2(x)}{\cos^2(x)}
+\]
+
+E, finalmente, como \(\cos^2(x) + \sin^2(x) = 1\), obtemos:
+
+\[
+f'(x) = \frac{1}{\cos^2(x)}
+\]
+
+--- 
+
+Tradução fiel ao original, mantendo toda a formatação matemática e explicações passo a passo.
