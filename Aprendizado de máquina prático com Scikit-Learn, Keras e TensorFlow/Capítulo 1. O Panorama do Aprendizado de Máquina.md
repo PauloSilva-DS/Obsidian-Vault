@@ -321,8 +321,7 @@ Parece haver uma tendência aqui! Embora os dados sejam **ruidosos** (ou seja, p
 
 **Equação 1-1. Um modelo linear simples**
 
-\[ \text{satisfação\_com\_a\_vida} = \theta_0 + \theta_1 \times \text{PIB\_per\_capita} \]
-
+O
 Esse modelo tem dois **parâmetros do modelo**, \(\theta_0\) e \(\theta_1\). Ao ajustar esses parâmetros, você pode fazer seu modelo representar qualquer função linear, como mostrado na Figura 1-19.
 
 **Figura 1-19. Alguns possíveis modelos lineares**

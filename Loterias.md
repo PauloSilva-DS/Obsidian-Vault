@@ -11,7 +11,7 @@ random.seed()  # inicializar o contador
 sorteados = [10,11,22,23]  # lista de números sorteados
 
 # realização dos sorteios
-for i in range(11):
+for i in range(12):
     n = 10
     while (n in sorteados):
         n = random.randint(1, 25)
@@ -64,9 +64,31 @@ for y in range(volantes):
 
 
 ```
+```ad-note
+title: Dupla Sena
+
+
+```
 
 ```python
-print(67)
+# -*- coding: utf-8 -*
+import random  # importar as funções do random
+random.seed()  # inicializar o contador
+sorteados = [33]  # lista de números sorteados
+
+
+
+# realização dos sorteios
+for i in range(6):
+    n = 33
+    while (n in sorteados):
+        n = random.randint(1,50)
+    sorteados.append(n)
+
+
+print(len(sorteados))
+sorteados.sort()
+print (sorteados)
 ```
 
 
