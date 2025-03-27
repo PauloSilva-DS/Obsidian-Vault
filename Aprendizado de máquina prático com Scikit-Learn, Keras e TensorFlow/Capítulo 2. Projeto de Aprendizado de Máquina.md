@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-27  16.34
+Atualizado: 2025-03-27  16.39
 Criado: 2025-03-07  14.55
 ---
 Claro! Vou traduzir o conteúdo do arquivo para o português. Aqui está a tradução:
@@ -370,10 +370,15 @@ def shuffle_and_split_data(data, test_ratio):
 
 Você pode então usar esta função assim:
 
+```run-python
 >>> train_set, test_set = shuffle_and_split_data(housing, 0.2)
 >>> len(train_set)
+```
 16512
+
+```run-python
 >>> len(test_set)
+```
 4128
 
 Bem, isso funciona, mas não é perfeito: se você executar o programa novamente, ele gerará um conjunto de teste diferente! Com o tempo, você (ou seus algoritmos de machine learning) verá todo o conjunto de dados, o que é exatamente o que você quer evitar.
@@ -384,6 +389,7 @@ No entanto, ambas as soluções quebrarão na próxima vez que você buscar um c
 
 Aqui está uma possível implementação:
 
+```run-python
 from 2lib import crc32
 
 def is_id_in_test_set(identifier, test_ratio):
@@ -394,52 +400,71 @@ def split_data_with_id_hash(data, test_ratio, id_column):
     in_test_set = tds.apply(lambda td: is_id_in_test_set(id_, test_ratio))
     return data.loc[-in_test_set], data.loc[in_test_set]
 
+```
 Infelizmente, o conjunto de dados de habitação não tem uma coluna de identificador. A solução mais simples é usar o índice da linha como ID:
 
+```run-python
 housing_with_id = housing.reset_index()  # adiciona uma coluna `index`
 train_set, test_set = split_data_with_id_hash(housing_with_id, 0.2, "index")
 
+```
 Se você usar o índice da linha como um identificador único, precisa garantir que novos dados sejam anexados ao final do conjunto de dados e que nenhuma linha seja excluída. Se isso não for possível, você pode tentar usar os recursos mais estáveis para construir um identificador único. Por exemplo, a latitude e a longitude de um distrito são garantidamente estáveis por alguns milhões de anos, então você poderia combiná-las em um ID assim:[7]
 
+```run-python
 housing_with_id["id"] = housing["longitude"] * 1000 + housing["latitude"]
 train_set, test_set = split_data_with_id_hash(housing_with_id, 0.2, "id")
 
+```
 O Scikit-Learn fornece algumas funções para dividir conjuntos de dados em vários subconjuntos de várias maneiras. A função mais simples é train_test_split(), que faz basicamente a mesma coisa que a função shuffle_and_split_data() que definimos anteriormente, com alguns recursos adicionais. Primeiro, há um parâmetro random_state que permite definir a semente do gerador aleatório. Segundo, você pode passar vários conjuntos de dados com o mesmo número de linhas, e ele os dividirá nos mesmos índices (isso é muito útil, por exemplo, se você tiver um DataFrame separado para rótulos):
 
+```run-python
 from sklearn.model_selection import train_test_split
 
 train_set, test_set = train_test_split(housing, test_size=0.2,
 random_state=42)
 
+```
 Até agora, consideramos métodos de amostragem puramente aleatórios. Isso geralmente é bom se seu conjunto de dados for grande o suficiente (especialmente em relação ao número de atributos), mas se não for, você corre o risco de introduzir um viés de amostragem significativo. Quando os funcionários de uma empresa de pesquisa decidem ligar para 1.000 pessoas para fazer algumas perguntas, eles não escolhem 1.000 pessoas aleatoriamente em uma lista telefônica. Eles tentam garantir que essas 1.000 pessoas sejam representativas de toda a população, em relação às perguntas que querem fazer. Por exemplo, a população dos EUA é 51,1% feminina e 48,9% masculina, então uma pesquisa bem conduzida nos EUA tentaria manter essa proporção na amostra: 511 mulheres e 489 homens (pelo menos se parecer possível que as respostas variem entre gêneros). Isso é chamado de *amostragem estratificada*: a população é dividida em subgrupos homogêneos chamados estratos, e o número certo de instâncias é amostrado de cada estrato para garantir que o conjunto de teste seja representativo da população geral. Se as pessoas que conduzem a pesquisa usassem amostragem puramente aleatória, haveria cerca de 10,7% de chance de amostrar um conjunto de teste distorcido com menos de 48,5% de participantes do sexo feminino ou mais de 53,5%. De qualquer forma, os resultados da pesquisa provavelmente seriam bastante tendenciosos.
 
 Suponha que você tenha conversado com alguns especialistas que disseram que a renda média é um atributo muito importante para prever os preços médios das casas. Você pode querer garantir que o conjunto de teste seja representativo das várias categorias de renda em todo o conjunto de dados. Como a renda média é um atributo numérico contínuo, você primeiro precisa criar um atributo de categoria de renda. Vamos olhar mais de perto o histograma de renda média (de volta à Figura 2-8): a maioria dos valores de renda média está agrupada em torno de 1,5 a 6 (ou seja, \$15.000-\$60.000), mas algumas rendas médias vão muito além de 6. É importante ter um número suficiente de instâncias em seu conjunto de dados para cada estrato, ou a estimativa da importância de um estrato pode ser tendenciosa. Isso significa que você não deve ter muitos estratos, e cada estrato deve ser grande o suficiente. O código a seguir usa a função pd.cut() para criar um atributo de categoria de renda com cinco categorias (rotuladas de 1 a 5); a categoria 1 varia de 0 a 1,5 (ou seja, menos de \$15.000), a categoria 2 de 1,5 a 3, e assim por diante:
 
+```run-python
 housing["income_cat"] = pd.cut(housing["median_income"], bins=[0., 1.5, 3.0, 4.5, 6., np.inf], labels=[1, 2, 3, 4, 5])
 
+```
 Essas categorias de renda são representadas na Figura 2-9:
+```run-python
 
 housing["income_cat"].value_counts().sort_index().plot.bar(rot=0, grid=True) plt.xlabel("Categoria de Renda") plt.ylabel("Número de Distritos") plt.show()
 
+```
 Agora você está pronto para fazer uma amostragem estratificada com base na categoria de renda. O Scikit-Learn fornece várias classes de divisão no pacote sklearn.model_selection que implementam várias estratégias para dividir seu conjunto de dados em um conjunto de treinamento e um conjunto de teste. Cada divisor tem um método split() que retorna um iterador sobre diferentes divisões de treino/teste dos mesmos dados.
 
 ---
 
 Para ser preciso, o método split() gera os índices de treinamento e teste, não os dados em si. Ter várias divisões pode ser útil se você quiser estimar melhor o desempenho do seu modelo, como veremos quando discutirmos validação cruzada mais adiante neste capítulo. Por exemplo, o código a seguir gera 10 divisões estratificadas diferentes do mesmo conjunto de dados:
+```run-python
 
 from sklearn.model_selection import StratifiedShuffleSplit
 
 splitter = StratifiedShuffleSplit(n_splits=10, test_size=0.2, random_state=42) strat_splits = []
 for train_index, test_index in splitter.split(housing, housing["income_cat"]): strat_train_set_n = housing.1loc[train_index] strat_test_set_n = housing.1loc[test_index] strat_splits.append([strat_train_set_n, strat_test_set_n])
 
+
+```
+
 Por enquanto, você pode apenas usar a primeira divisão:
 
+```run-python
 strat_train_set, strat_test_set = strat_splits[0]
+```
 
 Ou, como a amostragem estratificada é bastante comum, há uma maneira mais curta de obter uma única divisão usando a função train_test_split() com o argumento stratify:
 
+```run-python
 strat_train_set, strat_test_set = train_test_split( housing, test_size=0.2, stratify=housing["income_cat"], random_state=42)
 
+```
 ---
 
 Vamos ver se isso funcionou como esperado. Você pode começar olhando as proporções das categorias de renda no conjunto de teste:
