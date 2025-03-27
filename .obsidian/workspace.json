@@ -11,14 +11,16 @@
             "id": "baf78baf21381818",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.md",
-                "mode": "source",
-                "source": false
+                "file": "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
+                "page": 37,
+                "left": -94,
+                "top": 84,
+                "zoom": 1.1
               },
-              "icon": "lucide-file",
-              "title": "Matemática - Álgebra Linear"
+              "icon": "lucide-file-text",
+              "title": "Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron"
             }
           }
         ],
@@ -98,7 +100,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 449.5
+    "width": 449.5,
+    "collapsed": true
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -227,15 +230,68 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "baf78baf21381818",
+  "floating": {
+    "id": "3707ff9ee0ee7fbe",
+    "type": "floating",
+    "children": [
+      {
+        "id": "b8ee1659dbfda7a6",
+        "type": "window",
+        "children": [
+          {
+            "id": "e1c2e5238ddc9ab5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3657a88ac76966bf",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Capítulo 1. O Panorama do Aprendizado de Máquina"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1284,
+        "y": 40,
+        "width": 1268,
+        "height": 1032,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "3657a88ac76966bf",
   "lastOpenFiles": [
+    "Source Material/Imagens/Pasted image 20250327153410.png",
+    "Source Material/Imagens/Pasted image 20250327153352.png",
+    "Source Material/Imagens/Pasted image 20250327153334.png",
+    "Source Material/Imagens/Pasted image 20250327153315.png",
+    "Source Material/Imagens/Pasted image 20250327153258.png",
+    "Source Material/Imagens/Pasted image 20250327153232.png",
+    "Source Material/Imagens/Pasted image 20250327153214.png",
+    "Source Material/Imagens/Pasted image 20250327153127.png",
+    "Source Material/Imagens/Pasted image 20250327153032.png",
+    "Source Material/Imagens/Pasted image 20250327153006.png",
+    "Source Material/Imagens/Pasted image 20250327152928.png",
+    "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
+    "Source Material/pdf/mãos a obra/Hands-On Machine Learning 20-69.pdf",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/linear.ipynb",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Copy.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.ipynb",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear-Copy1.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Untitled.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Autodiferenciação.md",
     "Clippings/Notebooks Obsidian e Jupyter  por Brian Carey - Freedium 1.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Cálculo Diferencial.md",
@@ -249,32 +305,18 @@
     "Nova Notas/202503141057.md",
     "Nova Notas/Teste Python notebook.md",
     "differential_calculus.md",
-    "plot/plot3d.png",
     "Nova Notas/Matemática - Álgebra Linear 1.md",
-    "plot3d.png",
     "plot",
     "Nova Notas/Sem título.md",
-    "Source Material/Imagens/Pasted image 20250311155314.png",
-    "Source Material/Imagens/Pasted image 20250311154907.png",
-    "Source Material/Imagens/Pasted image 20250311154341.png",
     "Data Science do Zero/4-Álgebra Linear.md",
     "Source Material/pdf/temp5668552431312359342.PDF",
     "Source Material/pdf/temp5945610998191025736.PDF",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
     "Templates/Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow.md",
     "Templates/DataScience.md",
-    "Source Material/Imagens/Pasted image 20250310150827.png",
     "Source Material/pdf/mãos a obra/Hands-On Machine Learning 70-155.pdf",
-    "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow",
-    "Source Material/pdf/mãos a obra/Hands-On Machine Learning 20-69.pdf",
     "Source Material/pdf/Essential-Math-for-Data-Science-by-Thomas-Nield.pdf",
-    "piecesdb.json",
-    "Source Material/Imagens/banner1.jpg",
-    "Source Material/Imagens/Pasted image 20250219154846.png",
-    "Source Material/Imagens/Pasted image 20250219154447.png",
-    "Pasted image 20250218110522.png",
     "Sem título.canvas"
   ]
 }

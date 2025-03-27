@@ -4,7 +4,7 @@ tags:
   - python
   - AprendizadoMaquina
 Completo: false
-Atualizado: 2025-03-11  15.34
+Atualizado: 2025-03-27  15.34
 Criado: 2025-03-07  15.07
 ---
 [[Aprendizado de máquina]]
@@ -59,20 +59,24 @@ Considere como você escreveria um filtro de spam usando técnicas de programaç
 2. Você escreveria um algoritmo de detecção para cada um dos padrões que notou, e seu programa marcaria e-mails como spam se vários desses padrões fossem detectados.
 3. Você testaria seu programa e repetiria os passos 1 e 2 até que ele estivesse bom o suficiente para ser lançado.
 
+![[Pasted image 20250327152836.png]]
+
 **Figura 1-1. A abordagem tradicional**  
 Como o problema é difícil, seu programa provavelmente se tornará uma longa lista de regras complexas — bastante difícil de manter.
 
 Em contraste, um filtro de spam baseado em técnicas de aprendizado de máquina aprende automaticamente quais palavras e frases são bons preditores de spam, detectando padrões incomuns de palavras nos exemplos de spam em comparação com os exemplos de ham (Figura 1-2). O programa é muito mais curto, fácil de manter e, muito provavelmente, mais preciso.
+![[Pasted image 20250327152928.png]]
 
 **Figura 1-2. A abordagem de aprendizado de máquina**  
 E se os spammers perceberem que todos os seus e-mails contendo "4U" são bloqueados? Eles podem começar a escrever "For U" em vez disso. Um filtro de spam usando técnicas de programação tradicionais precisaria ser atualizado para marcar e-mails com "For U". Se os spammers continuarem contornando seu filtro de spam, você precisará continuar escrevendo novas regras para sempre.
 
 Em contraste, um filtro de spam baseado em técnicas de aprendizado de máquina percebe automaticamente que "For U" se tornou incomumente frequente nos spams marcados pelos usuários e começa a marcá-los sem sua intervenção (Figura 1-3).
-
+![[Pasted image 20250327153006.png]]
 **Figura 1-3. Adaptando-se automaticamente às mudanças**  
 Outra área onde o aprendizado de máquina se destaca é para problemas que são muito complexos para abordagens tradicionais ou para os quais não há algoritmo conhecido. Por exemplo, considere o reconhecimento de fala. Digamos que você queira começar de forma simples e escrever um programa capaz de distinguir as palavras "um" e "dois". Você pode notar que a palavra "dois" começa com um som agudo ("T"), então você poderia codificar um algoritmo que mede a intensidade do som agudo e usá-lo para distinguir "um" e "dois" — mas, obviamente, essa técnica não escalaria para milhares de palavras faladas por milhões de pessoas muito diferentes em ambientes ruidosos e em dezenas de idiomas. A melhor solução (pelo menos hoje) é escrever um algoritmo que aprenda sozinho, dados muitos exemplos de gravações para cada palavra.
 
 Finalmente, o aprendizado de máquina pode ajudar os humanos a aprender (Figura 1-4). Modelos de aprendizado de máquina podem ser inspecionados para ver o que aprenderam (embora, para alguns modelos, isso possa ser complicado). Por exemplo, uma vez que um filtro de spam foi treinado com spam suficiente, ele pode ser facilmente inspecionado para revelar a lista de palavras e combinações de palavras que ele acredita serem os melhores preditores de spam. Às vezes, isso revelará correlações inesperadas ou novas tendências, levando a uma melhor compreensão do problema. Cavar grandes quantidades de dados para descobrir padrões ocultos é chamado de **mineração de dados**, e o aprendizado de máquina se destaca nisso.
+![[Pasted image 20250327153032.png]]
 
 **Figura 1-4. O aprendizado de máquina pode ajudar os humanos a aprender**  
 Para resumir, o aprendizado de máquina é ótimo para:
@@ -153,13 +157,14 @@ Os sistemas de aprendizado de máquina podem ser classificados de acordo com a q
 #### **Aprendizado Supervisionado**
 
 No aprendizado supervisionado, o conjunto de treinamento que você alimenta ao algoritmo inclui as soluções desejadas, chamadas de **rótulos** (Figura 1-5).
+![[Pasted image 20250327153127.png]]
 
 **Figura 1-5. Um conjunto de treinamento rotulado para classificação de spam (um exemplo de aprendizado supervisionado)**
 
 Uma tarefa típica de aprendizado supervisionado é a **classificação**. O filtro de spam é um bom exemplo disso: ele é treinado com muitos exemplos de e-mails junto com sua classe (spam ou ham), e ele deve aprender como classificar novos e-mails.
 
 Outra tarefa típica é prever um valor numérico, como o preço de um carro, dado um conjunto de características (quilometragem, idade, marca, etc.). Esse tipo de tarefa é chamado de **regressão** (Figura 1-6). Para treinar o sistema, você precisa fornecer muitos exemplos de carros, incluindo suas características e seus valores alvo (ou seja, seus preços).
-
+![[Pasted image 20250327153214.png]]
 **Figura 1-6. Um problema de regressão: prever um valor, dado um recurso de entrada (geralmente há vários recursos de entrada e, às vezes, vários valores de saída)**
 
 **NOTA**  
@@ -170,21 +175,22 @@ As palavras **target** e **label** são geralmente tratadas como sinônimos em a
 #### **Aprendizado Não Supervisionado**
 
 No aprendizado não supervisionado, como você pode imaginar, os dados de treinamento não são rotulados (Figura 1-7). O sistema tenta aprender sem um professor.
-
+![[Pasted image 20250327153232.png]]
 **Figura 1-7. Um conjunto de treinamento não rotulado para aprendizado não supervisionado**
 
 Por exemplo, digamos que você tenha muitos dados sobre os visitantes do seu blog. Você pode querer executar um algoritmo de **clustering** para tentar detectar grupos de visitantes semelhantes (Figura 1-8). Em nenhum momento você diz ao algoritmo a qual grupo um visitante pertence: ele encontra essas conexões sem sua ajuda. Por exemplo, ele pode notar que 40% dos seus visitantes são adolescentes que adoram quadrinhos e geralmente leem seu blog após a escola, enquanto 20% são adultos que gostam de ficção científica e visitam durante os fins de semana. Se você usar um algoritmo de clustering hierárquico, ele também pode subdividir cada grupo em grupos menores. Isso pode ajudá-lo a direcionar suas postagens para cada grupo.
-
+![[Pasted image 20250327153258.png]]
 **Figura 1-8. Clustering**
 
 Algoritmos de **visualização** também são bons exemplos de aprendizado não supervisionado: você os alimenta com muitos dados complexos e não rotulados, e eles produzem uma representação 2D ou 3D dos seus dados que pode ser facilmente plotada (Figura 1-9). Esses algoritmos tentam preservar o máximo de estrutura possível (por exemplo, tentando evitar que clusters separados no espaço de entrada se sobreponham na visualização) para que você possa entender como os dados estão organizados e talvez identificar padrões inesperados.
-
+![[Pasted image 20250327153315.png]]
 **Figura 1-9. Exemplo de uma visualização t-SNE destacando clusters semânticos**
 
 **DICA**  
 É frequentemente uma boa ideia tentar reduzir o número de dimensões nos seus dados de treinamento usando um algoritmo de redução de dimensionalidade antes de alimentá-los a outro algoritmo de aprendizado de máquina (como um algoritmo de aprendizado supervisionado). Ele rodará muito mais rápido, os dados ocuparão menos espaço em disco e na memória, e em alguns casos também pode ter um desempenho melhor.
 
 Outra tarefa importante de aprendizado não supervisionado é a **detecção de anomalias** — por exemplo, detectar transações incomuns de cartão de crédito para prevenir fraudes, capturar defeitos de fabricação ou remover automaticamente outliers de um conjunto de dados antes de alimentá-lo a outro algoritmo de aprendizado. O sistema é mostrado principalmente instâncias normais durante o treinamento, então ele aprende a reconhecê-las; depois, quando vê uma nova instância, ele pode dizer se ela parece normal ou se é provavelmente uma anomalia (veja a Figura 1-10). Uma tarefa muito semelhante é a **detecção de novidades**: ela visa detectar novas instâncias que parecem diferentes de todas as instâncias no conjunto de treinamento. Isso requer ter um conjunto de treinamento muito "limpo", sem nenhuma instância que você gostaria que o algoritmo detectasse. Por exemplo, se você tiver milhares de fotos de cachorros, e 1% dessas fotos representam Chihuahuas, então um algoritmo de detecção de novidades não deve tratar novas fotos de Chihuahuas como novidades. Por outro lado, algoritmos de detecção de anomalias podem considerar esses cachorros tão raros e diferentes de outros cachorros que provavelmente os classificariam como anomalias (sem ofensa aos Chihuahuas).
+![[Pasted image 20250327153334.png]]
 
 **Figura 1-10. Detecção de anomalias**
 
@@ -195,7 +201,7 @@ Finalmente, outra tarefa comum de aprendizado não supervisionado é a **aprendi
 #### **Aprendizado Semi-Supervisionado**
 
 Como rotular dados geralmente consome tempo e é caro, muitas vezes você terá muitas instâncias não rotuladas e poucas instâncias rotuladas. Alguns algoritmos podem lidar com dados parcialmente rotulados. Isso é chamado de **aprendizado semi-supervisionado** (Figura 1-11).
-
+![[Pasted image 20250327153352.png]]
 **Figura 1-11. Aprendizado semi-supervisionado com duas classes (triângulos e quadrados): os exemplos não rotulados (círculos) ajudam a classificar uma nova instância (a cruz) na classe dos triângulos em vez da classe dos quadrados, mesmo que ela esteja mais próxima dos quadrados rotulados**
 
 Alguns serviços de hospedagem de fotos, como o Google Fotos, são bons exemplos disso. Depois que você faz o upload de todas as suas fotos de família para o serviço, ele reconhece automaticamente que a mesma pessoa A aparece nas fotos 1, 5 e 11, enquanto outra pessoa B aparece nas fotos 2, 5 e 7. Essa é a parte não supervisionada do algoritmo (clustering). Agora, tudo o que o sistema precisa é que você diga quem são essas pessoas. Basta adicionar um rótulo por pessoa\(^3\), e ele será capaz de nomear todos em todas as fotos, o que é útil para pesquisar fotos.
@@ -209,7 +215,7 @@ A maioria dos algoritmos de aprendizado semi-supervisionado são combinações d
 Outra abordagem para o aprendizado de máquina envolve gerar um conjunto de dados totalmente rotulado a partir de um conjunto de dados não rotulado. Novamente, uma vez que todo o conjunto de dados é rotulado, qualquer algoritmo de aprendizado supervisionado pode ser usado. Essa abordagem é chamada de **aprendizado auto-supervisionado**.
 
 Por exemplo, se você tiver um grande conjunto de dados de imagens não rotuladas, pode mascarar aleatoriamente uma pequena parte de cada imagem e então treinar um modelo para recuperar a imagem original (Figura 1-12). Durante o treinamento, as imagens mascaradas são usadas como entradas para o modelo, e as imagens originais são usadas como rótulos.
-
+![[Pasted image 20250327153410.png]]
 **Figura 1-12. Exemplo de aprendizado auto-supervisionado: entrada (esquerda) e alvo (direita)**
 
 O modelo resultante pode ser bastante útil por si só — por exemplo, para reparar imagens danificadas ou para apagar objetos indesejados de fotos. Mas, na maioria das vezes, um modelo treinado com aprendizado auto-supervisionado não é o objetivo final. Você geralmente desejará ajustar e refinar o modelo para uma tarefa ligeiramente diferente — uma que você realmente se importa.
