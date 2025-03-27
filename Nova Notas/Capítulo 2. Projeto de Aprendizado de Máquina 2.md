@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-27  17.15
+Atualizado: 2025-03-27  17.22
 Criado: 2025-03-27  17.11
 tags:
   - estudo
@@ -866,8 +866,3 @@ std_scaler = StandardScaler()
 housing_num_std_scaled = std_scaler.fit_transform(housing_num)
 ```
 
-**DICA**
-
-Se você quiser dimensionar uma matriz esparsa sem convertê-la primeiro em uma matriz densa, você pode usar um StandardScaler com seu hiperparâmetro with_mean definido como False: ele apenas dividirá os dados pelo desvio padrão, sem subtrair a média (pois isso quebraria a esparsidade).
-
-Quando a distribuição de um recurso tem uma cauda pesada (ou seja, quando valores distantes da média não são exponencialmente raros), tanto o dimensionamento min-max quanto a padronização esmagarão a maioria dos valores em um intervalo pequeno. Os modelos de aprendizado de máquina geralmente não gostam nada disso, como você verá no Capítulo 4. Então, antes de dimensionar o recurso, você deve primeiro transformá-lo para reduzir a cauda pesada e, se possível, tornar a distribuição aproximadamente simétrica. Por exemplo, uma maneira comum de fazer isso para recursos positivos com uma cauda pesada à direita é substituir o recurso por sua raiz quadrada (ou elevar o recurso a uma potência entre 0 e 1). Se o recurso tiver uma cauda realmente longa e pesada, como uma distribuição de lei de potência, então substituir o recurso por seu logaritmo pode ajudar. Por exemplo, o recurso population segue aproximadamente uma lei de potência: distritos com 10.000 habitantes são apenas 10 vezes menos frequentes que distritos com 1.000 habitantes, não exponencialmente menos frequentes. A Figura 2-17 mostra como este recurso fica muito melhor quando você calcula seu log: ele está muito próximo de uma distribuição Gaussiana (ou seja, em forma de sino
