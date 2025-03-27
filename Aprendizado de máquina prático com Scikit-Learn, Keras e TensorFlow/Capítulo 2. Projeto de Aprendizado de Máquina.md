@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-27  16.09
+Atualizado: 2025-03-27  16.24
 Criado: 2025-03-07  14.55
 ---
 Claro! Vou traduzir o conteúdo do arquivo para o português. Aqui está a tradução:
@@ -153,7 +153,7 @@ Embora o RMSE seja geralmente a medida de desempenho preferida para tarefas de r
 
 Equação 2-2. Erro absoluto médio (MAE)
 
-\[MAE(X, h) = \frac{1}{m} \sum_{i=1}^{m} |h(x^{(i)}) - y^{(i)}|\]
+$[MAE(X, h) = \frac{1}{m} \sum_{i=1}^{m} |h(x^{(i)}) - y^{(i)}]$
 
 ---
 
