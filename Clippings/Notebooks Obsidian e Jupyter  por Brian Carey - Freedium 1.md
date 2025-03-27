@@ -7,16 +7,10 @@ data: 2025-03-13T17:23:43-03:00
 description: Personal Knowledge Management for Data Science
 tags:
   - clippings
-Atualizado: 2025-03-13  18.13
+Atualizado: 2025-03-27  16.52
 Criado: 2025-03-13  17.23
 ---
-### Motivação de informação
 
-Os notebooks Jupyter, ou mais corretamente os notebooks iPython, são ferramentas fantásticas para exploração e modelagem de dados. Você pode executar pedaços de código, intercalados com blocos de markdown, permitindo que você trabalhe facilmente com dados e apresente análises e previsões em um formato visual e interativo. Os notebooks podem ser facilmente compartilhados via GitHub ou executados on-line com o Colab.
-
-O problema com os cadernos iPython, de uma perspectiva de Gestão de Conhecimento Pessoal, é que eles acabam sendo "livros na prateleira". Para os usuários da Obsidian e os praticantes de PKM, o objetivo é evitar manter informações em cadernos, com toda a inutilidade que isso implica. Pode-se, como você verá, apenas fazer a exploração de dados diretamente no Obsidian em vez de em um caderno padrão do iPython. Mas a Obsidian não é um IDE. O ecossistema em torno dos IDEs interativos do notebook Python, seja o próprio Jupyter Lab, ou VS Code, etc., é tão útil que trabalhar na Obsidian enquanto exploramos dados e criar modelos seria inaceitavelmente tedioso. Usar ferramentas adequadas para fins é muito importante para a eficiência.
-
-Precisamos de uma maneira indolor para capturar todas essas informações em nosso cofre, fazendo **anotações** dos cadernos. Como podemos tornar essas informações úteis para o futuro, sem repetir/duplicar nossos esforços ou fazer uma tonelada de copiar/colar? Neste artigo, vou explicar a solução que funciona bem para mim, garantindo o acesso à velocidade Obsidian a qualquer informação que eu tenha em meus cadernos, além de tornar as atividades de revisão e estudo muito mais agradável. E, claro, minhas telas também ficaram mais ricas.
 
 ### Configurando o Obsidiano
 
@@ -52,8 +46,3 @@ Uma vez em Obsidian você pode processar seus Notebooks como você faria com qua
 
 Ao converter seus blocos de anotações em notas, esteja ciente de que notas diferentes não compartilham o mesmo tempo de execução. Certifique-se de incluir todas as variáveis / cálculos necessárias para a parte do código que você extraiu no novo arquivo, pois isso não estará disponível no estado de outro arquivo. Além disso, todas as imagens que você vincular nas seções de marcação do bloco de anotações original precisarão ser copiadas manualmente para o cofre, pois apenas as imagens geradas a partir do código no arquivo serão exportadas.
 
-### Fechamento de pensamentos
-
-Comecei a usar a Obsidian com o propósito específico de estudar ciência de dados. Meu uso de Obsidian se ampliou consideravelmente e rapidamente, uma vez que eu comecei com ele. No entanto, depois de algum tempo, percebi que, por causa da natureza dos cadernos iPython, e da necessidade, ou realmente do prazer de usá-los, encontrei-me muitos meses depois na posição que eu estava tentando evitar vis-à-vis minhas notas: as informações que eu precisava estavam em algum lugar em minhas pilhas de cadernos, e eu me virei para o Google com mais frequência do que pesquisar através de meus cadernos.
-
-Agora eu posso mergulhar no projeto Python ou estudar eu estou me concentrando, sabendo que depois que eu terminar, gerar notas atômicas adequadas a partir do trabalho que estou fazendo será uma brisa. Espero que você possa achar essa informação útil. Feliz codificação!

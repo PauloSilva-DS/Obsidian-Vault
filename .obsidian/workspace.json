@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "91241b7996c6d0e8",
+        "id": "0048ab4dbd367461",
         "type": "tabs",
         "children": [
           {
-            "id": "baf78baf21381818",
+            "id": "7ca104dabf8a342e",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf"
+                "file": "Clippings/Notebooks Obsidian e Jupyter  por Brian Carey - Freedium 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron"
+              "icon": "lucide-file",
+              "title": "Notebooks Obsidian e Jupyter  por Brian Carey - Freedium 1"
             }
           }
         ],
@@ -96,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 449.5,
-    "collapsed": true
+    "width": 449.5
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -226,14 +227,15 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "baf78baf21381818",
+  "active": "7ca104dabf8a342e",
   "lastOpenFiles": [
+    "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
+    "Source Material/pdf/mãos a obra/Hands Cap 2.pdf",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
     "Source Material/Imagens/Pasted image 20250327163339.png",
     "Source Material/Imagens/Pasted image 20250327163246.png",
     "Source Material/Imagens/Pasted image 20250327163224.png",
     "Source Material/Imagens/Pasted image 20250327163151.png",
-    "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
     "Source Material/Imagens/Pasted image 20250327163052.png",
     "Source Material/Imagens/Pasted image 20250327162806.png",
     "Source Material/Imagens/Pasted image 20250327162723.png",
