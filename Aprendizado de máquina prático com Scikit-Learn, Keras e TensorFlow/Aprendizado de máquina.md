@@ -36,7 +36,7 @@ https://homl.info/tutorials
 ## Parte I. Os Fundamentos do Aprendizado de Máquina
 
 [[Capítulo 1. O Panorama do Aprendizado de Máquina]]
-[[Capítulo 2. Projeto de Aprendizado de Máquina]]
+[[Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina]]
 
 
 
