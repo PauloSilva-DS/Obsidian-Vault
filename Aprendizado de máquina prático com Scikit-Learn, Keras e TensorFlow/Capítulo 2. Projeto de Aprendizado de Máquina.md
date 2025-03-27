@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-27  16.24
+Atualizado: 2025-03-27  16.34
 Criado: 2025-03-07  14.55
 ---
 Claro! Vou traduzir o conteúdo do arquivo para o português. Aqui está a tradução:
@@ -159,11 +159,11 @@ $[MAE(X, h) = \frac{1}{m} \sum_{i=1}^{m} |h(x^{(i)}) - y^{(i)}]$
 
 Ambos o RMSE e o MAE são maneiras de medir a distância entre dois vetores: o vetor de previsões e o vetor de valores alvo. Várias medidas de distância, ou normas, são possíveis:
 
-- Calcular a raiz de uma soma de quadrados (RMSE) corresponde à norma euclidiana: esta é a noção de distância com a qual todos estamos familiarizados. Também é chamada de norma ℓ2, notada || · ||2 (ou apenas || · ||).
+- Calcular a raiz de uma soma de quadrados (RMSE) corresponde à norma euclidiana: esta é a noção de distância com a qual todos estamos familiarizados. Também é chamada de norma ℓ2, notada $|| · ||2$ (ou apenas || · ||).
 
 - Calcular a soma de valores absolutos (MAE) corresponde à norma ℓ1, notada || · ||1. Isso às vezes é chamado de norma de Manhattan porque mede a distância entre dois pontos em uma cidade se você só puder viajar ao longo de quarteirões ortogonais.
 
-- Mais geralmente, a norma ℓk de um vetor v contendo n elementos é definida como ||v||k = (|v1|k + |v2|k + ... + |vn|k)^{1/k}. ℓ0 dá o número de elementos diferentes de zero no vetor, e ℓ∞ dá o valor absoluto máximo no vetor.
+- Mais geralmente, a norma ℓk de um vetor v contendo n elementos é definida como $||v||k$ = $(|v1|k + |v2|k + ... + |vn|k)^{1/k}. ℓ0$ dá o número de elementos diferentes de zero no vetor, e ℓ∞ dá o valor absoluto máximo no vetor.
 
 Quanto maior o índice da norma, mais ela se concentra em valores grandes e negligencia os pequenos. É por isso que o RMSE é mais sensível a valores discrepantes do que o MAE. Mas quando os valores discrepantes são exponencialmente raros (como em uma curva em forma de sino), o RMSE funciona muito bem e geralmente é preferido.
 
@@ -182,25 +182,12 @@ Felizmente, após conversar com a equipe responsável pelo sistema downstream, v
 Primeiro, abra um navegador da web e visite https://homl.info/colab3: isso o levará ao Google Colab e exibirá a lista de notebooks Jupyter para este livro (veja a Figura 2-3). Você encontrará um notebook por capítulo, além de alguns notebooks extras e tutoriais para NumPy, Matplotlib, Pandas, álgebra linear e cálculo diferencial. Por exemplo, se você clicar em _02_end_to_end_machine_learning_project.ipynb_, o notebook do Capítulo 2 será aberto no Google Colab (veja a Figura 2-4).
 
 Um notebook Jupyter é composto por uma lista de células. Cada célula contém código executável ou texto. Tente clicar duas vezes na primeira célula de texto (que contém a frase "Bem-vindo à Corporação de Machine Learning de Habitação!"). Isso abrirá a célula para edição. Observe que os notebooks Jupyter usam sintaxe Markdown para formatação (por exemplo, **negrito**, *itálico*, # Título, [url](texto do link), etc.). Tente modificar este texto e pressione Shift-Enter para ver o resultado.
-
+![[Pasted image 20250327162633.png]]
 Figura 2-3. Lista de notebooks no Google Colab
 
 ---
 
-**Capítulo 2 – Projeto de Machine Learning de Ponta a Ponta**
-
-*Bem-vindo à Corporação de Machine Learning de Habitação! Sua tarefa é prever os valores médios das casas em distritos da Califórnia, dados vários recursos desses distritos.*
-
-*Este notebook contém todo o código de exemplo e as soluções para os exercícios do capítulo 2.*
-
-- **Configuração**
-  - Células de texto: clique duas vezes para editar
-  - Primeiro, vamos importar alguns módulos comuns, garantir que o Matplotlib plote figuras inline e preparar uma função para salvar as figuras.
-    - Células de código: clique para editar
-  [ ] # Python E3.7 é necessário
-    - Import sys
-    - assert sys.version_info >= (3, 7)
-
+![[Pasted image 20250327162723.png]]
 *Figura 2-4. Seu notebook no Google Colab*
 
 Em seguida, crie uma nova célula de código selecionando Inserir → "Célula de código" no menu. Alternativamente, você pode clicar no botão + Código na barra de ferramentas ou passar o mouse sobre a parte inferior de uma célula até ver + Código e + Texto aparecerem, então clique em + Código. Na nova célula de código, digite algum código Python, como print("Hello World"), e pressione Shift-Enter para executar este código (ou clique no botão > no lado esquerdo da célula).
@@ -227,16 +214,7 @@ Se o notebook gerar dados que você se importa, certifique-se de baixar esses da
 
 ---
 
-### Arquivos
-- [ ] sample_data
-- [ ] my_great_model
-- [ ] ...
-
-### Download
-- Renomear arquivo
-- Excluir arquivo
-- Copiar caminho
-- Atualizar
+![[Pasted image 20250327162806.png]]
 
 ---
 
@@ -277,7 +255,7 @@ Em ambientes típicos, seus dados estariam disponíveis em um banco de dados rel
 Em vez de baixar e descompactar os dados manualmente, geralmente é preferível escrever uma função que faça isso por você. Isso é útil principalmente se os dados mudarem regularmente: você pode escrever um pequeno script que usa a função para buscar os dados mais recentes (ou você pode configurar um trabalho agendado para fazer isso automaticamente em intervalos regulares). Automatizar o processo de busca dos dados também é útil se você precisar instalar o conjunto de dados em várias máquinas.
 
 Aqui está a função para buscar e carregar os dados:
-
+```python
 from pathlib import Path
 import pandas as pd
 import tarfile
@@ -293,6 +271,7 @@ def load_housing_data():
     housing_tarball.extractall(path="datasets")
     return pd.read_csv(Path("datasets/housing/housing.csv"))
     housing = load_housing_data()
+```
 
 Quando load_housing_data() é chamada, ela procura pelo arquivo _datasets/housing.tgz_. Se não o encontrar, cria o diretório _datasets_ dentro do diretório atual (que é /content por padrão, no Colab), baixa o arquivo _housing.tgz_ do repositório GitHub _ageron/data_ e extrai seu conteúdo no diretório _datasets_; isso cria o diretório _datasets/housing_ com o arquivo _housing.csv_ dentro dele. Por fim, a função carrega este arquivo CSV em um objeto DataFrame do Pandas contendo todos os dados e o retorna.
 
@@ -304,15 +283,11 @@ Você começa olhando as cinco primeiras linhas de dados usando o método head()
 
 ---
 
-**longitude latitude housing_median_age median_income ocean_proximity median_house_value**
+![[Pasted image 20250327163052.png]]
 
-|    |    |    |    |    |
-|---|---|---|---|---|
-| 0   | -122.23    | 37.88    | 41.0    | 8.3252    | NEAR BAY    | 452600.0    |
-| 1   | -122.22    | 37.86    | 21.0    | 8.3014    | NEAR BAY    | 358500.0    |
-| 2   | -122.24    | 37.85    | 52.0    | 7.2574    | NEAR BAY    | 352100.0    |
-| 3   | -122.25    | 37.85    | 52.0    | 5.6431    | NEAR BAY    | 341300.0    |
-| 4   | -122.25    | 37.85    | 52.0    | 3.8462    | NEAR BAY    | 342200.0    |
+
+
+
 
 *Figura 2-6. As cinco primeiras linhas no conjunto de dados*
 
@@ -320,24 +295,7 @@ Cada linha representa um distrito. Há 10 atributos (nem todos são mostrados na
 
 O método info() é útil para obter uma descrição rápida dos dados, em particular o número total de linhas, o tipo de cada atributo e o número de valores não nulos:
 
->>> housing.info()
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 20640 entries, 0 to 20639
-Data columns (total 10 columns):
-# Column    Non-Null Count    Dtype
---- --- --- ---
-0    longitude    20640 non-null    float64
-1    latitude    20640 non-null    float64
-2    housing_median_age    20640 non-null    float64
-3    total_rooms    20640 non-null    float64
-4    total_bedrooms    20433 non-null    float64
-5    population    20640 non-null    float64
-6    households    20640 non-null    float64
-7    median_income    20640 non-null    float64
-8    median_house_value    20640 non-null    float64
-9    ocean_proximity    20640 non-null    object
-dtypes: float64(9), object(1)
-memory usage: 1.6+ MB
+![[Pasted image 20250327163151.png]]
 
 ---
 
@@ -349,29 +307,12 @@ Há 20.640 instâncias no conjunto de dados, o que significa que ele é bastante
 
 Todos os atributos são numéricos, exceto ocean_proximity. Seu tipo é object, então ele pode conter qualquer tipo de objeto Python. Mas como você carregou esses dados de um arquivo CSV, sabe que deve ser um atributo de texto. Quando você olhou as cinco primeiras linhas, provavelmente notou que os valores na coluna ocean_proximity eram repetitivos, o que significa que provavelmente é um atributo categórico. Você pode descobrir quais categorias existem e quantos distritos pertencem a cada categoria usando o método value_counts():
 
->>> housing["ocean_proximity"].value_counts()
-<1H OCEAN    9136
-INLAND    6551
-NEAR OCEAN    2658
-NEAR BAY    2290
-ISLAND    5
-Name: ocean_proximity, dtype: int64
-
+![[Pasted image 20250327163224.png]]
 Vamos olhar para os outros campos. O método describe() mostra um resumo dos atributos numéricos (Figura 2-7).
 
 ---
+![[Pasted image 20250327163246.png]]
 
-hoursing.describe()
-
-    longitude    latitude housing_median_age total_rooms total_bedrooms median_house_value
-count  20640.000000  20640.000000    20640.000000  20640.000000    20433.000000    20640.000000
-mean  -119.569704    35.631861    28.639486    2835.763081    537.870553    208855.816909
-std    2.003532    2.135952    12.585558    2181.615252    421.385070    115395.615874
-min  -124.350000    32.540000    1.000000    2.000000    1.000000    14999.000000
-25%  -121.800000    33.930000    18.000000    1447.750000    298.000000    119600.000000
-50%  -118.490000    34.260000    29.000000    2127.000000    435.000000    179700.000000
-75%  -118.010000    37.710000    37.000000    3148.000000    647.000000    264725.000000
-max  -114.310000    41.950000    52.000000    39320.000000    6445.000000    500001.000000
 
 Figura 2-7. Resumo de cada atributo numérico
 
@@ -379,10 +320,14 @@ As linhas count, mean, min e max são autoexplicativas. Observe que os valores n
 
 Outra maneira rápida de ter uma noção do tipo de dados com os quais você está lidando é plotar um histograma para cada atributo numérico. Um histograma mostra o número de instâncias (no eixo vertical) que têm um determinado intervalo de valores (no eixo horizontal). Você pode plotar um atributo por vez ou chamar o método hist() em todo o conjunto de dados (como mostrado no exemplo de código a seguir), e ele plotará um histograma para cada atributo numérico (veja a Figura 2-8):
 
+```run-python
 import matplotlib.pyplot as plt
 
 housing.hist(bins=50, figsize=(12, 8))
 plt.show()
+
+```
+![[Pasted image 20250327163339.png]]
 
 ---
 
@@ -412,6 +357,7 @@ Pode parecer estranho separar voluntariamente parte dos dados nesta fase. Afinal
 
 Criar um conjunto de teste é teoricamente simples; escolha algumas instâncias aleatoriamente, tipicamente 20% do conjunto de dados (ou menos se seu conjunto de dados for muito grande), e separe-as:
 
+```run-python
 import numpy as np
 
 def shuffle_and_split_data(data, test_ratio):
@@ -420,6 +366,7 @@ def shuffle_and_split_data(data, test_ratio):
     test_indices = shuffled_indices[:test_set_size]
     train_indices = shuffled_indices[test_set_size:]
     return data.iloc[train_indices], data.iloc[test_indices]
+```
 
 Você pode então usar esta função assim:
 
