@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-27  16.04
+Atualizado: 2025-03-27  16.09
 Criado: 2025-03-07  14.55
 ---
 Claro! Vou traduzir o conteúdo do arquivo para o português. Aqui está a tradução:
@@ -122,11 +122,12 @@ e:
 [y^{(1)} = 156.400]
 
 $$
-- \( X \) é uma matriz contendo todos os valores das características (excluindo rótulos) de todas as instâncias no conjunto de dados. Há uma linha por instância, e a \( i^{th} \) linha é igual à transposta de \( x^{(i)} \), notada \( (x^{(i)})^{\top} \).\(^3\)
+- $( X )$ é uma matriz contendo todos os valores das características (excluindo rótulos) de todas as instâncias no conjunto de dados. Há uma linha por instância, e a $( i^{th} )$ linha é igual à transposta de ( $x^{(i)} ),$ notada $( (x^{(i)})^{\top} ).(^3)$
   - Por exemplo, se o primeiro distrito for como acabamos de descrever, então a matriz \( X \) se parece com isso:
 
 ---
 
+$$
 [X = \begin{pmatrix}
 (x^{(1)})^T \\
 (x^{(2)})^T \\
@@ -137,15 +138,16 @@ $$
 \begin{pmatrix}
 -118.29 & 33.91 & 1.416 & 38.372 \\
 \vdots & \vdots & \vdots & \vdots \\
-\end{pmatrix}\]
+\end{pmatrix}]
+$$
 
-- \( h \) é a função de previsão do seu sistema, também chamada de hipótese. Quando seu sistema recebe um vetor de características \( x^{(i)} \) de uma instância, ele gera um valor previsto \( \hat{y}^{(i)} = h(x^{(i)}) \) para essa instância (\(\hat{y}\) é pronunciado "y-chapéu").
+- ( h \) é a função de previsão do seu sistema, também chamada de hipótese. Quando seu sistema recebe um vetor de características $( x^{(i)} )$ de uma instância, ele gera um valor previsto $( \hat{y}^{(i)} = h(x^{(i)}) )$ para essa instância $((\hat{y})$ é pronunciado "y-chapéu".
 
-- Por exemplo, se seu sistema prever que o preço médio de habitação no primeiro distrito é \$158.400, então \( y^{(1)} = h(x^{(1)}) = 158.400 \). O erro de previsão para este distrito é \( \hat{y}^{(1)} - y^{(1)} = 2.000 \).
+- Por exemplo, se seu sistema prever que o preço médio de habitação no primeiro distrito é \$158.400, entã$o ( y^{(1)} = h(x^{(1)}) = 158.400 )$. O erro de previsão para este distrito é $( \hat{y}^{(1)} - y^{(1)} = 2.000 ).$
 
-- RMSE(\( X,h \)) é a função de custo medida no conjunto de exemplos usando sua hipótese \( h \).
+- RMSE(( X,h )) é a função de custo medida no conjunto de exemplos usando sua hipótese ( h ).
 
-Usamos fonte itálica minúscula para valores escalares (como \( m \) ou \( y^{(i)}\)) e nomes de funções (como \( h \)), fonte em negrito minúscula para vetores (como \( x^{(i)}) \), e fonte em negrito maiúscula para matrizes (como \( X \)). 
+Usamos fonte itálica minúscula para valores escalares (como ( m ) ou $( y^{(i)}))$ e nomes de funções (como ( h )), fonte em negrito minúscula para vetores (como $( x^{(i)}) ),$ e fonte em negrito maiúscula para matrizes (como ( X )). 
 
 Embora o RMSE seja geralmente a medida de desempenho preferida para tarefas de regressão, em alguns contextos você pode preferir usar outra função. Por exemplo, se houver muitos distritos discrepantes. Nesse caso, você pode considerar usar o erro absoluto médio (MAE, também chamado de desvio absoluto médio), mostrado na Equação 2-2:
 
