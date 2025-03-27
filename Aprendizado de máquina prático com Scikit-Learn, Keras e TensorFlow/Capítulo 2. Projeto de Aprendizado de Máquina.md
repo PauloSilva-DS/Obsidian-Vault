@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-07  15.47
+Atualizado: 2025-03-27  16.04
 Criado: 2025-03-07  14.55
 ---
 Claro! Vou traduzir o conteúdo do arquivo para o português. Aqui está a tradução:
@@ -38,8 +38,10 @@ Quando você está aprendendo sobre machine learning, é melhor experimentar com
     - Quora.com
     - O subreddit de conjuntos de dados
 
-Neste capítulo, usaremos o conjunto de dados de preços de habitação na Califórnia do repositório StatLib[1] (veja a Figura 2-1). Este conjunto de dados é baseado em dados do censo da Califórnia de 1990. Não é exatamente recente (uma boa casa na Bay Area ainda era acessível na época), mas tem muitas qualidades para aprendizado, então vamos fingir que são dados recentes. Para fins de ensino, adicionei um atributo categórico e removi alguns recursos.
 
+
+Neste capítulo, usaremos o conjunto de dados de preços de habitação na Califórnia do repositório StatLib[1] (veja a Figura 2-1). Este conjunto de dados é baseado em dados do censo da Califórnia de 1990. Não é exatamente recente (uma boa casa na Bay Area ainda era acessível na época), mas tem muitas qualidades para aprendizado, então vamos fingir que são dados recentes. Para fins de ensino, adicionei um atributo categórico e removi alguns recursos.
+![[Pasted image 20250327155936.png]]
 ---
 
 # Olhar para o Panorama Geral
@@ -64,17 +66,7 @@ A próxima pergunta a fazer ao seu chefe é como é a solução atual (se houver
 
 ---
 
-_Seu componente    Outros sinais_
-
-_Componentes upstream_
-
-Precificação de distrito
-
-Análise de investimento
-
-Dados do distrito
-
-Preços do distrito
+![[Pasted image 20250327160018.png]]
 
 _Figura 2-2. Um pipeline de machine learning para investimentos imobiliários_
 
@@ -105,7 +97,7 @@ Seu próximo passo é selecionar uma medida de desempenho. Uma medida de desempe
 
 _Equação 2-1. Erro quadrático médio (RMSE)_
 
-\[RMSE(X, h) = \sqrt{\frac{1}{m} \sum_{i=1}^{m} \left( h(x^{(i)}) - y^{(i)} \right)^2}\]
+$[RMSE(X, h) = \sqrt{\frac{1}{m} \sum_{i=1}^{m} \left( h(x^{(i)}) - y^{(i)} \right)^2}]$
 
 ---
 
@@ -116,24 +108,26 @@ Esta equação introduz várias notações muito comuns em machine learning que 
 - \( m \) é o número de instâncias no conjunto de dados em que você está medindo o RMSE.
   - Por exemplo, se você está avaliando o RMSE em um conjunto de validação de 2.000 distritos, então \( m = 2.000 \).
 
-- \( x^{(i)} \) é um vetor de todos os valores das características (excluindo o rótulo) da \( i^{th} \) instância no conjunto de dados, e \( y^{(i)} \) é seu rótulo (o valor de saída desejado para essa instância).
-  - Por exemplo, se o primeiro distrito no conjunto de dados estiver localizado na longitude \(-118.29^\circ\), latitude \( 33.91^\circ \), e tiver 1.416 habitantes com uma renda média de \( \$38.372 \), e o valor médio da casa for \( \$156.400 \) (ignorando outras características por enquanto), então:
-\[x^{(1)} =
+- $( x^{(i)} )$ é um vetor de todos os valores das características (excluindo o rótulo) da $( i^{th} )$ instância no conjunto de dados, e$( y^{(i)} )$ é seu rótulo (o valor de saída desejado para essa instância).
+  - Por exemplo, se o primeiro distrito no conjunto de dados estiver localizado na longitude $(-118.29^\circ)$, latitude $( 33.91^\circ )$, e tiver 1.416 habitantes com uma renda média de $( \$38.372 ),$ e o valor médio da casa for $( \$156.400 )$ (ignorando outras características por enquanto), então:
+$$
+[x^{(1)} =
 \begin{pmatrix}
 -118.29 \\
 33.91 \\
 1.416 \\
 38.372
-\end{pmatrix}\]
+\end{pmatrix}]
 e:
-\[y^{(1)} = 156.400\]
+[y^{(1)} = 156.400]
 
+$$
 - \( X \) é uma matriz contendo todos os valores das características (excluindo rótulos) de todas as instâncias no conjunto de dados. Há uma linha por instância, e a \( i^{th} \) linha é igual à transposta de \( x^{(i)} \), notada \( (x^{(i)})^{\top} \).\(^3\)
   - Por exemplo, se o primeiro distrito for como acabamos de descrever, então a matriz \( X \) se parece com isso:
 
 ---
 
-\[X = \begin{pmatrix}
+[X = \begin{pmatrix}
 (x^{(1)})^T \\
 (x^{(2)})^T \\
 \vdots \\

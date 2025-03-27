@@ -4,7 +4,7 @@ tags:
   - python
   - AprendizadoMaquina
 Completo: false
-Atualizado: 2025-03-27  15.53
+Atualizado: 2025-03-27  15.56
 Criado: 2025-03-07  15.07
 ---
 [[Aprendizado de máquina]]
@@ -614,7 +614,31 @@ Neste capítulo, cobrimos alguns dos conceitos mais importantes do aprendizado d
 
 As soluções para esses exercícios estão disponíveis no final do notebook deste capítulo, em https://homl.info/colab3.
 
+
 ---
+
+1. **Machine Learning** é sobre construir sistemas que podem aprender a partir de dados. Aprendizado significa melhorar em alguma tarefa, dado algum critério de desempenho.  
+2. **Machine Learning** é ótimo para problemas complexos para os quais não temos solução algorítmica, para substituir longas listas de regras ajustadas manualmente, para construir sistemas que se adaptam a ambientes variáveis e, finalmente, para ajudar humanos a aprender (ex.: *data mining*).  
+3. Um **conjunto de treinamento rotulado** (*labeled training set*) é um conjunto que contém a solução desejada (o *label*) para cada instância.  
+4. As duas tarefas mais comuns em **aprendizado supervisionado** são **regressão** e **classificação**.  
+5. Tarefas comuns de **aprendizado não supervisionado** incluem **clustering**, visualização, redução de dimensionalidade e aprendizado de regras de associação.  
+6. **Reinforcement Learning** provavelmente terá o melhor desempenho se quisermos que um robô aprenda a andar em terrenos desconhecidos, pois esse é o tipo de problema que essa abordagem resolve. Seria possível expressar o problema como **aprendizado supervisionado** ou **semi-supervisionado**, mas seria menos natural.  
+7. Se você não sabe como definir os grupos, pode usar um algoritmo de **clustering** (aprendizado não supervisionado) para segmentar seus clientes em clusters similares. Porém, se já souber quais grupos deseja, pode alimentar exemplos de cada grupo em um algoritmo de **classificação** (supervisionado), que classificará todos os clientes nessas categorias.  
+8. **Detecção de spam** é um problema típico de aprendizado supervisionado: o algoritmo recebe muitos e-mails com seus *labels* (spam ou não spam).  
+9. Um sistema de **aprendizado online** pode aprender incrementalmente, ao contrário de um sistema de **aprendizado em lote** (*batch learning*). Isso o torna capaz de se adaptar rapidamente a dados em mudança e a sistemas autônomos, além de treinar com grandes volumes de dados.  
+10. Algoritmos **out-of-core** podem lidar com grandes quantidades de dados que não cabem na memória principal. Eles dividem os dados em *mini-batches* e usam técnicas de aprendizado online para aprender a partir deles.  
+11. Um sistema de **aprendizado baseado em instâncias** memoriza os dados de treinamento; ao receber uma nova instância, usa uma medida de similaridade para encontrar as instâncias mais parecidas e faz previsões com base nelas.  
+12. Um **modelo** tem um ou mais **parâmetros** que determinam sua previsão para uma nova instância (ex.: a inclinação de um modelo linear). Um algoritmo de aprendizado busca valores ótimos para esses parâmetros, de modo que o modelo generalize bem para novas instâncias. Um **hiperparâmetro** é um parâmetro do próprio algoritmo, não do modelo (ex.: o grau de regularização).  
+13. Algoritmos de **aprendizado baseado em modelos** buscam valores ótimos para os parâmetros, visando uma boa generalização. Normalmente, treinamos esses sistemas minimizando uma **função de custo** (que mede o erro nas previsões sobre os dados de treinamento) e adicionando penalidades por complexidade (se o modelo for regularizado). Para prever, usamos a função do modelo com os parâmetros encontrados pelo algoritmo.  
+14. Alguns desafios do **Machine Learning** são: falta de dados, dados de baixa qualidade, dados não representativos, *features* pouco informativas, modelos excessivamente simples (*underfitting*) ou complexos (*overfitting*).  
+15. Se um modelo tem ótimo desempenho nos dados de treinamento mas generaliza mal para novas instâncias, ele provavelmente está em **overfitting** (ou houve sorte extrema nos dados de treino). Soluções incluem obter mais dados, simplificar o modelo (algoritmo mais simples, menos parâmetros/ *features*, regularização) ou reduzir ruído nos dados.  
+16. Um **conjunto de teste** (*test set*) é usado para estimar o erro de generalização do modelo antes de colocá-lo em produção.  
+17. Um **conjunto de validação** (*validation set*) é usado para comparar modelos, selecionar o melhor e ajustar hiperparâmetros.  
+18. O **train-dev set** é usado quando há risco de incompatibilidade entre os dados de treinamento e os de validação/teste (que devem ser similares aos dados de produção). É uma parte separada do conjunto de treino — o modelo não é treinado nela. Se o modelo performa bem no treino mas mal no *train-dev*, há *overfitting*; se performa bem em ambos mas mal na validação, há incompatibilidade de dados (*data mismatch*).  
+19. Se você ajustar hiperparâmetros usando o **test set**, pode ocorrer **overfitting do teste**, e o erro de generalização medido será otimista (o modelo em produção pode performar pior que o esperado).  
+
+--- 
+
 
 #### **Notas de Rodapé**
 
