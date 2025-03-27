@@ -4,7 +4,7 @@ tags:
   - python
   - AprendizadoMaquina
 Completo: false
-Atualizado: 2025-03-27  15.34
+Atualizado: 2025-03-27  15.40
 Criado: 2025-03-07  15.07
 ---
 [[Aprendizado de máquina]]
@@ -232,7 +232,7 @@ Algumas pessoas consideram o aprendizado auto-supervisionado como parte do apren
 #### **Aprendizado por Reforço**
 
 O **aprendizado por reforço** é uma abordagem muito diferente. O sistema de aprendizado, chamado de **agente** nesse contexto, pode observar o ambiente, selecionar e executar ações, e receber recompensas em troca (ou penalidades na forma de recompensas negativas, como mostrado na Figura 1-13). Ele deve então aprender por si mesmo qual é a melhor estratégia, chamada de **política**, para obter a maior recompensa ao longo do tempo. Uma política define qual ação o agente deve escolher quando está em uma determinada situação.
-
+![[Pasted image 20250327153438.png]]
 **Figura 1-13. Aprendizado por reforço**
 
 Por exemplo, muitos robôs implementam algoritmos de aprendizado por reforço para aprender a andar. O programa AlphaGo da DeepMind também é um bom exemplo de aprendizado por reforço: ele ganhou as manchetes em maio de 2017 quando derrotou Ke Jie, o jogador número um do mundo na época, no jogo Go. Ele aprendeu sua política vencedora analisando milhões de jogos e, em seguida, jogando muitos jogos contra si mesmo. Observe que o aprendizado foi desativado durante os jogos contra o campeão; o AlphaGo estava apenas aplicando a política que havia aprendido. Como você verá na próxima seção, isso é chamado de **aprendizado offline**.
@@ -261,13 +261,13 @@ Se você quiser que um sistema de aprendizado em lote saiba sobre novos dados (c
 #### **Aprendizado Online**
 
 No **aprendizado online**, você treina o sistema incrementalmente, alimentando-o com instâncias de dados sequencialmente, individualmente ou em pequenos grupos chamados **mini-lotes**. Cada passo de aprendizado é rápido e barato, então o sistema pode aprender sobre novos dados em tempo real, à medida que eles chegam (veja a Figura 1-14).
-
+![[Pasted image 20250327153504.png]]
 **Figura 1-14. No aprendizado online, um modelo é treinado e lançado em produção, e então continua aprendendo à medida que novos dados chegam**
 
 O aprendizado online é útil para sistemas que precisam se adaptar a mudanças extremamente rápidas (por exemplo, para detectar novos padrões no mercado de ações). Também é uma boa opção se você tiver recursos computacionais limitados; por exemplo, se o modelo for treinado em um dispositivo móvel.
 
 Além disso, algoritmos de aprendizado online podem ser usados para treinar modelos em grandes conjuntos de dados que não cabem na memória principal de uma máquina (isso é chamado de **aprendizado fora do núcleo**). O algoritmo carrega parte dos dados, executa um passo de treinamento nesses dados e repete o processo até que tenha processado todos os dados (veja a Figura 1-15).
-
+![[Pasted image 20250327153517.png]]
 **Figura 1-15. Usando aprendizado online para lidar com grandes conjuntos de dados**
 
 Um parâmetro importante dos sistemas de aprendizado online é a velocidade com que eles devem se adaptar a mudanças nos dados: isso é chamado de **taxa de aprendizado**. Se você definir uma taxa de aprendizado alta, seu sistema se adaptará rapidamente a novos dados, mas também tenderá a esquecer rapidamente os dados antigos (e você não quer que um filtro de spam marque apenas os tipos mais recentes de spam que ele viu). Por outro lado, se você definir uma taxa de aprendizado baixa, o sistema terá mais inércia; ou seja, ele aprenderá mais lentamente, mas também será menos sensível a ruídos nos novos dados ou a sequências de pontos de dados não representativos (outliers).
@@ -294,7 +294,7 @@ Possivelmente a forma mais trivial de aprendizado é simplesmente aprender de co
 Em vez de apenas marcar e-mails idênticos a e-mails de spam conhecidos, seu filtro de spam poderia ser programado para também marcar e-mails que são muito semelhantes a e-mails de spam conhecidos. Isso requer uma medida de similaridade entre dois e-mails. Uma medida de similaridade (muito básica) entre dois e-mails poderia ser contar o número de palavras que eles têm em comum. O sistema marcaria um e-mail como spam se ele tivesse muitas palavras em comum com um e-mail de spam conhecido.
 
 Isso é chamado de **aprendizado baseado em instância**: o sistema aprende os exemplos de cor e, em seguida, generaliza para novos casos usando uma medida de similaridade para compará-los aos exemplos aprendidos (ou a um subconjunto deles). Por exemplo, na Figura 1-16, a nova instância seria classificada como um triângulo porque a maioria das instâncias mais semelhantes pertence a essa classe.
-
+![[Pasted image 20250327153546.png]]
 **Figura 1-16. Aprendizado baseado em instância**
 
 ---
@@ -302,7 +302,7 @@ Isso é chamado de **aprendizado baseado em instância**: o sistema aprende os e
 #### **Aprendizado Baseado em Modelo e um Fluxo de Trabalho Típico de Aprendizado de Máquina**
 
 Outra maneira de generalizar a partir de um conjunto de exemplos é construir um **modelo** desses exemplos e, em seguida, usar esse modelo para fazer previsões. Isso é chamado de **aprendizado baseado em modelo** (Figura 1-17).
-
+![[Pasted image 20250327153606.png]]
 **Figura 1-17. Aprendizado baseado em modelo**
 
 Por exemplo, suponha que você queira saber se o dinheiro torna as pessoas mais felizes, então você baixa os dados do Índice de Vida Melhor da OCDE e as estatísticas do Banco Mundial sobre o produto interno bruto (PIB) per capita. Em seguida, você une as tabelas e as ordena por PIB per capita. A Tabela 1-1 mostra um trecho do que você obtém.
@@ -320,7 +320,7 @@ Por exemplo, suponha que você queira saber se o dinheiro torna as pessoas mais 
 | Dinamarca    | 55.938               | 7,6                   |
 
 Vamos plotar os dados para esses países (Figura 1-18).
-
+![[Pasted image 20250327153624.png]]
 **Figura 1-18. Você vê uma tendência aqui?**
 
 Parece haver uma tendência aqui! Embora os dados sejam **ruidosos** (ou seja, parcialmente aleatórios), parece que a satisfação com a vida aumenta mais ou menos linearmente à medida que o PIB per capita do país aumenta. Então você decide modelar a satisfação com a vida como uma função linear do PIB per capita. Esse passo é chamado de **seleção de modelo**: você selecionou um **modelo linear** de satisfação com a vida com apenas um atributo, o PIB per capita (Equação 1-1).
@@ -329,7 +329,7 @@ Parece haver uma tendência aqui! Embora os dados sejam **ruidosos** (ou seja, p
 
 O
 Esse modelo tem dois **parâmetros do modelo**, \(\theta_0\) e \(\theta_1\). Ao ajustar esses parâmetros, você pode fazer seu modelo representar qualquer função linear, como mostrado na Figura 1-19.
-
+![[Pasted image 20250327153646.png]]
 **Figura 1-19. Alguns possíveis modelos lineares**
 
 Antes de usar seu modelo, você precisa definir os valores dos parâmetros \(\theta_0\) e \(\theta_1\). Como você pode saber quais valores farão seu modelo ter o melhor desempenho? Para responder a essa pergunta, você precisa especificar uma medida de desempenho. Você pode definir uma **função de utilidade** (ou **função de aptidão**) que mede o quão **bom** seu modelo é, ou pode definir uma **função de custo** que mede o quão **ruim** ele é. Para problemas de regressão linear, as pessoas geralmente usam uma função de custo que mede a distância entre as previsões do modelo linear e os exemplos de treinamento; o objetivo é minimizar essa distância.
@@ -340,10 +340,10 @@ Antes de usar seu modelo, você precisa definir os valores dos parâmetros \(\th
 Confusamente, a palavra "modelo" pode se referir a um tipo de modelo (por exemplo, regressão linear), a uma arquitetura de modelo totalmente especificada (por exemplo, regressão linear com uma entrada e uma saída) ou ao modelo final treinado e pronto para ser usado para previsões (por exemplo, regressão linear com uma entrada e uma saída, usando \(\theta_0 = 3,75\) e \(\theta_1 = 6,78 \times 10^{-5}\)). A seleção de modelo consiste em escolher o tipo de modelo e especificar completamente sua arquitetura. Treinar um modelo significa executar um algoritmo para encontrar os parâmetros do modelo que o farão se ajustar melhor aos dados de treinamento e, esperançosamente, fazer boas previsões em novos dados.
 
 Agora o modelo se ajusta aos dados de treinamento o mais próximo possível (para um modelo linear), como você pode ver na Figura 1-20.
-
+![[Pasted image 20250327153709.png]]
 **Figura 1-20. O modelo linear que melhor se ajusta aos dados de treinamento**
 
-Você está finalmente pronto para executar o modelo e fazer previsões. Por exemplo, digamos que você queira saber o quão felizes são os cipriotas, e os dados da OCDE não têm a resposta. Felizmente, você pode usar seu modelo para fazer uma boa previsão: você consulta o PIB per capita de Chipre, encontra $37.655 e, em seguida, aplica seu modelo e descobre que a satisfação com a vida provavelmente está em torno de \(3,75 + 37.655 \times 6,78 \times 10^{-5} = 6,30\).
+Você está finalmente pronto para executar o modelo e fazer previsões. Por exemplo, digamos que você queira saber o quão felizes são os cipriotas, e os dados da OCDE não têm a resposta. Felizmente, você pode usar seu modelo para fazer uma boa previsão: você consulta o PIB per capita de Chipre, encontra $37.655 e, em seguida, aplica seu modelo e descobre que a satisfação com a vida provavelmente está em torno de \($3,75 + 37.655 \times 6,78 \times 10^{-5} = 6,30).$
 
 ---
 
@@ -371,6 +371,7 @@ Se você treinar um modelo linear nesses dados, obterá a linha sólida, enquant
 
 Ao usar um conjunto de treinamento não representativo, você treinou um modelo que provavelmente não fará previsões precisas, especialmente para países muito pobres e muito ricos.
 
+![[Pasted image 20250327154040.png]]
 **Figura 1-22. Uma amostra de treinamento mais representativa**
 
 É crucial usar um conjunto de treinamento que seja representativo dos casos para os quais você deseja generalizar. Isso é frequentemente mais difícil do que parece: se a amostra for muito pequena, você terá **ruído de amostragem** (ou seja, dados não representativos como resultado do acaso), mas mesmo amostras muito grandes podem ser não representativas se o método de amostragem for falho. Isso é chamado de **viés de amostragem**.
