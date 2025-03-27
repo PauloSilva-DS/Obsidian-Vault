@@ -4,7 +4,7 @@ tags:
   - python
   - AprendizadoMaquina
 Completo: false
-Atualizado: 2025-03-27  15.40
+Atualizado: 2025-03-27  15.53
 Criado: 2025-03-07  15.07
 ---
 [[Aprendizado de máquina]]
@@ -346,6 +346,71 @@ Agora o modelo se ajusta aos dados de treinamento o mais próximo possível (par
 Você está finalmente pronto para executar o modelo e fazer previsões. Por exemplo, digamos que você queira saber o quão felizes são os cipriotas, e os dados da OCDE não têm a resposta. Felizmente, você pode usar seu modelo para fazer uma boa previsão: você consulta o PIB per capita de Chipre, encontra $37.655 e, em seguida, aplica seu modelo e descobre que a satisfação com a vida provavelmente está em torno de \($3,75 + 37.655 \times 6,78 \times 10^{-5} = 6,30).$
 
 ---
+Para aguçar seu apetite, o Exemplo 1-1 mostra o código Python que carrega os dados, separa as entradas X dos rótulos y, cria um gráfico de dispersão para visualização e então treina um modelo linear e faz uma previsão.  
+
+Exemplo 1-1. Treinando e executando um modelo linear usando Scikit-Learn  
+
+
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+# Download and prepare the data
+data_root = "https://github.com/ageron/data/raw/main/"
+lifesat = pd.read_csv(data_root + "lifesat/lifesat.csv")
+X = lifesat[["GDP per capita (USD)"]].values
+y = lifesat[["Life satisfaction"]].values
+
+# Visualize the data
+lifesat.plot(kind='scatter', grid=True,
+             x="GDP per capita (USD)", y="Life satisfaction")
+plt.axis([23_500, 62_500, 4, 9])
+plt.show()
+
+# Select a linear model
+model = LinearRegression()
+
+# Train the model
+model.fit(X, y)
+
+# Make a prediction for Cyprus
+X_new = [[37_655.2]]  # Cyprus' GDP per capita in 2020
+print(model.predict(X_new))  # output: [[6.30165767]]
+```
+
+**NOTA**  
+Se você tivesse usado um algoritmo de aprendizado baseado em instância, teria descoberto que Israel tem o PIB per capita mais próximo ao do Chipre (US$ 38.341), e como os dados da OCDE nos dizem que a satisfação de vida dos israelenses é 7.2, você teria previsto uma satisfação de vida de 7.2 para o Chipre.  
+
+Se ampliar um pouco e olhar para os dois países mais próximos em seguida, você encontrará Lituânia e Eslovênia, ambos com satisfação de vida de 5.9. Calculando a média desses três valores, você obtém 6.33, que está bem próximo da previsão baseada em modelo. Esse algoritmo simples é chamado de regressão *k-nearest neighbors* (neste exemplo, *k = 3*).  
+
+Substituir o modelo de regressão linear por um modelo *k-nearest neighbors* no código anterior é tão simples quanto substituir estas linhas:  
+
+```python
+from sklearn.linear_model import LinearRegression
+model = LinearRegression()
+```
+
+por estas duas:  
+
+```python
+from sklearn.neighbors import KNeighborsRegressor
+model = KNeighborsRegressor(n_neighbors=3)
+```
+
+Se tudo correr bem, seu modelo fará boas previsões. Caso contrário, talvez você precise usar mais atributos (taxa de emprego, saúde, poluição do ar, etc.), obter dados de treinamento melhores ou em maior quantidade, ou talvez selecionar um modelo mais poderoso (por exemplo, um modelo de regressão polinomial).  
+
+Em resumo:  
+- Você estudou os dados.  
+- Selecionou um modelo.  
+- Treinou-o com os dados de treinamento (ou seja, o algoritmo de aprendizado buscou os valores dos parâmetros do modelo que minimizam uma função de custo).  
+- Finalmente, aplicou o modelo para fazer previsões em novos casos (isso é chamado de *inferência*), esperando que o modelo generalize bem.  
+
+É assim que um projeto típico de *machine learning* se parece. No Capítulo 2, você vivenciará isso na prática, passando por um projeto do início ao fim.  
+
+Cobrimos muito terreno até aqui: agora você sabe o que é *machine learning*, por que é útil, quais são algumas das categorias mais comuns de sistemas de ML e como é o fluxo de trabalho típico de um projeto. Agora, vamos ver o que pode dar errado no aprendizado e impedir você de fazer previsões precisas.  
 
 #### **Desafios Principais do Aprendizado de Máquina**
 
@@ -360,6 +425,18 @@ Para uma criança aprender o que é uma maçã, basta apontar para uma maçã e 
 O aprendizado de máquina ainda não chegou lá; é preciso muita data para a maioria dos algoritmos de aprendizado de máquina funcionarem corretamente. Mesmo para problemas muito simples, você geralmente precisa de milhares de exemplos, e para problemas complexos, como reconhecimento de imagem ou fala, você pode precisar de milhões de exemplos (a menos que você possa reutilizar partes de um modelo existente).
 
 ---
+
+A EFICÁCIA IRRACIONAL DOS DADOS  
+Em um famoso artigo publicado em 2001, os pesquisadores da Microsoft Michele Banko e Eric Brill mostraram que algoritmos muito diferentes de *machine learning*, incluindo alguns bastante simples, tiveram desempenhos quase idênticos em um problema complexo de desambiguação de linguagem natural quando receberam dados suficientes (como você pode ver na Figura 1-21).  
+
+Como os autores colocaram, *"esses resultados sugerem que talvez precisemos reconsiderar a troca entre gastar tempo e dinheiro no desenvolvimento de algoritmos versus investi-los no desenvolvimento de corpora"*.  
+
+A ideia de que os dados importam mais do que os algoritmos para problemas complexos foi ainda mais popularizada por Peter Norvig et al. em um artigo intitulado **"The Unreasonable Effectiveness of Data"**, publicado em 2009.  
+
+No entanto, é importante notar que conjuntos de dados pequenos e médios ainda são muito comuns, e nem sempre é fácil ou barato obter dados adicionais para treinamento — então, não abandone os algoritmos ainda.  
+
+![[Pasted image 20250327155055.png]]
+
 
 #### **Dados de Treinamento Não Representativos**
 
@@ -415,7 +492,7 @@ Agora que vimos muitos exemplos de dados ruins, vamos dar uma olhada em alguns e
 Digamos que você está visitando um país estrangeiro e o motorista de táxi tenta te enganar. Você pode ser tentado a dizer que **todos** os motoristas de táxi daquele país são ladrões. Generalizar demais é algo que nós, humanos, fazemos com frequência, e, infelizmente, as máquinas podem cair na mesma armadilha se não formos cuidadosos. No aprendizado de máquina, isso é chamado de **sobreajuste**: significa que o modelo tem um bom desempenho nos dados de treinamento, mas não generaliza bem.
 
 A Figura 1-23 mostra um exemplo de um modelo polinomial de alto grau de satisfação com a vida que se ajusta excessivamente aos dados de treinamento. Embora ele tenha um desempenho muito melhor nos dados de treinamento do que o modelo linear simples, você realmente confiaria em suas previsões?
-
+![[Pasted image 20250327155134.png]]
 **Figura 1-23. Sobreajuste aos dados de treinamento**
 
 Modelos complexos, como redes neurais profundas, podem detectar padrões sutis nos dados, mas se o conjunto de treinamento for ruidoso ou muito pequeno, o que introduz ruído de amostragem, o modelo provavelmente detectará padrões no próprio ruído (como no exemplo do motorista de táxi). Obviamente, esses padrões não generalizarão para novas instâncias. Por exemplo, digamos que você alimente seu modelo de satisfação com a vida com muitos atributos adicionais, incluindo alguns irrelevantes, como o nome do país. Nesse caso, um modelo complexo pode detectar padrões como o fato de que todos os países no conjunto de treinamento com um "w" no nome têm uma satisfação com a vida maior que 7: Nova Zelândia (7,3), Noruega (7,6), Suécia (7,3) e Suíça (7,5). Quão confiante você está de que a regra do "w-satisfação" generaliza para Ruanda ou Zimbábue? Obviamente, esse padrão ocorreu nos dados de treinamento por puro acaso, mas o modelo não tem como saber se um padrão é real ou simplesmente o resultado do ruído nos dados.
@@ -430,7 +507,7 @@ O sobreajuste ocorre quando o modelo é muito complexo em relação à quantidad
 Restringir um modelo para torná-lo mais simples e reduzir o risco de sobreajuste é chamado de **regularização**. Por exemplo, o modelo linear que definimos anteriormente tem dois parâmetros, \(\theta_0\) e \(\theta_1\). Isso dá ao algoritmo de aprendizado dois **graus de liberdade** para ajustar o modelo aos dados de treinamento: ele pode ajustar tanto a altura (\(\theta_0\)) quanto a inclinação (\(\theta_1\)) da linha. Se forçarmos \(\theta_1 = 0\), o algoritmo terá apenas um grau de liberdade e terá muito mais dificuldade para ajustar os dados corretamente: tudo o que ele poderia fazer é mover a linha para cima ou para baixo para chegar o mais próximo possível das instâncias de treinamento, então ele acabaria em torno da média. Um modelo muito simples, de fato! Se permitirmos que o algoritmo modifique \(\theta_1\), mas o forçarmos a mantê-lo pequeno, o algoritmo de aprendizado terá efetivamente algo entre um e dois graus de liberdade. Ele produzirá um modelo mais simples do que um com dois graus de liberdade, mas mais complexo do que um com apenas um. Você quer encontrar o equilíbrio certo entre ajustar os dados de treinamento perfeitamente e manter o modelo simples o suficiente para garantir que ele generalize bem.
 
 A Figura 1-24 mostra três modelos. A linha pontilhada representa o modelo original que foi treinado nos países representados como círculos (sem os países representados como quadrados), a linha sólida é nosso segundo modelo treinado com todos os países (círculos e quadrados), e a linha tracejada é um modelo treinado com os mesmos dados do primeiro modelo, mas com uma restrição de regularização. Você pode ver que a regularização forçou o modelo a ter uma inclinação menor: esse modelo não se ajusta tão bem aos dados de treinamento (círculos) quanto o primeiro modelo, mas na verdade generaliza melhor para novos exemplos que ele não viu durante o treinamento (quadrados).
-
+![[Pasted image 20250327155155.png]]
 **Figura 1-24. A regularização reduz o risco de sobreajuste**
 
 A quantidade de regularização a ser aplicada durante o aprendizado pode ser controlada por um **hiperparâmetro**. Um hiperparâmetro é um parâmetro de um algoritmo de aprendizado (não do modelo). Como tal, ele não é afetado pelo algoritmo de aprendizado em si; ele deve ser definido antes do treinamento e permanece constante durante o treinamento. Se você definir o hiperparâmetro de regularização para um valor muito alto, obterá um modelo quase plano (uma inclinação próxima de zero); o algoritmo de aprendizado quase certamente não se ajustará excessivamente aos dados de treinamento, mas será menos provável que encontre uma boa solução. Ajustar hiperparâmetros é uma parte importante da construção de um sistema de aprendizado de máquina (você verá um exemplo detalhado no próximo capítulo).
@@ -484,7 +561,7 @@ Agora suponha que o modelo linear generalize melhor, mas você deseja aplicar al
 O problema é que você mediu o erro de generalização várias vezes no conjunto de teste e adaptou o modelo e os hiperparâmetros para produzir o melhor modelo para aquele conjunto específico. Isso significa que o modelo provavelmente não terá um bom desempenho em novos dados.
 
 Uma solução comum para esse problema é chamada de **validação holdout** (Figura 1-25): você simplesmente reserva parte do conjunto de treinamento para avaliar vários modelos candidatos e selecionar o melhor. O novo conjunto reservado é chamado de **conjunto de validação** (ou conjunto de desenvolvimento, ou dev set). Mais especificamente, você treina vários modelos com vários hiperparâmetros no conjunto de treinamento reduzido (ou seja, o conjunto de treinamento completo menos o conjunto de validação) e seleciona o modelo que tem o melhor desempenho no conjunto de validação. Após esse processo de validação holdout, você treina o melhor modelo no conjunto de treinamento completo (incluindo o conjunto de validação), e isso lhe dá o modelo final. Por fim, você avalia esse modelo final no conjunto de teste para obter uma estimativa do erro de generalização.
-
+![[Pasted image 20250327155245.png]]
 **Figura 1-25. Seleção de modelo usando validação holdout**
 
 Essa solução geralmente funciona muito bem. No entanto, se o conjunto de validação for muito pequeno, as avaliações do modelo serão imprecisas: você pode acabar selecionando um modelo subótimo por engano. Por outro lado, se o conjunto de validação for muito grande, o conjunto de treinamento restante será muito menor do que o conjunto de treinamento completo. Por que isso é ruim? Bem, como o modelo final será treinado no conjunto de treinamento completo, não é ideal comparar modelos candidatos treinados em um conjunto de treinamento muito menor. Seria como selecionar o corredor mais rápido para participar de uma maratona. Uma maneira de resolver esse problema é realizar **validação cruzada repetida**, usando muitos pequenos conjuntos de validação. Cada modelo é avaliado uma vez por conjunto de validação depois de ser treinado no restante dos dados. Ao calcular a média de todas as avaliações de um modelo, você obtém uma medida muito mais precisa de seu desempenho. No entanto, há uma desvantagem: o tempo de treinamento é multiplicado pelo número de conjuntos de validação.
@@ -498,7 +575,7 @@ Em alguns casos, é fácil obter uma grande quantidade de dados para treinamento
 Nesse caso, a regra mais importante a lembrar é que tanto o conjunto de validação quanto o conjunto de teste devem ser o mais representativos possível dos dados que você espera usar em produção, então eles devem ser compostos exclusivamente de fotos representativas: você pode embaralhá-las e colocar metade no conjunto de validação e metade no conjunto de teste (garantindo que nenhuma duplicata ou quase-duplicata acabe em ambos os conjuntos). Depois de treinar seu modelo nas fotos da web, se você observar que o desempenho do modelo no conjunto de validação é decepcionante, você não saberá se isso ocorre porque seu modelo sobreajustou o conjunto de treinamento ou se é apenas devido ao desajuste entre as fotos da web e as fotos do aplicativo móvel.
 
 Uma solução é reservar algumas das fotos de treinamento (da web) em outro conjunto que Andrew Ng chamou de **conjunto train-dev** (Figura 1-26). Depois que o modelo for treinado (no conjunto de treinamento, não no conjunto train-dev), você pode avaliá-lo no conjunto train-dev. Se o modelo tiver um desempenho ruim, ele deve ter sobreajustado o conjunto de treinamento, então você deve tentar simplificar ou regularizar o modelo, obter mais dados de treinamento e limpar os dados de treinamento. Mas se ele tiver um bom desempenho no conjunto train-dev, você pode avaliar o modelo no conjunto de validação. Se ele tiver um desempenho ruim, o problema deve estar vindo do desajuste de dados. Você pode tentar resolver esse problema pré-processando as imagens da web para que pareçam mais com as fotos que serão tiradas pelo aplicativo móvel e, em seguida, retreinar o modelo. Uma vez que você tenha um modelo que tenha um bom desempenho tanto no conjunto train-dev quanto no conjunto de validação, você pode avaliá-lo uma última vez no conjunto de teste para saber o quão bem ele provavelmente se sairá em produção.
-
+![[Pasted image 20250327155303.png]]
 **Figura 1-26. Quando os dados reais são escassos (direita), você pode usar dados abundantes semelhantes (esquerda) para treinamento e reservar alguns deles em um conjunto train-dev para avaliar o sobreajuste; os dados reais são então usados para avaliar o desajuste de dados (conjunto de validação) e o desempenho do modelo final (conjunto de teste)**
 
 ---

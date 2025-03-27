@@ -14,9 +14,9 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
-                "page": 50,
+                "page": 69,
                 "left": -94,
-                "top": 72,
+                "top": 596,
                 "zoom": 1.1
               },
               "icon": "lucide-file-text",
@@ -255,8 +255,23 @@
                   "icon": "lucide-file",
                   "title": "Capítulo 1. O Panorama do Aprendizado de Máquina"
                 }
+              },
+              {
+                "id": "fa4026a00edbf16f",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://colab.research.google.com/github/ageron/handson-ml3/blob/main/01_the_machine_learning_landscape.ipynb#scrollTo=-pOgS-GC89d7",
+                    "title": "01_the_machine_learning_landscape.ipynb - Colab",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "01_the_machine_learning_landscape.ipynb - Colab"
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical",
@@ -269,20 +284,20 @@
       }
     ]
   },
-  "active": "baf78baf21381818",
+  "active": "fa4026a00edbf16f",
   "lastOpenFiles": [
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
-    "Source Material/Imagens/Pasted image 20250327154040.png",
+    "Source Material/Imagens/Pasted image 20250327155303.png",
+    "Source Material/Imagens/Pasted image 20250327155245.png",
+    "Source Material/Imagens/Pasted image 20250327155155.png",
+    "Source Material/Imagens/Pasted image 20250327155134.png",
+    "Source Material/Imagens/Pasted image 20250327155055.png",
+    "Source Material/Imagens/Pasted image 20250327155041.png",
     "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
+    "Source Material/Imagens/Pasted image 20250327154040.png",
     "Source Material/Imagens/Pasted image 20250327153935.png",
     "Source Material/Imagens/Pasted image 20250327153709.png",
     "Source Material/Imagens/Pasted image 20250327153646.png",
-    "Source Material/Imagens/Pasted image 20250327153624.png",
-    "Source Material/Imagens/Pasted image 20250327153606.png",
-    "Source Material/Imagens/Pasted image 20250327153546.png",
-    "Source Material/Imagens/Pasted image 20250327153517.png",
-    "Source Material/Imagens/Pasted image 20250327153504.png",
-    "Source Material/Imagens/Pasted image 20250327153438.png",
     "Source Material/pdf/mãos a obra/Hands-On Machine Learning 20-69.pdf",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/linear.ipynb",
