@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-31  15.29
+Atualizado: 2025-03-31  15.40
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1781,10 +1781,12 @@ A partir de agora, podemos realizar ambas as transformações em apenas um produ
 
 E se você quiser realizar o inverso dessa dupla transformação? Bem, se você comprimiu e depois cisalhou, e quer desfazer o que fez, deve ser óbvio que você deve primeiro "descisalhar" e depois "descomprimir". Em termos mais matemáticos, dadas duas matrizes invertíveis (também conhecidas como não singulares) \( Q \) e \( R \):
 
+$$
 [
 (Q \cdot R)^{-1} = R^{-1} \cdot Q^{-1}
 ]
 
+$$
 E no NumPy:
 
 ```python
@@ -1795,15 +1797,17 @@ LA.inv(F_shear @ F_squeeze) == LA.inv(F_squeeze) @ LA.inv(F_shear)
 
 ### **Decomposição em Valores Singulares (SVD)**
 
-Acontece que qualquer matriz \( m \times n \) \( M \) pode ser decomposta no produto escalar de três matrizes simples:
+Acontece que qualquer matriz $( m \times n ) ( M )$ pode ser decomposta no produto escalar de três matrizes simples:
 
-- Uma matriz de rotação \( U \) (uma matriz ortogonal \( m \times m \))
-- Uma matriz de escalonamento e projeção \( \Sigma \) (uma matriz diagonal \( m \times n \))
-- E outra matriz de rotação \( V^T \) (uma matriz ortogonal \( n \times n \))
+- Uma matriz de rotação \( U \) (uma matriz ortogonal $( m \times m ))$
+- Uma matriz de escalonamento e projeção $( \Sigma )$ (uma matriz diagonal $( m \times n ))$
+- E outra matriz de rotação \( V^T \) (uma matriz ortogonal $( n \times n ))$
 
-\[
+$$
+[
 M = U \cdot \Sigma \cdot V^T
-\]
+]
+$$
 
 Por exemplo, vamos decompor a transformação de cisalhamento:
 
@@ -1812,14 +1816,14 @@ U, S_diag, V_T = LA.svd(F_shear)  # nota: no Python 3, você pode renomear S_dia
 S_diag
 ```
 
-Observe que isso é apenas um array 1D contendo os valores diagonais de \( \Sigma \). Para obter a matriz \( \Sigma \) real, podemos usar a função `diag` do NumPy:
+Observe que isso é apenas um array 1D contendo os valores diagonais de $( \Sigma )$. Para obter a matriz $( \Sigma )$ real, podemos usar a função `diag` do NumPy:
 
 ```python
 S = np.diag(S_diag)
 S
 ```
 
-Agora vamos verificar que \( U \cdot \Sigma \cdot V^T \) é de fato igual a \( F_{\text{shear}} \):
+Agora vamos verificar que $( U \cdot \Sigma \cdot V^T )$ é de fato igual a $( F_{\text{shear}} ):$
 
 ```python
 U @ np.diag(S_diag) @ V_T
@@ -1827,14 +1831,14 @@ U @ np.diag(S_diag) @ V_T
 F_shear
 ```
 
-Funcionou perfeitamente. Vamos aplicar essas transformações uma por uma (em ordem inversa) no quadrado unitário para entender o que está acontecendo. Primeiro, vamos aplicar a primeira rotação \( V^T \):
+Funcionou perfeitamente. Vamos aplicar essas transformações uma por uma (em ordem inversa) no quadrado unitário para entender o que está acontecendo. Primeiro, vamos aplicar a primeira rotação $( V^T )$:
 
 ```python
 plot_transformation(Square, V_T @ Square, "$Square$", r"$V^T \cdot Square$", axis=[-0.5, 3.5, -1.5, 1.5])
 plt.show()
 ```
 
-Agora vamos redimensionar ao longo dos eixos vertical e horizontal usando \( \Sigma \):
+Agora vamos redimensionar ao longo dos eixos vertical e horizontal usando $( \Sigma ):$
 
 ```python
 plot_transformation(V_T @ Square, S @ V_T @ Square, r"$V^T \cdot Square$", r"$\Sigma \cdot V^T \cdot Square$", axis=[-0.5, 3.5, -1.5, 1.5])
@@ -1854,21 +1858,23 @@ E podemos ver que o resultado é de fato um mapeamento de cisalhamento do quadra
 
 ### **Autovetores e autovalores**
 
-Um **autovetor** de uma matriz quadrada \( M \) (também chamado de **vetor característico**) é um vetor não nulo que permanece na mesma linha após a transformação pela transformação linear associada a \( M \). Uma definição mais formal é qualquer vetor \( \mathbf{v} \) tal que:
+Um **autovetor** de uma matriz quadrada \( M \) (também chamado de **vetor característico**) é um vetor não nulo que permanece na mesma linha após a transformação pela transformação linear associada a \( M \). Uma definição mais formal é qualquer vetor $( \mathbf{v} )$ tal que:
 
-\[
+$$
+[
 M \cdot \mathbf{v} = \lambda \times \mathbf{v}
-\]
+]
+$$
 
-Onde \( \lambda \) é um valor escalar chamado de **autovalor** associado ao vetor \( \mathbf{v} \).
+Onde $( \lambda )$ é um valor escalar chamado de **autovalor** associado ao vetor $( \mathbf{v} )$.
 
-Por exemplo, qualquer vetor horizontal permanece horizontal após aplicar o mapeamento de cisalhamento (como você pode ver na imagem acima), então ele é um autovetor de \( M \). Um vetor vertical acaba inclinado para a direita, então vetores verticais **NÃO** são autovetores de \( M \).
+Por exemplo, qualquer vetor horizontal permanece horizontal após aplicar o mapeamento de cisalhamento (como você pode ver na imagem acima), então ele é um autovetor de $( M ).$ Um vetor vertical acaba inclinado para a direita, então vetores verticais **NÃO** são autovetores de $( M).$
 
-Se olharmos para o mapeamento de compressão, descobrimos que qualquer vetor horizontal ou vertical mantém sua direção (embora seu comprimento mude), então todos os vetores horizontais e verticais são autovetores de \( F_{\text{squeeze}} \).
+Se olharmos para o mapeamento de compressão, descobrimos que qualquer vetor horizontal ou vertical mantém sua direção (embora seu comprimento mude), então todos os vetores horizontais e verticais são autovetores de ( $F_{\text{squeeze}} )$.
 
-No entanto, matrizes de rotação não têm autovetores (exceto se o ângulo de rotação for \( 0^\circ \) ou \( 180^\circ \), caso em que todos os vetores não nulos são autovetores).
+No entanto, matrizes de rotação não têm autovetores (exceto se o ângulo de rotação for ( $0^\circ) ou ( 180^\circ )$, caso em que todos os vetores não nulos são autovetores).
 
-A função `eig` do NumPy retorna a lista de autovetores unitários e seus autovalores correspondentes para qualquer matriz quadrada. Vamos ver os autovetores e autovalores da matriz de compressão \( F_{\text{squeeze}} \):
+A função `eig` do NumPy retorna a lista de autovetores unitários e seus autovalores correspondentes para qualquer matriz quadrada. Vamos ver os autovetores e autovalores da matriz de compressão $( F_{\text{squeeze}} )$:
 
 ```python
 eigenvalues, eigenvectors = LA.eig(F_squeeze)
