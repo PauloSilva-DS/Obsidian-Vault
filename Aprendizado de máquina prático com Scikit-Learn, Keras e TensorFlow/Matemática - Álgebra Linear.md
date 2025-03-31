@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-31  14.49
+Atualizado: 2025-03-31  15.05
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -711,7 +711,7 @@ D = np.array([
 print(np.diag(D))
 ```
 
-Finalmente, a **matriz identidade** de tamanho \( n \), denotada por \( I_n \), é uma matriz diagonal de tamanho $( n \times n )$ com 1s na diagonal principal, por exemplo \( I_3 \):
+Finalmente, a **matriz identidade** de tamanho ( n ), denotada por $( I_n )$, é uma matriz diagonal de tamanho $( n \times n )$ com 1s na diagonal principal, por exemplo \( I_3 \):
 
 $$
 
@@ -858,7 +858,7 @@ print( 2 * A + 2 * B)
 
 Até agora, as operações matriciais foram bastante intuitivas. Mas multiplicar matrizes é um pouco mais complexo.
 
-Uma matriz \( Q \) de tamanho $( m \times n )$ pode ser multiplicada por uma matriz ( R ) de tamanho ( n \times q ). Ela é denotada simplesmente por ( QR ) sem sinal de multiplicação ou ponto. O resultado ( P ) é uma matriz ( m \times q ) onde cada elemento é calculado como uma soma de produtos:
+Uma matriz ( Q ) de tamanho $( m \times n )$ pode ser multiplicada por uma matriz ( R ) de tamanho $( n \times q )$. Ela é denotada simplesmente por ( QR ) sem sinal de multiplicação ou ponto. O resultado ( P ) é uma matriz $( m \times q )$ onde cada elemento é calculado como uma soma de produtos:
 
 $P_{i,j} = \sum_{k=1}^n{Q_{i,k} \times R_{k,j}}$
 
@@ -884,7 +884,7 @@ Q_{m1} R_{11} + Q_{m2} R_{21} + \cdots + Q_{mn} R_{n1} &
 \end{bmatrix} 
 $$
 
-Você pode notar que cada elemento $( P_{i,j} )$ é o produto escalar do vetor linha ( Q_{i,*} ) e do vetor coluna $( R_{*,j}):$
+Você pode notar que cada elemento $( P_{i,j} )$ é o produto escalar do vetor linha ( $Q_{i,*} )$ e do vetor coluna $( R_{*,j}):$
 
 $P_{i,j} = Q_{i,*} \cdot R_{*,j}$
 
