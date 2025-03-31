@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-31  15.18
+Atualizado: 2025-03-31  15.29
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1726,7 +1726,7 @@ LA.det(F_shear)
 
 Perfeito! Essa matriz pode ser invertida, como vimos anteriormente. Uau, a matemática realmente funciona!
 
-O determinante também pode ser usado para medir o quanto uma transformação linear afeta as áreas de superfície: por exemplo, as matrizes de projeção \( F_{\text{project}} \) e \( F_{\text{project\_30}} \) achatam completamente o polígono \( P \), até que sua área seja zero. É por isso que o determinante dessas matrizes é 0. O mapeamento de cisalhamento modificou a forma do polígono, mas não afetou sua área de superfície, e é por isso que o determinante é 1. Você pode tentar calcular o determinante de uma matriz de rotação e também deve encontrar 1. E quanto a uma matriz de redimensionamento? Vamos ver:
+O determinante também pode ser usado para medir o quanto uma transformação linear afeta as áreas de superfície: por exemplo, as matrizes de projeção $( F_{\text{project}} ) e ( F_{\text{project\_30}} )$ achatam completamente o polígono \( P \), até que sua área seja zero. É por isso que o determinante dessas matrizes é 0. O mapeamento de cisalhamento modificou a forma do polígono, mas não afetou sua área de superfície, e é por isso que o determinante é 1. Você pode tentar calcular o determinante de uma matriz de rotação e também deve encontrar 1. E quanto a uma matriz de redimensionamento? Vamos ver:
 
 ```python
 F_scale = np.array([
@@ -1746,7 +1746,7 @@ LA.det(F_scale)
 
 Correto!
 
-O determinante pode realmente ser negativo, quando a transformação resulta em uma versão "invertida" do polígono original (por exemplo, uma luva para a mão esquerda se torna uma luva para a mão direita). Por exemplo, o determinante da matriz \( F_{\text{reflect}} \) é -1 porque a área de superfície é preservada, mas o polígono é invertido:
+O determinante pode realmente ser negativo, quando a transformação resulta em uma versão "invertida" do polígono original (por exemplo, uma luva para a mão esquerda se torna uma luva para a mão direita). Por exemplo, o determinante da matriz $( F_{\text{reflect}})$ é -1 porque a área de superfície é preservada, mas o polígono é invertido:
 
 ```python
 LA.det(F_reflect)
@@ -1781,9 +1781,9 @@ A partir de agora, podemos realizar ambas as transformações em apenas um produ
 
 E se você quiser realizar o inverso dessa dupla transformação? Bem, se você comprimiu e depois cisalhou, e quer desfazer o que fez, deve ser óbvio que você deve primeiro "descisalhar" e depois "descomprimir". Em termos mais matemáticos, dadas duas matrizes invertíveis (também conhecidas como não singulares) \( Q \) e \( R \):
 
-\[
+[
 (Q \cdot R)^{-1} = R^{-1} \cdot Q^{-1}
-\]
+]
 
 E no NumPy:
 
