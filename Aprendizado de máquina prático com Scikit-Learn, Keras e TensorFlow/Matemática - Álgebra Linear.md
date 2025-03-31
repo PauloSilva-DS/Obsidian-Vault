@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-31  15.10
+Atualizado: 2025-03-31  15.18
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1318,7 +1318,7 @@ def plot_projection(U, P):
 plot_projection(U, P)
 ```
 
-Podemos realmente projetar em qualquer outro eixo, basta substituir \( U \) por qualquer outro vetor unitário. Por exemplo, vamos projetar no eixo que está a um ângulo de \( 30^\circ \) acima do eixo horizontal:
+Podemos realmente projetar em qualquer outro eixo, basta substituir \( U \) por qualquer outro vetor unitário. Por exemplo, vamos projetar no eixo que está a um ângulo de $( 30^\circ )$ acima do eixo horizontal:
 
 ```python
 angle30 = 30 * np.pi / 180  # ângulo em radianos
