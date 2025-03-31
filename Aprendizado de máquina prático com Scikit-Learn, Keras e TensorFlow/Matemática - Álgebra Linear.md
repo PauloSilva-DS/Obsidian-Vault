@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-31  15.05
+Atualizado: 2025-03-31  15.10
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1014,7 +1014,7 @@ A * B  # NÃO é uma multiplicação de matrizes
 
 ### **Transposta de uma matriz**
 
-A transposta de uma matriz \( M \) é uma matriz denotada por $( M^T )$ tal que a $( i^{ésima} \)$ linha em $( M^T )$ é igual à $( i^{ésima} )$ coluna em $( M )$:
+A transposta de uma matriz \( M \) é uma matriz denotada por $( M^T )$ tal que a $( i^{ésima} )$ linha em $( M^T )$ é igual à $( i^{ésima} )$ coluna em $( M )$:
 
 $$
 A^T = 
