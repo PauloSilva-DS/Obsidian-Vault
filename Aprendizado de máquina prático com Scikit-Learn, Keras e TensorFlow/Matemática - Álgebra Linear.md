@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-27  15.24
+Atualizado: 2025-03-31  14.49
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -462,9 +462,9 @@ print(u * v)
 
 - O produto escalar é **comutativo**: $( \mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u} )$.
 - O produto escalar é definido apenas entre dois vetores, não entre um escalar e um vetor. Isso significa que não podemos encadear produtos escalares: por exemplo, a expressão $( \mathbf{u} \cdot \mathbf{v} \cdot \mathbf{w} )$ não é definida, pois $( \mathbf{u} \cdot \mathbf{v} )$ é um escalar e $( \mathbf{w} )$ é um vetor.
-- Isso também significa que o produto escalar **NÃO** é associativo: \( (\mathbf{u} \cdot \mathbf{v}) \cdot \mathbf{w} \neq \mathbf{u} \cdot (\mathbf{v} \cdot \mathbf{w}) \), já que nenhum dos dois é definido.
-- No entanto, o produto escalar é **associativo em relação à multiplicação por escalar**: \( \lambda \times (\mathbf{u} \cdot \mathbf{v}) = (\lambda \times \mathbf{u}) \cdot \mathbf{v} = \mathbf{u} \cdot (\lambda \times \mathbf{v}) \).
-- Finalmente, o produto escalar é **distributivo** sobre a adição de vetores: \( \mathbf{u} \cdot (\mathbf{v} + \mathbf{w}) = \mathbf{u} \cdot \mathbf{v} + \mathbf{u} \cdot \mathbf{w} \).
+- Isso também significa que o produto escalar **NÃO** é associativo: $( (\mathbf{u} \cdot \mathbf{v}) \cdot \mathbf{w} \neq \mathbf{u} \cdot (\mathbf{v} \cdot \mathbf{w}) )$, já que nenhum dos dois é definido.
+- No entanto, o produto escalar é **associativo em relação à multiplicação por escalar**: $( \lambda \times (\mathbf{u} \cdot \mathbf{v}) = (\lambda \times \mathbf{u}) \cdot \mathbf{v} = \mathbf{u} \cdot (\lambda \times \mathbf{v}) )$.
+- Finalmente, o produto escalar é **distributivo** sobre a adição de vetores: $( \mathbf{u} \cdot (\mathbf{v} + \mathbf{w}) = \mathbf{u} \cdot \mathbf{v} + \mathbf{u} \cdot \mathbf{w} )$.
 
 ---
 
@@ -600,7 +600,7 @@ A.size
 
 ### **Indexação de elementos**
 
-O número localizado na $( i^{ésima} )$ linha e $( j^{ésima})$ coluna de uma matriz ( X\) é às vezes denotado por ( X_{i,j}\) ou ( X_{ij} ), mas não há uma notação padrão, então as pessoas geralmente preferem nomear explicitamente os elementos, assim: "seja $( X = (x_{i,j})_{1 \leq i \leq m, 1 \leq j \leq n} \)$." Isso significa que ( X ) é igual a:
+O número localizado na $( i^{ésima} )$ linha e $( j^{ésima})$ coluna de uma matriz ( X\) é às vezes denotado por ( X_{i,j}\) ou ( X_{ij} ), mas não há uma notação padrão, então as pessoas geralmente preferem nomear explicitamente os elementos, assim: "seja $( X = (x_{i,j})_{1 \leq i \leq m, 1 \leq j \leq n} )$." Isso significa que ( X ) é igual a:
 
 $$
 
@@ -615,13 +615,13 @@ x_{m,1} & x_{m,2} & x_{m,3} & \cdots & x_{m,n}
 
 
 $$
-No entanto, neste notebook, usaremos a notação \( X_{i,j} \), pois ela corresponde bem à notação do NumPy. Observe que, em matemática, os índices geralmente começam em 1, mas na programação eles geralmente começam em 0. Portanto, para acessar \( A_{2,3} \) programaticamente, precisamos escrever:
+No entanto, neste notebook, usaremos a notação $( X_{i,j} )$, pois ela corresponde bem à notação do NumPy. Observe que, em matemática, os índices geralmente começam em 1, mas na programação eles geralmente começam em 0. Portanto, para acessar $( A_{2,3} )$ programaticamente, precisamos escrever:
 
 ```python
 A[1, 2]  # 2ª linha, 3ª coluna
 ```
 
-O vetor da $( i^{ésima} )$ linha é às vezes denotado por ( M_i) ou ( M_{i,*} ), mas novamente não há uma notação padrão, então as pessoas geralmente preferem definir seus próprios nomes, por exemplo: "seja ( x_i) o vetor da ( $i^{ésima}$ ) linha da matriz ( X )." Usaremos ( M_{i,*} ) pelo mesmo motivo mencionado acima. Por exemplo, para acessar ( A_{2,*} ) (ou seja, o vetor da 2ª linha de ( A ):
+O vetor da $( i^{ésima} )$ linha é às vezes denotado por $( M_i)$ ou $( M_{i,*} )$, mas novamente não há uma notação padrão, então as pessoas geralmente preferem definir seus próprios nomes, por exemplo: "seja ( x_i) o vetor da ( $i^{ésima}$ ) linha da matriz ( X )." Usaremos ( M_{i,*} ) pelo mesmo motivo mencionado acima. Por exemplo, para acessar ( A_{2,*} ) (ou seja, o vetor da 2ª linha de ( A ):
 
 ```python
 A[1, :]  # vetor da 2ª linha (como um array 1D)
