@@ -1,12 +1,13 @@
 ---
-title: "Codificação Vibe com Cursor Ai com exemplos | por Chris Dunlop - Freedium"
-url: "https://freedium.cfd/https://medium.com/realworld-ai-use-cases/vibe-coding-with-cursor-ai-with-examples-869e1003d919"
-author:
-published:
-data: "2025-04-07T14:28:33-03:00"
-description: "I'm obsessed with vibe coding and here is 8 examples of products I have made at my software..."
+title: Codificação Vibe com Cursor Ai com exemplos | por Chris Dunlop - Freedium
+url: https://freedium.cfd/https://medium.com/realworld-ai-use-cases/vibe-coding-with-cursor-ai-with-examples-869e1003d919
+author: 
+published: 
+data: 2025-04-07T14:28:33-03:00
+description: I'm obsessed with vibe coding and here is 8 examples of products I have made at my software...
 tags:
-  - "clippings"
+  - clippings
+  - "#codificação"
 ---
 [< Ir para o original](https://medium.com/@chrisdunlop_37984/vibe-coding-with-cursor-ai-with-examples-869e1003d919#bypass)
 

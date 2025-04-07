@@ -8,7 +8,7 @@ description: In today's fast-paced data world, traditional methods are evolving 
 tags:
   - clippings
   - estatística
-Atualizado: 2025-04-07  14.19
+Atualizado: 2025-04-07  14.28
 Criado: 2025-04-07  14.18
 ---
 [< Ir para o original](https://medium.com/@thedatabeast/20-cutting-edge-statistical-techniques-every-data-scientist-should-master-in-2025-4fbcef24b373#bypass)
