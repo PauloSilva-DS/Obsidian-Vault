@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - álgebraLinear
 Completo: false
-Atualizado: 2025-03-31  15.41
+Atualizado: 2025-03-31  15.42
 Criado: 2025-03-11  15.38
 ---
 🔖[[Aprendizado de máquina]]
@@ -1898,7 +1898,7 @@ Espere, o quê!? Esperávamos apenas um autovetor unitário, não dois. O segund
 
 ### **Traço**
 
-O traço de uma matriz quadrada \( M \), denotado por \( \text{tr}(M) \), é a soma dos valores em sua diagonal principal. Por exemplo:
+O traço de uma matriz quadrada \( M \), denotado por $( \text{tr}(M) )$, é a soma dos valores em sua diagonal principal. Por exemplo:
 
 ```python
 D = np.array([
@@ -1919,20 +1919,13 @@ $$
 - ( \text{tr}(A^T \cdot B) = \text{tr}(A \cdot B^T) = \text{tr}(B^T \cdot A) = text{tr}(B \cdot A^T) = \sum_{i,j} X_{i,j} \times Y_{i,j})
 $$
 
-No entanto, ele tem uma interpretação geométrica útil no caso de matrizes de projeção (como \( F_{\text{project}} \) que discutimos anteriormente): ele corresponde ao número de dimensões após a projeção. Por exemplo:
+No entanto, ele tem uma interpretação geométrica útil no caso de matrizes de projeção (como ( $F_{\text{project}} )$ que discutimos anteriormente): ele corresponde ao número de dimensões após a projeção. Por exemplo:
 
 ```python
 F_project.trace()
 ```
 
 ---
-
-### **O que vem a seguir?**
-
-Isso conclui esta introdução à Álgebra Linear. Embora esses conceitos básicos cubram a maior parte do que você precisará saber para Aprendizado de Máquina, se você quiser se aprofundar neste tópico, há muitas opções disponíveis: livros de Álgebra Linear, lições da Khan Academy ou apenas páginas da Wikipedia.
-
----
-
 
 
 
