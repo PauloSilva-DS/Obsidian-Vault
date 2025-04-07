@@ -1,13 +1,15 @@
 ---
-title: "How I created UI with ChatGPT’s new image generator (4o)"
-url: "https://medium.com/design-bootcamp/how-i-created-ui-with-chatgpts-new-image-generator-4o-d52389a5833e"
+title: How I created UI with ChatGPT’s new image generator (4o)
+url: https://medium.com/design-bootcamp/how-i-created-ui-with-chatgpts-new-image-generator-4o-d52389a5833e
 author:
   - "[[Xinran Ma]]"
 published: 2025-03-31
-data: "2025-04-07T14:39:21-03:00"
-description: "GPT-4o’s new image generator goes beyond Ghibli-style art—see how it creates effective UI mockups for product designers, product managers, and UX pros."
+data: 2025-04-07T14:39:21-03:00
+description: GPT-4o’s new image generator goes beyond Ghibli-style art—see how it creates effective UI mockups for product designers, product managers, and UX pros.
 tags:
-  - "clippings"
+  - clippings
+Atualizado: 2025-04-07  14.39
+Criado: 2025-04-07  14.39
 ---
 Prompts, orientações e surpresas
 
