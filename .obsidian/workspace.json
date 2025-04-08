@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/NotebookLM mudará a forma como você aprende.md",
+                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NotebookLM mudará a forma como você aprende"
+              "title": "Aprendizado de máquina"
+            }
+          },
+          {
+            "id": "bd80e4b8b7b49b2d",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://github.com/ageron/handson-ml3",
+                "title": "GitHub - ageron/handson-ml3: A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in Python using Scikit-Learn, Keras and TensorFlow 2.",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "GitHub - ageron/handson-ml3: A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in Python using Scikit-Learn, Keras and TensorFlow 2."
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -98,8 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 449.5,
-    "collapsed": true
+    "width": 449.5
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -228,17 +242,17 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "40733a1b0463efb1",
+  "active": "bd80e4b8b7b49b2d",
   "lastOpenFiles": [
-    "Clippings/How I created UI with ChatGPT’s new image generator (4o).md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Clippings/NotebookLM mudará a forma como você aprende.md",
+    "Clippings/How I created UI with ChatGPT’s new image generator (4o).md",
     "Clippings/Por que os robôs não podem clicar na caixa Eu não sou um robô em sites  por Grant Piper - Freedium.md",
     "Clippings/O Anthropic Claude acabou de acabar com uma indústria inteira  por AI Rabbit  em CodeX - Freedium.md",
     "Clippings/Codificação Vibe com Cursor Ai com exemplos  por Chris Dunlop - Freedium.md",
     "Clippings/Você pode ganhar dinheiro com IA sem largar seu emprego  por Nipuna Maduranga  em Aprenda IA ​​para lucrar - Freedium.md",
     "Clippings/20 técnicas estatísticas de ponta que todo cientista de dados deve dominar em 2025  por The Data Beast - Freedium.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.md",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Nova Notas/Capítulo 2. Projeto de Aprendizado de Máquina 2.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
     "Clippings/Notebooks Obsidian e Jupyter  por Brian Carey - Freedium 1.md",
