@@ -7,7 +7,9 @@ data: 2025-03-13T17:23:43-03:00
 description: Personal Knowledge Management for Data Science
 tags:
   - clippings
-Atualizado: 2025-03-27  16.52
+  - python
+  - "#markdown"
+Atualizado: 2025-04-09  14.43
 Criado: 2025-03-13  17.23
 ---
 
