@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - "#matplotlib"
 Completo: false
-Atualizado: 2025-04-09  15.10
+Atualizado: 2025-04-09  15.45
 Criado: 2025-04-09  14.53
 ---
 🔖[[Aprendizado de máquina]]

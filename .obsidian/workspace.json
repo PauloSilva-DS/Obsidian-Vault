@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6fd475f742db2fa1",
+            "id": "cc4af2177fc360a8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "webviewer",
               "state": {
-                "file": "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Demonstra como usar a biblioteca matplotlib.md",
-                "mode": "preview",
-                "source": false
+                "url": "https://www.youtube.com/watch?v=jZudeLTPTb0",
+                "title": "Novo GIMP 3 ameaça domínio do Photoshop? (+ PhotoGIMP 2025) - YouTube",
+                "mode": "webview"
               },
-              "icon": "lucide-file",
-              "title": "Demonstra como usar a biblioteca matplotlib"
+              "icon": "globe-2",
+              "title": "Novo GIMP 3 ameaça domínio do Photoshop? (+ PhotoGIMP 2025) - YouTube"
             }
           }
         ],
@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 449.5
+    "width": 449.5,
+    "collapsed": true
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -227,8 +228,9 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "e9ea88d18a839487",
+  "active": "cc4af2177fc360a8",
   "lastOpenFiles": [
+    "Nova Notas/Gimp.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Demonstra como usar a biblioteca matplotlib.md",
     "Clippings/Notebooks Obsidian e Jupyter  por Brian Carey - Freedium 1.md",
     "Excalidraw/Drawing 2025-02-24 15.54.56.excalidraw.md",
@@ -269,7 +271,6 @@
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.ipynb",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear-Copy1.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Autodiferenciação.md",
-    "Clippings/GitHub - iamgodotCAO Claude AI for Obsidian.md",
     "plot",
     "Source Material/pdf/temp5668552431312359342.PDF",
     "Source Material/pdf/temp5945610998191025736.PDF",
