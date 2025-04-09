@@ -6,11 +6,11 @@
     "emojiStyle": "twemoji",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🧰",
       "🀄",
       "📚",
       "🔖",
-      "CoBookOpen",
-      "CoFolderEdit"
+      "CoBookOpen"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -57,5 +57,6 @@
   "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md": "CoBookOpen",
   "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md": "📚",
   "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Cálculo Diferencial.md": "🀄",
-  "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.md": "🀄"
+  "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.md": "🀄",
+  "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Demonstra como usar a biblioteca matplotlib.md": "🧰"
 }
