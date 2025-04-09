@@ -5,7 +5,7 @@ tags:
   - AprendizadoMaquina
   - "#matplotlib"
 Completo: false
-Atualizado: 2025-04-09  15.01
+Atualizado: 2025-04-09  15.10
 Criado: 2025-04-09  14.53
 ---
 🔖[[Aprendizado de máquina]]
@@ -176,9 +176,11 @@ plt.savefig("minha_funcao_quadrada.png", transparent=True)
 
 # Subplots
 Uma figura do matplotlib pode conter vários subplots. Esses subplots são organizados em uma grade. Para criar um subplot, basta chamar a função `subplot` e especificar o número de linhas e colunas na figura e o índice do subplot que você deseja desenhar (começando em 1, da esquerda para a direita e de cima para baixo). Observe que o pyplot mantém o controle do subplot ativo atual (que você pode obter uma referência chamando `plt.gca()`), então quando você chama a função `plot`, ela desenha no subplot *ativo*.
-```markdown
+
+
 # Subplots
 (continuação)
+
 
 ```python
 plt.subplot2grid((3,3), (2, 0), colspan=2)
@@ -216,7 +218,8 @@ plt.show()
 ```
 
 # Máquina de estados do Pyplot: implícito vs explícito
-Até agora usamos a máquina de estados do Pyplot que mantém o controle do subplot ativo atual. Toda vez que você chama a função `plot`, o pyplot simplesmente desenha no subplot ativo atual. Ele também faz alguma mágica, como criar automaticamente uma figura e um subplot quando você chama `plot`, se eles ainda não existirem. Essa mágica é conveniente em um ambiente interativo (como o Jupyter).
+Até agora usamos a máquina de estados do Pyplot que mantém o controle do subplot ativo atual. Toda vez que você chama a função `plot`, o pyplot simplesmente desenha no subplot ativo atual. Ele também faz alguma mágica, como criar automaticamente uma figura e um subplot quando você chama `plot`, se eles ainda não existirem. Essa mágica é conveniente em um
+ambiente interativo (como o Jupyter).
 
 Mas quando você está escrevendo um programa, *explícito é melhor que implícito*. Código explícito geralmente é mais fácil de depurar e manter, e se você não acredita em mim, basta ler a segunda regra no Zen do Python:
 
