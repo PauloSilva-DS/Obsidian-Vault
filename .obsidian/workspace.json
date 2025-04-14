@@ -11,14 +11,14 @@
             "id": "cc4af2177fc360a8",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "markdown",
               "state": {
-                "url": "https://www.youtube.com/watch?v=jZudeLTPTb0",
-                "title": "Novo GIMP 3 ameaça domínio do Photoshop? (+ PhotoGIMP 2025) - YouTube",
-                "mode": "webview"
+                "file": "Clippings/O sistema de prompts de 3 níveis que torna a IA incrivelmente útil  por Eva Keiffenheim  em Era da Consciência - Freedium.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "globe-2",
-              "title": "Novo GIMP 3 ameaça domínio do Photoshop? (+ PhotoGIMP 2025) - YouTube"
+              "icon": "lucide-file",
+              "title": "O sistema de prompts de 3 níveis que torna a IA incrivelmente útil  por Eva Keiffenheim  em Era da Consciência - Freedium"
             }
           }
         ],
@@ -230,6 +230,7 @@
   },
   "active": "cc4af2177fc360a8",
   "lastOpenFiles": [
+    "Clippings/O sistema de prompts de 3 níveis que torna a IA incrivelmente útil  por Eva Keiffenheim  em Era da Consciência - Freedium.md",
     "Nova Notas/Gimp.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Demonstra como usar a biblioteca matplotlib.md",
     "Clippings/Notebooks Obsidian e Jupyter  por Brian Carey - Freedium 1.md",
@@ -270,7 +271,6 @@
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/linear.ipynb",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.ipynb",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear-Copy1.md",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Autodiferenciação.md",
     "plot",
     "Source Material/pdf/temp5668552431312359342.PDF",
     "Source Material/pdf/temp5945610998191025736.PDF",
