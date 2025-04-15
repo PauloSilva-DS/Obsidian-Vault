@@ -1,12 +1,14 @@
 ---
-title: "Como eu aprenderia ML em 2025 (se pudesse recomeçar) | por Boris Meinardus | em Rumo à IA - Freedium"
-url: "https://freedium.cfd/https://pub.towardsai.net/how-id-learn-ml-in-2025-if-i-could-start-over-5e83cefdb2aa"
-author:
-published:
-data: "2025-04-14T16:47:40-03:00"
-description: "All you need to learn ML in 2025 is a laptop and a list of the steps you must take."
+title: Como eu aprenderia ML em 2025 (se pudesse recomeçar) | por Boris Meinardus | em Rumo à IA - Freedium
+url: https://freedium.cfd/https://pub.towardsai.net/how-id-learn-ml-in-2025-if-i-could-start-over-5e83cefdb2aa
+author: 
+published: 
+data: 2025-04-14T16:47:40-03:00
+description: All you need to learn ML in 2025 is a laptop and a list of the steps you must take.
 tags:
-  - "clippings"
+  - clippings
+Atualizado: 2025-04-15  09.41
+Criado: 2025-04-14  16.47
 ---
 [< Ir para o original](https://pub.towardsai.net/how-id-learn-ml-in-2025-if-i-could-start-over-5e83cefdb2aa#bypass)
 
@@ -16,7 +18,6 @@ tags:
 
 ## Tudo o que você precisa para aprender ML em 2025 é um laptop e uma lista de etapas que você deve seguir.[Rumo à IA](https://medium.com/towards-artificial-intelligence "A principal comunidade de IA e plataforma de conteúdo focada em…")
 
-estúdio android ~11 min de leitura · 2 de janeiro de 2025 (Atualizado: 2 de janeiro de 2025) · Grátis: Não
 
 Eu disse isso ano passado e vou repetir.
 
@@ -28,7 +29,7 @@ Então, hoje, compartilharei como eu aprenderia ML se pudesse começar do zero, 
 
 Vamos lá!
 
-### Pitão
+### Pithon
 
 Bem, isso parece óbvio, não é? Mas o que não é tão óbvio é o quanto de Python você deve aprender nesta fase.
 
