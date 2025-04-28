@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-04-28  15.35
+Atualizado: 2025-04-28  16.05
 Criado: 2025-03-07  14.55
 ---
 
@@ -314,7 +314,7 @@ Vamos olhar para os outros campos. O método describe() mostra um resumo dos atr
 
 Figura 2-7. Resumo de cada atributo numérico
 
-As linhas count, mean, min e max são autoexplicativas. Observe que os valores nulos são ignorados (então, por exemplo, a contagem de total_bedrooms é 20.433, não 20.640). A linha std mostra o desvio padrão, que mede o quão dispersos estão os valores.\(^5\) As linhas 25%, 50% e 75% mostram os percentis correspondentes: um percentil indica o valor abaixo do qual uma determinada porcentagem de observações em um grupo de observações cai. Por exemplo, 25% dos distritos têm um housing_median_age menor que 18, enquanto 50% são menores que 29 e 75% são menores que 37. Esses são frequentemente chamados de 25º percentil (ou primeiro quartil), mediana e 75º percentil (ou terceiro quartil).
+As linhas count, mean, min e max são autoexplicativas. Observe que os valores nulos são ignorados (então, por exemplo, a contagem de total_bedrooms é 20.433, não 20.640). A linha std mostra o desvio padrão, que mede o quão dispersos estão os valores.$(^5)$ As linhas 25%, 50% e 75% mostram os percentis correspondentes: um percentil indica o valor abaixo do qual uma determinada porcentagem de observações em um grupo de observações cai. Por exemplo, 25% dos distritos têm um housing_median_age menor que 18, enquanto 50% são menores que 29 e 75% são menores que 37. Esses são frequentemente chamados de 25º percentil (ou primeiro quartil), mediana e 75º percentil (ou terceiro quartil).
 
 Outra maneira rápida de ter uma noção do tipo de dados com os quais você está lidando é plotar um histograma para cada atributo numérico. Um histograma mostra o número de instâncias (no eixo vertical) que têm um determinado intervalo de valores (no eixo horizontal). Você pode plotar um atributo por vez ou chamar o método hist() em todo o conjunto de dados (como mostrado no exemplo de código a seguir), e ele plotará um histograma para cada atributo numérico (veja a Figura 2-8):
 
