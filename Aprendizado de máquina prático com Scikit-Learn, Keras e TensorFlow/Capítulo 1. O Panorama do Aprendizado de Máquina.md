@@ -3,8 +3,8 @@ tags:
   - estudo
   - python
   - AprendizadoMaquina
-Completo: false
-Atualizado: 2025-03-27  15.56
+Completo: true
+Atualizado: 2025-04-28  15.16
 Criado: 2025-03-07  15.07
 ---
 [[Aprendizado de máquina]]

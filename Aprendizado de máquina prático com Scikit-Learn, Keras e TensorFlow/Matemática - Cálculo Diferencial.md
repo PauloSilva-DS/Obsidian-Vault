@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-04-15  10.14
+Atualizado: 2025-04-28  15.16
 Criado: 2025-03-13  18.13
 ---
 **Matemática - Cálculo Diferencial**
