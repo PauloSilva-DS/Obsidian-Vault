@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-27  16.39
+Atualizado: 2025-04-28  15.35
 Criado: 2025-03-07  14.55
 ---
 
@@ -58,7 +58,7 @@ Como você é um cientista de dados bem organizado, a primeira coisa que deve fa
 
 A primeira pergunta a fazer ao seu chefe é qual exatamente é o objetivo do negócio. Construir um modelo provavelmente não é o objetivo final. Como a empresa espera usar e se beneficiar desse modelo? Saber o objetivo é importante porque ele determinará como você enquadrará o problema, quais algoritmos selecionará, qual medida de desempenho usará para avaliar seu modelo e quanto esforço gastará ajustando-o.
 
-Seu chefe responde que a saída do seu modelo (uma previsão do preço médio de habitação de um distrito) será alimentada em outro sistema de machine learning (veja a Figura 2-2), junto com muitos outros sinais.\(^2\) Esse sistema downstream determinará se vale a pena investir em uma determinada área. Acertar isso é crítico, pois afeta diretamente a receita.
+Seu chefe responde que a saída do seu modelo (uma previsão do preço médio de habitação de um distrito) será alimentada em outro sistema de machine learning (veja a Figura 2-2), junto com muitos outros sinais.$(^2)$ Esse sistema downstream determinará se vale a pena investir em uma determinada área. Acertar isso é crítico, pois afeta diretamente a receita.
 
 A próxima pergunta a fazer ao seu chefe é como é a solução atual (se houver). A situação atual geralmente lhe dará uma referência de desempenho, bem como insights sobre como resolver o problema. Seu chefe responde que os preços de habitação dos distritos são atualmente estimados manualmente por especialistas: uma equipe coleta informações atualizadas sobre um distrito, e quando não conseguem obter o preço médio de habitação, eles o estimam usando regras complexas.
 
@@ -145,7 +145,7 @@ $$
 
 - RMSE(( X,h )) é a função de custo medida no conjunto de exemplos usando sua hipótese ( h ).
 
-Usamos fonte itálica minúscula para valores escalares (como ( m ) ou $( y^{(i)}))$ e nomes de funções (como ( h )), fonte em negrito minúscula para vetores (como $( x^{(i)}) ),$ e fonte em negrito maiúscula para matrizes (como ( X )). 
+Usamos fonte itálica minúscula para valores escalares (como $( m )$ ou $( y^{(i)}))$ e nomes de funções (como $( h )$), fonte em negrito minúscula para vetores (como $( x^{(i)}) ),$ e fonte em negrito maiúscula para matrizes (como $( X ))$. 
 
 Embora o RMSE seja geralmente a medida de desempenho preferida para tarefas de regressão, em alguns contextos você pode preferir usar outra função. Por exemplo, se houver muitos distritos discrepantes. Nesse caso, você pode considerar usar o erro absoluto médio (MAE, também chamado de desvio absoluto médio), mostrado na Equação 2-2:
 
