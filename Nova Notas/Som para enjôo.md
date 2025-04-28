@@ -1,0 +1,1 @@
+https://www.infomoney.com.br/saude/cientistas-do-japao-descobrem-som-que-alivia-enjoo-em-carro-em-apenas-1-minuto/

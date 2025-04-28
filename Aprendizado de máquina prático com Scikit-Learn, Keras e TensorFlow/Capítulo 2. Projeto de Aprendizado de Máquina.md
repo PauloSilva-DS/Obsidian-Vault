@@ -2,9 +2,7 @@
 Atualizado: 2025-03-27  16.39
 Criado: 2025-03-07  14.55
 ---
-Claro! Vou traduzir o conteúdo do arquivo para o português. Aqui está a tradução:
 
----
 
 # Capítulo 2. Projeto de Machine Learning de Ponta a Ponta
 

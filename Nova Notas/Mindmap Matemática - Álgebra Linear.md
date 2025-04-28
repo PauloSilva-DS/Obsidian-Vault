@@ -2,7 +2,9 @@
 Atualizado: 2025-03-14  11.33
 Criado: 2025-03-14  11.31
 ---
-
+- Uso de bibliotecas NumPy e Matplotlib
+- Códigos para cada operação
+- Geração de gráficos e 
 ### 1. **Introdução**
 
 - Definição de Álgebra Linear
@@ -53,8 +55,5 @@ Criado: 2025-03-14  11.31
 
 ### 6. **Implementação em Python**
 
-- Uso de bibliotecas NumPy e Matplotlib
-- Códigos para cada operação
-- Geração de gráficos e visualização de vetores e matrizes
+visualização de vetores e matrizes
 
-Esse mindmap sintetiza os principais tópicos abordados no documento e facilita a organização do estudo.

@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-03-26  15.19
+Atualizado: 2025-04-15  10.14
 Criado: 2025-03-13  18.13
 ---
 **Matemática - Cálculo Diferencial**
@@ -362,7 +362,8 @@ $y = {x_\mathrm{A}}^2 + 2x_\mathrm{A}(x - x_\mathrm{A}) = 2x_\mathrm{A}x - x_\ma
 
 Uma regra muito importante é que **a derivada de uma soma é a soma das derivadas**. Mais precisamente, se definirmos $f(x) = g(x) + h(x)$, então $f'(x) = g'(x) + h'(x)$. Isso é bastante fácil de provar:
 
-$
+
+$$
 \begin{align*}
 f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} && \quad\text{por definição}\\
 & = \underset{\epsilon \to 0}\lim\dfrac{g(x+\epsilon) + h(x+\epsilon) - g(x) - h(x)}{\epsilon} && \quad \text{usando }f(x) = g(x) + h(x) \\
@@ -370,7 +371,8 @@ f'(x) & = \underset{\epsilon \to 0}\lim\dfrac{f(x+\epsilon) - f(x)}{\epsilon} &&
 & = \underset{\epsilon \to 0}\lim\dfrac{g(x+\epsilon) - g(x)}{\epsilon} + \underset{\epsilon \to 0}\lim\dfrac{h(x+\epsilon) - h(x)}{\epsilon} && \quad \text{pois o limite de uma soma é a soma dos limites}\\
 & = g'(x) + h'(x) && \quad \text{usando as definições de }g'(x) \text{ e } h'(x)
 \end{align*}
-$
+
+$$
 
 Da mesma forma, é possível mostrar as seguintes regras importantes (incluí as provas no final deste notebook, caso você esteja curioso):
 
@@ -954,13 +956,13 @@ Como todos esses termos são estritamente positivos quando \(0 < \theta < \frac{
 
 **Desigualdades (1)**
 
-\[
-\frac{1}{\cos(\theta)} > \frac{\sin(\theta)}{\theta} > \cos(\theta)
-\]
+$[$
+$\frac{1}{\cos(\theta)} > \frac{\sin(\theta)}{\theta} > \cos(\theta)$
+$]$
 
-assumindo \(0 < \theta < \frac{\pi}{2}\)
+assumindo $(0 < \theta < \frac{\pi}{2})$
 
-Agora, como \(\sin(-\theta) = -\sin(\theta)\), vemos que \(\frac{\sin(-\theta)}{-\theta} = \frac{\sin(\theta)}{\theta}\). Além disso, \(\cos(-\theta) = \cos(\theta)\), e portanto \(\frac{1}{\cos(-\theta)} = \frac{1}{\cos(\theta)}\). Substituindo os termos nas desigualdades (1), obtemos:
+Agora, como (\sin(-\theta) = -\sin(\theta)\), vemos que \(\frac{\sin(-\theta)}{-\theta} = \frac{\sin(\theta)}{\theta}\). Além disso, \(\cos(-\theta) = \cos(\theta)\), e portanto \(\frac{1}{\cos(-\theta)} = \frac{1}{\cos(\theta)}). Substituindo os termos nas desigualdades (1), obtemos:
 
 \[
 \frac{1}{\cos(-\theta)} > \frac{\sin(-\theta)}{-\theta} > \cos(-\theta)

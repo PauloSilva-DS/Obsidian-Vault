@@ -74,12 +74,12 @@ title: Dupla Sena
 # -*- coding: utf-8 -*
 import random  # importar as funções do random
 random.seed()  # inicializar o contador
-sorteados = [33]  # lista de números sorteados
+sorteados = []  # lista de números sorteados
 
 
 
 # realização dos sorteios
-for i in range(6):
+for i in range(7):
     n = 33
     while (n in sorteados):
         n = random.randint(1,50)
