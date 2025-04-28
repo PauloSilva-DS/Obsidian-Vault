@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-04-28  16.05
+Atualizado: 2025-04-28  16.13
 Criado: 2025-03-07  14.55
 ---
 
@@ -381,7 +381,7 @@ Você pode então usar esta função assim:
 
 Bem, isso funciona, mas não é perfeito: se você executar o programa novamente, ele gerará um conjunto de teste diferente! Com o tempo, você (ou seus algoritmos de machine learning) verá todo o conjunto de dados, o que é exatamente o que você quer evitar.
 
-Uma solução é salvar o conjunto de teste na primeira execução e depois carregá-lo nas execuções subsequentes. Outra opção é definir a semente do gerador de números aleatórios (por exemplo, com np.random.seed(42))\(^6\) antes de chamar np.random.permutation() para que ele sempre gere os mesmos índices embaralhados.
+Uma solução é salvar o conjunto de teste na primeira execução e depois carregá-lo nas execuções subsequentes. Outra opção é definir a semente do gerador de números aleatórios (por exemplo, com np.random.seed$(42)^6$ antes de chamar np.random.permutation() para que ele sempre gere os mesmos índices embaralhados.
 
 No entanto, ambas as soluções quebrarão na próxima vez que você buscar um conjunto de dados atualizado. Para ter uma divisão estável entre treino/teste mesmo após atualizar o conjunto de dados, uma solução comum é usar o identificador de cada instância para decidir se ela deve ir para o conjunto de teste (assumindo que as instâncias têm identificadores únicos e imutáveis). Por exemplo, você poderia calcular um hash do identificador de cada instância e colocar essa instância no conjunto de teste se o hash for menor ou igual a 20% do valor máximo de hash. Isso garante que o conjunto de teste permanecerá consistente em várias execuções, mesmo que você atualize o conjunto de dados. O novo conjunto de teste conterá 20% das novas instâncias, mas não conterá nenhuma instância que estava anteriormente no conjunto de treinamento.
 
