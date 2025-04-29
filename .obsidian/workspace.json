@@ -36,6 +36,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -241,11 +242,11 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "cc4af2177fc360a8",
+  "active": "07d1881adb1d2bba",
   "lastOpenFiles": [
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Clippings/5 Cool Jupyter Notebook Dicas  by Ben Hui  em Towards Dev - Freedium.md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Nova Notas/Executar bibliotecas python.md",
     "Nova Notas/Gimp.md",
     "Capítulo 2. Projeto de Aprendizado de Máquina.ipynb",
