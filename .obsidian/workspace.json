@@ -34,21 +34,8 @@
               "icon": "lucide-file",
               "title": "5 Cool Jupyter Notebook Dicas  by Ben Hui  em Towards Dev - Freedium"
             }
-          },
-          {
-            "id": "03dc614ce3f12126",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.10"
-            }
           }
         ],
-        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -254,14 +241,14 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "03dc614ce3f12126",
+  "active": "cc4af2177fc360a8",
   "lastOpenFiles": [
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
+    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Clippings/5 Cool Jupyter Notebook Dicas  by Ben Hui  em Towards Dev - Freedium.md",
     "Nova Notas/Executar bibliotecas python.md",
     "Nova Notas/Gimp.md",
     "Capítulo 2. Projeto de Aprendizado de Máquina.ipynb",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Cálculo Diferencial.md",
     "Clippings/Como eu aprenderia ML em 2025 (se pudesse recomeçar)  por Boris Meinardus  em Rumo à IA - Freedium.md",

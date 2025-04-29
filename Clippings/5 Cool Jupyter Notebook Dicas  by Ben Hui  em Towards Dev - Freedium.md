@@ -1,12 +1,14 @@
 ---
-title: "5 Cool Jupyter Notebook Dicas | by Ben Hui | em Towards Dev - Freedium"
-source: "https://freedium.cfd/https://medium.com/towardsdev/5-cool-jupyter-notebook-tips-0d2c00b5ffb8"
-author:
-published:
+title: 5 Cool Jupyter Notebook Dicas | by Ben Hui | em Towards Dev - Freedium
+source: https://freedium.cfd/https://medium.com/towardsdev/5-cool-jupyter-notebook-tips-0d2c00b5ffb8
+author: 
+published: 
 created: 2025-03-01
-description: "Jupyter Notebook is one of the most popular integrated development environments (IDEs) for almost..."
+description: Jupyter Notebook is one of the most popular integrated development environments (IDEs) for almost...
 tags:
-  - "clippings"
+  - clippings
+Atualizado: 2025-04-29  09.14
+Criado: 2025-03-02  10.07
 ---
 O Jupyter Notebook é um dos ambientes de desenvolvimento integrados (IDEs) mais populares para quase todas as tarefas de programação Python, como ciência de dados, aprendizado de máquina, computação científica e muito mais.
 
