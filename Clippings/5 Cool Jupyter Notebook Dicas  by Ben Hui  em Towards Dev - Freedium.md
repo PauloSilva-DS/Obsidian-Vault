@@ -7,7 +7,7 @@ created: 2025-03-01
 description: Jupyter Notebook is one of the most popular integrated development environments (IDEs) for almost...
 tags:
   - clippings
-Atualizado: 2025-04-29  09.14
+Atualizado: 2025-04-29  15.16
 Criado: 2025-03-02  10.07
 ---
 O Jupyter Notebook é um dos ambientes de desenvolvimento integrados (IDEs) mais populares para quase todas as tarefas de programação Python, como ciência de dados, aprendizado de máquina, computação científica e muito mais.
