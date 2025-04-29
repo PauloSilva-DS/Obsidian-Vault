@@ -20,8 +20,25 @@
               "icon": "lucide-file",
               "title": "Curso Arduino"
             }
+          },
+          {
+            "id": "b4d8333b833c5360",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Source Material/pdf/MD-1500 Manual.pdf",
+                "page": 3,
+                "left": -18,
+                "top": 706,
+                "zoom": 0.8162579778300303
+              },
+              "icon": "lucide-file-text",
+              "title": "MD-1500 Manual"
+            }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -227,10 +244,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "afd14caf626cdea2",
+  "active": "b4d8333b833c5360",
   "lastOpenFiles": [
-    "Source Material/pdf/MD-1500 Manual.pdf",
     "Nova Notas/Curso Arduino.md",
+    "Source Material/pdf/MD-1500 Manual.pdf",
     "Source Material/Imagens/Pasted image 20250429153309.png",
     "Clippings/5 Cool Jupyter Notebook Dicas  by Ben Hui  em Towards Dev - Freedium.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
