@@ -6,11 +6,11 @@
     "emojiStyle": "twemoji",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiCircuitBoard",
       "🧰",
       "🀄",
       "📚",
-      "🔖",
-      "CoBookOpen"
+      "🔖"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -58,5 +58,6 @@
   "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md": "📚",
   "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Cálculo Diferencial.md": "🀄",
   "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.md": "🀄",
-  "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Demonstra como usar a biblioteca matplotlib.md": "🧰"
+  "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Demonstra como usar a biblioteca matplotlib.md": "🧰",
+  "Source Material/pdf/eletronica-para-makers.pdf": "LiCircuitBoard"
 }
