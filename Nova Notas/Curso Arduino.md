@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-05-06  20.19
+Atualizado: 2025-05-06  20.25
 Criado: 2025-04-29  15.16
 tags:
   - "#arduino"
@@ -10,3 +10,4 @@ tags:
 
 
  ![[eletronica-para-makers.pdf#page=45&rect=65,387,544,761&color=yellow]]
+ 

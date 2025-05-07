@@ -12,7 +12,7 @@ tags:
 
 Saiba mais sobre um fenômeno conhecido como sonho lúcido, mecanismos, benefícios, riscos e estratégias para induzir o sonho lúcido e treinar sua mente para reconhecer a realidade e a mente consciente enquanto estiver em um estado lúcido.
 
-- **Definição:** O sonho lúcido aparece quando você se torna consciente de que está sonhando, permitindo o controle dentro do sonho.
+- **Definição:** O sonho lúcido aparece quando você se torna consciente de que está sonhando, permitindo o ⁵ dentro do sonho.
 - **Benefícios:** Inclui superação de pesadelos, maior criatividade e melhor solução de problemas através da terapia de sonhos lúcidos.
 - **Técnicas**: Para cultivar sonhos lúcidos, métodos como verificações da realidade e diários são eficazes.
 - **Saúde Mental:** Terapia de sonho lúcida pode apoiar o bem-estar mental abordando problemas psicológicos.
