@@ -38,7 +38,6 @@
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -244,10 +243,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "afd14caf626cdea2",
+  "active": "b667ab0b5d692cbf",
   "lastOpenFiles": [
-    "Source Material/pdf/eletronica-para-makers.pdf",
     "Nova Notas/Anotações livro eletrônica para makers.md",
+    "Source Material/pdf/eletronica-para-makers.pdf",
     "Source Material/pdf/MD-1500 Manual.pdf",
     "Source Material/pdf/internet-das-coisas-com-esp8266-arduino-e-raspberry-pi-1nbsped-8575225812-9788575225813_compress.pdf",
     "Source Material/Imagens/Pasted image 20250429153309.png",
