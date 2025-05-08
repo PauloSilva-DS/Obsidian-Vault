@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-05-08  09.45
+Atualizado: 2025-05-08  09.59
 Criado: 2025-04-29  15.16
 tags:
   - "#arduino"
@@ -14,6 +14,24 @@ tags:
 
 ![[eletronica-para-makers.pdf#page=45&rect=62,408,551,726&color=yellow|eletronica-para-makers, p.45]]
 
+
+
+> [!PDF|important] [[eletronica-para-makers.pdf#page=60&selection=3,0,35,14&color=> important|eletronica-para-makers, p.60]]
+> Mas os volts são apenas uma parte da história. Quando elétrons fluem através de um fio, a quantidade do fluxo durante um período de tempo é conhecida como amperagem, um nome que homenageia outro pioneiro da pesquisa com eletricidade, André-Marie Ampère. Este fluxo também é normalmente conhecido como corrente. A corrente – a amperagem – gera calor. • Pense na voltagem como pressão. • Pense nos amperes como a quantidade de fluxo, mais conhecida como corrente.
+
+
+
+
+> [!PDF|note] [[eletronica-para-makers.pdf#page=60&selection=144,0,169,1&color=note|eletronica-para-makers, p.60]]
+> Aqui vão alguns outros conceitos básicos:
+>  • O fluxo de eletricidade por segundo é medido em amperes, comumente abreviado para <font color="#4bacc6">amps</font>.
+>  • A pressão da eletricidade que causa o fluxo é medida em volts. 
+>  • A resistência ao fluxo é medida em ohms. 
+>  • Uma resistência maior restringe a corrente.
+>   • Uma tensão maior consegue superar melhor a resistência e aumentar a corrente.
+
+
+![[eletronica-para-makers.pdf#page=61&rect=69,211,553,556&color=note|eletronica-para-makers, p.61]]
 
  
  
