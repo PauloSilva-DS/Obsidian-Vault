@@ -14,9 +14,9 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/eletronica-para-makers.pdf",
-                "page": 69,
+                "page": 78,
                 "left": -13,
-                "top": 755,
+                "top": 480,
                 "zoom": 1.144607843137255
               },
               "icon": "lucide-file-text",
@@ -246,9 +246,9 @@
   },
   "active": "afd14caf626cdea2",
   "lastOpenFiles": [
-    "Source Material/pdf/MD-1500 Manual.pdf",
-    "Nova Notas/Anotações livro eletrônica para makers.md",
     "Source Material/pdf/eletronica-para-makers.pdf",
+    "Nova Notas/Anotações livro eletrônica para makers.md",
+    "Source Material/pdf/MD-1500 Manual.pdf",
     "Source Material/pdf/internet-das-coisas-com-esp8266-arduino-e-raspberry-pi-1nbsped-8575225812-9788575225813_compress.pdf",
     "Source Material/Imagens/Pasted image 20250429153309.png",
     "Clippings/5 Cool Jupyter Notebook Dicas  by Ben Hui  em Towards Dev - Freedium.md",
