@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-05-08  09.59
+Atualizado: 2025-05-08  10.39
 Criado: 2025-04-29  15.16
 tags:
   - "#arduino"
@@ -32,6 +32,12 @@ tags:
 
 
 ![[eletronica-para-makers.pdf#page=61&rect=69,211,553,556&color=note|eletronica-para-makers, p.61]]
+
+
+> [!PDF|red] [[eletronica-para-makers.pdf#page=67&selection=7,0,45,13&color=red|eletronica-para-makers, p.67]]
+> Fundamentos: corrente contínua e alternada O fluxo de corrente obtido de uma bateria é conhecido como corrente contínua ou DC. Como o fluxo de água de uma torneira, ele é um fluxo contínuo em uma direção. O fluxo de corrente obtido de uma tomada em sua casa é muito diferente. O lado “vivo” da tomada muda de positivo para negativo em relação ao lado “neutro”, a uma taxa de 60 vezes por segundo (em muitos países estrangeiros, incluindo a Europa, 50 vezes por segundo). Isto é conhecido como corrente alternada ou AC, que é mais parecido com o fluxo pulsante de uma mangueira elétrica para lavar carros.
+
+
 
  
  

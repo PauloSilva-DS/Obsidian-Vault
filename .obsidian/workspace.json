@@ -14,10 +14,10 @@
               "type": "pdf",
               "state": {
                 "file": "Source Material/pdf/eletronica-para-makers.pdf",
-                "page": 61,
-                "left": -11,
-                "top": 312,
-                "zoom": 1.4191176470588236
+                "page": 69,
+                "left": -20,
+                "top": 751,
+                "zoom": 0.7941176470588235
               },
               "icon": "lucide-file-text",
               "title": "eletronica-para-makers"
@@ -36,8 +36,25 @@
               "icon": "lucide-file",
               "title": "Anotações livro eletrônica para makers"
             }
+          },
+          {
+            "id": "f2f618037afa36d9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Source Material/pdf/MD-1500 Manual.pdf",
+                "page": 15,
+                "left": -18,
+                "top": 5,
+                "zoom": 0.8162579778300303
+              },
+              "icon": "lucide-file-text",
+              "title": "MD-1500 Manual"
+            }
           }
         ],
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -114,8 +131,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 449.5,
-    "collapsed": true
+    "width": 449.5
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -244,7 +260,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "b667ab0b5d692cbf",
+  "active": "f2f618037afa36d9",
   "lastOpenFiles": [
     "Nova Notas/Anotações livro eletrônica para makers.md",
     "Source Material/pdf/eletronica-para-makers.pdf",
