@@ -15,9 +15,9 @@
               "state": {
                 "file": "Source Material/pdf/eletronica-para-makers.pdf",
                 "page": 69,
-                "left": -20,
-                "top": 751,
-                "zoom": 0.7941176470588235
+                "left": -13,
+                "top": 755,
+                "zoom": 1.144607843137255
               },
               "icon": "lucide-file-text",
               "title": "eletronica-para-makers"
@@ -36,25 +36,9 @@
               "icon": "lucide-file",
               "title": "Anotações livro eletrônica para makers"
             }
-          },
-          {
-            "id": "f2f618037afa36d9",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Source Material/pdf/MD-1500 Manual.pdf",
-                "page": 15,
-                "left": -18,
-                "top": 5,
-                "zoom": 0.8162579778300303
-              },
-              "icon": "lucide-file-text",
-              "title": "MD-1500 Manual"
-            }
           }
         ],
-        "currentTab": 2,
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -260,12 +244,12 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f2f618037afa36d9",
+  "active": "afd14caf626cdea2",
   "lastOpenFiles": [
+    "Source Material/pdf/MD-1500 Manual.pdf",
     "Nova Notas/Anotações livro eletrônica para makers.md",
     "Source Material/pdf/eletronica-para-makers.pdf",
     "Source Material/pdf/internet-das-coisas-com-esp8266-arduino-e-raspberry-pi-1nbsped-8575225812-9788575225813_compress.pdf",
-    "Source Material/pdf/MD-1500 Manual.pdf",
     "Source Material/Imagens/Pasted image 20250429153309.png",
     "Clippings/5 Cool Jupyter Notebook Dicas  by Ben Hui  em Towards Dev - Freedium.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
