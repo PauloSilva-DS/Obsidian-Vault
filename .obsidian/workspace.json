@@ -15,9 +15,9 @@
               "state": {
                 "file": "Source Material/pdf/eletronica-para-makers.pdf",
                 "page": 78,
-                "left": -19,
-                "top": 20,
-                "zoom": 0.7941176470588236
+                "left": -38,
+                "top": 42,
+                "zoom": 0.39583333333333337
               },
               "icon": "lucide-file-text",
               "title": "eletronica-para-makers"
@@ -243,10 +243,49 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "b667ab0b5d692cbf",
+  "floating": {
+    "id": "ae3dbe39659d90d4",
+    "type": "floating",
+    "children": [
+      {
+        "id": "3f89b9259a16ee6b",
+        "type": "window",
+        "children": [
+          {
+            "id": "bedb5d898bd7a3e5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d467787ef14b9d12",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://github.com/javalent/admonitions",
+                    "title": "GitHub - javalent/admonitions: Adds admonition block-styled content to Obsidian.md",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "GitHub - javalent/admonitions: Adds admonition block-styled content to Obsidian.md"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 3524,
+        "y": 8,
+        "width": 948,
+        "height": 1064,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "d467787ef14b9d12",
   "lastOpenFiles": [
-    "Nova Notas/Anotações livro eletrônica para makers.md",
     "Source Material/pdf/eletronica-para-makers.pdf",
+    "Nova Notas/Anotações livro eletrônica para makers.md",
     "Source Material/pdf/MD-1500 Manual.pdf",
     "Source Material/pdf/internet-das-coisas-com-esp8266-arduino-e-raspberry-pi-1nbsped-8575225812-9788575225813_compress.pdf",
     "Source Material/Imagens/Pasted image 20250429153309.png",
