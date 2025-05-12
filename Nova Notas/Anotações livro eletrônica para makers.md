@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-05-08  11.15
+Atualizado: 2025-05-08  11.17
 Criado: 2025-04-29  15.16
 tags:
   - "#arduino"
@@ -39,5 +39,12 @@ tags:
 
 
 
- 
+ > [!PDF|important] [[eletronica-para-makers.pdf#page=78&selection=53,0,94,1&color=important|eletronica-para-makers, p.78]]
+> <font color="#4bacc6">Acendendo um LED</font>
+> • O fio mais longo que sai do LED deve receber uma tensão mais positiva em relação ao fio mais curto. 
+> • A diferença positiva de tensão aplicada entre o fio longo e o fio curto não pode exceder o limite definido pelo fabricante. Este limite é conhecido como tensão direta. 
+> • A corrente que entra no LED pelo fio longo e sai pelo fio curto não pode exceder o limite definido pelo fabricante. Este limite é conhecido como corrente direta.
+
+
+
  
