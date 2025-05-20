@@ -34,6 +34,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -110,7 +111,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 449.5
+    "width": 449.5,
+    "collapsed": true
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -239,7 +241,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "b667ab0b5d692cbf",
+  "active": "afd14caf626cdea2",
   "lastOpenFiles": [
     "Source Material/pdf/eletronica-para-makers.pdf",
     "Nova Notas/Anotações livro eletrônica para makers.md",
