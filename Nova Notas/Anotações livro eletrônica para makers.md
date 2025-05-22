@@ -1,5 +1,5 @@
 ---
-Atualizado: 2025-05-08  11.17
+Atualizado: 2025-05-22  10.42
 Criado: 2025-04-29  15.16
 tags:
   - "#arduino"
@@ -47,4 +47,13 @@ tags:
 
 
 
- 
+ > [!PDF|note] [[eletronica-para-makers.pdf#page=105&selection=64,0,80,66&color=note|eletronica-para-makers, p.105]]
+> > Para minimizar o risco de erros, você pode memorizar a Lei de Ohm usando as unidades reais, assim:
+> > volts = amperes × ohms
+> > amperes = volts / ohms
+> > ohms = volts / amperes
+> > Lembre-se: • Volts são medidos como uma diferença de tensão entre dois pontos em um circuito simples. Ohms são a resistência entre os mesmos dois pontos. Amperes são a corrente que flui pelo circuito.
+> 
+
+
+> 
