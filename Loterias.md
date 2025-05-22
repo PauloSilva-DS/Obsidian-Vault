@@ -94,3 +94,33 @@ print (sorteados)
 
 
 
+```ad-note
+title: Mega Sena 
+
+
+```
+
+
+```python
+# -*- coding: utf-8 -*-
+import random  # importar as funções do random
+random.seed()  # inicializar o contador
+sorteados = {33}  # lista de números sorteado
+qtd = 7
+volantes = 1
+
+
+# realização dos sorteios
+for y in range(volantes):
+    for i in range(qtd):
+        n = random.randint(1,60)
+        sorteados.add(n)
+        if len(sorteados) == qtd:
+          lista = list(sorteados)
+          lista.sort()
+          sorteados.clear() 
+          sorteados = {33}
+          print(lista)
+
+
+```

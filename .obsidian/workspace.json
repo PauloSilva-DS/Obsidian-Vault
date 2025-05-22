@@ -34,11 +34,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Source Material/pdf/eletronica-para-makers.pdf",
-                "page": 74,
-                "left": -13,
-                "top": 105,
-                "zoom": 1.2022058823529411
+                "file": "Source Material/pdf/eletronica-para-makers.pdf"
               },
               "icon": "lucide-file-text",
               "title": "eletronica-para-makers"
