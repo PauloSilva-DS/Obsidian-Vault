@@ -51,11 +51,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Source Material/pdf/eletronica-para-makers.pdf",
-                "page": 112,
-                "left": -19,
-                "top": 728,
-                "zoom": 0.8235294117647058
+                "file": "Source Material/pdf/eletronica-para-makers.pdf"
               },
               "icon": "lucide-file-text",
               "title": "eletronica-para-makers"
@@ -267,7 +263,7 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "aa73acb3b533a681",
+  "active": "7ad913b039abee5b",
   "lastOpenFiles": [
     "Nova Notas/Anotações livro eletrônica para makers.md",
     "Nova Notas/Sem título.md",
