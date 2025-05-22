@@ -36,11 +36,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Source Material/pdf/eletronica-para-makers.pdf",
-                "page": 112,
-                "left": -11,
-                "top": 750,
-                "zoom": 1.3872549019607843
+                "file": "Source Material/pdf/eletronica-para-makers.pdf"
               },
               "icon": "lucide-file-text",
               "title": "eletronica-para-makers"
@@ -252,11 +248,11 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "b52ff0390ee0ddb1",
+  "active": "7ad913b039abee5b",
   "lastOpenFiles": [
+    "Nova Notas/Anotações livro eletrônica para makers.md",
     "Nova Notas/Sem título.md",
     "Source Material/pdf/eletronica-para-makers.pdf",
-    "Nova Notas/Anotações livro eletrônica para makers.md",
     "Clippings/Como se programa em um computador quântico.md",
     "Source Material/pdf/MD-1500 Manual.pdf",
     "Source Material/pdf/internet-das-coisas-com-esp8266-arduino-e-raspberry-pi-1nbsped-8575225812-9788575225813_compress.pdf",
