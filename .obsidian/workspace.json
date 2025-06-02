@@ -6,7 +6,6 @@
       {
         "id": "ea6ede32c5c100d1",
         "type": "tabs",
-        "dimension": 52.64,
         "children": [
           {
             "id": "b52ff0390ee0ddb1",
@@ -24,25 +23,6 @@
           }
         ],
         "stacked": true
-      },
-      {
-        "id": "a17412ac8f219e9e",
-        "type": "tabs",
-        "dimension": 47.36,
-        "children": [
-          {
-            "id": "7ad913b039abee5b",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Source Material/pdf/eletronica-para-makers.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "eletronica-para-makers"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -118,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 449.5,
-    "collapsed": true
+    "width": 703.5
   },
   "right": {
     "id": "00e7413b30db199d",
@@ -248,21 +227,27 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "7ad913b039abee5b",
+  "active": "b52ff0390ee0ddb1",
   "lastOpenFiles": [
-    "Nova Notas/Anotações livro eletrônica para makers.md",
-    "Nova Notas/Sem título.md",
+    "Source Material/Eletrônica/dispositivos eletronicos.pdf",
     "Source Material/pdf/eletronica-para-makers.pdf",
+    "Nova Notas/Anotações livro eletrônica para makers.md",
+    "Source Material/Eletrônica/Eletrônica Volume 1 - 8ed - malvino.pdf",
+    "Source Material/Eletrônica/analise-de-circuitos-v1.pdf",
+    "Source Material/Eletrônica/analise-de-circuitos-v2.pdf",
+    "Source Material/Eletrônica/eletronica-moderna.pdf",
+    "Source Material/Eletrônica/projetos-com-arduino-e-android-simon-monk.pdf",
+    "Source Material/Eletrônica/sistemas-digitais-principios-e-aplicaoes-11-ediao-tocci.pdf",
+    "Source Material/Eletrônica/eletronica-vol-2-8ed-malvino.pdf",
+    "Source Material/Eletrônica/eletronica-vol-1-malvino-ed-7.pdf",
+    "Nova Notas/Sem título.md",
     "Clippings/Como se programa em um computador quântico.md",
-    "Source Material/pdf/MD-1500 Manual.pdf",
-    "Source Material/pdf/internet-das-coisas-com-esp8266-arduino-e-raspberry-pi-1nbsped-8575225812-9788575225813_compress.pdf",
     "Source Material/Imagens/Pasted image 20250429153309.png",
     "Clippings/5 Cool Jupyter Notebook Dicas  by Ben Hui  em Towards Dev - Freedium.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 2. Projeto de Aprendizado de Máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Aprendizado de máquina.md",
     "Nova Notas/Executar bibliotecas python.md",
     "Nova Notas/Gimp.md",
-    "Capítulo 2. Projeto de Aprendizado de Máquina.ipynb",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Capítulo 1. O Panorama do Aprendizado de Máquina.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Cálculo Diferencial.md",
     "Clippings/Como eu aprenderia ML em 2025 (se pudesse recomeçar)  por Boris Meinardus  em Rumo à IA - Freedium.md",
@@ -280,8 +265,6 @@
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Copy.md",
     "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Untitled.md",
     "Clippings/NotebookLM mudará a forma como você aprende.md",
-    "Source Material/pdf/Hands-On_Machine_Learning_with_Scikit-Learn_Keras_and_Tensorflow_-_Aurelien_Geron.pdf",
-    "Source Material/pdf/mãos a obra/Hands Cap 2.pdf",
     "Source Material/Imagens/Pasted image 20250327163339.png",
     "Source Material/Imagens/Pasted image 20250327163246.png",
     "Source Material/Imagens/Pasted image 20250327163224.png",
@@ -291,10 +274,6 @@
     "Source Material/Imagens/Pasted image 20250327162723.png",
     "Source Material/Imagens/Pasted image 20250327162633.png",
     "Source Material/Imagens/Pasted image 20250327160018.png",
-    "Source Material/pdf/mãos a obra/Hands-On Machine Learning 20-69.pdf",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/linear.ipynb",
-    "Aprendizado de máquina prático com Scikit-Learn, Keras e TensorFlow/Matemática - Álgebra Linear.ipynb",
-    "plot",
     "Sem título.canvas"
   ]
 }
